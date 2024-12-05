@@ -1,15 +1,18 @@
 import { React, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"; //provides an active class to the link (can use for css styling)
+import logo from '../assets/logos/brand-logo.svg';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate;
 
   return (
-    <div className="">
+    <div className="bg-white font-sans">
       <nav className="flex justify-between items-center p-4">
         {/* Logo or brand */}
-        <div className="text-xl font-bold">Logo</div>
+        <div className="">
+          <img alt='brand-logo' src={logo} className='h-20 w-auto'/>
+        </div>
 
         {/* Mobile menu toggle */}
         <button
