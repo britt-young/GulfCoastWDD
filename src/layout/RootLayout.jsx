@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const RootLayout = () => {
   return (
-    <div className="bg-green-600 min-h-screen"> {/* Use min-h-screen to fill the viewport */}
+    <div className="bg-blue-200 min-h-screen"> {/* Use min-h-screen to fill the viewport */}
       <Navbar />
       <Outlet />
       {/* <Footer /> */}

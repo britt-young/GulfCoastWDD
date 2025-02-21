@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,13 +24,9 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="py-10 lg:px-40 px-10">
+    <div className="py-8 lg:px-40 px-8">
       <nav
-        className={`flex justify-between items-center px-4 transition-all duration-300 ${
-          isScrolled
-            ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0"
-            : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50"
-        }`}
+        className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${isScrolled ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0 scroll-smooth" : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50"}`}
       >
         {/* Logo or brand */}
         <div className="text-xl font-bold">Logo</div>
