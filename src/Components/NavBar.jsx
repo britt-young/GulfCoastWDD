@@ -33,7 +33,7 @@ const NavBar = () => {
 
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden p-2"
+          className="lg:hidden p-2 cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -53,7 +53,7 @@ const NavBar = () => {
         </button>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex space-x-4">
+        <ul className="hidden lg:flex space-x-4 uppercase">
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
             <NavLink to="/">Page 1</NavLink>
           </li>
@@ -73,7 +73,7 @@ const NavBar = () => {
 
         {/* Sign Up Button (Desktop) */}
         <button
-          className="hidden lg:flex items-center justify-center p-2 m-5"
+          className="hidden lg:flex items-center justify-center p-2 m-5 cursor-pointer"
           onClick={() => navigate("/page5")}
         >
           Sign Up
@@ -82,7 +82,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-        <ul className="flex flex-col space-y-4 px-4 py-2">
+        <ul className="flex flex-col space-y-4 px-4 py-2 uppercase items-center">
           <li>
             <NavLink to="/">Page 1</NavLink>
           </li>
@@ -101,14 +101,16 @@ const NavBar = () => {
         </ul>
 
         {/* Sign Up Button (Mobile) */}
-        <button
-          className="flex items-center justify-center p-2 m-5 w-full"
-          onClick={() => navigate("/page5")}
-        >
-          Sign Up
-        </button>
-      </div>
+  <div className="flex justify-center mt-5"> 
+    <button
+      className="p-2 w-full max-w-xs cursor-pointer"
+      onClick={() => navigate("/page5")}
+    >
+      Sign Up
+    </button>
     </div>
+    </div>
+  </div>
   );
 };
 

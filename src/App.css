@@ -3,9 +3,45 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-  /*
+
  h1 {
-  font-size: 3.2em;
+  text-transform: uppercase;
+  font-size: 4em;
   line-height: 1.1;
   color: black;
-}  */
+} 
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1.1;
+  color: black;
+} 
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.1;
+  color: black;
+} 
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.1;
+  color: black;
+} 
+
+p {
+  font-size: 1em;
+  line-height: 1.1;
+  color: black;
+} 
+
+button {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.1;
+  background-color: chartreuse;
+  color: black;
+} 
