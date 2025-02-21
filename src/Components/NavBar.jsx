@@ -1,13 +1,36 @@
-import { React, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom"; //provides an active class to the link (can use for css styling)
+import { React, useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate;
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="">
-      <nav className="flex justify-between items-center p-4">
+    <div className="py-10 lg:px-40 px-10">
+      <nav
+        className={`flex justify-between items-center px-4 transition-all duration-300 ${
+          isScrolled
+            ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0"
+            : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50"
+        }`}
+      >
         {/* Logo or brand */}
         <div className="text-xl font-bold">Logo</div>
 
@@ -50,7 +73,7 @@ const NavBar = () => {
             <NavLink to="/page5">Page 5</NavLink>
           </li>
         </ul>
-        {/* look-up {replace:true} for buttons/useNavigate Hook */}
+
         {/* Sign Up Button (Desktop) */}
         <button
           className="hidden lg:flex items-center justify-center p-2 m-5"
@@ -59,7 +82,8 @@ const NavBar = () => {
           Sign Up
         </button>
       </nav>
-      {/* Mobile menu (will be toggled based on isMenuOpen) */}
+
+      {/* Mobile menu */}
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col space-y-4 px-4 py-2">
           <li>
