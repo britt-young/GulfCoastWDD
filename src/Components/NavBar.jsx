@@ -33,7 +33,7 @@ const NavBar = () => {
 
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden p-2 cursor-pointer"
+          className="lg:hidden m-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -73,7 +73,7 @@ const NavBar = () => {
 
         {/* Sign Up Button (Desktop) */}
         <button
-          className="hidden lg:flex items-center justify-center p-2 m-5 cursor-pointer"
+          className="hidden lg:flex items-center justify-center m-5"
           onClick={() => navigate("/page5")}
         >
           Sign Up

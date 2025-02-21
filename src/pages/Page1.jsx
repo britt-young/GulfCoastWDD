@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
+import HomeHeader from "../Components/HomeHeader";
 
 const Page1 = () => {
   return (
-    <div >
-    <div className="h-screen bg-blue-200">
-      <h4>hello</h4>
-      <h2>hello</h2>
-      <p>i'm britt</p>
-      <button>click here</button>
+    <div>
+      <HomeHeader />
+      <div className="h-screen bg-red-500">
+        hi
+      </div>
     </div>
-    <div className="h-screen bg-blue-300">part1</div>
-    </div>
-  )
-}
+  );
+};
 
-export default Page1
+export default Page1;
