@@ -5,7 +5,7 @@ import mobile from "../assets/icons/mobile.png";
 
 const ServiceCards = () => {
   return (
-    <div className="bg-blue-400">
+    <div className="bg-blue-400 py-10">
       <div className="flex flex-col items-center justify-center py-5">
         <h4 className="">what we offer</h4>
         <h2 className="text-center text-3xl font-bold">Our Services</h2>
@@ -123,7 +123,7 @@ const ServiceCards = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
-      <button className="mb-10">get started</button>
+      <button className="">get started</button>
     </div>
     </div>
   );
