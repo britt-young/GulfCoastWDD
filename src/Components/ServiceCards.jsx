@@ -13,9 +13,9 @@ const ServiceCards = () => {
       </div>
 
       {/* Feature Card Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-5 lg:mx-80 mx-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-5 w-fit mx-auto">
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
@@ -33,7 +33,7 @@ const ServiceCards = () => {
         </div>
 
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
@@ -49,9 +49,8 @@ const ServiceCards = () => {
             </Link>
           </div>
         </div>
-
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
@@ -67,9 +66,8 @@ const ServiceCards = () => {
             </Link>
           </div>
         </div>
-
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
@@ -85,9 +83,8 @@ const ServiceCards = () => {
             </Link>
           </div>
         </div>
-
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
@@ -103,9 +100,8 @@ const ServiceCards = () => {
             </Link>
           </div>
         </div>
-
         {/* Feature Card */}
-        <div className="bg-white mx-2 lg:mt-0 mt-2 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="bg-white m-2 lg:mt-0 p-4 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
