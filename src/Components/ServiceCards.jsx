@@ -14,12 +14,12 @@ const ServiceCards = () => {
 
       {/* Feature Card Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-5 lg:w-300 lg:h-150 w-80 overflow-hidden mx-auto">
-        {/* Feature Card */}
+        {/* Feature Card (add negative margin on icon to offset?*/}
         <div className="bg-white m-2 lg:mt-0 p-8 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
           <img
             src={mobile}
             alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
+            className="w-16 h-16 mb-5 bg-white"
           />
           <div>
             <h4 className="text-center">Mobile First Design</h4>
@@ -37,7 +37,24 @@ const ServiceCards = () => {
           <img
             src={mobile}
             alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
+            className="w-16 h-16 mb-5 bg-white"          />
+          <div>
+            <h4 className="text-center">Mobile First Design</h4>
+            <p>kiesurthiseutbhkeiu</p>
+          </div>
+          <div>
+            <Link to="/services" className="flex items-center justify-end">
+              <FaArrowRight />
+            </Link>
+          </div>
+        </div>
+
+        {/* Feature Card */}
+        <div className="bg-white m-2 lg:mt-0 p-8 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
+          <img
+            src={mobile}
+            alt="serviceicon"
+            className="w-16 h-16 mb-5 bg-white"
           />
           <div>
             <h4 className="text-center">Mobile First Design</h4>
@@ -55,26 +72,7 @@ const ServiceCards = () => {
           <img
             src={mobile}
             alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
-          />
-          <div>
-            <h4 className="text-center">Mobile First Design</h4>
-            <p>kiesurthiseutbhkeiu</p>
-          </div>
-          <div>
-            <Link to="/services" className="flex items-center justify-end">
-              <FaArrowRight />
-            </Link>
-          </div>
-        </div>
-
-        {/* Feature Card */}
-        <div className="bg-white m-2 lg:mt-0 p-8 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center">
-          <img
-            src={mobile}
-            alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
-          />
+            className="w-16 h-16 mb-5 bg-white"          />
           <div>
             <h4 className="text-center">Mobile First Design</h4>
             <p>kiesurthiseutbhkeiu</p>
@@ -91,7 +89,7 @@ const ServiceCards = () => {
           <img
             src={mobile}
             alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
+           className="w-16 h-16 mb-5 bg-white"
           />
           <div>
             <h4 className="text-center">Mobile First Design</h4>
@@ -109,7 +107,7 @@ const ServiceCards = () => {
           <img
             src={mobile}
             alt="serviceicon"
-            className="w-16 h-16 mb-5 shadow-xl shadow-blue-300"
+           className="w-16 h-16 mb-5 bg-white"
           />
           <div>
             <h4 className="text-center">Mobile First Design</h4>
