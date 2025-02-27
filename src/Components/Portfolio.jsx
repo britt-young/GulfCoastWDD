@@ -2,7 +2,7 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:mx-60 py-10">
+    <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
       <div className="h-full">
         <h4 className="">Portfolio</h4>
         <h2 className="font-bold">Some of our recent website designs</h2>

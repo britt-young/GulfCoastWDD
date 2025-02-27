@@ -12,13 +12,15 @@ import Error from './Components/Error'
 function App() {
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RootLayout />}>
+    // parent path
+    <Route path='/' element={<RootLayout />}> 
+    {/* child routes */}
       <Route index element={<Page1 />} />
       <Route path ='page2' element={<Page2 />} />
       <Route path ='page3' element={<Page3 />} />
       <Route path ='page4' element={<Page4 />} />
       <Route path ='page5' element={<Page5 />} />
-      {/* Can add nested routes too */}
+      {/* Can add nested (additional children) routes too */}
       <Route path ='*' element={<Error />} />
     </Route>
     
