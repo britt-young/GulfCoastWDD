@@ -25,53 +25,53 @@ const Portfolio = () => {
       {/* Portfolio Cards */}
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-1 py-10 lg:px-5 px-5">
         {/* First Card */}
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
-            class="w-full object-cover"
+            className="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
             alt="Website Design"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Local Farm</div>
-            <p class="text-grey-darker text-base">
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Local Farm</div>
+            <p className="text-grey-darker text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
           </div>
-          <div class="px-6 py-4">
+          <div className="px-6 py-4">
           <button>visit website</button>
           </div>
         </div>
         {/* Second Card */}
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
-            class="w-full object-cover"
+            className="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
             alt="Website Design"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Local Florist</div>
-            <p class="text-grey-darker text-base">
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Local Florist</div>
+            <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
           </div>
-          <div class="px-6 py-4">
+          <div className="px-6 py-4">
           <button>visit website</button>
           </div>
         </div>
         {/* Third Card */}
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
-            class="w-full object-cover"
+            className="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
             alt="Website Design"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Riley Addison Photography</div>
-            <p class="text-grey-darker text-base">
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Riley Addison Photography</div>
+            <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
           </div>
-          <div class="px-6 py-4">
+          <div className="px-6 py-4">
             <button>visit website</button>
           </div>
         </div>
