@@ -16,7 +16,7 @@ const ServiceCards = () => {
         </p>
       </div>
       {/* Feature Card Grid */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-0 lg:p-20 overflow-hidden">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:p-20 overflow-hidden">
         {/* Feature Card */}
         <div className="bg-blue-50 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-lg shadow-gray-500 rounded-lg flex flex-col items-center justify-center relative">
           <MdPhonelinkSetup className="rounded-lg bg-blue-900/60 p-4 w-20 h-20 mb-4 absolute left-1/2 transform -translate-x-1/2 -top-11" />
