@@ -23,7 +23,7 @@ const Portfolio = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-1 py-10 lg:px-5 px-5">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-1 gap-5 py-10 lg:px-5 px-5">
         {/* First Card */}
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
