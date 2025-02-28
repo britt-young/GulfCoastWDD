@@ -2,8 +2,8 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div>
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
+    <div className="relative isolate bg-green-400 px-6 py-24 sm:py-32 lg:px-8">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
           <h2 className="font-bold">Some of our recent website designs</h2>
@@ -23,9 +23,9 @@ const Portfolio = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-4 py-10 lg:px-0 px-5">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-1 py-10 lg:px-5 px-5">
         {/* First Card */}
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             class="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
@@ -42,7 +42,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Second Card */}
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             class="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
@@ -59,7 +59,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Third Card */}
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             class="w-full object-cover"
             src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"

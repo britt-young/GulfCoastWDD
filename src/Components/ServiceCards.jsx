@@ -5,7 +5,7 @@ import mobile from "../assets/icons/mobile.png";
 
 const ServiceCards = () => {
   return (
-    <div className="bg-transparent py-10 mx-auto max-w-7xl"> 
+    <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8"> 
       <div className="flex flex-col items-center justify-center py-5">
         <h4 className="">what we offer</h4>
         <h2 className="text-center text-3xl font-bold">Our Services</h2>

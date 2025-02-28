@@ -3,12 +3,12 @@ import GuarenteeGrid from "./GuarenteeGrid";
 
 const HomeAbout = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center py-10 mx-auto max-w-7xl">
+    <div className="relative isolate bg-red-200 px-6 py-24 sm:py-32 lg:px-8 flex flex-col lg:flex-row items-center justify-center">
       <div>
         <img
           src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="about"
-          className="w-full h-200 object-cover px-5 lg:px-0 mr-8"
+          className="w-full h-185 object-cover"
         />
       </div>
       <div className="flex flex-col items-start lg:ml-8 m-5 lg:w-180">
