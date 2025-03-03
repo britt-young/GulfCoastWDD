@@ -53,3 +53,7 @@ button {
   border-radius: 40px;
   cursor: pointer;
 } 
+
+button:hover {
+  background-color: red;
+}
