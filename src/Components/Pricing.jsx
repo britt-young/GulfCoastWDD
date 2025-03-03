@@ -62,10 +62,8 @@ const Pricing = () => {
         />
       </div>
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-        <p className="mt-2 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">
-          Choose the right plan for you
-        </p>
+        <h4>our packages</h4>
+        <h2 className="text-base/7 font-semibold text-indigo-600">Pricing packages for any business</h2>
       </div>
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
         Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer
