@@ -3,19 +3,21 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 
 const tiers = [
   {
-    name: 'Hobby',
-    id: 'tier-hobby',
+    name: 'Lump-sum',
+    id: 'tier-sum',
     href: '#',
-    priceMonthly: '$29',
+    price: '$900',
+    add: '+$25/month Hosting',
     description: "The perfect plan if you're just getting started with our product.",
     features: ['25 products', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
     featured: false,
   },
   {
-    name: 'Enterprise',
-    id: 'tier-enterprise',
+    name: 'Monthly',
+    id: 'tier-month',
     href: '#',
-    priceMonthly: '$99',
+    price: '$145',
+    add: '/month',
     description: 'Dedicated support and infrastructure for your company.',
     features: [
       'Unlimited products',
@@ -28,10 +30,11 @@ const tiers = [
     featured: true,
   },
   {
-    name: 'Pro',
-    id: 'tier-pro',
+    name: 'E-commerce',
+    id: 'tier-commerce',
     href: '#',
-    priceMonthly: '$59',
+    price: '$59',
+    add: 'Starting',
     description: 'The ideal plan for businesses looking for additional features.',
     features: [
       '50 products',
@@ -61,16 +64,18 @@ const Pricing = () => {
           className="mx-auto aspect-1155/678 w-full bg-linear-to-tr from-[#e43d3d] to-[#2a95eb] opacity-90"
         />
       </div>
+      <div className="mx-auto max-w-7xl text-center">
       <div className="mx-auto max-w-4xl text-center">
         <h4>our packages</h4>
         <h2 className="text-base/7 font-semibold text-indigo-600">Pricing packages for any business</h2>
       </div>
-      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-pretty text-gray-600 sm:text-xl/8">
         Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer
         loyalty, and driving sales.
       </p>
+      </div>
       {/* Pricing Cards */}
-      <div className="mx-auto mt-16 grid grid-cols-1 gap-y-6 sm:mt-20 lg:grid-cols-3 lg:gap-8 lg:px-80">
+      <div className="mx-auto max-w-7xl mt-16 grid grid-cols-1 gap-y-6 sm:mt-20 lg:grid-cols-3 lg:gap-8">
         {tiers.map((tier, tierIdx) => (
           <div
             key={tier.id}
@@ -92,9 +97,9 @@ const Pricing = () => {
                   'text-5xl font-semibold tracking-tight',
                 )}
               >
-                {tier.priceMonthly}
+                {tier.price}
               </span>
-              <span className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-500', 'text-base')}>/month</span>
+              <span className={classNames(tier.featured ? 'text-red-300' : 'text-gray-500', 'text-base')}>{tier.add}</span>
             </p>
             <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-6 text-base/7')}>
               {tier.description}
