@@ -2,11 +2,10 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
 
-import Page1 from './pages/Page1'
-import Page2 from './pages/Page2'
-import Page3 from './pages/Page3'
-import Page4 from './pages/Page4'
-import Page5 from './pages/Page5'
+import Home from './pages/Home'
+import About from './pages/About'
+import FAQs from './pages/FAQs'
+import Contact from './pages/Contact'
 import Error from './Components/Error'
 
 function App() {
@@ -15,11 +14,10 @@ const router = createBrowserRouter(
     // parent path
     <Route path='/' element={<RootLayout />}> 
     {/* child routes */}
-      <Route index element={<Page1 />} />
-      <Route path ='page2' element={<Page2 />} />
-      <Route path ='page3' element={<Page3 />} />
-      <Route path ='page4' element={<Page4 />} />
-      <Route path ='page5' element={<Page5 />} />
+      <Route index element={<Home />} />
+      <Route path ='About' element={<About />} />
+      <Route path ='FAQs' element={<FAQs />} />
+      <Route path ='Contact' element={<Contact />} />
       {/* Can add nested (additional children) routes too */}
       <Route path ='*' element={<Error />} />
     </Route>

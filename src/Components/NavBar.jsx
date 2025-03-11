@@ -55,26 +55,23 @@ const NavBar = () => {
         {/* Desktop menu */}
         <ul className="hidden lg:flex space-x-4 uppercase">
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/">Page 1</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page2">Page 2</NavLink>
+            <NavLink to="/About">About</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page3">Page 3</NavLink>
+            <NavLink to="/FAQs">FAQs</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page4">Page 4</NavLink>
-          </li>
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page5">Page 5</NavLink>
+            <NavLink to="/Contact">Contact</NavLink>
           </li>
         </ul>
 
         {/* Sign Up Button (Desktop) */}
         <button
           className="hidden lg:flex items-center justify-center m-5"
-          onClick={() => navigate("/page5")}
+          onClick={() => navigate("/Contact")}
         >
           Sign Up
         </button>
@@ -87,13 +84,13 @@ const NavBar = () => {
             <NavLink to="/">Page 1</NavLink>
           </li>
           <li>
-            <NavLink to="/page2">Page 2</NavLink>
+            <NavLink to="/About">Page 2</NavLink>
           </li>
           <li>
-            <NavLink to="/page3">Page 3</NavLink>
+            <NavLink to="/FAQs">Page 3</NavLink>
           </li>
           <li>
-            <NavLink to="/page4">Page 4</NavLink>
+            <NavLink to="/Contact">Page 4</NavLink>
           </li>
           <li>
             <NavLink to="/page5">Page 5</NavLink>

@@ -6,7 +6,7 @@ import Portfolio from "../Components/Portfolio";
 import Pricing from "../Components/Pricing";
 import Testimonials from "../Components/Testimonials";
 
-const Page1 = () => {
+const Home = () => {
   return (
     <div className="min-h-screen">
       <HomeHeader />
@@ -19,4 +19,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Home;
