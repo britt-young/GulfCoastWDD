@@ -6,9 +6,9 @@ const HomeAbout = () => {
     <div className="relative isolate bg-red-200 px-6 py-24 sm:py-32 lg:px-8 flex flex-col lg:flex-row items-center justify-center">
       <div>
         <img
-          src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.pexels.com/photos/20044366/pexels-photo-20044366/free-photo-of-hands-holding-smartphone-over-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="about"
-          className="w-full h-185 object-cover"
+          className="w-full h-185 object-cover rounded-2xl"
         />
       </div>
       <div className="flex flex-col items-start lg:ml-8 m-5 lg:w-180">
