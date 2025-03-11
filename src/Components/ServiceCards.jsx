@@ -8,7 +8,7 @@ const ServiceCards = () => {
     <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">what we offer</h4>
-        <h2 className="text-center text-3xl font-bold">Our Services</h2>
+        <h2 className="text-center">Our Services</h2>
         <p className="mt-5 lg:w-200 mx-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
