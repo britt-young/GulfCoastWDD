@@ -3,7 +3,7 @@ import FlowStepper from "./FlowStepper";
 
 const Workflow = () => {
   return (
-    <div className="bg-red-500 flex flex-col">
+    <div className="bg-red-500 flex flex-col py-10">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
         <div className="h-full">
           <h4 className="">Our Workflow</h4>
@@ -19,6 +19,9 @@ const Workflow = () => {
         </div>
       </div>
       <FlowStepper />
+      <div className="flex items-center justify-center">
+      <button>Get Started Today</button>
+      </div>
     </div>
   );
 };
