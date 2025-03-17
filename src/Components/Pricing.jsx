@@ -74,14 +74,14 @@ const Pricing = () => {
           className="mx-auto aspect-1155/678 w-full bg-linear-to-tr from-[#e43d3d] to-[#2a95eb] opacity-90"
         />
       </div>
-      <div className="mx-auto max-w-7xl text-center">
-        <div className="mx-auto max-w-4xl text-center">
+      <div className="mx-auto text-center">
+        <div className="">
           <h4>our packages</h4>
-          <h2 className="text-base/7 font-semibold text-indigo-600">
+          <h2 className="">
             Pricing packages for any business
           </h2>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-pretty text-gray-600 sm:text-xl/8">
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-pretty text-gray-600 sm:text-xl/8">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>

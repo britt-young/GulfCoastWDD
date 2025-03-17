@@ -9,7 +9,7 @@ const ServiceCards = () => {
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
-        <p className="mt-5 lg:w-200 mx-5">
+        <p className="mt-5 lg:w-200 mx-5 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris
