@@ -8,10 +8,10 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="bg-white/50 py-12 my-20 rounded-lg shadow-lg lg:mx-0 mx-5">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
-          Contact sales
+          Send us a message
         </h2>
         <p className="mt-2 text-lg/8 text-gray-600">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
@@ -20,7 +20,7 @@ const ContactForm = () => {
       <form
         action="#"
         method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="lg:mx-auto mx-5 max-w-xl mt-12 lg:mt-0 "
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -30,7 +30,7 @@ const ContactForm = () => {
             >
               First name
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <input
                 id="first-name"
                 name="first-name"
@@ -47,7 +47,7 @@ const ContactForm = () => {
             >
               Last name
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <input
                 id="last-name"
                 name="last-name"
@@ -64,7 +64,7 @@ const ContactForm = () => {
             >
               Company
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <input
                 id="company"
                 name="company"
@@ -81,7 +81,7 @@ const ContactForm = () => {
             >
               Email
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <input
                 id="email"
                 name="email"
@@ -98,7 +98,7 @@ const ContactForm = () => {
             >
               Phone number
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <div className="flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
                 {/* <div className="grid shrink-0 grid-cols-1 focus-within:relative">
                   <select
@@ -134,7 +134,7 @@ const ContactForm = () => {
             >
               Message
             </label>
-            <div className="mt-2.5">
+            <div className="mt-1">
               <textarea
                 id="message"
                 name="message"
