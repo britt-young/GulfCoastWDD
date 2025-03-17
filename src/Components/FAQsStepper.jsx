@@ -83,7 +83,7 @@ const FAQsStepper = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-10 bg-gray-100">
+    <div className="flex flex-col items-center py-24 bg-gray-100">
       {/* Title/Subtitle */}
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">how can we help</h4>
@@ -94,7 +94,7 @@ const FAQsStepper = () => {
       </div>
 
       {/* Category buttons */}
-      <div className="flex gap-4 mb-8">
+      <div className="flex gap-4 mb-8 mt-10">
         {["general", "shipping", "account"].map((category) => (
           <button
             key={category}
