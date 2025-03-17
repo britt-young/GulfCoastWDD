@@ -15,9 +15,9 @@ const FlowStepper = () => {
             <h3>1</h3>
           </span>
         </div>
-        <h4>hello</h4>
-        <p className="lg:w-60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        <h5 className="font-bold text-lg">Initial Consultation</h5>
+        <p className="lg:w-60 text-center">
+          Lorem ipsum dolor sit amet.
         </p>
       </div>
       {/* Step2 */}
@@ -28,9 +28,9 @@ const FlowStepper = () => {
             <h3>2</h3>
           </span>
         </div>
-        <h4>hello</h4>
-        <p className="lg:w-60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        <h5 className="font-bold text-lg">Design Approval</h5>
+        <p className="lg:w-60 text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         </p>
       </div>
       {/* Step3 */}
@@ -41,9 +41,9 @@ const FlowStepper = () => {
             <h3>3</h3>
           </span>
         </div>
-        <h4>hello</h4>
-        <p className="lg:w-60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <h5 className="font-bold text-lg">Development & Launch</h5>
+        <p className="lg:w-60 text-center">
+          Lorem ipsum dolor sit amet consectetur.
         </p>
       </div>
     </div>
