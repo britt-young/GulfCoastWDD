@@ -1,13 +1,13 @@
 import React from "react";
 
-const AboutHeader = () => {
+const FAQsHeader = () => {
   return (
     <div>
       <h2 className="flex flex-col items-center h-[200px] justify-center">
-        About Us
+        FAQs
       </h2>
     </div>
   );
 };
 
-export default AboutHeader;
+export default FAQsHeader;
