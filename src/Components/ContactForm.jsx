@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="bg-pink-400 rounded-lg shadow-lg my-60 py-10 max-w-5xl mx-auto">
+    <div className="bg-pink-400 rounded-lg shadow-lg my-10 py-10 max-w-2xl mx-auto">
       <div className="mx-auto text-center">
         <h2 className="tracking-tight text-gray-900">
           Send us a message
@@ -20,7 +20,7 @@ const ContactForm = () => {
       <form
         action="#"
         method="POST"
-        className="lg:mx-auto mx-5 max-w-4xl mt-12"
+        className="lg:mx-auto mx-5 max-w-xl mt-12"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
