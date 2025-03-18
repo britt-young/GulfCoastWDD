@@ -46,12 +46,12 @@ const NavBar = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="py-8 lg:px-40 px-8">
+    <div className="">
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0 scroll-smooth dark:bg-gray-800 dark:text-white"
-            : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50 dark:bg-gray-800 dark:text-white"
+            ? "fixed top-0 left-0 w-full bg-[#314B6E] text-white shadow-md z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-[#314B6E] text-white shadow-xl z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}

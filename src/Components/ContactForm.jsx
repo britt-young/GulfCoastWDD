@@ -8,19 +8,19 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="bg-white/50 py-12 lg:my-20 my-10 rounded-lg shadow-lg lg:mx-0 mx-5">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+    <div className="bg-pink-400 rounded-lg shadow-lg my-60 py-10 max-w-5xl mx-auto">
+      <div className="mx-auto text-center">
+        <h2 className="tracking-tight text-gray-900">
           Send us a message
         </h2>
-        <p className="mt-2 text-lg/8 text-gray-600">
+        <p className="mt-2 text-gray-600">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>
       <form
         action="#"
         method="POST"
-        className="lg:mx-auto mx-5 max-w-xl mt-12"
+        className="lg:mx-auto mx-5 max-w-4xl mt-12"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -177,9 +177,9 @@ const ContactForm = () => {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Let's talk
+            submit
           </button>
         </div>
       </form>

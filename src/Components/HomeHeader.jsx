@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeHeader = () => {
   return (
-    <div className="relative isolate bg-yellow-400 px-6 py-24 sm:py-32 lg:px-80 flex flex-col lg:flex-row items-center justify-center gap-8">
+    <div className="bg-yellow-400 px-6 py-24 sm:py-32 lg:px-80 flex flex-col lg:flex-row items-center justify-center gap-8">
       <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>

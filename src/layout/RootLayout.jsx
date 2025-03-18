@@ -5,12 +5,12 @@ import Footer from "../Components/Footer";
 
 const RootLayout = () => {
   return (
-    <div className="bg-blue-800 min-h-screen">{/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
+    <div className="">{/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Navbar />
       <main>
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
