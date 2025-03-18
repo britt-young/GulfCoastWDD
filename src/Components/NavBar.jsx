@@ -28,7 +28,7 @@ const NavBar = () => {
   }, []);
 
   const handleLinkClick = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
   // Toggle Dark Mode
@@ -83,6 +83,14 @@ const NavBar = () => {
 
         {/* Right side (Sign Up button and Dark Mode toggle) */}
         <div className="flex items-center space-x-4">
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={toggleDarkMode}
+            className="text-2xl lg:flex items-center justify-center m-5"
+          >
+            {isDarkMode ? <FiSun /> : <FiMoon />}
+          </button>
+
           {/* Sign Up Button (Desktop) */}
           <button
             className="hidden lg:flex items-center justify-center m-5"
@@ -90,15 +98,15 @@ const NavBar = () => {
           >
             Sign Up
           </button>
-
-          {/* Dark Mode Toggle ---- ADD TO TAILWIND THEME*/}
-          <button
-            onClick={toggleDarkMode}
-            className="text-2xl lg:flex items-center justify-center m-5"
-          >
-            {isDarkMode ? <FiSun /> : <FiMoon />}
-          </button>
         </div>
+
+        {/* Mobile menu toggle */}
+        <button
+          className="lg:hidden m-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <GiHamburgerMenu />
+        </button>
       </nav>
 
       {/* Mobile menu */}
@@ -143,7 +151,7 @@ const NavBar = () => {
           <button
             className="p-2 w-full max-w-xs cursor-pointer"
             onClick={() => {
-              navigate("/page5");
+              navigate("/Contact");
               setIsMenuOpen(false); // Close the menu after clicking
             }}
           >
