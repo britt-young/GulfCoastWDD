@@ -1,10 +1,13 @@
 import { React, useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5"; // Close icon
+import { FiMoon, FiSun } from "react-icons/fi"; // Moon and Sun icons for dark/light mode
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode
 
   const navigate = useNavigate();
 
@@ -24,65 +27,114 @@ const NavBar = () => {
     };
   }, []);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
+  // Toggle Dark Mode
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Add or remove dark mode class to the body based on the state
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
   return (
     <div className="py-8 lg:px-40 px-8">
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0 scroll-smooth"
-            : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50"
+            ? "fixed top-0 left-0 w-full bg-white shadow-md z-50 rounded-none m-0 scroll-smooth dark:bg-gray-800 dark:text-white"
+            : "lg:rounded-3xl rounded-xl bg-white shadow-xl z-50 dark:bg-gray-800 dark:text-white"
         }`}
       >
-        {/* Logo or brand */}
+        {/* Logo or brand (far left) */}
         <img src="/logo.png" alt="logo" className="h-12" />
 
-        {/* Mobile menu toggle */}
-        <button
-          className="lg:hidden m-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <GiHamburgerMenu />
-        </button>
-
-        {/* Desktop menu */}
-        <ul className="hidden lg:flex space-x-10 uppercase">
+        {/* Desktop menu (centered) */}
+        <ul className="hidden lg:flex space-x-10 uppercase mx-auto">
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={handleLinkClick}>
+              Home
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/About">About</NavLink>
+            <NavLink to="/About" onClick={handleLinkClick}>
+              About
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/FAQs">FAQs</NavLink>
+            <NavLink to="/FAQs" onClick={handleLinkClick}>
+              FAQs
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/Contact">Contact</NavLink>
+            <NavLink to="/Contact" onClick={handleLinkClick}>
+              Contact
+            </NavLink>
           </li>
         </ul>
 
-        {/* Sign Up Button (Desktop) */}
-        <button
-          className="hidden lg:flex items-center justify-center m-5"
-          onClick={() => navigate("/Contact")}
-        >
-          Sign Up
-        </button>
+        {/* Right side (Sign Up button and Dark Mode toggle) */}
+        <div className="flex items-center space-x-4">
+          {/* Sign Up Button (Desktop) */}
+          <button
+            className="hidden lg:flex items-center justify-center m-5"
+            onClick={() => navigate("/Contact")}
+          >
+            Sign Up
+          </button>
+
+          {/* Dark Mode Toggle ---- ADD TO TAILWIND THEME*/}
+          <button
+            onClick={toggleDarkMode}
+            className="text-2xl lg:flex items-center justify-center m-5"
+          >
+            {isDarkMode ? <FiSun /> : <FiMoon />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
-      <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"} lg:rounded-3xl rounded-xl bg-white shadow-xl -z-40 -mt-5 py-8`}>
-        <ul className="flex flex-col space-y-4 px-4 py-2 uppercase items-center">
+      <div
+        className={`lg:hidden fixed inset-0 bg-white bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
+        {/* Close button (X) */}
+        <button
+          className="absolute top-4 right-4 text-3xl text-gray-700"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <IoClose />
+        </button>
+
+        <ul className="flex flex-col space-y-6 items-center justify-center h-full uppercase text-xl">
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={handleLinkClick}>
+              Home
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/About">About</NavLink>
+            <NavLink to="/About" onClick={handleLinkClick}>
+              About
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/FAQs">FAQs</NavLink>
+            <NavLink to="/FAQs" onClick={handleLinkClick}>
+              FAQs
+            </NavLink>
           </li>
           <li className="hover:font-bold hover:text-purple-800">
-            <NavLink to="/Contact">Contact</NavLink>
+            <NavLink to="/Contact" onClick={handleLinkClick}>
+              Contact
+            </NavLink>
           </li>
         </ul>
 
@@ -90,7 +142,10 @@ const NavBar = () => {
         <div className="flex justify-center mt-5">
           <button
             className="p-2 w-full max-w-xs cursor-pointer"
-            onClick={() => navigate("/page5")}
+            onClick={() => {
+              navigate("/page5");
+              setIsMenuOpen(false); // Close the menu after clicking
+            }}
           >
             Sign Up
           </button>
