@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+
+  --font-title: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-subTitle: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+
+  --color-twitter-blue: #1da1f2;
+  --color-twitter-blue-hover: #0d8ecf;
+
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
