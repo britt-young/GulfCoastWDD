@@ -3,7 +3,7 @@ import GuarenteeGrid from "./GuarenteeGrid";
 
 const HomeAbout = () => {
   return (
-    <div className="relative isolate bg-pink-300 px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
+    <div className="relative px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <div className="mx-auto lg:mr-20">
         <img
           src="https://images.pexels.com/photos/20044366/pexels-photo-20044366/free-photo-of-hands-holding-smartphone-over-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

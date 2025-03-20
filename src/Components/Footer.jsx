@@ -4,7 +4,7 @@ import {PhoneArrowDownLeftIcon, EnvelopeIcon, MapPinIcon} from "@heroicons/react
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-teal-600 p-20 lg:px-80 lg:gap-40 gap-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#79ABAC] p-20 lg:px-80 lg:gap-40 gap-20">
       <div className="flex flex-col lg:items-start justify-between py-5 lg:order-first order-last">
         <img src="https://via.placeholder.com/150" alt="logo" />
         <p className="my-5 mr-10">

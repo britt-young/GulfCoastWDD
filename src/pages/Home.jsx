@@ -8,7 +8,7 @@ import Testimonials from "../Components/Testimonials";
 
 const Home = () => {
   return (
-    <div className="min-h-screen absolute top-0 -z-10">
+    <div className="min-h-screen ">
       <HomeHeader />
       <ServiceCards />
       <HomeAbout />
