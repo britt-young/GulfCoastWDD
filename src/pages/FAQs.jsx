@@ -5,7 +5,7 @@ import FAQsStepper from '../Components/FAQsStepper'
 
 const FAQs = () => {
   return (
-    <div className="min-h-screen absolute top-0 -z-10 w-full">
+    <div className="min-h-screen">
       <FAQsHeader />
       <FAQsStepper />
     </div>

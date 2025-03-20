@@ -5,7 +5,7 @@ import Workflow from '../Components/Workflow'
 
 const About = () => {
   return (
-    <div className="min-h-screen absolute top-0 -z-10">
+    <div className="min-h-screen">
       <AboutHeader />
       <Bio />
       <Workflow />
