@@ -50,8 +50,8 @@ const NavBar = () => {
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-[#314B6E] text-white shadow-md z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-[#314B6E] text-white shadow-xl z-50 my-8 lg:mx-40 mx-8"
+            ? "fixed top-0 left-0 w-full bg-[#79ABAC] text-black shadow-md z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-[#79ABAC] text-black shadow-xl z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
@@ -59,22 +59,22 @@ const NavBar = () => {
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 uppercase mx-auto">
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/" onClick={handleLinkClick}>
               Home
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/About" onClick={handleLinkClick}>
               About
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/FAQs" onClick={handleLinkClick}>
               FAQs
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/Contact" onClick={handleLinkClick}>
               Contact
             </NavLink>
@@ -111,7 +111,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-0 bg-white bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed inset-0 bg-[#79ABAC] bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -124,22 +124,22 @@ const NavBar = () => {
         </button>
 
         <ul className="flex flex-col space-y-6 items-center justify-center h-full uppercase text-xl">
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/" onClick={handleLinkClick}>
               Home
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/About" onClick={handleLinkClick}>
               About
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/FAQs" onClick={handleLinkClick}>
               FAQs
             </NavLink>
           </li>
-          <li className="hover:font-bold hover:text-purple-800">
+          <li className="hover:font-bold ">
             <NavLink to="/Contact" onClick={handleLinkClick}>
               Contact
             </NavLink>
