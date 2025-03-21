@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { MdPhonelinkSetup } from "react-icons/md";
 
 const ServiceCards = () => {
+  const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate("/Contact"); // Navigate to the "/home" route
+    };
   return (
-    <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8">
+    <div className="relative bg-white isolate px-6 py-12 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
@@ -16,7 +21,7 @@ const ServiceCards = () => {
         </p>
       </div>
       {/* Feature Card Grid */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:p-20 pb-4 overflow-hidden">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0">
         {/* Feature Card */}
         <div className="bg-blue-50 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-lg shadow-gray-500 rounded-lg flex flex-col relative">
           <MdPhonelinkSetup className="rounded-lg bg-[#79ABAC] p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
@@ -144,7 +149,7 @@ const ServiceCards = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-0">
-        <button className="">get started</button>
+      <button className="lg:mt-0 mt-5" onClick={handleClick} >get started</button>
       </div>
     </div>
   );
