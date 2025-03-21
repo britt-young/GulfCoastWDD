@@ -50,12 +50,12 @@ const NavBar = () => {
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-[#79ABAC] text-black shadow-md z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-[#79ABAC] text-black shadow-xl z-50 my-8 lg:mx-40 mx-8"
+            ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-white/50 z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-white text-black shadow-2xl shadow-white/50 z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
-        <img src="/logo.png" alt="logo" className="h-12" />
+        <img src="/logo.png" alt="logo" className="h-24" />
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 uppercase mx-auto">
@@ -82,27 +82,22 @@ const NavBar = () => {
         </ul>
 
         {/* Right side (Sign Up button and Dark Mode toggle) */}
-        <div className="flex items-center space-x-4">
-          {/* Dark Mode Toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="text-2xl lg:flex items-center justify-center m-5"
-          >
-            {isDarkMode ? <FiSun /> : <FiMoon />}
-          </button>
+        {/* Sign Up Button (Desktop) */}
+        <button
+          className="hidden lg:flex items-center m-0"
+          onClick={() => navigate("/Contact")}
+        >
+          Sign Up
+        </button>
 
-          {/* Sign Up Button (Desktop) */}
-          <button
-            className="hidden lg:flex items-center justify-center m-5"
-            onClick={() => navigate("/Contact")}
-          >
-            Sign Up
-          </button>
+        {/* Dark Mode Toggle */}
+        <div onClick={toggleDarkMode} className="text-2xl mx-2 cursor-pointer">
+          {isDarkMode ? <FiSun /> : <FiMoon />}
         </div>
 
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden m-2"
+          className="lg:hidden mx-0"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <GiHamburgerMenu />
