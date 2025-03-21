@@ -1,13 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomeHeader = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Contact"); // Navigate to the "/home" route
+  };
+
   return (
     <div className="pt-20 pb-20 lg:px-80 flex flex-col lg:flex-row items-center justify-center gap-8 ">
       <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>
-        <p className="mt-5">No drag-and-drop webpage builders or templates. We offer 100% hand-coded websites for your business starting at only $145/mo with free hosting and edits*</p>
-        <button className="lg:mt-15 mt-5">get started</button>
+        <p className="mt-5">
+          No drag-and-drop webpage builders or templates. We offer 100%
+          hand-coded websites for your business starting at only $145/mo with
+          free hosting and edits*
+        </p>
+        <button className="lg:mt-15 mt-5" onClick={handleClick} >get started</button>
       </div>
       <div className="flex items-center lg:justify-start justify-center">
         <picture>
