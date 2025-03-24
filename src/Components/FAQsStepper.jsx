@@ -96,27 +96,27 @@ const FAQsStepper = () => {
       {/* Category buttons */}
       <div className="flex gap-4 mb-8 mt-10">
         {["general", "shipping", "account"].map((category) => (
-          <button
+          <a
             key={category}
-            className={`px-4 py-2 border rounded ${
+            className={`px-4 py-2 border rounded cursor-pointer hover:bg-alt ${
               activeCategory === category
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200"
+                ? "bg-main text-black"
+                : "bg-white text-black"
             }`}
             onClick={() => setActiveCategory(category)}
           >
             {category.charAt(0).toUpperCase() + category.slice(1)}
-          </button>
+          </a>
         ))}
       </div>
 
       {/* FAQ list */}
       <div className="w-full max-w-2xl">
         {faqData[activeCategory].map((item, index) => (
-          <div key={index} className="mb-4 border rounded">
+          <div key={index} className="my-4 border rounded">
             <div
               onClick={() => toggleExpand(index)}
-              className="px-4 py-2 cursor-pointer bg-blue-500 hover:bg-blue-700 flex justify-between items-center"
+              className="px-4 py-1 cursor-pointer bg-main hover:bg-alt flex justify-between items-center"
             >
               <span className="font-semibold">{item[0]}</span> {/* Question */}
               <span className="text-xl">
