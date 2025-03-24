@@ -50,8 +50,8 @@ const NavBar = () => {
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-white/50 z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-white text-black shadow-2xl shadow-white/50 z-50 my-8 lg:mx-40 mx-8"
+            ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-white/30 z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-white text-black shadow-lg shadow-white/30 z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
