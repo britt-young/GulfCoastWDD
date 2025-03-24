@@ -1,5 +1,5 @@
 import React from "react";
-import { GoCheckCircleFill } from "react-icons/go";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const GuarenteeGrid = () => {
   return (
@@ -8,7 +8,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
         </h5>
@@ -18,7 +18,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
         </h5>
@@ -28,40 +28,40 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
-        </h5>{" "}
+        </h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
-        </h5>{" "}
+        </h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, incidunt.</p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
-        </h5>{" "}
+        </h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus?</p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
         <h5 className="font-bold">
           <span>
-            <GoCheckCircleFill className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
           </span>
           Our Guarentee
-        </h5>{" "}
+        </h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rerum?</p>
       </div>
     </div>
