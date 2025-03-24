@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import mockup from "../assets/Mockup.svg"
 
 const HomeHeader = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/Contact"); // Navigate to the "/home" route
+    navigate("/Contact"); // Navigate to the "/contact" route
   };
 
   return (
@@ -23,9 +24,9 @@ const HomeHeader = () => {
       <div className="flex items-center lg:justify-start justify-center">
         <picture>
           <img
-            src="https://plus.unsplash.com/premium_vector-1733932442559-1e9f83edb452?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={mockup}
             alt="A random image"
-            className="w-250 p-5 lg:p-0 rounded-lg"
+            className="w-300 p-5 lg:p-0"
           />
         </picture>
       </div>
