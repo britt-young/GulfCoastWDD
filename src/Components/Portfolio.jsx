@@ -1,4 +1,7 @@
 import React from "react";
+import farm from "../assets/clippings/localFarm.png"
+import florist from "../assets/clippings/localFlorist.png"
+import photo from "../assets/clippings/photo.png"
 
 const Portfolio = () => {
   return (
@@ -28,7 +31,7 @@ const Portfolio = () => {
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             className="w-full object-cover"
-            src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
+            src={farm}
             alt="Website Design"
           />
           <div className="px-6 py-4">
@@ -45,7 +48,7 @@ const Portfolio = () => {
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             className="w-full object-cover"
-            src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
+            src={florist}
             alt="Website Design"
           />
           <div className="px-6 py-4">
@@ -62,7 +65,7 @@ const Portfolio = () => {
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
           <img
             className="w-full object-cover"
-            src="https://tailwindcss-v0.netlify.app//img/card-top.jpg"
+            src={photo}
             alt="Website Design"
           />
           <div className="px-6 py-4">
