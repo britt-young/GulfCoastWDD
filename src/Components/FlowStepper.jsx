@@ -10,9 +10,9 @@ const FlowStepper = () => {
       {/* Step1 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
         <div className="relative">
-          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg rounded-lg"></div>
-          <span className="absolute h-15 w-15 rounded-full bg-red-500 border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
-            <h3>1</h3>
+          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg"></div>
+          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+            <h6 className="text-main text-3xl">1</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Initial Consultation</h5>
@@ -23,9 +23,9 @@ const FlowStepper = () => {
       {/* Step2 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
         <div className="relative">
-          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg rounded-lg flex items-center justify-center"></div>
-          <span className="absolute h-15 w-15 rounded-full bg-white border-8 border-red-500 -top-6 -left-6 text-center justify-center flex items-center">
-            <h3>2</h3>
+          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg flex items-center justify-center"></div>
+          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-main text-3xl">2</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Design Approval</h5>
@@ -36,9 +36,9 @@ const FlowStepper = () => {
       {/* Step3 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
         <div className="relative">
-          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg rounded-lg"></div>
-          <span className="absolute h-15 w-15 rounded-full bg-red-500 border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
-            <h3>3</h3>
+          <div className="lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg"></div>
+          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-main text-3xl">3</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Development & Launch</h5>
