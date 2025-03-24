@@ -1,4 +1,5 @@
 import React from "react";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
@@ -16,35 +17,57 @@ const Testimonials = () => {
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
         <div className="bg-gray-50 h-fit min-h-full m-2 mt-0 p-8 shadow-lg shadow-gray-500 rounded-4xl lg:rounded-2xl flex flex-col justify-center items-center">
-        <div className="my-2 items-start justify-start flex-grow">
-            <h4 className="mt-0">Mobile First Design</h4>
+          <div className="my-2 items-start justify-start flex-grow">
             <p className="mt-5 mb-10">
-              "Brittney transformed our outdated website into a modern,
+              <span className="inline-flex items-start me-1">
+                <RiDoubleQuotesL />
+              </span>
+              Brittney transformed our outdated website into a modern,
               user-friendly platform. The team was responsive and dedicated, and
               we've seen a noticeable increase in traffic and positive feedback
-              since the launch."
+              since the launch
+              <span className="inline-flex items-end ms-1">
+                <RiDoubleQuotesR />
+              </span>
             </p>
-            <h4>– Sarah T., Marketing Director, Local Florist</h4>
+            <h4>Sarah T.</h4>
+            <h4>Marketing Director, Local Florist</h4>
           </div>
         </div>
         {/* Testimonial Card */}
         <div className="bg-gray-50 h-fit min-h-full m-2 mt-0 p-8 shadow-lg shadow-gray-500 rounded-4xl lg:rounded-2xl flex flex-col justify-center items-center">
-        <div className="my-2 items-start justify-start flex-grow">
-            <h4 className="mt-0">Mobile First Design</h4>
+          <div className="my-2 items-start justify-start flex-grow">
             <p className="mt-5 mb-10">
-            "Thanks to Gulf Coast WDD, our e-commerce site is not only beautiful but also fast and user-friendly. Their attention to detail and expertise led to a significant boost in sales."
+              <span className="inline-flex items-start me-1">
+                <RiDoubleQuotesL />
+              </span>
+              Thanks to Gulf Coast WDD, our e-commerce site is not only
+              beautiful but also fast and user-friendly. Their attention to
+              detail and expertise led to a significant boost in sales
+              <span className="inline-flex items-end ms-1">
+                <RiDoubleQuotesR />
+              </span>
             </p>
-            <h4>– John M., CEO, Local Farm</h4>
+            <h4 classsName="">John M.</h4>
+            <h4>CEO, Local Farm</h4>
           </div>
         </div>
         {/* Testimonial Card */}
         <div className="bg-gray-50 h-fit min-h-full m-2 mt-0 p-8 shadow-lg shadow-gray-500 rounded-4xl lg:rounded-2xl flex flex-col justify-center items-center">
-        <div className="my-2 items-start justify-start flex-grow">
-            <h4 className="mt-0">Mobile First Design</h4>
+          <div className="my-2 items-start justify-start flex-grow">
             <p className="mt-5 mb-10">
-            "Brittney brought our vision to life with a stunning and functional website. Their ongoing support and expertise have been invaluable to our business."
+              <span className="inline-flex items-start me-1">
+                <RiDoubleQuotesL />
+              </span>
+              Brittney brought our vision to life with a stunning and functional
+              website. Their ongoing support and expertise have been invaluable
+              to our business
+              <span className="inline-flex items-end ms-1">
+                <RiDoubleQuotesR />
+              </span>
             </p>
-            <h4>– Emily R., Founder, Riley Addison Photography</h4>
+            <h4>Emily R.</h4>
+            <h4>Founder, Riley Addison Photography</h4>
           </div>
         </div>
       </div>
