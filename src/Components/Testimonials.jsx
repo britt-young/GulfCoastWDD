@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <div className="bg-white lg:p-20 p-5">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 mb-5 text-center">
-        <h4 className="">testimonials</h4>
+        <h4 className="text-main">testimonials</h4>
         <h2 className="">what our clients are saying</h2>
         <p className="mt-5 lg:w-200 mx-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,8 +30,8 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4>Sarah T.</h4>
-            <h4>Marketing Director, Local Florist</h4>
+            <h4 className="text-main">Sarah T.</h4>
+            <h4 className="text-main">Marketing Director, Local Florist</h4>
           </div>
         </div>
         {/* Testimonial Card */}
@@ -48,8 +48,8 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4 classsName="">John M.</h4>
-            <h4>CEO, Local Farm</h4>
+            <h4 className="text-main">John M.</h4>
+            <h4 className="text-main">CEO, Local Farm</h4>
           </div>
         </div>
         {/* Testimonial Card */}
@@ -66,8 +66,8 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4>Emily R.</h4>
-            <h4>Founder, Riley Addison Photography</h4>
+            <h4 className="text-main">Emily R.</h4>
+            <h4 className="text-main">Founder, Riley Addison Photography</h4>
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ const NavBar = () => {
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white dark:bg-black/30 text-black dark:text-alt-dark shadow-lg shadow-alt dark:shadow-alt-dark/30 z-50 rounded-none m-0 scroll-smooth "
+            ? "fixed top-0 left-0 w-full bg-white dark:bg-black/90 text-black dark:text-alt-dark shadow-lg shadow-alt dark:shadow-alt-dark/30 z-50 rounded-none m-0 scroll-smooth "
             : "lg:rounded-3xl rounded-xl bg-white dark:bg-black/30 text-black dark:text-alt-dark shadow-lg shadow-alt dark:shadow-alt-dark/30 z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
