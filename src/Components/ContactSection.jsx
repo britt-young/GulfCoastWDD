@@ -6,10 +6,10 @@ const ContactSection = () => {
     <div className="px-5 lg:py-24 pt-20 lg:px-0">
         <div className="mx-auto w-fit lg:text-start text-center">
         <h4>contact us</h4>
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+        <h2>
           Stay in touch
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>

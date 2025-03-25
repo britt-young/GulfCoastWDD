@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <ContactHeader />
-      <div className="bg-white lg:px-60 grid grid-cols-1 lg:grid-cols-2">
+      <div className="bg-white dark:bg-black lg:px-60 grid grid-cols-1 lg:grid-cols-2">
         <ContactSection />
         <ContactForm />
       </div>
