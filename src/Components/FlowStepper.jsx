@@ -1,9 +1,7 @@
 import React from "react";
 // import { BsPersonWorkspace } from "react-icons/bs";
 //import {UserPlusIcon} from 'heroicons/react/24/solid'
-import { IoPeopleCircleSharp } from "react-icons/io5";
-import { IoShieldCheckmarkSharp } from "react-icons/io5";
-import { HiRocketLaunch } from "react-icons/hi2";
+import { IoPeopleCircleSharp, IoShieldCheckmarkSharp, IoRocketSharp } from "react-icons/io5";
 
 const FlowStepper = () => {
   return (
@@ -37,7 +35,7 @@ const FlowStepper = () => {
       {/* Step3 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
       <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white dark:bg-main-dark shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
-      <HiRocketLaunch className="w-20 h-20 dark:text-white"/>
+      <IoRocketSharp  className="w-20 h-20 dark:text-white"/>
           <span className="absolute h-15 w-15 rounded-full bg-alt dark:bg-black border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
           <h6 className="text-main text-3xl dark:text-white">3</h6>
           </span>
