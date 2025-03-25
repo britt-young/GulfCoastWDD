@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* fluid text needs adjusting */
+body {
+  @apply font-sans m-0 p-0 box-border text-[min(2vw,2vh)];
+}
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
@@ -8,45 +13,41 @@
   --breakpoint-lg: 1024px;
 
   --font-title: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --font-subTitle: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --font-body: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-subTitle: "Avenir", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  --color-main: #216869;
-  --color-alt: #9cc5a1;
-  --color-main-dark: #011432;
-  --color-alt-dark: #3bd1f3;
+  --color-main: #79abac;
+  --color-alt: #aedbde;
+  --color-main-dark: #325443;
+  --color-alt-dark: #94a264;
 }
 
 @layer base {
-  .body {
-    @apply font-sans m-0 p-0 box-border;
-  }
-
-  .h1 {
+  h1 {
     @apply uppercase text-[4em] font-bold text-black;
   }
 
-  .h2 {
+  h2 {
     @apply uppercase text-[3em] font-semibold text-black;
   }
 
-  .h3 {
+  h3 {
     @apply uppercase text-[2em] font-medium text-black;
   }
 
-  .h4 {
+  h4 {
     @apply uppercase text-[1em] font-normal text-black;
   }
 
-  .p {
+  p {
     @apply text-base leading-[1.1] text-black;
   }
 
-  .button {
-    @apply uppercase font-semibold text-base leading-[1.0] bg-[#cde9dc] text-black p-4 border-none rounded-[10px] cursor-pointer;
+  button {
+    @apply uppercase font-semibold text-base leading-[1.0] bg-alt text-black p-4 rounded-[10px] cursor-pointer dark:bg-alt-dark dark:text-black;
   }
 
-  .button:hover {
-    @apply bg-white border-2 border-black;
+  button:hover {
+    @apply bg-gray-200;
   }
 }
