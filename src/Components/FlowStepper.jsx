@@ -10,10 +10,10 @@ const FlowStepper = () => {
     <div className="flex-col flex lg:flex-row mx-auto lg:gap-20 gap-0">
       {/* Step1 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-        <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
-        <IoPeopleCircleSharp className="w-20 h-20"/>
-          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
-            <h6 className="text-main text-3xl">1</h6>
+        <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white dark:bg-main-dark shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+        <IoPeopleCircleSharp className="w-20 h-20 dark:text-white"/>
+          <span className="absolute h-15 w-15 rounded-full bg-alt dark:bg-black border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+            <h6 className="text-main text-3xl dark:text-white">1</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Initial Consultation</h5>
@@ -23,10 +23,10 @@ const FlowStepper = () => {
       </div>
       {/* Step2 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-        <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
-        <IoShieldCheckmarkSharp className="w-20 h-20"/>
-          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
-          <h6 className="text-main text-3xl">2</h6>
+        <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white dark:bg-main-dark shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+        <IoShieldCheckmarkSharp className="w-20 h-20 dark:text-white"/>
+          <span className="absolute h-15 w-15 rounded-full bg-alt dark:bg-black border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-main dark:text-white text-3xl">2</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Design Approval</h5>
@@ -36,10 +36,10 @@ const FlowStepper = () => {
       </div>
       {/* Step3 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-      <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
-      <HiRocketLaunch className="w-20 h-20"/>
-          <span className="absolute h-15 w-15 rounded-full bg-alt border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
-          <h6 className="text-main text-3xl">3</h6>
+      <div className="relative lg:h-60 h-30 w-30 lg:w-60 bg-white dark:bg-main-dark shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+      <HiRocketLaunch className="w-20 h-20 dark:text-white"/>
+          <span className="absolute h-15 w-15 rounded-full bg-alt dark:bg-black border-4 border-white -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-main text-3xl dark:text-white">3</h6>
           </span>
         </div>
         <h5 className="font-bold text-lg">Development & Launch</h5>
