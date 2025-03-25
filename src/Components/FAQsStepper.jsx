@@ -83,7 +83,7 @@ const FAQsStepper = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-24 bg-gray-100">
+    <div className="flex flex-col items-center py-24 bg-gray-100 dark:bg-black">
       {/* Title/Subtitle */}
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">how can we help</h4>
@@ -126,7 +126,7 @@ const FAQsStepper = () => {
             </div>
             {expandedItems[index] && (
               <div className="px-4 py-2 bg-gray-50">
-                <p>{item[1]}</p> {/* Answer */}
+                <p className="dark:text-black">{item[1]}</p> {/* Answer */}
               </div>
             )}
           </div>
