@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <div className="bg-white dark:bg-black dark:text-white lg:p-20 p-5">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 mb-5 text-center">
-        <h4 className="text-main dark:text-alt-dark">testimonials</h4>
+        <h4 className="">testimonials</h4>
         <h2 className="">what our clients are saying</h2>
         <p className="mt-5 lg:w-200 mx-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -18,8 +18,10 @@ body {
 
   --color-main: #79abac;
   --color-alt: #aedbde;
-  --color-main-dark: #325443;
-  --color-alt-dark: #94a264;
+  --color-main-dark: #326263;
+  --color-alt-dark: #61999d;
+  /* --color-main-dark: #325443;
+  --color-alt-dark: #94a264; */
 }
 
 @layer base {
@@ -54,6 +56,6 @@ body {
 
 @layer components {
   .card {
-    @apply text-black bg-gray-50 dark:bg-main-dark dark:text-white h-fit m-2 mt-20 lg:mt-0 p-8 dark:shadow-alt-dark/30 drop-shadow-lg rounded-lg flex flex-col relative;
+    @apply text-black bg-gray-50 dark:bg-main-dark dark:text-white h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-alt/20 rounded-lg flex flex-col relative;
   }
 }

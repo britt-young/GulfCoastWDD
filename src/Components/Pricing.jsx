@@ -75,13 +75,13 @@ const Pricing = () => {
         />
       </div>
       <div className="mx-auto text-center">
-        <div className="">
+        <div>
           <h4>our packages</h4>
-          <h2 className="">
+          <h2>
             Pricing packages for any business
           </h2>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-pretty text-gray-600 sm:text-xl/8">
+        <p >
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
@@ -93,15 +93,15 @@ const Pricing = () => {
           key={tier.id}
           className={classNames(
             tier.featured
-              ? "relative bg-white shadow-2xl "
-              : "bg-white/60 sm:mx-8 lg:mx-0",
-            "rounded-3xl lg:p-8 shadow-sm shadow-white/50 p-10 h-full flex flex-col"
+              ? "relative bg-white/60 shadow-xl"
+              : "bg-alt/60 mx-8 lg:mx-0 shadow-xl",
+            "rounded-3xl lg:p-8 shadow-alt/50 p-10 h-full flex flex-col"
           )}
         >
           <h3
             id={tier.id}
             className={classNames(
-              tier.featured ? "text-indigo-400" : "text-indigo-600",
+              tier.featured ? "text-main-dark" : "text-black",
               "text-base/7 font-semibold"
             )}
           >
@@ -110,7 +110,7 @@ const Pricing = () => {
           <p className="mt-4 flex items-baseline gap-x-2">
             <span
               className={classNames(
-                tier.featured ? "text-black" : "text-black",
+                tier.featured ? "text-main-dark" : "text-black",
                 "text-5xl font-semibold tracking-tight"
               )}
             >
@@ -145,7 +145,7 @@ const Pricing = () => {
                 <CheckIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-main" : "text-black",
+                    tier.featured ? "text-main-dark" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -158,8 +158,8 @@ const Pricing = () => {
             aria-describedby={tier.id}
             className={classNames(
               tier.featured
-                ? "bg-main text-black shadow-xs hover:bg-alt"
-                : "text-black ring-1 ring-black ring-inset hover:ring-white hover:bg-alt",
+                ? "bg-main-dark text-white shadow-xs hover:bg-alt-dark"
+                : "text-black bg-alt hover:bg-alt-dark",
               "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10"
             )}
           >
