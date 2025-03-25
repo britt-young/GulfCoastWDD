@@ -5,10 +5,10 @@ import photo from "../assets/clippings/photo.png"
 
 const Portfolio = () => {
   return (
-    <div className="bg-white relative px-6 py-24 sm:py-32 lg:px-8">
+    <div className="bg-white dark:bg-black dark:text-white relative px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
-          <h4 className="text-main">Portfolio</h4>
+          <h4 className="text-main dark:text-alt-dark">Portfolio</h4>
           <h2 className="font-bold">Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start">
@@ -28,14 +28,14 @@ const Portfolio = () => {
       {/* Portfolio Cards */}
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-1 gap-5 py-10 lg:px-5 px-5">
         {/* First Card */}
-        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="card p-0">
           <img
-            className="w-full object-cover"
+            className="w-full object-cover rounded-t-lg"
             src={farm}
             alt="Website Design"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Local Farm</div>
+            <div className="font-bold text-xl mb-2 text-main dark:text-alt-dark">Local Farm</div>
             <p className="text-grey-darker text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
@@ -45,14 +45,14 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Second Card */}
-        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="card p-0 ">
           <img
-            className="w-full object-cover"
+            className="w-full object-cover rounded-t-lg"
             src={florist}
             alt="Website Design"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Local Florist</div>
+            <div className="font-bold text-xl mb-2 text-main dark:text-alt-dark">Local Florist</div>
             <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
@@ -62,14 +62,14 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Third Card */}
-        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto">
+        <div className="card p-0">
           <img
-            className="w-full object-cover"
+            className="w-full object-cover rounded-t-lg"
             src={photo}
             alt="Website Design"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Riley Addison Photography</div>
+            <div className="font-bold text-xl mb-2 text-main dark:text-alt-dark">Riley Addison Photography</div>
             <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
