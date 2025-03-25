@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5"; // Close icon
 import { FiMoon, FiSun } from "react-icons/fi"; // Moon and Sun icons for dark/light mode
+import main from "../assets/logos/main.svg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +56,7 @@ const NavBar = () => {
         }`}
       >
         {/* Logo or brand (far left) */}
-        <img src="/logo.png" alt="logo" className="h-24" />
+        <img src={main} alt="logo" className="h-20 p-5" />
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 uppercase mx-auto">
