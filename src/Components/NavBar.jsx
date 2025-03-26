@@ -56,7 +56,7 @@ const NavBar = () => {
         }`}
       >
         {/* Logo or brand (far left) */}
-        <img src={main} alt="logo" className="h-20 p-5" />
+        <img src={main} alt="logo" className="lg:h-20 h-12 py-2 lg:py-5" />
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 tracking-tighter mx-auto">
