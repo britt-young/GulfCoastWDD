@@ -127,7 +127,7 @@ const ContactForm = () => {
 
 <label className="block text-sm/6 font-semibold dark:text-white text-gray-900">
   Select your preferred pricing package:
-  <select name="selectedPackage" className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 ">
+  <select name="selectedPackage" defaultValue="Select a Package" className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 ">
     <option value="" disabled selected>Select a package</option>
     <option value="sum">Lump-Sum</option>
     <option value="sub">Monthly Subscription</option>

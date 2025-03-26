@@ -1,5 +1,5 @@
 import React from "react";
-import { useNaviagte } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
