@@ -61,7 +61,7 @@ function classNames(...classes) {
 
 const Pricing = () => {
   return (
-    <div className="relative isolate px-6 lg:py-24 py-32 lg:px-8">
+    <div className="relative isolate px-6 py-20 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -87,15 +87,15 @@ const Pricing = () => {
         </p>
       </div>
       {/* Pricing Cards */}
-      <div className="mx-auto max-w-7xl mt-16 grid grid-cols-1 gap-y-6 sm:mt-20 lg:grid-cols-3 lg:gap-8">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
         {tiers.map((tier, tierIdx) => (
           <div
           key={tier.id}
           className={classNames(
             tier.featured
               ? "relative bg-white/60 shadow-xl"
-              : "bg-alt/60 mx-8 lg:mx-0 shadow-xl",
-            "rounded-3xl lg:p-8 shadow-alt/50 p-10 h-full flex flex-col"
+              : "bg-alt/60 shadow-xl",
+            "rounded-3xl lg:p-8 shadow-alt/50 p-10 h-full flex flex-col mx-8 lg:mx-0"
           )}
         >
           <h3
@@ -160,7 +160,7 @@ const Pricing = () => {
               tier.featured
                 ? "bg-main-dark text-white shadow-xs hover:bg-alt-dark"
                 : "text-black bg-alt hover:bg-alt-dark",
-              "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10"
+              "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
             )}
           >
             Get started today

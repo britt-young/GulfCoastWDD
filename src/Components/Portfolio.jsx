@@ -5,7 +5,7 @@ import photo from "../assets/clippings/photo.png"
 
 const Portfolio = () => {
   return (
-    <div className="bg-white dark:bg-black dark:text-white relative px-6 py-24 sm:py-32 lg:px-8">
+    <div className="bg-white dark:bg-black dark:text-white relative px-6 py-25 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
@@ -26,7 +26,7 @@ const Portfolio = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-1 gap-5 py-10 lg:px-5 px-5">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-1 gap-0 lg:pt-15 px-0">
         {/* First Card */}
         <div className="card p-0">
           <img
