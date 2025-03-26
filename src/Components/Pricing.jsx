@@ -92,6 +92,8 @@ const Pricing = () => {
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
       </div>
+
+  
       {/* Pricing Cards */}
       <div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
         {tiers.map((tier, tierIdx) => (
@@ -170,7 +172,7 @@ const Pricing = () => {
               "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
             )}
           >
-            Get started today
+            Get a quote
           </a>
         </div>
         
