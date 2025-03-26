@@ -81,7 +81,7 @@ const Pricing = () => {
             Pricing packages for any business
           </h2>
         </div>
-        <p >
+        <p className="mt-5">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>

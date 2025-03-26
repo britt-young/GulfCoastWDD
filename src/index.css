@@ -30,7 +30,7 @@ body {
   }
 
   h2 {
-    @apply uppercase text-[3em] font-bold text-black dark:text-white;
+    @apply uppercase text-[3em] font-bold text-black dark:text-white leading-12;
   }
 
   h3 {
