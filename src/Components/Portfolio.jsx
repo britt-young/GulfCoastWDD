@@ -2,6 +2,7 @@ import React from "react";
 import farm from "../assets/clippings/localFarm.png"
 import florist from "../assets/clippings/localFlorist.png"
 import photo from "../assets/clippings/photo.png"
+import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -41,7 +42,8 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-          <button>visit website</button>
+            <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+          <button>visit website</button></NavLink>
           </div>
         </div>
         {/* Second Card */}
@@ -58,7 +60,8 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-          <button>visit website</button>
+          <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+          <button>visit website</button></NavLink>
           </div>
         </div>
         {/* Third Card */}
@@ -75,7 +78,8 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-            <button>visit website</button>
+          <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+          <button>visit website</button></NavLink>
           </div>
         </div>
       </div>      
