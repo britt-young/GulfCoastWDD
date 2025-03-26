@@ -1,7 +1,12 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 import GuarenteeGrid from "./GuarenteeGrid";
 
 const HomeAbout = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/About"); // Navigate to the "/contact" route
+  }
   return (
     <div className="relative px-6 py-25 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <div className="mx-auto lg:mr-20">
@@ -25,7 +30,7 @@ const HomeAbout = () => {
         <div className="w-full">
           <GuarenteeGrid />
         </div>
-        <button className="mt-10">About Us</button>
+        <button className="mt-10" onClick={handleClick}>About Us</button>
       </div>
     </div>
   );
