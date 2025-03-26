@@ -35,7 +35,6 @@ const Bio = () => {
           laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris</p>
-        <button className="mt-10">About Us</button>
       </div>
     </div>
   );
