@@ -52,11 +52,11 @@ const NavBar = () => {
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
             ? "fixed top-0 left-0 w-full bg-white dark:bg-black/90 text-black dark:text-alt-dark shadow-xl shadow-alt/30 dark:shadow-alt-dark/30 z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-white/70 dark:bg-black/30 text-black dark:text-alt-dark shadow-lg shadow-alt dark:shadow-alt-dark/30 z-50 my-8 lg:mx-40 mx-8"
+            : "lg:rounded-3xl rounded-xl bg-white/70 dark:bg-black/40 text-black dark:text-alt-dark shadow-lg shadow-alt dark:shadow-alt-dark/30 z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
-        <img src={main} alt="logo" className="lg:h-20 h-12 py-2 lg:py-5" />
+        <img src={main} alt="logo" className="lg:mr-0 mr-40 lg:h-20 lg:py-5" />
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 tracking-tighter mx-auto">
@@ -98,7 +98,7 @@ const NavBar = () => {
 
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden mx-0"
+          className="lg:hidden my-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <GiHamburgerMenu />
