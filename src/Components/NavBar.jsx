@@ -59,36 +59,36 @@ const NavBar = () => {
         <img src={main} alt="logo" className="h-20 p-5" />
 
         {/* Desktop menu (centered) */}
-        <ul className="hidden lg:flex space-x-10 uppercase mx-auto">
+        <ul className="hidden lg:flex space-x-10 tracking-tighter mx-auto">
           <li className="hover:font-bold ">
-            <NavLink to="/"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/"  className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               Home
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/About"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/About"  className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               About
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/FAQs" onClick={handleLinkClick}>
+            <NavLink to="/FAQs" className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               FAQs
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/Contact"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/Contact"  className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               Contact
             </NavLink>
           </li>
         </ul>
 
-        {/* Right side (Sign Up button and Dark Mode toggle) */}
-        {/* Sign Up Button (Desktop) */}
+        {/* Right side (CTA and Dark Mode toggle) */}
+        {/* CTA Button (Desktop) */}
         <button
-          className="hidden lg:flex items-center m-0"
+          className="hidden lg:flex items-center mr-2"
           onClick={() => navigate("/Contact")}
         >
-          Sign Up
+          Get started today
         </button>
 
         {/* Dark Mode Toggle */}
@@ -107,7 +107,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-0 bg-[#79ABAC] bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed inset-0 dark:bg-main-dark bg-main bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -119,31 +119,29 @@ const NavBar = () => {
           <IoClose />
         </button>
 
-        <ul className="flex flex-col space-y-6 items-center justify-center h-full uppercase text-xl">
+        <ul className="flex flex-col space-y-6 items-center justify-center h-full text-xl">
           <li className="hover:font-bold ">
-            <NavLink to="/"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               Home
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/About"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/About" className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               About
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/FAQs"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/FAQs" className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               FAQs
             </NavLink>
           </li>
           <li className="hover:font-bold ">
-            <NavLink to="/Contact"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
+            <NavLink to="/Contact" className={({ isActive }) => (isActive ? "font-bold uppercase" : "hover:font-bold")} onClick={handleLinkClick}>
               Contact
             </NavLink>
           </li>
-        </ul>
-
-        {/* Sign Up Button (Mobile) */}
-        <div className="flex justify-center mt-5">
+          {/* Sign Up Button (Mobile) */}
+          <div className="flex justify-center">
           <button
             className="p-2 w-full max-w-xs cursor-pointer"
             onClick={() => {
@@ -151,9 +149,12 @@ const NavBar = () => {
               setIsMenuOpen(false); // Close the menu after clicking
             }}
           >
-            Sign Up
+            Get Started Today
           </button>
-        </div>
+          </div>
+        </ul>
+
+        
       </div>
     </div>
   );

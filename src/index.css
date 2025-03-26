@@ -3,7 +3,7 @@
 
 /* fluid text needs adjusting */
 body {
-  @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(2vw,2vh)];
+  @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
 }
 
 @theme {
