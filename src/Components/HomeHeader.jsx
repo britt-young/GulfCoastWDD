@@ -19,7 +19,7 @@ const HomeHeader = () => {
           hand-coded websites for your business starting at only $145/mo with
           free hosting and edits*
         </p>
-        <button className="lg:mt-15 mt-5" onClick={handleClick} >get started</button>
+        <button className="lg:mt-10 mt-5" onClick={handleClick} >get started</button>
       </div>
       <div className="flex items-center lg:justify-start justify-center">
         <picture>

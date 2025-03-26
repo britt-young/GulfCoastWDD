@@ -6,7 +6,7 @@ const Error = () => {
 
   return (
     <div className='flex flex-col'>
-        <h2 className='mx-auto'> 404 | Page Not Found</h2>
+        <h2 className='mx-auto mt-20 lg:px-0 text-center'> 404 | Page Not Found</h2>
         <br/>
         <button onClick={()=>navigate('/')} className='mx-auto border-2 rounded-lg border-slate-800  p-2'>Go back to homepage</button>
     </div>
