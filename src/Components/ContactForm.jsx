@@ -98,13 +98,13 @@ const ContactForm = () => {
                 Phone number
               </label>
               <div className="mt-1">
-                  <input
-                    id="phone-number"
-                    name="phone-number"
-                    type="text"
-                    placeholder="123-456-7890"
-                    className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
-                  />
+                <input
+                  id="phone-number"
+                  name="phone-number"
+                  type="text"
+                  placeholder="123-456-7890"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                />
               </div>
             </div>
             {/* <div className="sm:col-span-2">
@@ -125,23 +125,29 @@ const ContactForm = () => {
               </div>
             </div> */}
 
-<label className="block text-sm/6 font-semibold dark:text-white text-gray-900">
-  Select your preferred pricing package:
-  <select name="selectedPackage" defaultValue="default" className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 ">
-    <option value="default" disabled selected>Select a package</option>
-    <option value="sum">Lump-Sum</option>
-    <option value="sub">Monthly Subscription</option>
-    <option value="e-comm">E-Commerce</option>
-  </select>
-</label>
-
+            {/* Pricing Selection */}
+            <label className="block text-sm/6 font-semibold dark:text-white text-gray-900">
+              Select your preferred pricing package:
+              <select
+                name="selectedPackage"
+                defaultValue="default"
+                className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 "
+              >
+                <option value="default" disabled selected>
+                  Select a package
+                </option>
+                <option value="sum">Lump-Sum</option>
+                <option value="sub">Monthly Subscription</option>
+                <option value="e-comm">E-Commerce</option>
+              </select>
+            </label>
 
             <Field className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-alt-dark"
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-alt-dark dark:bg-white/15 dark:border-white/15"
                 >
                   {/* Checkmark icon */}
                   <svg
