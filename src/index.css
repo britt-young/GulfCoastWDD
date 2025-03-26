@@ -38,7 +38,7 @@ body {
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold text-alt dark:text-alt-dark;
+    @apply uppercase text-[1em] font-semibold text-alt dark:text-alt-dark tracking-tighter;
   }
 
   p {
