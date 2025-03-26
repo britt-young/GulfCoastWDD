@@ -162,6 +162,7 @@ const Pricing = () => {
           <a
             href={tier.href}
             aria-describedby={tier.id}
+            onClick={handleClick}
             className={classNames(
               tier.featured
                 ? "bg-main-dark text-white shadow-xs hover:bg-alt-dark"
