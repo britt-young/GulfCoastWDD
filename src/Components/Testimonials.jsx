@@ -3,8 +3,8 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
-    <div className="bg-white dark:bg-black dark:text-white lg:p-20 p-5">
-      <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 mb-5 text-center">
+    <div className="bg-white dark:bg-black dark:text-white lg:py-20 p-15">
+      <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">what our clients are saying</h2>
         <p className="mt-5 lg:w-200 mx-5">
@@ -17,8 +17,8 @@ const Testimonials = () => {
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
         <div className="card min-h-full">
-          <div className="my-2 items-start justify-start flex-grow">
-            <p className="mt-5 mb-10">
+          <div className="my-2 items-start justify-start flex-grow relative">
+            <p className="mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -30,14 +30,18 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4 className="text-main dark:text-alt-dark">Sarah T.</h4>
-            <h4 className="text-main dark:text-alt-dark">Marketing Director, Local Florist</h4>
+            <div className="absolute bottom-0 left-0 right-0">
+              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">Sarah T.</h4>
+              <h4 className="text-main dark:text-alt-dark leading-5">
+                Marketing Director, Local Florist
+              </h4>
+            </div>
           </div>
         </div>
         {/* Testimonial Card */}
         <div className="card min-h-full">
-          <div className="my-2 items-start justify-start flex-grow">
-            <p className="mt-5 mb-10">
+          <div className="my-2 items-start justify-start flex-grow relative">
+            <p className="mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -48,14 +52,16 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4 className="text-main dark:text-alt-dark">John M.</h4>
-            <h4 className="text-main dark:text-alt-dark">CEO, Local Farm</h4>
+            <div className="absolute bottom-0 left-0 right-0">
+              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">John M.</h4>
+              <h4 className="text-main dark:text-alt-dark leading-5">CEO, Local Farm</h4>
+            </div>
           </div>
         </div>
         {/* Testimonial Card */}
         <div className="card min-h-full">
-          <div className="my-2 items-start justify-start flex-grow">
-            <p className="mt-5 mb-10">
+          <div className="my-2 items-start justify-start flex-grow relative">
+            <p className="mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -66,8 +72,12 @@ const Testimonials = () => {
                 <RiDoubleQuotesR />
               </span>
             </p>
-            <h4 className="text-main dark:text-alt-dark">Emily R.</h4>
-            <h4 className="text-main dark:text-alt-dark">Founder, Riley Addison Photography</h4>
+            <div className="absolute bottom-0 left-0 right-0">
+              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">Emily R.</h4>
+              <h4 className="text-main dark:text-alt-dark leading-5">
+                Founder, Riley Addison Photography
+              </h4>
+            </div>
           </div>
         </div>
       </div>
