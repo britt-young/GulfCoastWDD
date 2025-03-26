@@ -1,4 +1,5 @@
 import React from "react";
+import { useNaviagte } from "react-router-dom";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
@@ -60,6 +61,11 @@ function classNames(...classes) {
 }
 
 const Pricing = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/Contact");
+  }
+
   return (
     <div className="relative isolate px-6 py-20 lg:px-8">
       <div

@@ -42,7 +42,7 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-            <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+            <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
           <button>visit website</button></NavLink>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-          <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+          <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
           <button>visit website</button></NavLink>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="px-6 py-4">
-          <NavLink to="https:google.com" target="_blank" rel="noopener noreferrer">
+          <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
           <button>visit website</button></NavLink>
           </div>
         </div>

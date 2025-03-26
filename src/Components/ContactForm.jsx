@@ -107,7 +107,7 @@ const ContactForm = () => {
                   />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            {/* <div className="sm:col-span-2">
               <label
                 htmlFor="message"
                 className="block text-sm/6 font-semibold dark:text-white text-gray-900"
@@ -123,7 +123,19 @@ const ContactForm = () => {
                   defaultValue={""}
                 />
               </div>
-            </div>
+            </div> */}
+
+<label className="block text-sm/6 font-semibold dark:text-white text-gray-900">
+  Select your preferred pricing package:
+  <select name="selectedPackage" className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 ">
+    <option value="" disabled selected>Select a package</option>
+    <option value="sum">Lump-Sum</option>
+    <option value="sub">Monthly Subscription</option>
+    <option value="e-comm">E-Commerce</option>
+  </select>
+</label>
+
+
             <Field className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Checkbox
