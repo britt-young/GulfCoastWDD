@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
-    <div className="bg-white dark:bg-black dark:text-white lg:py-20 p-15">
+    <div className=" dark:bg-linear-240 from-[#1f3b47] to-[#3d8069] dark:text-white lg:py-20 p-15">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">what our clients are saying</h2>

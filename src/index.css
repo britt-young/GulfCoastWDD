@@ -16,11 +16,24 @@ body {
   --font-subTitle: "Avenir", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  --color-main: #79abac;
+  --color-main: #1f3b47;
+  --color-alt: #3d8069;
+  --color-main-dark: #1f3b47;
+  --color-alt-dark: #3d8069;
+
+
+/* greens
+--color-main: #818E75;
+--color-alt: #A8B69A;
+--color-main-dark: #53635D;
+--color-alt-dark: #E0E2C6; */
+
+
+/*  --color-main: #79abac;
   --color-alt: #aedbde;
   --color-main-dark: #326263;
   --color-alt-dark: #61999d;
-  /* --color-main-dark: #325443;
+   --color-main-dark: #325443;
   --color-alt-dark: #94a264; */
 }
 
