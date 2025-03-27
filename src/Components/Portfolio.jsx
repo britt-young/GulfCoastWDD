@@ -13,7 +13,7 @@ const Portfolio = () => {
           <h2 className="font-bold">Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start">
-          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-gray-600 lg:pl-5 lg:pt-0 pt-5">
+          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 dark:border-alt-dark border-alt lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laborisLorem
@@ -37,7 +37,7 @@ const Portfolio = () => {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 text-black">Local Farm</div>
-            <p className="text-grey-darker text-base">
+            <p className="text-black text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
             </p>
           </div>
@@ -47,7 +47,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Second Card */}
-        <div className="card p-0 ">
+        <div className="bg-white rounded-xl m-1">
           <img
             className="w-full object-cover rounded-t-lg"
             src={florist}
@@ -65,7 +65,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Third Card */}
-        <div className="card p-0">
+        <div className="bg-white rounded-xl m-1">
           <img
             className="w-full object-cover rounded-t-lg"
             src={photo}

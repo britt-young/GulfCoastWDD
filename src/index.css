@@ -17,7 +17,7 @@ body {
   --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --color-main: #1f3b47ed;
-  --color-alt: #3d8069c7;
+  --color-alt: #4BA36F;
   --color-main-dark: #1f3b47;
   --color-alt-dark: #3d8069;
 
@@ -69,6 +69,6 @@ body {
 
 @layer components {
   .card {
-    @apply dark:text-black text-black bg-gray-100 dark:bg-main-dark h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-gray-500/20 dark:shadow-alt/20 rounded-lg flex flex-col relative;
+    @apply dark:text-black text-black bg-white dark:bg-main-dark h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-alt/30 dark:shadow-alt-dark/30 rounded-lg flex flex-col relative;
   }
 }
