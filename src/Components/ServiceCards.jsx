@@ -14,7 +14,7 @@ const ServiceCards = () => {
       navigate("/Contact"); // Navigate to the "/home" route
     };
   return (
-    <div className="relative dark:bg-linear-120 from-[#1f3b47] to-[#3d8069] dark:text-white isolate px-6 py-24 lg:px-8">
+    <div className="relative dark:bg-linear-120 from-[#1f3b47] to-[#3d8069] isolate px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 ">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
@@ -28,10 +28,10 @@ const ServiceCards = () => {
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0">
         {/* Feature Card */}
         <div className="card">
-        <TbDeviceMobileStar className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <TbDeviceMobileStar className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Mobile First Design</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!
@@ -49,10 +49,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <GiSpeedometer className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <GiSpeedometer className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Optimized Page Loading</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!
@@ -70,10 +70,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <LiaLaptopCodeSolid className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <LiaLaptopCodeSolid className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Device Responsiveness</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!
@@ -91,10 +91,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <GiEarthAmerica className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <GiEarthAmerica className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Based in USA</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!
@@ -112,10 +112,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <ImEmbed2 className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <ImEmbed2 className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Mobile First Design</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!
@@ -133,10 +133,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <ImEmbed2 className="rounded-lg bg-main dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <ImEmbed2 className="text-white dark:text-black rounded-lg bg-main-dark dark:bg-alt-dark p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="text-black mt-5">Mobile First Design</h4>
-            <p className="mt-2 mb-3">
+            <p className="text-black mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!

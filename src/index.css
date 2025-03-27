@@ -16,8 +16,8 @@ body {
   --font-subTitle: "Avenir", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  --color-main: #1f3b47;
-  --color-alt: #3d8069;
+  --color-main: #1f3b47ed;
+  --color-alt: #3d8069c7;
   --color-main-dark: #1f3b47;
   --color-alt-dark: #3d8069;
 
@@ -39,27 +39,27 @@ body {
 
 @layer base {
   h1 {
-    @apply uppercase text-[4em] font-bold text-black dark:text-white;
+    @apply uppercase text-[4em] font-bold dark:text-black text-white;
   }
 
   h2 {
-    @apply uppercase text-[3em] font-bold text-black dark:text-white leading-12;
+    @apply uppercase text-[3em] font-bold dark:text-black text-white leading-12;
   }
 
   h3 {
-    @apply uppercase text-[2em] font-medium text-black dark:text-white;
+    @apply uppercase text-[2em] font-medium dark:text-black text-white;
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold text-alt dark:text-alt-dark tracking-tighter;
+    @apply uppercase text-[1em] font-semibold dark:text-alt text-alt-dark tracking-tighter;
   }
 
   p {
-    @apply text-base leading-[1.1] text-black dark:text-white;
+    @apply text-base leading-[1.1] dark:text-black text-white;
   }
 
   button {
-    @apply uppercase font-semibold text-base leading-[1.0] bg-alt text-black p-4 rounded-[10px] cursor-pointer dark:bg-alt-dark dark:text-black;
+    @apply uppercase font-semibold text-base leading-[1.0] bg-alt text-white p-4 rounded-[10px] cursor-pointer dark:bg-alt-dark dark:text-black;
   }
 
   button:hover {
@@ -69,6 +69,6 @@ body {
 
 @layer components {
   .card {
-    @apply text-black bg-gray-100 dark:bg-main-dark dark:text-white h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-gray-500/20 dark:shadow-alt/20 rounded-lg flex flex-col relative;
+    @apply dark:text-black text-black bg-gray-100 dark:bg-main-dark h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-gray-500/20 dark:shadow-alt/20 rounded-lg flex flex-col relative;
   }
 }
