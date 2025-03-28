@@ -14,7 +14,7 @@ const ServiceCards = () => {
       navigate("/Contact"); // Navigate to the "/contact" route
     };
   return (
-    <div className="relative isolate px-6 py-24 lg:px-8">
+    <div className="relative px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 ">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
@@ -160,5 +160,3 @@ const ServiceCards = () => {
 };
 
 export default ServiceCards;
-
-// bg-gradient-to-tl from-[#1f3b47] from-55% via-[#406779] via-75% to-[#3d8069] to-95%

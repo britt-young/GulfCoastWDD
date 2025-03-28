@@ -1,18 +1,18 @@
 import React from "react";
-import farm from "../assets/clippings/localFarm.png"
-import florist from "../assets/clippings/localFlorist.png"
-import photo from "../assets/clippings/photo.png"
+import farm from "../assets/clippings/localFarm.png";
+import florist from "../assets/clippings/localFlorist.png";
+import photo from "../assets/clippings/photo.png";
 import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="relative px-6 py-25 lg:px-8">
+    <div className="relative px-6 lg:py-25 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
           <h2 className="font-bold">Some of our recent website designs</h2>
         </div>
-        <div className="flex items-center justify-start">
+        <div className="flex items-center justify-start pb-10 lg:pb-0">
           <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 dark:border-alt-dark border-alt lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -27,67 +27,70 @@ const Portfolio = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-1 gap-0 lg:pt-15 px-0">
-        {/* First Card */}
-        <div className="card p-0">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-4 lg:pt-15 px-0">
+        {/* First Webpage */}
+        <div className="relative group shadow-xl shadow-white/30">
+          {/* Image */}
           <img
-            className="w-full object-cover rounded-t-lg"
             src={farm}
-            alt="Website Design"
+            alt="Overlay Image"
+            className="w-full h-full object-cover"
           />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-black">Local Farm</div>
-            <p className="text-black text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
-            </p>
-          </div>
-          <div className="px-6 py-4">
-            <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
-          <button>visit website</button></NavLink>
+          {/* Overlay Text */}
+          <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
+            <p className="text-white p-4">Local Farm</p>
+            <NavLink
+              to="https://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>visit website</button>
+            </NavLink>
           </div>
         </div>
-        {/* Second Card */}
-        <div className="card p-0">
+
+        {/* Second Webpage */}
+        <div className="relative group">
+          {/* Image */}
           <img
-            className="w-full object-cover rounded-t-lg"
             src={florist}
-            alt="Website Design"
+            alt="Overlay Image"
+            className="w-full h-full object-cover"
           />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-black">Local Florist</div>
-            <p className="text-grey-darker text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
-            </p>
-          </div>
-          <div className="px-6 py-4">
-          <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
-          <button>visit website</button></NavLink>
+          {/* Overlay Text */}
+          <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
+            <p className="text-white p-4">Riley Addison Photography</p>
+            <NavLink
+              to="https://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>visit website</button>
+            </NavLink>
           </div>
         </div>
 
-        
-
-
-
-        {/* Third Card
-        <div className="card p-0">
+        {/* Third Webpage */}
+        <div className="relative group">
+          {/* Image */}
           <img
-            className="w-full object-cover rounded-t-lg"
             src={photo}
-            alt="Website Design"
+            alt="Overlay Image"
+            className="w-full h-full object-cover"
           />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-black">Riley Addison Photography</div>
-            <p className="text-grey-darker text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum!
-            </p>
+          {/* Overlay Text */}
+          <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
+            <p className="text-white p-4">Riley Addison Photography</p>
+            <NavLink
+              to="https://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>visit website</button>
+            </NavLink>
           </div>
-          <div className="px-6 py-4">
-          <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
-          <button>visit website</button></NavLink>
-          </div>
-        </div> */}
-      </div>      
+        </div>
+      </div>
     </div>
   );
 };
