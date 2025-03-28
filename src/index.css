@@ -39,27 +39,27 @@ body {
 
 @layer base {
   h1 {
-    @apply uppercase text-[4em] font-bold dark:text-black text-white;
+    @apply uppercase text-[4em] font-bold text-black ;
   }
 
   h2 {
-    @apply uppercase text-[3em] font-bold dark:text-black text-white leading-12;
+    @apply uppercase text-[3em] font-bold text-black  leading-12;
   }
 
   h3 {
-    @apply uppercase text-[2em] font-medium dark:text-black text-white;
+    @apply uppercase text-[2em] font-medium text-black ;
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold dark:text-alt text-alt-dark tracking-tighter;
+    @apply uppercase text-[1em] font-semibold text-black  tracking-tighter;
   }
 
   p {
-    @apply text-base leading-[1.1] dark:text-black text-white;
+    @apply text-base leading-[1.1] text-black ;
   }
 
   button {
-    @apply uppercase font-semibold text-base leading-[1.0] bg-alt text-white p-4 rounded-[10px] cursor-pointer dark:bg-alt-dark dark:text-black;
+    @apply uppercase font-semibold text-base leading-[1.0] bg-red-500 text-black p-4 rounded-[10px] cursor-pointer ;
   }
 
   button:hover {
@@ -69,6 +69,6 @@ body {
 
 @layer components {
   .card {
-    @apply dark:text-black text-black bg-white dark:bg-main-dark h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-alt/30 dark:shadow-alt-dark/30 rounded-lg flex flex-col relative;
+    @apply text-black bg-white  h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-gray-200/30 dark:shadow-gray-200/30 rounded-lg flex flex-col relative;
   }
 }

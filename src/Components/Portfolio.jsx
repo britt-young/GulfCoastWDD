@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="dark:bg-linear-180 from-[#1f3b47] to-[#3d8069] dark:text-white relative px-6 py-25 lg:px-8">
+    <div className="relative px-6 py-25 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
@@ -47,7 +47,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Second Card */}
-        <div className="bg-white rounded-xl m-1">
+        <div className="card p-0">
           <img
             className="w-full object-cover rounded-t-lg"
             src={florist}
@@ -64,8 +64,13 @@ const Portfolio = () => {
           <button>visit website</button></NavLink>
           </div>
         </div>
-        {/* Third Card */}
-        <div className="bg-white rounded-xl m-1">
+
+        
+
+
+
+        {/* Third Card
+        <div className="card p-0">
           <img
             className="w-full object-cover rounded-t-lg"
             src={photo}
@@ -81,10 +86,12 @@ const Portfolio = () => {
           <NavLink to="https://google.com" target="_blank" rel="noopener noreferrer">
           <button>visit website</button></NavLink>
           </div>
-        </div>
+        </div> */}
       </div>      
     </div>
   );
 };
 
 export default Portfolio;
+
+// dark:bg-linear-180 from-[#1f3b47] to-[#3d8069] dark:text-white

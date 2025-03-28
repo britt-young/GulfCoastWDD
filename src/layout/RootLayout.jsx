@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 const RootLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-tr from-[#1f3b47] from-55% via-[#406779] via-75% to-[#3d8069] to-95%">{/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
+    <div className="flex flex-col min-h-screen ">{/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Navbar />
       <main className="flex-1">
         <Outlet />
@@ -17,3 +17,4 @@ const RootLayout = () => {
 
 export default RootLayout;
 
+// bg-gradient-to-tr from-[#1f3b47] from-55% via-[#406779] via-75% to-[#3d8069] to-95%
