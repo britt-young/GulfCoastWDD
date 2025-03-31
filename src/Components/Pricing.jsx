@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
@@ -8,14 +8,18 @@ const tiers = [
     id: "tier-sum",
     href: "#",
     price: "$900",
-    add: "+$25/month Hosting",
+    add: "+$25/month hosting fee",
     description:
-      "The perfect plan if you're just getting started with our product.",
+      "The perfect one and done plan for businesses that want a website without the hassle of monthly payments",
     features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
+      "Design And Development",
+      "$25 Hosting Fee",
+      "5 Page Website",
+      "+$50/mo Unlimited Edits",
+    ],
+    others: [
+      "24/7 Support",
+      "Lifetime Updates",
     ],
     featured: false,
   },
@@ -25,14 +29,16 @@ const tiers = [
     href: "#",
     price: "$145",
     add: "/month",
-    description: "Dedicated support and infrastructure for your company.",
+    description: "Our most popular plan for businesses that prefer a month to month commitment",
     features: [
-      "Unlimited products",
-      "Unlimited subscribers",
-      "Advanced analytics",
-      "Dedicated support representative",
-      "Marketing automations",
-      "Custom integrations",
+      "Design And Development",
+      "Includes Hosting",
+      "5 Page Website",
+      "Unlimited Edits",
+      "24/7 Support",
+      "Lifetime Updates",
+    ],
+    others: [
     ],
     featured: true,
   },
@@ -40,17 +46,20 @@ const tiers = [
     name: "E-commerce",
     id: "tier-commerce",
     href: "#",
-    price: "$59",
-    add: "Starting",
+    price: "$1300",
+    add: "base price",
     description:
-      "The ideal plan for businesses looking for additional features.",
+      "The ideal plan for businesses wanting to sell products or services online",
     features: [
-      "50 products",
-      "Up to 50,000 subscribers",
-      "Advanced analytics",
-      "Priority support response time",
-      "Custom reporting",
-      "Email marketing",
+      "Custom Shopify Store",
+      "Integrated Shipping",
+      "Shopify Tutorial Walkthrough",
+      "Fully Editable In Shopify CMS",
+    ],
+    others: [
+      "Unlimited Edits",
+      "24/7 Support",
+      "Lifetime Updates",
     ],
     featured: false,
   },
@@ -158,6 +167,18 @@ const Pricing = () => {
                   )}
                 />
                 {feature}
+              </li>
+            ))}
+            {tier.others.map((other) => (
+              <li key={other} className="flex gap-x-3">
+                <XCircleIcon
+                  aria-hidden="true"
+                  className={classNames(
+                    tier.featured ? "text-main-dark" : "text-black",
+                    "h-6 w-5 flex-none"
+                  )}
+                />
+                {other}
               </li>
             ))}
           </ul>
