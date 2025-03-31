@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const FAQsStepper = () => {
-  const [activeCategory, setActiveCategory] = useState("general");
+  const [activeCategory, setActiveCategory] = useState("General");
   const [expandedItems, setExpandedItems] = useState([false, false, false]);
 
   const toggleExpand = (index) => {
@@ -14,18 +14,32 @@ const FAQsStepper = () => {
   };
 
   const faqData = {
-    general: [
+    General: [
       [
-        "What is your return policy?",
-        "Our return policy allows returns within 30 days of purchase for a full refund or exchange. Products must be in their original condition and packaging.",
+        "How long does the entire design and development process take?",
+        "We typically take between 4 weeks to complete a website, dependent on how quickly clients respond to content requests and proposal feedback.",
       ],
       [
-        "How do I track my order?",
-        "You can track your order by visiting our order tracking page and entering your order number. You will also receive tracking information via email once your order has shipped.",
+        "What is the difference between the Lump Sum and Monthly packages?",
+        "The Lump Sum package is a one-time payment for a set number of pages, while the Monthly package is a subscription service that includes ongoing support and updates.",
       ],
       [
-        "Can I change my delivery address?",
-        "Yes, you can change your delivery address as long as the order has not been shipped. Please contact our customer service team as soon as possible.",
+        "Can I upgrade from the Lump Sum to the Monthly package?",
+        "Yes, you can upgrade at any time. Please contact our customer support team for assistance.",
+      ],
+      [
+        "What if I need more than 5 pages in the Lump Sum package?",
+        "If you need more than 5 pages, there is an additional charge of $100 per page.",
+      ],
+      [
+        "How do you handle late payments?",
+        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue for months and late for months, we can cancel the contract and the client will be responsible for paying the full price of the site.We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
+    ],
+  ],
+    "Lump Sum": [
+      [
+        "How many pages are included in the Lump Sum package?",
+        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a $100 charge per additional page.",
       ],
       [
         "What payment methods do you accept?",
@@ -36,7 +50,7 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email, phone, or live chat on our website. We are available 24/7 to assist you.",
       ],
     ],
-    shipping: [
+    Monthly: [
       [
         "Do you ship internationally?",
         "Yes, we ship to most countries around the world. Shipping costs will be calculated at checkout based on your location.",
@@ -58,7 +72,7 @@ const FAQsStepper = () => {
         "Yes, we offer expedited shipping options for faster delivery. You can choose the shipping method during checkout.",
       ],
     ],
-    account: [
+    "E-Commerce": [
       [
         "How do I reset my password?",
         'To reset your password, click on the "Forgot Password" link on the login page. We will send you a link to reset your password via email.',
@@ -95,7 +109,7 @@ const FAQsStepper = () => {
 
       {/* Category buttons */}
       <div className="flex gap-4 mb-8 mt-10">
-        {["general", "shipping", "account"].map((category) => (
+        {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
             className={`px-4 py-2 border rounded cursor-pointer hover:bg-alt ${
