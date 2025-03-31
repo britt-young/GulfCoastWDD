@@ -65,6 +65,13 @@ body {
   button:hover {
     @apply bg-gray-200;
   }
+
+  a.email-link {
+    @apply text-main text-base font-semibold cursor-pointer;
+  }
+  a.email-link:hover {
+    @apply text-red-500;
+  }
 }
 
 @layer components {

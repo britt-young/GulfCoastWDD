@@ -17,33 +17,41 @@ const FAQsStepper = () => {
     General: [
       [
         "How long does the entire design and development process take?",
-        "We typically take between 4 weeks to complete a website, dependent on how quickly clients respond to content requests and proposal feedback.",
+        "Our websites typically take 4 weeks to complete. Development timelines can vary depending on how quickly clients respond to content requests and proposal feedback.",
       ],
       [
         "What is the difference between the Lump Sum and Monthly packages?",
-        "The Lump Sum package is a one-time payment for a set number of pages, while the Monthly package is a subscription service that includes ongoing support and updates.",
-      ],
-      [
-        "Can I upgrade from the Lump Sum to the Monthly package?",
-        "Yes, you can upgrade at any time. Please contact our customer support team for assistance.",
+        "The main difference is long term versus short term costs. Our subscription package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Lump-Sum package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
       ],
       [
         "What if I need more than 5 pages in the Lump Sum package?",
         "If you need more than 5 pages, there is an additional charge of $100 per page.",
       ],
       [
-        "How do you handle late payments?",
-        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue for months and late for months, we can cancel the contract and the client will be responsible for paying the full price of the site.We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
+        "How do I make a payment and what payment methods do you accept?",
+        "We will send you and invoice via Square that provides you a link to the secure payment page. Subscriptions can be paid with a credit card or debit card. Lump sum projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
+      ],
+      [
+        "Do you offer refunds?",
+        "When you sign a contract (lump sum or subscription) a deposit is required before designing begins. If you are not satisfied with our design proposals and no longer wish to continue with us, then we will refund you your deposit.",
+      ],
+      [
+        "Who owns the domain name and website after the project is completed?",
+        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the lump-sum package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
+      ],
+      [
+        "How do we request edits?",
+        "All edit requests must be submitted via email to <a href='mailto:GulfCoastWDD@protonmail.com' class='email-link'>GulfCoastWDD@protonmail.com</a> and will be fulfilled in the order they're received. As edits are received and completed, we will send you an email notification.",
+      ]
     ],
-  ],
     "Lump Sum": [
       [
         "How many pages are included in the Lump Sum package?",
-        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a $100 charge per additional page.",
+        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 charge per additional page.",
       ],
       [
-        "What payment methods do you accept?",
-        "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay.",
+        "Can I add unlimited edits and support to the Lump Sum package?",
+        "Yes! We offer $50/mo. support packages within a minimum of 12 months commitment."
       ],
       [
         "How do I contact customer support?",
@@ -52,24 +60,20 @@ const FAQsStepper = () => {
     ],
     Monthly: [
       [
-        "Do you ship internationally?",
-        "Yes, we ship to most countries around the world. Shipping costs will be calculated at checkout based on your location.",
+        "How long do the subscription last?",
+        "Monthly subscriptions plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
       ],
       [
-        "How long does shipping take?",
-        "Shipping typically takes between 5-10 business days, depending on your location. International orders may take longer.",
+        "If I previously cancelled, can I re-subscribe?",
+        "Yes! You just have to sign a new 12 month contract.",
       ],
       [
-        "Do you offer free shipping?",
-        "We offer free shipping on orders over $50 within the United States. For international orders, shipping fees will apply.",
+        "What happens if I need to cancel before the 12 months are up?",
+        "If you cancel before your 12 month contract is up, you will owe the full cost of a lump sum website ($900) minus the amount you've already paid.",
       ],
       [
-        "Can I change my shipping address after placing an order?",
-        "If your order has not been shipped yet, we can modify your shipping address. Please contact us as soon as possible.",
-      ],
-      [
-        "Do you offer expedited shipping?",
-        "Yes, we offer expedited shipping options for faster delivery. You can choose the shipping method during checkout.",
+        "How do you handle late payments?",
+        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue for months and late for months, we can cancel the contract and the client will be responsible for paying the full price of the site.We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
       ],
     ],
     "E-Commerce": [
@@ -140,7 +144,7 @@ const FAQsStepper = () => {
             </div>
             {expandedItems[index] && (
               <div className="px-4 py-2 bg-gray-50">
-                <p className="dark:text-black">{item[1]}</p> {/* Answer */}
+                <p dangerouslySetInnerHTML={{ __html: item[1] }} /> {/* Answer */}
               </div>
             )}
           </div>
