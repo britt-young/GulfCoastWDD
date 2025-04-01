@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import mockup from "../assets/Mockup.svg"
+import mockup from "../assets/mockup2.svg"
 
 const HomeHeader = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="pt-20 pb-20 lg:px-50 flex flex-col lg:flex-row items-center justify-center gap-2 lg:h-[700px]">
+    <div className="pt-20 pb-20 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-0 lg:h-[700px]">
       <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>
@@ -26,7 +26,7 @@ const HomeHeader = () => {
           <img
             src={mockup}
             alt="mockup img"
-            className="w-500 p-5 lg:p-0"
+            className="h-full w-400 p-5 lg:p-0"
           />
         </picture>
       </div>

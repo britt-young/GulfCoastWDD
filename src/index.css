@@ -37,23 +37,23 @@
   }
 
   h1 {
-    @apply uppercase text-[4em] font-bold text-black;
+    @apply uppercase text-[4em] font-bold text-black dark:text-white;
   }
 
   h2 {
-    @apply uppercase text-[3em] font-bold text-black  leading-12;
+    @apply uppercase text-[3em] font-bold text-black dark:text-white leading-12;
   }
 
   h3 {
-    @apply uppercase text-[2em] font-medium text-black;
+    @apply uppercase text-[2em] font-medium text-black dark:text-white;
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold text-black  tracking-tighter;
+    @apply uppercase text-[1em] font-semibold text-black dark:text-white tracking-tighter;
   }
 
   p {
-    @apply text-base leading-[1.1] text-black;
+    @apply text-base leading-[1.1] text-black dark:text-white;
   }
 
   button {
