@@ -51,8 +51,8 @@ const NavBar = () => {
       <nav
         className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white dark:bg-main text-black dark:text-alt-dark shadow-lg shadow-white/30 dark:shadow-white/30 z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-white/70 dark:bg-main/80 text-black dark:text-alt-dark shadow-lg shadow-white/30 dark:shadow-white/30 z-50 my-8 lg:mx-40 mx-8"
+            ? "fixed top-0 left-0 w-full bg-white dark:bg-main text-black dark:text-white shadow-lg shadow-white/30 dark:shadow-white/30 z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-white/70 dark:bg-main text-black dark:text-white shadow-lg shadow-white/30 dark:shadow-white/30 z-50 my-8 lg:mx-40 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
@@ -107,7 +107,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-0 dark:bg-main-dark bg-main bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed inset-0 dark:bg-main bg-main bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >

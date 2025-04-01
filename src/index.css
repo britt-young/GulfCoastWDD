@@ -12,14 +12,13 @@ body {
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
 
-  --font-title: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* --font-title: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-subTitle: "Avenir", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: "Bitter", system-ui, Avenir, Helvetica, Arial, sans-serif; */
 
-  --color-main: #1f3b47ed;
-  --color-alt: #4BA36F;
-  --color-main-dark: #1f3b47;
-  --color-alt-dark: #3d8069;
+
+  --color-main: #1f3b47;
+  --color-alt: #3d8069;
 
 
 /* greens
@@ -39,7 +38,7 @@ body {
 
 @layer base {
   h1 {
-    @apply uppercase text-[4em] font-bold text-black ;
+    @apply uppercase text-[4em] font-bold text-black;
   }
 
   h2 {
@@ -59,7 +58,7 @@ body {
   }
 
   button {
-    @apply uppercase font-semibold text-base leading-[1.0] bg-red-500 text-black p-4 rounded-[10px] cursor-pointer ;
+    @apply uppercase font-semibold text-base leading-[1.0] bg-alt-dark text-black p-4 rounded-[10px] cursor-pointer ;
   }
 
   button:hover {

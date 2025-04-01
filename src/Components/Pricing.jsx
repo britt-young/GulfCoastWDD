@@ -118,7 +118,7 @@ const Pricing = () => {
           <h3
             id={tier.id}
             className={classNames(
-              tier.featured ? "text-main-dark" : "text-black",
+              tier.featured ? "text-main" : "text-black",
               "text-base/7 font-semibold"
             )}
           >
@@ -127,7 +127,7 @@ const Pricing = () => {
           <p className="mt-4 flex items-baseline gap-x-2">
             <span
               className={classNames(
-                tier.featured ? "text-main-dark" : "text-black",
+                tier.featured ? "text-main" : "text-black",
                 "text-5xl font-semibold tracking-tight"
               )}
             >
@@ -162,7 +162,7 @@ const Pricing = () => {
                 <CheckIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-main-dark" : "text-black",
+                    tier.featured ? "text-main" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -174,7 +174,7 @@ const Pricing = () => {
                 <XCircleIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-main-dark" : "text-black",
+                    tier.featured ? "text-main" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -188,7 +188,7 @@ const Pricing = () => {
             onClick={handleClick}
             className={classNames(
               tier.featured
-                ? "bg-main-dark/90 text-white shadow-xs hover:bg-main-dark"
+                ? "bg-main/90 text-white shadow-xs hover:bg-main"
                 : "text-black bg-white/60 hover:bg-white",
               "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
             )}

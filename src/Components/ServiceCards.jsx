@@ -40,7 +40,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -61,7 +61,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -82,7 +82,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -103,7 +103,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -124,7 +124,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -145,7 +145,7 @@ const ServiceCards = () => {
           <div>
             <Link
               to="/services"
-              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt-dark rounded-lg px-2 py-1 w-fit"
+              className="flex items-center justify-start font-bold hover:text-main dark:hover:text-alt rounded-lg px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>

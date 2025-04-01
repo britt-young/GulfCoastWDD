@@ -147,7 +147,7 @@ const ContactForm = () => {
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-alt-dark dark:bg-white/15 dark:border-white/15"
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-alt dark:bg-white/15 dark:border-white/15"
                 >
                   {/* Checkmark icon */}
                   <svg

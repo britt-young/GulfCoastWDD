@@ -10,7 +10,7 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="pt-20 pb-20 lg:px-80 flex flex-col lg:flex-row items-center justify-center gap-8 ">
+    <div className="pt-20 pb-20 lg:px-50 flex flex-col lg:flex-row items-center justify-center gap-2 lg:h-[700px]">
       <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>
@@ -25,8 +25,8 @@ const HomeHeader = () => {
         <picture>
           <img
             src={mockup}
-            alt="A random image"
-            className="w-300 p-5 lg:p-0"
+            alt="mockup img"
+            className="w-500 p-5 lg:p-0"
           />
         </picture>
       </div>

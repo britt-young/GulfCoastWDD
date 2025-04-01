@@ -31,8 +31,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">Sarah T.</h4>
-              <h4 className="text-main dark:text-alt-dark leading-5">
+              <h4 className="text-main dark:text-alt leading-5 font-bold">Sarah T.</h4>
+              <h4 className="text-main dark:text-alt leading-5">
                 Marketing Director, Local Florist
               </h4>
             </div>
@@ -53,8 +53,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">John M.</h4>
-              <h4 className="text-main dark:text-alt-dark leading-5">CEO, Local Farm</h4>
+              <h4 className="text-main dark:text-alt leading-5 font-bold">John M.</h4>
+              <h4 className="text-main dark:text-alt leading-5">CEO, Local Farm</h4>
             </div>
           </div>
         </div>
@@ -73,8 +73,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt-dark leading-5 font-bold">Emily R.</h4>
-              <h4 className="text-main dark:text-alt-dark leading-5">
+              <h4 className="text-main dark:text-alt leading-5 font-bold">Emily R.</h4>
+              <h4 className="text-main dark:text-alt leading-5">
                 Founder, Riley Addison Photography
               </h4>
             </div>
