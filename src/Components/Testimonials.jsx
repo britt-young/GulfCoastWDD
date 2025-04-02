@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-200 lg:py-20 p-15">
+    <div className="bg-gray-200 dark:bg-mainb-dark/80 lg:py-20 p-15">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">what our clients are saying</h2>
@@ -16,9 +16,9 @@ const Testimonials = () => {
       {/* Testimonial Grid */}
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
-        <div className="card min-h-full">
+        <div className="card min-h-full dark:bg-mainb/30">
           <div className="my-2 items-start justify-start flex-grow relative">
-            <p className="mb-15">
+            <p className="dark:text-black mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -31,17 +31,17 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt leading-5 font-bold">Sarah T.</h4>
-              <h4 className="text-main dark:text-alt leading-5">
+              <h4 className="text-main dark:text-mainb-dark leading-5 font-bold">Sarah T.</h4>
+              <h4 className="text-main dark:text-mainb-dark leading-5">
                 Marketing Director, Local Florist
               </h4>
             </div>
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full">
+        <div className="card min-h-full dark:bg-mainb/30">
           <div className="my-2 items-start justify-start flex-grow relative">
-            <p className="mb-15">
+            <p className="dark:text-black mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -53,15 +53,15 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt leading-5 font-bold">John M.</h4>
-              <h4 className="text-main dark:text-alt leading-5">CEO, Local Farm</h4>
+              <h4 className="text-main dark:text-mainb-dark leading-5 font-bold">John M.</h4>
+              <h4 className="text-main dark:text-mainb-dark leading-5">CEO, Local Farm</h4>
             </div>
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full">
+        <div className="card min-h-full dark:bg-mainb/30">
           <div className="my-2 items-start justify-start flex-grow relative">
-            <p className="mb-15">
+            <p className="dark:text-black mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
               </span>
@@ -73,8 +73,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-main dark:text-alt leading-5 font-bold">Emily R.</h4>
-              <h4 className="text-main dark:text-alt leading-5">
+              <h4 className="text-main dark:text-mainb-dark leading-5 font-bold">Emily R.</h4>
+              <h4 className="text-main dark:text-mainb-dark leading-5">
                 Founder, Riley Addison Photography
               </h4>
             </div>
