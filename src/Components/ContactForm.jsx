@@ -133,7 +133,7 @@ const ContactForm = () => {
                 defaultValue="default"
                 className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 "
               >
-                <option value="default" disabled selected>
+                <option value="default" disabled>
                   Select a package
                 </option>
                 <option value="sum">Lump-Sum</option>
