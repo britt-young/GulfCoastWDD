@@ -35,7 +35,7 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   autoComplete="family-name"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ const ContactForm = () => {
                   name="company"
                   type="text"
                   autoComplete="organization"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   id="message"
                   name="message"
                   rows={2}
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                   defaultValue={""}
                 />
               </div>
@@ -147,7 +147,7 @@ const ContactForm = () => {
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-alt dark:bg-white/15 dark:border-white/15"
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-secondary dark:bg-white/15 dark:border-white/15"
                 >
                   {/* Checkmark icon */}
                   <svg
@@ -168,7 +168,7 @@ const ContactForm = () => {
                 By selecting this, you agree to our
                 <Link
                   to="/privacy"
-                  className="text-blue-600 dark:text-alt underline ms-1"
+                  className="text-blue-600 dark:text-secondary underline ms-1"
                 >
                   privacy policy
                 </Link>

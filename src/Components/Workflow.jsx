@@ -22,7 +22,7 @@ const Workflow = () => {
           <h2 className="font-bold">How we build the perfect website</h2>
         </div>
         <div className="flex items-center justify-start">
-          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alt lg:pl-5 lg:pt-0 pt-5">
+          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-secondary lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

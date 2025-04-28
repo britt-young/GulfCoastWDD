@@ -116,9 +116,9 @@ const FAQsStepper = () => {
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
-            className={`px-4 py-2 border rounded cursor-pointer hover:bg-alt ${
+            className={`px-4 py-2 border rounded cursor-pointer hover:bg-secondary ${
               activeCategory === category
-                ? "bg-main text-black"
+                ? "bg-primary text-black"
                 : "bg-white text-black"
             }`}
             onClick={() => setActiveCategory(category)}
@@ -134,7 +134,7 @@ const FAQsStepper = () => {
           <div key={index} className="my-4 border rounded">
             <div
               onClick={() => toggleExpand(index)}
-              className="px-4 py-1 cursor-pointer bg-main hover:bg-alt flex justify-between items-center"
+              className="px-4 py-1 cursor-pointer bg-primary hover:bg-secondary flex justify-between items-center"
             >
               <span className="font-semibold">{item[0]}</span> {/* Question */}
               <span className="text-xl">
