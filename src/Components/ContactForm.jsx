@@ -9,7 +9,7 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="bg-gray-100 dark:bg-black dark:shadow-lg dark:shadow-white/30 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
+      <div className="bg-gray-100 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
         <div className="mx-auto text-center">
           <h3>Send us a message</h3>
           <p className="mt-1">
@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
+                className="block text-sm/6 font-semibold text-gray-900"
               >
                 First name
               </label>
@@ -35,14 +35,14 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
+                className="block text-sm/6 font-semibold  text-gray-900"
               >
                 Last name
               </label>
@@ -52,14 +52,14 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   autoComplete="family-name"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
+                className="block text-sm/6 font-semibold  text-gray-900"
               >
                 Company
               </label>
@@ -69,14 +69,14 @@ const ContactForm = () => {
                   name="company"
                   type="text"
                   autoComplete="organization"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
+                className="block text-sm/6 font-semibold  text-gray-900"
               >
                 Email
               </label>
@@ -86,14 +86,14 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
+                className="block text-sm/6 font-semibold  text-gray-900"
               >
                 Phone number
               </label>
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary"
                 />
               </div>
             </div>
@@ -126,12 +126,12 @@ const ContactForm = () => {
             </div> */}
 
             {/* Pricing Selection */}
-            <label className="block text-sm/6 font-semibold dark:text-white text-gray-900">
+            <label className="block text-sm/6 font-semibold  text-gray-900">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
                 defaultValue="default"
-                className="bg-white dark:bg-white/15 px-3.5 py-1 text-base font-normal text-gray-400 outline-1  dark:outline-gray-900 outline-gray-300 "
+                className="bg-white  px-3.5 py-1 text-base font-normal text-gray-400 outline-1  outline-gray-300 "
               >
                 <option value="default" disabled>
                   Select a package
@@ -147,7 +147,7 @@ const ContactForm = () => {
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-secondary dark:bg-white/15 dark:border-white/15"
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-secondary "
                 >
                   {/* Checkmark icon */}
                   <svg
@@ -164,11 +164,11 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm/6 text-gray-600 dark:text-white">
+              <Label className="text-sm/6 text-gray-600 ">
                 By selecting this, you agree to our
                 <Link
                   to="/privacy"
-                  className="text-blue-600 dark:text-secondary underline ms-1"
+                  className="text-blue-600  underline ms-1"
                 >
                   privacy policy
                 </Link>

@@ -26,7 +26,7 @@ const HomeHeader = () => {
           <img
             src={mockup}
             alt="mockup img"
-            className="h-full w-400 p-0 pl-5 lg:pl-0"
+            className="w-400 p-0 pl-5 lg:pl-0 "
           />
         </picture>
       </div>
