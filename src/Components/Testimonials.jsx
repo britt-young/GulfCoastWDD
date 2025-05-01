@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-200  lg:py-20 p-15">
+    <div className="bg-light  lg:py-20 p-15">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">what our clients are saying</h2>
@@ -31,8 +31,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-primary  leading-5 font-bold">Sarah T.</h4>
-              <h4 className="text-primary  leading-5">
+              <h4 className="text-black  leading-5 font-bold">Sarah T.</h4>
+              <h4 className="text-black  leading-5">
                 Marketing Director, Local Florist
               </h4>
             </div>
@@ -53,8 +53,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-primary  leading-5 font-bold">John M.</h4>
-              <h4 className="text-primary  leading-5">CEO, Local Farm</h4>
+              <h4 className="text-black  leading-5 font-bold">John M.</h4>
+              <h4 className="text-black  leading-5">CEO, Local Farm</h4>
             </div>
           </div>
         </div>
@@ -73,8 +73,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="text-primary  leading-5 font-bold">Emily R.</h4>
-              <h4 className="text-primary  leading-5">
+              <h4 className="text-black leading-5 font-bold">Emily R.</h4>
+              <h4 className="text-black leading-5">
                 Founder, Riley Addison Photography
               </h4>
             </div>

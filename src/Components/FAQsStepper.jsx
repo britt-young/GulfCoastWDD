@@ -101,7 +101,7 @@ const FAQsStepper = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-24 bg-gray-300">
+    <div className="flex flex-col items-center py-24 bg-light">
       {/* Title/Subtitle */}
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">how can we help</h4>
