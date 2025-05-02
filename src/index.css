@@ -63,7 +63,7 @@
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold text-black  tracking-tighter;
+    @apply uppercase text-[1em] font-semibold text-primary tracking-tighter;
   }
 
   p {

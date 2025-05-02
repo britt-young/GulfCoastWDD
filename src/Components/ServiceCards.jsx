@@ -14,7 +14,7 @@ const ServiceCards = () => {
       navigate("/Contact"); // Navigate to the "/contact" route
     };
   return (
-    <div className="bg-light  relative px-6 py-24 lg:px-8">
+    <div className="bg-light relative px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 ">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>

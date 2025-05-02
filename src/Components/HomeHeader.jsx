@@ -10,7 +10,7 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="pt-20 pb-20 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-0 lg:h-[550px]">
+    <div className="bg-secondary pt-20 pb-20 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-0 lg:h-[550px]">
       <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>

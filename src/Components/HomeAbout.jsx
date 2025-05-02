@@ -13,7 +13,7 @@ const HomeAbout = () => {
         <img
           src="https://images.pexels.com/photos/20044366/pexels-photo-20044366/free-photo-of-hands-holding-smartphone-over-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="about"
-          className="w-full lg:h-185 h-140 object-cover rounded-3xl"
+          className="w-full lg:h-185 h-140 object-cover rounded-3xl shadow-2xl shadow-white/30"
         />
       </div>
       <div className="flex flex-col items-start lg:mr-80 mt-10 lg:mt-0">

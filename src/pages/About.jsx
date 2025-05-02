@@ -10,7 +10,7 @@ const About = () => {
       <AboutHeader />
       <Bio />
       <Workflow />
-      <div className="bg-red-500 flex flex-col items-center">PORTFOLIO SECTION HERE MAYBE???</div>
+      <div className="bg-special flex flex-col items-center">PORTFOLIO SECTION HERE MAYBE???</div>
       <Testimonials />
     </div>
   )
