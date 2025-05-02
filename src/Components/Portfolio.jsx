@@ -59,7 +59,7 @@ const Portfolio = () => {
           />
           {/* Overlay Text */}
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
-            <p className="text-white p-4">Riley Addison Photography</p>
+            <p className="text-white p-4">Local Florist</p>
             <NavLink
               to="https://google.com"
               target="_blank"
@@ -80,7 +80,7 @@ const Portfolio = () => {
           />
           {/* Overlay Text */}
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
-            <p className="text-white p-4">Riley Addison Photography</p>
+            <p className="text-white p-4">Julia Rose Photography</p>
             <NavLink
               to="https://google.com"
               target="_blank"
