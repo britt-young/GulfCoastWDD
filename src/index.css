@@ -16,32 +16,6 @@
   --color-alternate: #C5D7D9;
   --color-special: #768C44;
   --color-light: #F2F1EF;
-
-  /* --color-main: #284958;
-  --color-primary: #FAFBFC;
-  --color-alt: #a4bab7;
-  --color-main-dark: #1D3742;
-  --color-primary-dark: #19303A;
-  --color-alt-dark: #6DB0BA;
-  --color-alt-black: #1A1A1A; */
-
-  /* --color-main: #1f3b47;
-  --color-alt: #a4bab7;
-  --color-main-dark: #1f473e;
-  --color-alt-dark: #a4baab; */
-
-  /* greens
---color-main: #818E75;
---color-alt: #A8B69A;
---color-main-dark: #53635D;
---color-alt-dark: #E0E2C6; */
-
-  /*  --color-main: #79abac;
-  --color-alt: #aedbde;
-  --color-main-dark: #326263;
-  --color-alt-dark: #61999d;
-   --color-main-dark: #325443;
-  --color-alt-dark: #94a264; */
 }
 
 @layer base {

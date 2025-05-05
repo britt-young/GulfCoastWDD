@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import mockup from "../assets/mockup2.svg"
+import mockup from "../assets/mockup3.svg"
 
 const HomeHeader = () => {
   const navigate = useNavigate();
@@ -11,7 +11,8 @@ const HomeHeader = () => {
 
   return (
     <div className="bg-secondary pt-20 pb-20 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-0 lg:h-[550px]">
-      <div className="h-full items-start justify-center flex flex-col px-5 lg:px-0">
+      {/* change below div to items-start if second div is un-commented */}
+      <div className="h-full items-center justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h2>small business web design</h2>
         <p className="mt-5">
