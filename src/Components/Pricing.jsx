@@ -92,7 +92,7 @@ const Pricing = () => {
       <div className="mx-auto text-center">
         <div>
           <h4>our packages</h4>
-          <h2>
+          <h2 className="text-white">
             Pricing packages for any business
           </h2>
         </div>
@@ -111,14 +111,14 @@ const Pricing = () => {
           className={classNames(
             tier.featured
               ? "relative bg-white/70 shadow-xl"
-              : "bg-white/20 shadow-xl",
+              : "bg-white/30 shadow-xl",
             "rounded-3xl lg:p-8 shadow-white/30 p-10 h-full flex flex-col mx-8 lg:mx-0"
           )}
         >
           <h3
             id={tier.id}
             className={classNames(
-              tier.featured ? "text-primary" : "text-black",
+              tier.featured ? "text-secondary" : "text-black",
               "text-base/7 font-semibold"
             )}
           >
@@ -127,7 +127,7 @@ const Pricing = () => {
           <p className="mt-4 flex items-baseline gap-x-2">
             <span
               className={classNames(
-                tier.featured ? "text-primary" : "text-black",
+                tier.featured ? "text-black" : "text-black",
                 "text-5xl font-semibold tracking-tight"
               )}
             >
@@ -162,7 +162,7 @@ const Pricing = () => {
                 <CheckIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-primary" : "text-black",
+                    tier.featured ? "text-secondary" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -188,7 +188,7 @@ const Pricing = () => {
             onClick={handleClick}
             className={classNames(
               tier.featured
-                ? "bg-primary/90 text-white shadow-xs hover:bg-primary"
+                ? "bg-primary/60 text-black shadow-xs hover:bg-primary"
                 : "text-black bg-white/60 hover:bg-white",
               "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
             )}

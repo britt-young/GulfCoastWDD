@@ -6,63 +6,81 @@ const GuarenteeGrid = () => {
     <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10">
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, mollitia?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          mollitia?
+        </p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate?</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          cupiditate?
+        </p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          mollitia?
+        </p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, incidunt.</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          cupiditate?
+        </p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          mollitia?
+        </p>
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold">
+        <h5 className="font-bold text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-primary" />
           </span>
           Our Guarentee
         </h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rerum?</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          cupiditate?
+        </p>
       </div>
     </div>
   );
