@@ -28,7 +28,7 @@ const ServiceCards = () => {
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0">
         {/* Feature Card */}
         <div className="card">
-        <TbDeviceMobileStar className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <TbDeviceMobileStar className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className=" mt-5">Mobile First Design</h4>
             <p className=" mt-2 mb-3">
@@ -49,7 +49,7 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <GiSpeedometer className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <GiSpeedometer className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="mt-5">Optimized Page Loading</h4>
             <p className="mt-2 mb-3">
@@ -70,7 +70,7 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <LiaLaptopCodeSolid className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <LiaLaptopCodeSolid className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className="mt-5">Device Responsiveness</h4>
             <p className="mt-2 mb-3">
@@ -91,7 +91,7 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <GiEarthAmerica className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <GiEarthAmerica className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className=" mt-5">Based in USA</h4>
             <p className=" mt-2 mb-3">
@@ -112,7 +112,7 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <ImEmbed2 className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <ImEmbed2 className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className=" mt-5">Mobile First Design</h4>
             <p className=" mt-2 mb-3">
@@ -133,10 +133,10 @@ const ServiceCards = () => {
 
         {/* Feature Card */}
         <div className="card">
-        <ImEmbed2 className="text-white  bg-primary  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
+        <ImEmbed2 className="text-white  bg-alternate  rounded-lg p-4 w-20 h-20 mb-4 absolute transform -translate-x-0.5 -top-11" />
           <div className="my-2 items-start justify-start">
             <h4 className=" mt-5">Mobile First Design</h4>
-            <p className=" mt-2 mb-3">
+            <p className="mt-2 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
               provident cupiditate, quasi earum temporibus numquam!

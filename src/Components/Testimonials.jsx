@@ -16,7 +16,7 @@ const Testimonials = () => {
       {/* Testimonial Grid */}
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
-        <div className="card min-h-full bg-alternate">
+        <div className="card min-h-full bg-primary shadow-black/30">
           <div className="my-2 items-start justify-start flex-grow relative">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
@@ -39,7 +39,7 @@ const Testimonials = () => {
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full bg-alternate">
+        <div className="card min-h-full  bg-primary shadow-black/30">
           <div className="my-2 items-start justify-start flex-grow relative">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
@@ -59,7 +59,7 @@ const Testimonials = () => {
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full bg-alternate">
+        <div className="card min-h-full  bg-primary shadow-black/30">
           <div className="my-2 items-start justify-start flex-grow relative">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">

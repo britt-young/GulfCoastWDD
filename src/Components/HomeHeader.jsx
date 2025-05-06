@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import mockup from "../assets/mockup3.svg"
+import mockup from "../assets/mockup.svg"
+
 
 const HomeHeader = () => {
   const navigate = useNavigate();
@@ -10,12 +11,12 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="bg-secondary pt-20 pb-20 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-0 lg:h-[550px]">
+    <div className="pt-10 pb-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 lg:h-[550px]">
       {/* change below div to items-start if second div is un-commented */}
-      <div className="h-full items-center justify-center flex flex-col px-5 lg:px-0">
+      <div className="h-fit lg:w-[550px] items-start justify-center flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
-        <h2>small business web design</h2>
-        <p className="mt-5">
+        <h1>Small business web designs</h1>
+        <p className="mt-10 text-white">
           No drag-and-drop webpage builders or templates. We offer 100%
           hand-coded websites for your business starting at only $145/mo with
           free hosting and edits*
@@ -27,7 +28,7 @@ const HomeHeader = () => {
           <img
             src={mockup}
             alt="mockup img"
-            className="w-400 p-0 pl-5 lg:pl-0 "
+            className="lg:w-[600px]"
           />
         </picture>
       </div>

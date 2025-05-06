@@ -49,14 +49,14 @@ const NavBar = () => {
   return (
     <div className="">
       <nav
-        className={`flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
+        className={`h-fit flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-primary  text-black  shadow-lg shadow-light/30  z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-primary/70  text-black  shadow-lg shadow-light/30  z-50 my-8 lg:mx-40 mx-8"
+            ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-light/30 z-50 rounded-none m-0 scroll-smooth "
+            : "lg:rounded-3xl rounded-xl bg-white/40 text-white shadow-lg shadow-light/30 z-50 my-8 lg:mx-56 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
-        <img src={main} alt="logo" className="lg:mr-0 mr-40 lg:h-20 lg:py-5" />
+        <img src={main} alt="logo" className="mr-0 lg:h-full lg:py-5" />
 
         {/* Desktop menu (centered) */}
         <ul className="hidden lg:flex space-x-10 tracking-tighter mx-auto">
@@ -143,7 +143,7 @@ const NavBar = () => {
           {/* Sign Up Button (Mobile) */}
           <div className="flex justify-center">
           <button
-            className="p-2 w-full max-w-xs cursor-pointer"
+            className="p-2 w-full max-w-xs cursor-pointer bg-secondary hover:bg-light"
             onClick={() => {
               navigate("/Contact");
               setIsMenuOpen(false); // Close the menu after clicking
