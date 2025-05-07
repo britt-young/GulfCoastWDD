@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="bg-light  relative px-6 lg:py-25 lg:px-8">
+    <div className="main-background relative px-6 lg:py-25 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
@@ -29,7 +29,7 @@ const Portfolio = () => {
       {/* Portfolio Cards */}
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-4 lg:pt-15 px-0 ">
         {/* First Webpage */}
-        <div className="relative group border-2 border-white">
+        <div className="relative group border-2">
           {/* Image */}
           <img
             src={farm}
@@ -50,7 +50,7 @@ const Portfolio = () => {
         </div>
 
         {/* Second Webpage */}
-        <div className="relative group border-2 border-white">
+        <div className="relative group border-2">
           {/* Image */}
           <img
             src={florist}
@@ -71,7 +71,7 @@ const Portfolio = () => {
         </div>
 
         {/* Third Webpage */}
-        <div className="relative group border-2 border-white">
+        <div className="relative group border-2">
           {/* Image */}
           <img
             src={photo}

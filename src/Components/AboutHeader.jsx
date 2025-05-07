@@ -3,7 +3,7 @@ import React from "react";
 const AboutHeader = () => {
   return (
     <div>
-      <h2 className="flex items-end h-[150px] justify-center pb-10">
+      <h2 className="flex items-end h-[150px] justify-center pb-10 text-white">
         About Us
       </h2>
     </div>
