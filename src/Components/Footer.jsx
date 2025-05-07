@@ -11,7 +11,7 @@ const Footer = () => {
       navigate("/Contact"); // Navigate to the "/contact" route
     };
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 pattern-background p-20 lg:px-80 lg:gap-40 gap-20 z-0">
+    <div className="grid grid-cols-1 lg:grid-cols-2 pattern-background p-10 lg:px-80 lg:gap-40 gap-20 z-0">
       <div className="flex flex-col lg:items-start justify-between py-5 lg:order-first order-last">
         <img src={logo} alt="logo" className="h-15"/>
         <p className="my-5 mr-10">
