@@ -2,12 +2,12 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="main-background relative isolate  px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
+    <div className="main-background relative isolate px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <div className="mx-auto lg:mr-20">
         <img
           src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="about"
-          className="w-full lg:h-185 h-140 object-cover rounded-3xl border-4"
+          className="w-full lg:h-185 h-140 object-cover rounded-lg border-4"
         />
       </div>
       <div className="flex flex-col items-start lg:mr-90 mt-10 lg:mt-0">
