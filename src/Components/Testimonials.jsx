@@ -16,8 +16,8 @@ const Testimonials = () => {
       {/* Testimonial Grid */}
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative">
+        <div className="card group min-h-full shadow-black/30">
+          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
@@ -31,16 +31,14 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className="leading-5 font-bold">Sarah T.</h4>
-              <h4 className="leading-5">
-                Marketing Director, Local Florist
-              </h4>
+              <h5 className="leading-5 font-bold">Sarah T.</h5>
+              <h5 className="leading-5">Marketing Director, Local Florist</h5>
             </div>
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative">
+        <div className="card group min-h-full shadow-black/30">
+          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
@@ -53,14 +51,14 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className= "leading-5 font-bold">John M.</h4>
-              <h4 className=" leading-5">CEO, Local Farm</h4>
+              <h5 className="leading-5 font-bold">John M.</h5>
+              <h5 className=" leading-5">CEO, Local Farm</h5>
             </div>
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative">
+        <div className="card group min-h-full shadow-black/30">
+          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
@@ -73,10 +71,8 @@ const Testimonials = () => {
               </span>
             </p>
             <div className="absolute bottom-0 left-0 right-0">
-              <h4 className=" leading-5 font-bold">Emily R.</h4>
-              <h4 className=" leading-5">
-                Founder, Julia Rose Photography
-              </h4>
+              <h5 className=" leading-5 font-bold">Emily R.</h5>
+              <h5 className=" leading-5">Founder, Julia Rose Photography</h5>
             </div>
           </div>
         </div>

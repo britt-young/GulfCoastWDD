@@ -8,15 +8,15 @@ const HomeAbout = () => {
     navigate("/About"); // Navigate to the "/contact" route
   }
   return (
-    <div className="pattern-background relative px-6 py-25 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
-      <div className="mx-auto lg:mr-20">
+    <div className="pattern-background relative mx-auto max-w-7xl px-6 lg:px-8 py-25 flex lg:flex-row flex-col items-center justify-center lg:gap-10">
+      <div className="w-full">
         <img
           src="https://images.pexels.com/photos/20044366/pexels-photo-20044366/free-photo-of-hands-holding-smartphone-over-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="about"
-          className="w-full lg:h-185 h-140 object-cover rounded-3xl shadow-2xl shadow-white/30 border-4"
+          className="w-full lg:h-185 h-140 object-cover rounded-3xl shadow-2xl shadow-white/30"
         />
       </div>
-      <div className="flex flex-col items-start lg:mr-80 mt-10 lg:mt-0">
+      <div className="flex flex-col items-start mt-10 lg:mt-0 w-full">
         <h4 className="">Gulf Coast Guarentee</h4>
         <h2 className="text-white">Websites starting at $145 per month</h2>
         <p className="mt-5">
