@@ -30,7 +30,7 @@ const HomeAbout = () => {
         <div className="w-full">
           <GuarenteeGrid />
         </div>
-        <button className="mt-10" onClick={handleClick}>About Us</button>
+        <button className="mt-10 w-full flex justify-center mx-auto" onClick={handleClick}>Read More About Us</button>
       </div>
     </div>
   );

@@ -160,7 +160,7 @@ const ServiceCards = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-0">
-        <button className="lg:mt-0 mt-5" onClick={handleClick}>
+        <button className="lg:mt-0 mt-10" onClick={handleClick}>
           get started
         </button>
       </div>
