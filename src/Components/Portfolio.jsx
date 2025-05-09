@@ -29,7 +29,7 @@ const Portfolio = () => {
       {/* Portfolio Cards */}
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-4 lg:pt-15 px-0 ">
         {/* First Webpage */}
-        <div className="relative group border-2">
+        <div className="relative group">
           {/* Image */}
           <img
             src={farm}
@@ -38,7 +38,7 @@ const Portfolio = () => {
           />
           {/* Overlay Text */}
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
-            <p className="text-white p-4">Local Farm</p>
+            <p className="text-white p-2">Local Farm</p>
             <NavLink
               to="https://google.com"
               target="_blank"
@@ -50,7 +50,7 @@ const Portfolio = () => {
         </div>
 
         {/* Second Webpage */}
-        <div className="relative group border-2">
+        <div className="relative group">
           {/* Image */}
           <img
             src={florist}
@@ -59,7 +59,7 @@ const Portfolio = () => {
           />
           {/* Overlay Text */}
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
-            <p className="text-white p-4">Local Florist</p>
+            <p className="text-white p-2 ">Local Florist</p>
             <NavLink
               to="https://google.com"
               target="_blank"
@@ -71,7 +71,7 @@ const Portfolio = () => {
         </div>
 
         {/* Third Webpage */}
-        <div className="relative group border-2">
+        <div className="relative group">
           {/* Image */}
           <img
             src={photo}
@@ -80,7 +80,7 @@ const Portfolio = () => {
           />
           {/* Overlay Text */}
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
-            <p className="text-white p-4">Julia Rose Photography</p>
+            <p className="text-white p-2">Julia Rose Photography</p>
             <NavLink
               to="https://google.com"
               target="_blank"
