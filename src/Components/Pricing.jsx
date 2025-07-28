@@ -76,7 +76,7 @@ const Pricing = () => {
   }
 
   return (
-    <div className="pattern-background relative isolate px-6 py-20 lg:px-8">
+    <div className="relative isolate px-6 py-20 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -92,7 +92,7 @@ const Pricing = () => {
       <div className="mx-auto text-center">
         <div>
           <h4>our packages</h4>
-          <h2 className="text-white">
+          <h2 className="">
             Pricing packages for any business
           </h2>
         </div>
@@ -118,7 +118,7 @@ const Pricing = () => {
           <h3
             id={tier.id}
             className={classNames(
-              tier.featured ? "text-secondary" : "text-black",
+              tier.featured ? "text-" : "text-black",
               "text-base/7 font-semibold"
             )}
           >
@@ -162,7 +162,7 @@ const Pricing = () => {
                 <CheckIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-secondary" : "text-black",
+                    tier.featured ? "text-" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -174,7 +174,7 @@ const Pricing = () => {
                 <XCircleIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-primary" : "text-black",
+                    tier.featured ? "text-red-500" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -188,7 +188,7 @@ const Pricing = () => {
             onClick={handleClick}
             className={classNames(
               tier.featured
-                ? "bg-primary/60 text-black shadow-xs hover:bg-primary"
+                ? "bg-red-500/60 text-black shadow-xs hover:bg-red-500"
                 : "text-black bg-white/60 hover:bg-white",
               "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
             )}

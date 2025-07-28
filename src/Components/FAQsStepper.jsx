@@ -101,7 +101,7 @@ const FAQsStepper = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-24 main-background">
+    <div className="flex flex-col items-center py-24">
       {/* Title/Subtitle */}
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
         <h4 className="">how can we help</h4>
@@ -116,9 +116,9 @@ const FAQsStepper = () => {
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
-            className={`px-4 py-2 border rounded cursor-pointer hover:bg-secondary ${
+            className={`px-4 py-2 border rounded cursor-pointer hover:bg- ${
               activeCategory === category
-                ? "bg-primary text-black"
+                ? "bg-red-500 text-black"
                 : "bg-white text-black"
             }`}
             onClick={() => setActiveCategory(category)}
@@ -134,7 +134,7 @@ const FAQsStepper = () => {
           <div key={index} className="my-4 border rounded">
             <div
               onClick={() => toggleExpand(index)}
-              className="px-4 py-1 cursor-pointer bg-primary hover:bg-secondary flex justify-between items-center"
+              className="px-4 py-1 cursor-pointer bg-red-500 hover:bg-red-600 flex justify-between items-center"
             >
               <span className="font-semibold">{item[0]}</span> {/* Question */}
               <span className="text-xl">

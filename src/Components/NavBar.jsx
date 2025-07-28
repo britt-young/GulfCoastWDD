@@ -52,7 +52,7 @@ const NavBar = () => {
         className={`h-fit flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
           isScrolled
             ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-light/30 z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-white/40 text-white shadow-lg shadow-light/30 z-50 my-8 lg:mx-56 mx-8"
+            : "lg:rounded-3xl rounded-xl bg-white/40  shadow-lg shadow-light/30 z-50 my-8 lg:mx-56 mx-8"
         }`}
       >
         {/* Logo or brand (far left) */}
@@ -107,7 +107,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-0  bg-primary bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed inset-0  bg-red-500 bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -143,7 +143,7 @@ const NavBar = () => {
           {/* Sign Up Button (Mobile) */}
           <div className="flex justify-center">
           <button
-            className="p-2 w-full max-w-xs cursor-pointer bg-secondary hover:bg-light"
+            className="p-2 w-full max-w-xs cursor-pointer bg- hover:bg-light"
             onClick={() => {
               navigate("/Contact");
               setIsMenuOpen(false); // Close the menu after clicking

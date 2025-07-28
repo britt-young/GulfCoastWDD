@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="main-background relative px-6 lg:py-25 lg:px-8">
+    <div className="relative px-6 lg:py-25 lg:px-8">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
@@ -61,7 +61,7 @@ const Portfolio = () => {
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
             <p className="text-white p-2 ">Local Florist</p>
             <NavLink
-              to="https://google.com"
+              to="https://localflorist.dev"
               target="_blank"
               rel="noopener noreferrer"
             >
