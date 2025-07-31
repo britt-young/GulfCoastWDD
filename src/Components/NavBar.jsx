@@ -115,8 +115,8 @@ const NavBar = () => {
                 to={item === "Home" ? "/" : `/${item}`}
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
-                  `hover:font-semibold ${
-                    isActive ? "font-bold" : ""
+                  `relative font-semibold text-lg transition-colors duration-200 ${
+                    isActive ? "text-black dark:text-white border-b-2 border-secondary dark:border-white" : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white text-sm"
                   } transition`
                 }
               >
