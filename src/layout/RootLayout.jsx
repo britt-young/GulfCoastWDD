@@ -7,7 +7,7 @@ const RootLayout = () => {
     <div className="flex flex-col min-h-screen main-background">
       {/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-34">
         <Outlet />
       </main>
       <Footer className="" />

@@ -1,162 +1,142 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5"; // Close icon
-import { FiMoon, FiSun } from "react-icons/fi"; // Moon and Sun icons for dark/light mode
+import { IoClose } from "react-icons/io5";
+import { FiMoon, FiSun } from "react-icons/fi";
 import main from "../assets/logos/main.svg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode
-
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleLinkClick = () => {
-    setIsMenuOpen(false); // Close the menu when a link is clicked
-  };
-
-  // Toggle Dark Mode
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
-  // Add or remove dark mode class to the body based on the state
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
+    document.body.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
 
+  const toggleDarkMode = () => setIsDarkMode((prev) => !prev);
+  const handleLinkClick = () => setIsMenuOpen(false);
+
   return (
-    <div className="">
+    <header className=" h-34 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out">
       <nav
-        className={`h-fit flex justify-between items-center px-4 transition-all duration-200 ease-in-out ${
+        className={`flex items-center justify-between px-6 lg:px-20 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "fixed top-0 left-0 w-full bg-white text-black shadow-lg shadow-light/30 z-50 rounded-none m-0 scroll-smooth "
-            : "lg:rounded-3xl rounded-xl bg-white/40  shadow-lg shadow-light/30 z-50 my-8 lg:mx-56 mx-8"
+            ? "bg-white shadow-lg dark:bg-gray-900"
+            : "bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
         }`}
       >
-        {/* Logo or brand (far left) */}
-        <img src={main} alt="logo" className="mr-0 lg:h-full lg:py-5" />
+        {/* Logo */}
+        <img src={main} alt="Logo" className="h-10" />
 
-        {/* Desktop menu (centered) */}
-        <ul className="hidden lg:flex space-x-20 mx-auto text-lg">
-          <li className="hover:font-bold">
-            <NavLink to="/"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              Home
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/About"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              About
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/FAQs" className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              FAQs
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/Contact"  className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              Contact
-            </NavLink>
-          </li>
+        {/* Nav Links */}
+        <ul className="hidden lg:flex items-center gap-20 text-lg">
+          {["Home", "About", "FAQs", "Contact"].map((item) => (
+            <li key={item}>
+              <NavLink
+                to={item === "Home" ? "/" : `/${item}`}
+                onClick={handleLinkClick}
+                className={({ isActive }) =>
+                  `relative font-semibold text-lg transition-colors duration-200 ${
+                    isActive
+                      ? "text-black dark:text-white border-b-2 border-secondary dark:border-white"
+                      : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white text-sm"
+                  }`
+                }
+              >
+                {item}
+              </NavLink>
+            </li>
+          ))}
         </ul>
 
-        {/* Right side (CTA and Dark Mode toggle) */}
-        {/* CTA Button (Desktop) */}
-        <button
-          className="hidden lg:flex items-center mr-2"
-          onClick={() => navigate("/Contact")}
-        >
-          Get started today
-        </button>
+        {/* Right Section */}
+        <div className="flex items-center space-x-4">
+          {/* CTA Button */}
+          <button
+            onClick={() => navigate("/Contact")}
+            className="hidden lg:inline-block px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition"
+          >
+            Get Started
+          </button>
 
-        {/* Dark Mode Toggle */}
-        <div onClick={toggleDarkMode} className="text-2xl mx-2 cursor-pointer">
-          {isDarkMode ? <FiSun /> : <FiMoon />}
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={toggleDarkMode}
+            className="text-2xl text-gray-800 dark:text-gray-200"
+            aria-label="Toggle Dark Mode"
+          >
+            {isDarkMode ? <FiSun /> : <FiMoon />}
+          </button>
+
+          {/* Hamburger Menu */}
+          <button
+            onClick={() => setIsMenuOpen(true)}
+            className="lg:hidden text-2xl"
+            aria-label="Open Menu"
+          >
+            <GiHamburgerMenu />
+          </button>
         </div>
-
-        {/* Mobile menu toggle */}
-        <button
-          className="lg:hidden my-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <GiHamburgerMenu />
-        </button>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0  bg-red-500 bg-opacity-90 z-50 transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "block" : "hidden"
+        className={`fixed inset-0 bg-white dark:bg-gray-900 bg-opacity-95 transition-opacity duration-300 ease-in-out ${
+          isMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* Close button (X) */}
+        {/* Close Icon */}
         <button
-          className="absolute top-4 right-4 text-3xl text-gray-700"
           onClick={() => setIsMenuOpen(false)}
+          className="absolute top-6 right-6 text-3xl text-gray-800 dark:text-white"
+          aria-label="Close Menu"
         >
           <IoClose />
         </button>
 
-        <ul className="flex flex-col space-y-6 items-center justify-center h-full text-xl">
-          <li className="hover:font-bold ">
-            <NavLink to="/" className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              Home
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/About" className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              About
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/FAQs" className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              FAQs
-            </NavLink>
-          </li>
-          <li className="hover:font-bold ">
-            <NavLink to="/Contact" className={({ isActive }) => (isActive ? "font-bold" : "hover:font-bold")} onClick={handleLinkClick}>
-              Contact
-            </NavLink>
-          </li>
-          {/* Sign Up Button (Mobile) */}
-          <div className="flex justify-center">
+        {/* Mobile Nav Links */}
+        <ul className="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium">
+          {["Home", "About", "FAQs", "Contact"].map((item) => (
+            <li key={item}>
+              <NavLink
+                to={item === "Home" ? "/" : `/${item}`}
+                onClick={handleLinkClick}
+                className={({ isActive }) =>
+                  `hover:font-semibold ${
+                    isActive ? "font-bold" : ""
+                  } transition`
+                }
+              >
+                {item}
+              </NavLink>
+            </li>
+          ))}
+          {/* Mobile CTA */}
           <button
-            className="p-2 w-full max-w-xs cursor-pointer bg- hover:bg-light"
             onClick={() => {
               navigate("/Contact");
-              setIsMenuOpen(false); // Close the menu after clicking
+              setIsMenuOpen(false);
             }}
+            className="mt-4 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
           >
-            Get Started Today
+            Get Started
           </button>
-          </div>
         </ul>
-
-        
       </div>
-    </div>
+    </header>
   );
 };
 
