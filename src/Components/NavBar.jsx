@@ -5,52 +5,47 @@ import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import main from "../assets/logos/main.svg";
 
-const NavBar = () => {
+const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    document.body.classList.toggle("dark", isDarkMode);
-  }, [isDarkMode]);
+  const navItems = ["Home", "About", "FAQs", "Contact"];
+  const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
-  const toggleDarkMode = () => setIsDarkMode((prev) => !prev);
-  const handleLinkClick = () => setIsMenuOpen(false);
+  const linkBaseClasses =
+    "relative font-semibold text-lg transition-colors duration-200";
+  const activeClasses = "text-black border-b-2 border-link-light";
+  const inactiveClasses = "text-gray-700 hover:text-black text-sm";
 
   return (
-    <header className=" h-34 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit">
       <nav
         className={`flex items-center justify-between px-6 lg:px-20 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "bg-white shadow-lg dark:bg-gray-900"
-            : "bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
+            ? "bg-white shadow-lg"
+            : "bg-white/70 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
         }`}
       >
         {/* Logo */}
         <img src={main} alt="Logo" className="h-10" />
 
-        {/* Nav Links */}
+        {/* Desktop Nav Links */}
         <ul className="hidden lg:flex items-center gap-20 text-lg">
-          {["Home", "About", "FAQs", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <li key={item}>
               <NavLink
-                to={item === "Home" ? "/" : `/${item}`}
-                onClick={handleLinkClick}
+                to={getPath(item)}
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
-                  `relative font-semibold text-lg transition-colors duration-200 ${
-                    isActive
-                      ? "text-black dark:text-white border-b-2 border-secondary dark:border-white"
-                      : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white text-sm"
+                  `${linkBaseClasses} ${
+                    isActive ? activeClasses : inactiveClasses
                   }`
                 }
               >
@@ -60,12 +55,12 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* Right Section */}
+        {/* Right Controls */}
         <div className="flex items-center space-x-4">
-          {/* CTA Button */}
+          {/* CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition"
+            className="hidden lg:inline-block px-4 py-2 rounded-lg "
           >
             Get Started
           </button>
@@ -73,13 +68,13 @@ const NavBar = () => {
           {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="text-2xl text-gray-800 dark:text-gray-200"
+            className="text-2xl bg-transparent border-none hover:text-yellow-400"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
           </button>
 
-          {/* Hamburger Menu */}
+          {/* Hamburger Icon */}
           <button
             onClick={() => setIsMenuOpen(true)}
             className="lg:hidden text-2xl"
@@ -92,38 +87,37 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-white dark:bg-gray-900 bg-opacity-95 transition-opacity duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white bg-opacity-95 transition-opacity duration-300 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* Close Icon */}
         <button
           onClick={() => setIsMenuOpen(false)}
-          className="absolute top-6 right-6 text-3xl text-gray-800 dark:text-white"
+          className="absolute top-6 right-6 text-3xl text-gray-800"
           aria-label="Close Menu"
         >
           <IoClose />
         </button>
 
-        {/* Mobile Nav Links */}
         <ul className="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium">
-          {["Home", "About", "FAQs", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <li key={item}>
               <NavLink
-                to={item === "Home" ? "/" : `/${item}`}
-                onClick={handleLinkClick}
+                to={getPath(item)}
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
-                  `relative font-semibold text-lg transition-colors duration-200 ${
-                    isActive ? "text-black dark:text-white border-b-2 border-secondary dark:border-white" : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white text-sm"
-                  } transition`
+                  `${linkBaseClasses} ${
+                    isActive ? activeClasses : inactiveClasses
+                  }`
                 }
               >
                 {item}
               </NavLink>
             </li>
           ))}
+
           {/* Mobile CTA */}
           <button
             onClick={() => {
