@@ -5,9 +5,9 @@ import ContactHeader from "../Components/ContactHeader";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       <ContactHeader />
-      <div className="lg:px-60 grid grid-cols-1 lg:grid-cols-2">
+      <div className="lg:px-60 grid grid-cols-1 lg:grid-cols-2 bg-white">
         <ContactSection />
         <ContactForm />
       </div>

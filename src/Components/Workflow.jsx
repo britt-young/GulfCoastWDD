@@ -2,7 +2,7 @@ import FlowStepper from "./FlowStepper";
 
 const Workflow = () => {
   return (
-    <div className="flex flex-col py-10 relative isolate">
+    <div className="flex flex-col py-10 relative isolate bg-blue-10">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"

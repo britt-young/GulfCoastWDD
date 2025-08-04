@@ -1,9 +1,11 @@
-import React from "react";
+import AOS from "aos";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Testimonials = () => {
   return (
-    <div className="lg:py-20 p-15">
+    <div className="lg:py-20 py-15 px-10 first-background ">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">What our clients are saying</h2>
@@ -16,8 +18,8 @@ const Testimonials = () => {
       {/* Testimonial Grid */}
       <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
         {/* Testimonial Card */}
-        <div className="card group min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
+        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
+          <div className="my-2 items-start justify-start flex-grow relative">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
@@ -37,8 +39,8 @@ const Testimonials = () => {
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card group min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
+        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
+          <div className="my-2 items-start justify-start flex-grow relative">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
@@ -57,8 +59,8 @@ const Testimonials = () => {
           </div>
         </div>
         {/* Testimonial Card */}
-        <div className="card group min-h-full shadow-black/30">
-          <div className="my-2 items-start justify-start flex-grow relative group-hover:text-black transition-colors duration-300">
+        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
+          <div className="my-2 items-start justify-start flex-grow relative  transition-colors duration-300">
             <p className=" mb-15">
               <span className="inline-flex items-start me-1">
                 <RiDoubleQuotesL />
