@@ -6,6 +6,10 @@ import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { GiEarthAmerica } from "react-icons/gi";
 import { ImEmbed2 } from "react-icons/im";
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+AOS.init();
+
 const ServiceCards = () => {
   const navigate = useNavigate();
 
@@ -24,7 +28,7 @@ const ServiceCards = () => {
         </p>
       </div>
       {/* Feature Card Grid */}
-      <div className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0">
+      <div className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0" data-aos="zoom-in" data-aos-duration="1500">
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
           <TbDeviceMobileStar className="text-white bg-blue-10 border-1 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />

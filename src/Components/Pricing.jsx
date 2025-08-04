@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useNavigate } from "react-router-dom";
 import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
 
@@ -14,7 +14,7 @@ const tiers = [
     features: [
       "Design And Development",
       "$25 Hosting Fee",
-      "5 Page Website",
+      "5 Page Website + Privacy/Terms Pages",
       "+$50/mo Unlimited Edits",
     ],
     others: [
@@ -33,7 +33,7 @@ const tiers = [
     features: [
       "Design And Development",
       "Includes Hosting",
-      "5 Page Website",
+      "5 Page Website + Privacy/Terms Pages",
       "Unlimited Edits",
       "24/7 Support",
       "Lifetime Updates",
@@ -104,21 +104,21 @@ const Pricing = () => {
 
   
       {/* Pricing Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 ">
         {tiers.map((tier, tierIdx) => (
           <div
           key={tier.id}
           className={classNames(
             tier.featured
-              ? "relative bg-white/70 shadow-xl"
+              ? "relative bg-white/90 shadow-xl"
               : "bg-white/30 shadow-xl",
-            "rounded-3xl lg:p-8 shadow-white/30 p-10 h-full flex flex-col mx-8 lg:mx-0"
+            "rounded-3xl lg:p-8 shadow-white/30 p-10 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in"
           )}
         >
           <h3
             id={tier.id}
             className={classNames(
-              tier.featured ? "text-" : "text-black",
+              tier.featured ? "text-blue-10" : "text-white",
               "text-base/7 font-semibold"
             )}
           >
@@ -162,7 +162,7 @@ const Pricing = () => {
                 <CheckIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-" : "text-black",
+                    tier.featured ? "text-blue-10" : "text-blue-10",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -174,7 +174,7 @@ const Pricing = () => {
                 <XCircleIcon
                   aria-hidden="true"
                   className={classNames(
-                    tier.featured ? "text-red-500" : "text-black",
+                    tier.featured ? "text-black" : "text-black",
                     "h-6 w-5 flex-none"
                   )}
                 />
@@ -188,9 +188,9 @@ const Pricing = () => {
             onClick={handleClick}
             className={classNames(
               tier.featured
-                ? "bg-red-500/60 text-black shadow-xs hover:bg-red-500"
-                : "text-black bg-white/60 hover:bg-white",
-              "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase"
+                ? "bg-blue-10/60 text-white shadow-lg hover:bg-blue-10 "
+                : "text-black bg-white/60 hover:bg-white ",
+              "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase hover:animate-bounce"
             )}
           >
             Get a quote
