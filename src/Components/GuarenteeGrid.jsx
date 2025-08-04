@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const GuarenteeGrid = () => {

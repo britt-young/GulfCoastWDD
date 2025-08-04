@@ -17,7 +17,7 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <div className="relative px-6 py-24 lg:px-8 first-background dark:bg-blue-10">
+    <div className="relative px-6 py-24 lg:px-8 first-background ">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 ">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
@@ -31,7 +31,7 @@ const ServiceCards = () => {
       <div className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0" data-aos="zoom-in" data-aos-duration="1500">
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="text-white bg-blue-10 border-1 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <TbDeviceMobileStar className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               Mobile First Design
@@ -53,7 +53,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <GiSpeedometer className="text-white bg-blue-10 border-1 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <GiSpeedometer className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               Loading Speed Optimization
@@ -75,7 +75,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <LiaLaptopCodeSolid className="text-white bg-blue-10 border-2 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <LiaLaptopCodeSolid className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
              Responsive Design
@@ -97,7 +97,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <GiEarthAmerica className="text-white bg-blue-10 border-2 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <GiEarthAmerica className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               Based in the USA
@@ -119,7 +119,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <ImEmbed2 className="text-white bg-blue-10 border-2 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <ImEmbed2 className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               On-Page SEO
@@ -141,7 +141,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="text-white bg-blue-10 border-2 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <TbDeviceMobileStar className="text-white bg-blue-10 border-3 border-yellow-10 border-dotted  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5 ">
             <h5 className="text-xl font-semibold">
               Mobile First Design

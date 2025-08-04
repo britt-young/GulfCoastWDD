@@ -1,14 +1,14 @@
-// import headshot from "../assets/imgs/headshot.png";
-import headshot from "../assets/imgs/owner.svg";
+import headshot from "../assets/imgs/headshot.png";
+// import headshot from "../assets/imgs/owner.svg";
 
 const Bio = () => {
   return (
-    <div className="first-background  relative isolate px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
+    <div className="first-background relative px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <div className="mx-auto lg:mr-20 mb-5 lg:mb-0">
         <img
           src={headshot}
           alt="owner headshot"
-          className="w-full lg:h-185 md:h-140 h-100 object-cover"
+          className="w-full lg:h-185 md:h-140 h-100 object-cover outline-6 outline-offset-2 outline-double outline-blue-10 rounded-lg"
         />
         {/* <p className="hidden lg:block absolute lg:bottom-34 lg:left-71  text-black bg-yellow-10/70 px-2 py-1 rounded-lg text-sm lg:text-base">
           <span className="font-semibold">Brittney Treece</span>, Owner of Gulf Coast Web Designs & Development
@@ -46,3 +46,5 @@ const Bio = () => {
 };
 
 export default Bio;
+
+
