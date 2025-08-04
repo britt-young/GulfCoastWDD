@@ -29,7 +29,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       <nav
         className={`flex items-center justify-between px-6 lg:px-20 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "bg-white/90 shadow-lg"
+            ? "bg-white shadow-lg"
             : "bg-white/90 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
         }`}
       >

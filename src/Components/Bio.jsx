@@ -1,14 +1,18 @@
-import React from "react";
+// import headshot from "../assets/imgs/headshot.png";
+import headshot from "../assets/imgs/owner.svg";
 
 const Bio = () => {
   return (
     <div className="first-background  relative isolate px-6 py-24 sm:py-32 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
-      <div className="mx-auto lg:mr-20">
+      <div className="mx-auto lg:mr-20 mb-5 lg:mb-0">
         <img
-          src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="about"
-          className="w-full lg:h-185 h-140 object-cover rounded-lg border-4"
+          src={headshot}
+          alt="owner headshot"
+          className="w-full lg:h-185 md:h-140 h-100 object-cover"
         />
+        {/* <p className="hidden lg:block absolute lg:bottom-34 lg:left-71  text-black bg-yellow-10/70 px-2 py-1 rounded-lg text-sm lg:text-base">
+          <span className="font-semibold">Brittney Treece</span>, Owner of Gulf Coast Web Designs & Development
+        </p> */}
       </div>
       <div className="flex flex-col items-start lg:mr-90 mt-10 lg:mt-0">
         <h4 className="">Gulf Coast Web Design & Development</h4>
@@ -35,6 +39,7 @@ const Bio = () => {
           laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris</p>
+          
       </div>
     </div>
   );
