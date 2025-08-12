@@ -8,9 +8,11 @@
   --breakpoint-lg: 1024px;
 
   /*light mode */
-  --color-yellow-10: #f1f414;
-  --color-blue-10: #006BDA;
-  
+  /* --color-yellow-10: #f1f414; */
+  --color-yellow-10: #d7f514;
+  --color-blue-10: #004fff;
+  --color-tan-10: #eeebe3;
+  --color-blue-11: #00194f;
 }
 
 /* @layer utilities {
@@ -23,46 +25,49 @@
 @layer base {
   body {
     @apply text-base font-sans m-0 p-0 transition-all duration-300 ease-in-out;
-    background-color: var(--color-bg-light);
-    color: var(--color-text-light);
+    background-color: var(--color-tan-10);
+    color: var(--color-blue-10);
   }
 
-  .dark body {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-dark);
-  }
+   .dark body {
+    background-color: var(--color-blue-11);
+    color: var(--color-blue-10);
+  } 
 
   h1 {
-    @apply text-[4em] font-bold  leading-15 tracking-tighter;
+    @apply text-[4em] font-bold  leading-15 tracking-tighter text-blue-10;
   }
 
   h2 {
-    @apply text-[3em] font-bold leading-12 tracking-tighter;
+    @apply text-[3em] font-bold leading-12 tracking-tighter text-blue-10;
   }
 
   h3 {
-    @apply uppercase text-[2em] font-medium;
+    @apply uppercase text-[2em] font-medium ;
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold tracking-tighter text-black;
+    @apply uppercase text-[1em] font-semibold tracking-tighter text-blue-11 dark:text-yellow-10;
   }
   h5 {
-    @apply font-semibold text-lg tracking-tight text-black;
+    @apply font-semibold text-lg tracking-tight text-white;
   }
 
   p {
-    @apply text-base leading-[1.1];
+    @apply text-base leading-[1.1] text-blue-11 dark:text-white;
   }
 
   button {
-    @apply uppercase font-semibold text-base leading-[1.0] bg-yellow-10 text-black shadow-lg p-2 rounded-[10px] cursor-pointer  ;
+    @apply uppercase font-bold text-base leading-[1.0] bg-blue-10 text-yellow-10 shadow-lg px-6 py-2 rounded-full cursor-pointer;
   }
 
   button:hover {
     @apply animate-bounce;
   }
-
+  
+  .dark button {
+    @apply bg-yellow-10 text-blue-11;
+  }
 
   a.email-link {
     @apply text-base font-semibold cursor-pointer;
@@ -77,14 +82,14 @@
 /* reusable UI */
 @layer components {
   .card {
-    @apply text-black h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-black/30 rounded-lg flex flex-col relative bg-white;
+    @apply text-white h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-black/30 rounded-lg flex flex-col relative bg-blue-11;
     /* background-color: #046362;
     background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%233d8d66' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: center; */
   }
-  
-  .first-background {
+
+  /* .first-background {
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23162a2b' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-repeat: repeat;
@@ -93,10 +98,10 @@
   }
 
   .dark .first-background {
-   background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23cdc570' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23cdc570' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: center;
     transition: background-color ease-in-out;
-  }
+  } */
 }

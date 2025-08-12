@@ -21,8 +21,8 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
 
   const linkBaseClasses =
     "relative font-semibold text-lg transition-colors duration-200";
-  const activeClasses = "text-black border-b-2 border-yellow-10";
-  const inactiveClasses = "text-gray-700 hover:text-black text-sm";
+  const activeClasses = "text-blue-11 border-b-2 border-blue-10 dark:border-yellow-10";
+  const inactiveClasses = "text-black/60 hover:text-blue-11 text-sm dark:text-white";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit">
@@ -30,7 +30,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         className={`flex items-center justify-between px-6 lg:px-20 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
             ? "bg-white shadow-lg"
-            : "bg-white/90 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
+            : "bg-white/40 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
         }`}
       >
         {/* Logo */}
@@ -60,7 +60,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block px-4 py-2 rounded-lg "
+            className="hidden lg:inline-block"
           >
             Get Started
           </button>
@@ -68,7 +68,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="text-2xl bg-transparent border-none hover:text-yellow-400"
+            className="bg-transparent shadow-none text-2xl p-0 text-blue-10 hover:text-blue-11 transition-colors duration-200 dark:text-blue-11 dark:hover:text-blue-10"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
