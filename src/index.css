@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+/* @import "./styles/fonts.css"; */
+
 
 @theme {
+--font-main: 'Inter', sans-serif;
+
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
@@ -24,7 +28,7 @@
 
 @layer base {
   body {
-    @apply text-base font-sans m-0 p-0 transition-all duration-300 ease-in-out;
+    @apply text-base font-main m-0 p-0 transition-all duration-300 ease-in-out;
     background-color: var(--color-tan-10);
     color: var(--color-blue-10);
   }
@@ -35,7 +39,7 @@
   } 
 
   h1 {
-    @apply text-[4em] font-bold  leading-15 tracking-tighter text-blue-10;
+    @apply text-[4em] font-bold leading-13 tracking-tighter text-blue-10;
   }
 
   h2 {
