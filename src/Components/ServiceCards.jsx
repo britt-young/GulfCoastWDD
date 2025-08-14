@@ -7,7 +7,7 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { ImEmbed2 } from "react-icons/im";
 
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 AOS.init();
 
 const ServiceCards = () => {
@@ -17,7 +17,7 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <div className="relative px-6 py-24 lg:px-8  ">
+    <div className="relative px-6 py-24 lg:px-8 shells">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5 ">
         <h4 className="">what we offer</h4>
         <h2 className="text-center">Our Services</h2>
@@ -28,14 +28,16 @@ const ServiceCards = () => {
         </p>
       </div>
       {/* Feature Card Grid */}
-      <div className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <TbDeviceMobileStar className="bg-alternate border-2 border-main/70 rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
-            <h5 className="text-xl font-semibold">
-              Mobile First Design
-            </h5>
+            <h5 className="text-xl font-semibold">Mobile First Design</h5>
             <p className="mt-1 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
@@ -53,7 +55,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <GiSpeedometer className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <GiSpeedometer className=" bg-alternate border-2 border-main/70  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               Loading Speed Optimization
@@ -75,11 +77,9 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <LiaLaptopCodeSolid className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <LiaLaptopCodeSolid className=" bg-alternate border-2 border-main/70  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
-            <h5 className="text-xl font-semibold">
-             Responsive Design
-            </h5>
+            <h5 className="text-xl font-semibold">Responsive Design</h5>
             <p className="mt-1 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
@@ -97,11 +97,9 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <GiEarthAmerica className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <GiEarthAmerica className=" bg-alternate border-2 border-main/70  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
-            <h5 className="text-xl font-semibold">
-              Based in the USA
-            </h5>
+            <h5 className="text-xl font-semibold">Based in the USA</h5>
             <p className="mt-1 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
@@ -119,11 +117,9 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <ImEmbed2 className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <ImEmbed2 className=" bg-alternate border-2 border-main/70  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5">
-            <h5 className="text-xl font-semibold">
-              On-Page SEO
-            </h5>
+            <h5 className="text-xl font-semibold">On-Page SEO</h5>
             <p className="mt-1 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit
@@ -141,11 +137,9 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="text-blue-10 bg-yellow-10 border-2 border-white rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          <TbDeviceMobileStar className="text-main bg-alternate border-2 border-main/70  rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
           <div className="mt-5 ">
-            <h5 className="text-xl font-semibold">
-              Mobile First Design
-            </h5>
+            <h5 className="text-xl font-semibold">Mobile First Design</h5>
             <p className="mt-1 mb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               odio commodi voluptatibus possimus provident! Quidem magnam, velit

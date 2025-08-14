@@ -21,16 +21,18 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
 
   const linkBaseClasses =
     "relative font-semibold text-lg transition-colors duration-200";
-  const activeClasses = "text-blue-11 border-b-2 border-blue-10 dark:border-yellow-10";
-  const inactiveClasses = "text-black/60 hover:text-blue-11 text-sm dark:text-white";
+  const activeClasses =
+    "text-main border-b-2 border-alternate dark:text-main";
+  const inactiveClasses =
+    "text-alternate hover:text-main text-sm dark:text-alternate";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit ">
       <nav
-        className={`flex items-center justify-between px-6 lg:px-20 py-4 transition-all duration-300 ease-in-out ${
+        className={`bg-dark flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "bg-white shadow-lg"
-            : "bg-white/40 backdrop-blur-lg rounded-xl mt-6 mx-4 lg:mx-20"
+            ? "shadow-lg"
+            : "backdrop-blur-lg mt-6 mx-4 lg:mx-10 rounded-full"
         }`}
       >
         {/* Logo */}

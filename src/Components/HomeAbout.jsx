@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import GuarenteeGrid from "./GuarenteeGrid";
-import pic from "../assets/imgs/gridpic.svg";
+import pic from "../assets/imgs/homeabout.jpg";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+AOS.init();
 
 const HomeAbout = () => {
   const navigate = useNavigate();
@@ -8,13 +11,15 @@ const HomeAbout = () => {
     navigate("/About"); // Navigate to the "/contact" route
   };
   return (
-    <div className="px-5">
+    <div className="px-5 py-20">
       <div className="bg-none px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10">
         <div className="w-full flex items-center justify-center">
           <img
             src={pic}
-            alt="Grid Image"
-            className="w-fit lg:h-185 md:h-140 h-100 object-cover"
+            alt="website preview"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            className="w-fit lg:h-185 md:h-140 h-100 object-cover rounded-lg shadow-lg"
           />
         </div>
         <div className="flex flex-col items-start">
