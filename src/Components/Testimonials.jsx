@@ -5,7 +5,7 @@ AOS.init();
 
 const Testimonials = () => {
   return (
-    <div className="lg:py-20 py-15 px-10 bg-alternate">
+    <div className="lg:py-20 py-15 px-10 bg-gray-50">
       <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">What our clients are saying</h2>

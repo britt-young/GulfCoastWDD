@@ -14,10 +14,9 @@
 
   /*light mode */
   
-  --color-main: #ece9e4;
-  --color-alternate: #a3b5be;
-  --color-dark: #B7C485;
-  --color-brown: #271205;
+  --color-main: #E6E5DE;
+  --color-alternate: #CCE19D;
+  --color-dark: #1B2524;
 
 }
 
@@ -30,18 +29,16 @@
 
 @layer base {
   body {
-    @apply text-base font-main m-0 p-0 transition-all duration-300 ease-in-out;
-    background-color: var(--color-main);
-    color: black
+    @apply text-base font-black m-0 p-0 transition-all duration-300 ease-in-out ;
   }
 
    .dark body {
-    background-color: var(--color-dark);
+    background-color: gray;
     color: white;
   } 
 
   h1 {
-    @apply text-[4em] font-bold leading-13 tracking-tighter text-main;
+    @apply text-[4em] font-bold leading-13 tracking-tighter text-black;
   }
 
   h2 {
@@ -60,7 +57,7 @@
   }
 
   p {
-    @apply text-base leading-[1.1] ;
+    @apply text-base font-normal leading-[1.1] ;
   }
 
   button {
@@ -88,7 +85,7 @@
 /* reusable UI */
 @layer components {
   .card {
-    @apply bg-main/70 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-black/30 rounded-lg flex flex-col relative;
+    @apply bg-white h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-black/30 rounded-lg flex flex-col relative;
     
 
   }
@@ -110,7 +107,7 @@
   } */
 
   .shells {
-    background-color: var(--color-alternate);
+    background-color: #f3f3f3;
     background-image: url("public/shells2.svg");
     background-repeat: repeat;
     background-size: center;

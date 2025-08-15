@@ -22,9 +22,9 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const linkBaseClasses =
     "relative font-semibold text-lg transition-colors duration-200";
   const activeClasses =
-    "text-main border-b-2 border-alternate dark:text-main";
+    "text-white border-b-2 border-black dark:text-white";
   const inactiveClasses =
-    "text-alternate hover:text-main text-sm dark:text-alternate";
+    "text-black hover:text-white text-sm dark:text-black";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit ">

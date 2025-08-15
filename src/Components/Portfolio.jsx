@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="relative px-6 py-20 lg:py-25 lg:px-8 bg-alternate">
+    <div className="relative px-6 py-20 lg:py-25 lg:px-8 bg-gray-50">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="h-full">
           <h4 className="">Portfolio</h4>
