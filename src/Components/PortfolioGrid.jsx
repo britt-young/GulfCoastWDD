@@ -56,7 +56,7 @@ const PortfolioGrid = () => {
           <h5 className="text-black p-2 font-semibold">Local Florist</h5>
           <p className="text-gray-600 pb-5">A beautiful florist website showcasing local flowers</p>
           <NavLink
-            to="https://google.com"
+            to="https://localflorist.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
