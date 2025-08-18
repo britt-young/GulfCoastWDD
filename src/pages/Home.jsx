@@ -2,9 +2,10 @@ import React from "react";
 import HomeHeader from "../Components/HomeHeader";
 import ServiceCards from "../Components/ServiceCards";
 import HomeAbout from "../Components/HomeAbout";
-import Portfolio from "../Components/Portfolio";
+// import Portfolio from "../Components/Portfolio";
 import Pricing from "../Components/Pricing";
 import Testimonials from "../Components/Testimonials";
+import PortfolioGrid from "../Components/PortfolioGrid";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <HomeHeader />
       <ServiceCards />
       <HomeAbout />
-      <Portfolio />
+      <PortfolioGrid />
+      {/* <Portfolio /> */}
       <Pricing />
       <Testimonials />  
     </div>

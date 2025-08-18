@@ -1,6 +1,9 @@
 import farm from "../assets/clippings/localFarm.png";
 import florist from "../assets/clippings/localFlorist.png";
 import photo from "../assets/clippings/photo.png";
+// import farm from "../assets/clippings/mockup-farm.svg";
+// import florist from "../assets/clippings/mockup-florist.svg";
+// import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
