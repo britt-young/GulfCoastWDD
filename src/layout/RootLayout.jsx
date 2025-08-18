@@ -11,7 +11,7 @@ const RootLayout = () => {
 }, [isDarkMode]);
 
   return (
-    <div className="flex flex-col min-h-screen transition-colors duration-300 shells">
+    <div className="flex flex-col min-h-screen transition-colors duration-300 ">
       {/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(prev => !prev)} />
       {/* Main content area */}

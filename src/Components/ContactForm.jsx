@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900"
               >
                 First name
               </label>
@@ -42,7 +42,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-semibold  text-gray-900"
+                className="block text-sm font-semibold  text-gray-900"
               >
                 Last name
               </label>
@@ -56,10 +56,10 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div className="col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm/6 font-semibold  text-gray-900"
+                className="block text-sm font-semibold  text-gray-900"
               >
                 Company
               </label>
@@ -73,10 +73,10 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div className="col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold  text-gray-900"
+                className="block text-sm font-semibold  text-gray-900"
               >
                 Email
               </label>
@@ -90,10 +90,10 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div className="col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm/6 font-semibold  text-gray-900"
+                className="block text-sm font-semibold  text-gray-900"
               >
                 Phone number
               </label>
@@ -126,7 +126,7 @@ const ContactForm = () => {
             </div> */}
 
             {/* Pricing Selection */}
-            <label className="block text-sm/6 font-semibold  text-gray-900">
+            <label className="block text-sm font-semibold  text-gray-900">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
@@ -142,12 +142,12 @@ const ContactForm = () => {
               </select>
             </label>
 
-            <Field className="flex gap-x-4 sm:col-span-2">
+            <Field className="flex gap-x-4 col-span-2">
               <div className="flex h-6 items-center">
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg- "
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-alternate "
                 >
                   {/* Checkmark icon */}
                   <svg
@@ -164,24 +164,16 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm/6 text-gray-600 ">
+              <Label className="text-sm text-gray-600 ">
                 By selecting this, you agree to our
-                <Link
-                  to="/privacy"
-                  className="text-blue-600  underline ms-1"
-                >
+                <Link to="/privacy" className="text-blue-600 underline ms-1">
                   privacy policy
                 </Link>
               </Label>
             </Field>
           </div>
           <div className="mt-10">
-            <button
-              type="submit"
-              className="block min-w-fit rounded-md px-3.5 py-2.5 text-center"
-            >
-              submit
-            </button>
+            <button type="submit">submit</button>
           </div>
         </form>
       </div>

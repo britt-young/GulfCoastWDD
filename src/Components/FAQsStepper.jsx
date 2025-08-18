@@ -116,9 +116,9 @@ const FAQsStepper = () => {
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
-            className={`px-4 py-2 border rounded cursor-pointer hover:bg- ${
+            className={`px-4 py-2 border rounded cursor-pointer hover:bg-gray-100 ${
               activeCategory === category
-                ? "bg-dark text-black"
+                ? "bg-alternate text-black"
                 : "bg-white text-black"
             }`}
             onClick={() => setActiveCategory(category)}

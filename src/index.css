@@ -2,10 +2,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 /* @import "./styles/fonts.css"; */
 
-
-
 @theme {
---font-main: 'Inter', sans-serif;
+  --font-main: "Inter", sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
@@ -13,11 +11,10 @@
   --breakpoint-lg: 1024px;
 
   /*light mode */
-  
-  --color-main: #E6E5DE;
-  --color-alternate: #CCE19D;
-  --color-dark: #1B2524;
 
+  --color-main: #e6e5de;
+  --color-alternate: #cce19d;
+  --color-dark: #1b2524;
 }
 
 /* @layer utilities {
@@ -29,13 +26,13 @@
 
 @layer base {
   body {
-    @apply text-base font-black m-0 p-0 transition-all duration-300 ease-in-out ;
+    @apply text-base font-black m-0 p-0 transition-all duration-300 ease-in-out;
   }
 
-   .dark body {
+  .dark body {
     background-color: gray;
     color: white;
-  } 
+  }
 
   h1 {
     @apply text-[4em] font-bold leading-13 tracking-tighter text-black;
@@ -50,24 +47,53 @@
   }
 
   h4 {
-    @apply uppercase text-[1em] font-semibold tracking-tighter ;
+    @apply uppercase text-[1em] font-semibold tracking-tighter;
   }
   h5 {
-    @apply font-semibold text-lg tracking-tight ;
+    @apply font-semibold text-lg tracking-tight;
   }
 
   p {
-    @apply text-base font-normal leading-[1.1] ;
+    @apply text-[1em] font-normal leading-[1.1];
   }
 
   button {
-    @apply uppercase font-bold text-base leading-[1.0] shadow-lg px-6 py-2 rounded-full cursor-pointer;
+    @apply relative overflow-visible uppercase font-bold text-base leading-[1.0] shadow-lg px-6 py-2 rounded-full cursor-pointer bg-alternate text-black;
+    z-index: 1;
   }
 
-  button:hover {
-    @apply animate-bounce;
+  button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 115%; /* halo width */
+    height: 150%; /* halo height */
+    border-radius: 9999px; /* full round */
+    background-color: var(--color-alternate); /* halo color */
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    z-index: -1; /* place behind button */
   }
-  
+
+  @keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0.75;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.2); /* how far the wave expands */
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  button:hover::after {
+    animation: ripple 1s infinite ease-in-out;
+  }
+
   /* .dark button {
     @apply ;
   } */
@@ -78,7 +104,7 @@
   }
   a.email-link:hover {
     @apply underline;
-    text-decoration-color: blue;
+    text-decoration-color: red;
   }
 }
 
@@ -86,8 +112,6 @@
 @layer components {
   .card {
     @apply bg-white h-fit m-2 mt-20 lg:mt-0 p-8 shadow-xl shadow-black/30 rounded-lg flex flex-col relative;
-    
-
   }
 
   /* .first-background {
@@ -108,10 +132,9 @@
 
   .shells {
     background-color: #f3f3f3;
-    background-image: url("public/shells2.svg");
+    background-image: url("/shells2.svg");
     background-repeat: repeat;
     background-size: center;
     fill-opacity: 0.05;
-
   }
 }

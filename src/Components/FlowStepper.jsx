@@ -8,10 +8,10 @@ const FlowStepper = () => {
     <div className="flex-col flex lg:flex-row mx-auto lg:gap-20 gap-0 mb-5">
       {/* Step1 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-        <div className="first-background  relative lg:h-60 h-30 w-30 lg:w-60  shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+        <div className="bg-gray-50 relative lg:h-60 h-30 w-30 lg:w-60 shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
         <IoPeopleCircleSharp className="w-20 h-20 text-black"/>
-          <span className="first-background absolute h-15 w-15 rounded-full bg- border-4 border-blue-10  -top-6 -left-6 text-center justify-center flex items-center">
-            <h6 className="text-blue-10 font-semibold text-3xl">1</h6>
+          <span className="border-gray-50 bg-black absolute h-15 w-15 rounded-full  border-4 -top-6 -left-6 text-center justify-center flex items-center">
+            <h6 className="text-alternate font-semibold text-3xl">1</h6>
           </span>
         </div>
         <h5>Initial Consultation</h5>
@@ -21,10 +21,10 @@ const FlowStepper = () => {
       </div>
       {/* Step2 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-        <div className="first-background relative lg:h-60 h-30 w-30 lg:w-60 shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+        <div className="bg-gray-50 relative lg:h-60 h-30 w-30 lg:w-60 shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
         <IoShieldCheckmarkSharp className="w-20 h-20 text-black"/>
-        <span className="first-background  absolute h-15 w-15 rounded-full bg- border-4 border-blue-10 -top-6 -left-6 text-center justify-center flex items-center">
-          <h6 className="text-blue-10 font-semibold text-3xl">2</h6>
+        <span className="border-gray-50 bg-black absolute h-15 w-15 rounded-full border-4 -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-alternate font-semibold text-3xl">2</h6>
           </span>
         </div>
         <h5>Design Approval</h5>
@@ -34,10 +34,10 @@ const FlowStepper = () => {
       </div>
       {/* Step3 */}
       <div className="flex flex-col items-center mx-auto lg:max-w-7xl gap-4 py-10 lg:px-0 px-5">
-      <div className="first-background relative lg:h-60 h-30 w-30 lg:w-60 shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
+      <div className="bg-gray-50 relative lg:h-60 h-30 w-30 lg:w-60 shadow-lg shadow-white/40 rounded-lg items-center justify-center flex">
       <IoRocketSharp  className="w-20 h-20 text-black"/>
-      <span className="first-background absolute h-15 w-15 rounded-full bg- border-4 border-blue-10 -top-6 -left-6 text-center justify-center flex items-center">
-          <h6 className="text-blue-10 text-3xl font-semibold">3</h6>
+      <span className="border-gray-50 bg-black absolute h-15 w-15 rounded-full border-4 -top-6 -left-6 text-center justify-center flex items-center">
+          <h6 className="text-alternate text-3xl font-semibold">3</h6>
           </span>
         </div>
         <h5>Development & Launch</h5>

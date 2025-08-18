@@ -35,7 +35,7 @@ const HomeAbout = () => {
           </p>
           <GuarenteeGrid />
           <button
-            className="mt-10 w-full flex justify-center mx-auto bg-blue-10 text-white"
+            className="mt-10 w-full flex justify-center mx-auto "
             onClick={handleClick}
           >
             More About GCWDD

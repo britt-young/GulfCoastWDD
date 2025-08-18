@@ -76,7 +76,7 @@ const Pricing = () => {
   }
 
   return (
-    <div className="relative isolate px-6 py-20 lg:px-8 border-8 border-double border-white shadow-lg">
+    <div className="relative isolate px-6 py-20 lg:px-8 shadow-lg">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -104,101 +104,63 @@ const Pricing = () => {
 
   
       {/* Pricing Cards */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 ">
-        {tiers.map((tier, tierIdx) => (
-          <div
-          key={tier.id}
-          className={classNames(
-            tier.featured
-              ? "relative bg-white/90 shadow-xl"
-              : "bg-white/30 shadow-xl",
-            "rounded-3xl lg:p-8 shadow-white/30 p-10 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in"
-          )}
-        >
-          <h3
-            id={tier.id}
-            className={classNames(
-              tier.featured ? "text-blue-10" : "text-white",
-              "text-base/7 font-semibold"
-            )}
-          >
-            {tier.name}
-          </h3>
-          <p className="mt-4 flex items-baseline gap-x-2">
-            <span
-              className={classNames(
-                tier.featured ? "text-black" : "text-black",
-                "text-5xl font-semibold tracking-tight"
-              )}
-            >
-              {tier.price}
-            </span>
-            <span
-              className={classNames(
-                tier.featured ? "text-black" : "text-black",
-                "text-base"
-              )}
-            >
-              {tier.add}
-            </span>
-          </p>
-          <p
-            className={classNames(
-              tier.featured ? "text-black" : "text-black",
-              "mt-6 text-base/7"
-            )}
-          >
-            {tier.description}
-          </p>
-          <ul
-            role="list"
-            className={classNames(
-              tier.featured ? "text-black" : "text-black",
-              "mt-8 space-y-3 text-sm/6 sm:mt-10 flex-grow"
-            )}
-          >
-            {tier.features.map((feature) => (
-              <li key={feature} className="flex gap-x-3">
-                <CheckIcon
-                  aria-hidden="true"
-                  className={classNames(
-                    tier.featured ? "text-blue-10" : "text-blue-10",
-                    "h-6 w-5 flex-none"
-                  )}
-                />
-                {feature}
-              </li>
-            ))}
-            {tier.others.map((other) => (
-              <li key={other} className="flex gap-x-3">
-                <XCircleIcon
-                  aria-hidden="true"
-                  className={classNames(
-                    tier.featured ? "text-black" : "text-black",
-                    "h-6 w-5 flex-none"
-                  )}
-                />
-                {other}
-              </li>
-            ))}
-          </ul>
-          <a
-            href={tier.href}
-            aria-describedby={tier.id}
-            onClick={handleClick}
-            className={classNames(
-              tier.featured
-                ? "bg-blue-10/60 text-white shadow-lg hover:bg-blue-10 "
-                : "text-black bg-white/60 hover:bg-white ",
-              "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase hover:animate-bounce"
-            )}
-          >
-            Get a quote
-          </a>
-        </div>
-        
+<div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
+  {tiers.map((tier) => (
+    <div
+      key={tier.id}
+      className={classNames(
+        "rounded-3xl shadow-xl p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+        tier.featured ? "bg-white" : "bg-white"
+      )}
+    >
+      <h3
+        id={tier.id}
+        className={classNames(
+          tier.featured ? "text-green-500" : "text-red-500",
+          "text-base font-semibold"
+        )}
+      >
+        {tier.name}
+      </h3>
+      <p className="mt-4 flex items-baseline gap-x-2">
+        <span className="text-5xl font-semibold tracking-tight text-black">{tier.price}</span>
+        <span className="text-base text-black">{tier.add}</span>
+      </p>
+      <p className="mt-6 text-base text-black">{tier.description}</p>
+
+      <ul role="list" className="mt-8 space-y-3 text-sm sm:mt-10 flex-grow">
+        {tier.features.map((feature) => (
+          <li key={feature} className="flex gap-x-3 items-center">
+            {/* Fully opaque green check */}
+            <CheckIcon className="h-6 w-5 flex-none text-green-500" aria-hidden="true" />
+            <span className="text-black">{feature}</span>
+          </li>
         ))}
-      </div>
+        {tier.others.map((other) => (
+          <li key={other} className="flex gap-x-3 items-center">
+            {/* Fully opaque red X */}
+            <XCircleIcon className="h-6 w-5 flex-none text-red-500" aria-hidden="true" />
+            <span className="text-black">{other}</span>
+          </li>
+        ))}
+      </ul>
+
+      <a
+        href={tier.href}
+        onClick={handleClick}
+        className={classNames(
+          "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase",
+          tier.featured
+            ? "bg-green-400 text-white shadow-lg hover:bg-green-500 hover:animate-bounce"
+            : "text-black bg-gray-100 hover:bg-gray-200"
+        )}
+      >
+        Get a quote
+      </a>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

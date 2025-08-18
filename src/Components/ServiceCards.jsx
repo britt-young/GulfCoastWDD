@@ -32,7 +32,7 @@ const ServiceCards = () => {
       >
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5">
             <h5 className="text-xl font-semibold">Mobile First Design</h5>
             <p className="mt-1 mb-3">
@@ -44,7 +44,7 @@ const ServiceCards = () => {
           <div className="flex justify-end">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -52,7 +52,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5">
             <h5 className="text-xl font-semibold">
               Loading Speed Optimization
@@ -66,7 +66,7 @@ const ServiceCards = () => {
           <div className="flex justify-end">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -74,7 +74,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5">
             <h5 className="text-xl font-semibold">Responsive Design</h5>
             <p className="mt-1 mb-3">
@@ -86,7 +86,7 @@ const ServiceCards = () => {
           <div className="flex justify-end">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -94,7 +94,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5">
             <h5 className="text-xl font-semibold">Based in the USA</h5>
             <p className="mt-1 mb-3">
@@ -106,7 +106,7 @@ const ServiceCards = () => {
           <div className="flex justify-end">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -114,7 +114,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5">
             <h5 className="text-xl font-semibold">On-Page SEO</h5>
             <p className="mt-1 mb-3">
@@ -126,7 +126,7 @@ const ServiceCards = () => {
           <div className="flex justify-end">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -134,7 +134,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card */}
         <div className="card hover:scale-105 transition-all duration-300 ease-in">
-          <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" />
+          {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
           <div className="mt-5 ">
             <h5 className="text-xl font-semibold">Mobile First Design</h5>
             <p className="mt-1 mb-3">
@@ -143,10 +143,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end ">
             <Link
               to="/services"
-              className="flex items-center hover:font-bold rounded-lg px-2 py-1 w-fit"
+              className="flex items-center font-medium px-2 py-1 w-fit "
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
