@@ -128,19 +128,19 @@ const Pricing = () => {
       </p>
       <p className="mt-6 text-base text-black">{tier.description}</p>
 
-      <ul role="list" className="mt-8 space-y-3 text-sm sm:mt-10 flex-grow">
+      <ul role="list" className="lg:mt-8 space-y-3 mt-10 flex-grow ">
         {tier.features.map((feature) => (
           <li key={feature} className="flex gap-x-3 items-center">
             {/* Fully opaque green check */}
             <CheckIcon className="h-6 w-5 flex-none text-green-500" aria-hidden="true" />
-            <span className="text-black">{feature}</span>
+            <span className="text-black font-semibold">{feature}</span>
           </li>
         ))}
         {tier.others.map((other) => (
           <li key={other} className="flex gap-x-3 items-center">
             {/* Fully opaque red X */}
             <XCircleIcon className="h-6 w-5 flex-none text-red-500" aria-hidden="true" />
-            <span className="text-black">{other}</span>
+            <span className="text-black font-normal">{other}</span>
           </li>
         ))}
       </ul>

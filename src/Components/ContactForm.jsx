@@ -34,7 +34,7 @@ const ContactForm = () => {
                   id="first-name"
                   name="first-name"
                   type="text"
-                  autoComplete="given-name"
+                  autoComplete="first-name"
                   className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
                 />
               </div>
@@ -51,7 +51,7 @@ const ContactForm = () => {
                   id="last-name"
                   name="last-name"
                   type="text"
-                  autoComplete="family-name"
+                  autoComplete="last-name"
                   className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
                 />
               </div>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                   id="company"
                   name="company"
                   type="text"
-                  autoComplete="organization"
+                  autoComplete="company"
                   className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
                 />
               </div>
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
+                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 placeholder:font-normal"
                 />
               </div>
             </div>
