@@ -1,8 +1,8 @@
-import AboutHeader from '../Components/AboutHeader'
-import Bio from '../Components/Bio'
-import Workflow from '../Components/Workflow'
-import Testimonials from '../Components/Testimonials'
-import Portfolio from '../Components/Portfolio'
+import AboutHeader from "../Components/AboutHeader";
+import Bio from "../Components/Bio";
+import Workflow from "../Components/Workflow";
+import PortfolioGrid from "../Components/PortfolioGrid";
+import Testimonials from "../Components/Testimonials";
 
 const About = () => {
   return (
@@ -10,10 +10,10 @@ const About = () => {
       <AboutHeader />
       <Bio />
       <Workflow />
-      <Portfolio />
+      <PortfolioGrid />
       <Testimonials />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
