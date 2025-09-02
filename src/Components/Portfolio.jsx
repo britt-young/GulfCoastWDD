@@ -42,7 +42,7 @@ const Portfolio = () => {
           <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-black/80">
             <p className="text-white p-2">Local Farm</p>
             <NavLink
-              to="https://google.com"
+              to="https://localfarm.dev"
               target="_blank"
               rel="noopener noreferrer"
             >
