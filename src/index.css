@@ -12,9 +12,14 @@
 
   /*light mode */
 
-  --color-main: #e6e5de;
+ --color-main: #e6e5de;
+  --color-alternate: #62ccec;
+  --color-dark: rgb(94, 21, 21);
+
+
+  /* --color-main: #e6e5de;
   --color-alternate: #cce19d;
-  --color-dark: #1b2524;
+  --color-dark: #1b2524; */
 }
 
 /* @layer utilities {
