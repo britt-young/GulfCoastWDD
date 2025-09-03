@@ -40,7 +40,7 @@
   }
 
   h1 {
-    @apply text-[4em] font-bold leading-13 tracking-tighter text-black;
+    @apply text-[6em] font-bold leading-20 tracking-tighter text-black;
   }
 
   h2 {
