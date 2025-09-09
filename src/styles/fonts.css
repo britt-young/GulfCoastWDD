@@ -1,15 +1,16 @@
-/* @font-face {
-  font-display: swap;
-  font-family: 'Baloo Bhaina 2';
+/* bricolage-grotesque-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Bricolage Grotesque';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/baloo-bhaina-2-v28-latin-regular.woff2') format('woff2');
+  src: url('../fonts/bricolage-grotesque-v8-latin-regular.woff2') format('woff2'); 
 }
-
+/* bricolage-grotesque-700 - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Baloo Bhaina 2';
+  font-display: swap; 
+  font-family: 'Bricolage Grotesque';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/baloo-bhaina-2-v28-latin-700.woff2') format('woff2');
-} */
+  src: url('../fonts/bricolage-grotesque-v8-latin-700.woff2') format('woff2');
+}
