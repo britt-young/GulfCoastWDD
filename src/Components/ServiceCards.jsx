@@ -41,10 +41,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit"
+              className="flex items-center px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -63,10 +63,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit"
+              className="flex items-center px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -83,10 +83,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit"
+              className="flex items-center px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -103,10 +103,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit"
+              className="flex items-center px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -123,10 +123,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit"
+              className="flex items-center px-2 py-1 w-fit"
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>
@@ -143,10 +143,10 @@ const ServiceCards = () => {
               provident cupiditate, quasi earum temporibus numquam!
             </p>
           </div>
-          <div className="flex justify-end ">
+          <div className="flex justify-end hover:text-alternate">
             <Link
               to="/services"
-              className="flex items-center font-medium px-2 py-1 w-fit "
+              className="flex items-center px-2 py-1 w-fit "
             >
               see more <FaArrowRight className="ms-2 inline-block" />
             </Link>

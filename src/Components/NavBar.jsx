@@ -20,11 +20,11 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
   const linkBaseClasses =
-    "relative font-semibold text-lg transition-colors duration-200";
+    "relative text-lg transition-colors duration-200 text-black dark:text-white";
   const activeClasses =
-    "text-[#62ccec] dark:text-white";
+    "font-semibold";
   const inactiveClasses =
-    "text-black hover:[#62ccec] text-sm dark:text-black hover:text-[#62ccec]";
+    "font-normal hover:text-alternate";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit ">
@@ -36,10 +36,10 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         }`}
       >
         {/* Logo */}
-        <img src={main} alt="Logo" className="h-10" />
+        <img src={main} alt="Logo" className="h-14" />
 
         {/* Desktop Nav Links */}
-        <ul className="hidden lg:flex items-center gap-20 text-lg">
+        <ul className="hidden lg:flex items-center gap-20">
           {navItems.map((item) => (
             <li key={item}>
               <NavLink

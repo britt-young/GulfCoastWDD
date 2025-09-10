@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const HomeHeader = () => {
 
   return (
-    <div className="py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 lg:h-screen">
+    <div className="py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 lg:h-[80vh]">
       {/* change below div to items-start if second div is un-commented */}
       <div className="h-fit lg:w-1/2 items-start flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h1>Small business web designs</h1>
-        <p className="mt-8">
+        <p className="mt-5">
           No drag-and-drop webpage builders or templates. We offer 100%
           hand-coded websites for your business starting at only $145/mo with
           free hosting and edits*

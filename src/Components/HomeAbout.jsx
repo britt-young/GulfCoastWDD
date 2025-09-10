@@ -23,7 +23,7 @@ const HomeAbout = () => {
           />
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="">Gulf Coast Guarentee</h4>
+          <h4 className="">GCWDD Guarentee</h4>
           <h2 className="">Websites starting at $145 per month</h2>
           <p className="mt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

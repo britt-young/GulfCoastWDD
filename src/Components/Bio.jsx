@@ -8,7 +8,7 @@ const Bio = () => {
         <img
           src={headshot}
           alt="owner headshot"
-          className="w-full lg:h-185 md:h-140 h-100 object-cover outline-6 outline-offset-2 outline-double outline-blue-500 rounded-lg"
+          className="w-full lg:h-185 md:h-140 h-100 object-cover outline-2 outline-offset-1 outline-main rounded-lg"
         />
         {/* <p className="hidden lg:block absolute lg:bottom-34 lg:left-71  text-black bg-yellow-10/70 px-2 py-1 rounded-lg text-sm lg:text-base">
           <span className="font-semibold">Brittney Treece</span>, Owner of Gulf Coast Web Designs & Development

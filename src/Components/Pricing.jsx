@@ -116,7 +116,7 @@ const Pricing = () => {
       <h3
         id={tier.id}
         className={classNames(
-          tier.featured ? "text-green-500" : "text-red-500",
+          tier.featured ? "text-alt" : "text-red-600",
           "text-base font-semibold"
         )}
       >
@@ -132,14 +132,14 @@ const Pricing = () => {
         {tier.features.map((feature) => (
           <li key={feature} className="flex gap-x-3 items-center">
             {/* Fully opaque green check */}
-            <CheckIcon className="h-6 w-5 flex-none text-green-500" aria-hidden="true" />
-            <span className="text-black font-semibold">{feature}</span>
+            <CheckIcon className="h-6 w-5 flex-none text-alt" aria-hidden="true" />
+            <span className="text-black ">{feature}</span>
           </li>
         ))}
         {tier.others.map((other) => (
           <li key={other} className="flex gap-x-3 items-center">
             {/* Fully opaque red X */}
-            <XCircleIcon className="h-6 w-5 flex-none text-red-500" aria-hidden="true" />
+            <XCircleIcon className="h-6 w-5 flex-none text-red-400" aria-hidden="true" />
             <span className="text-black font-normal">{other}</span>
           </li>
         ))}
@@ -149,9 +149,9 @@ const Pricing = () => {
         href={tier.href}
         onClick={handleClick}
         className={classNames(
-          "block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase",
+          "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
           tier.featured
-            ? "bg-green-400 text-white shadow-lg hover:bg-green-500 hover:animate-bounce"
+            ? "bg-alt text-white shadow-lg hover:bg-alternate"
             : "text-black bg-gray-100 hover:bg-gray-200"
         )}
       >
