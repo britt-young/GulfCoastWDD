@@ -4,6 +4,7 @@
 
 @theme {
   --font-main: "Bricolage Grotesque", sans-serif;
+  --font-alt: "Public Sans", sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
@@ -12,11 +13,10 @@
 
   /*light mode */
 
- --color-main: #EBE9E3;
-  --color-alternate: #36665B;
-  --color-alt: #638E87;
-  --color-dark: #142E39;
-
+  --color-main: #ffffff;
+  --color-alternate: #024059;
+  --color-alt: #a7d5f2;
+  --color-dark: #024059;
 
   /* --color-main: #e6e5de;
   --color-alternate: #cce19d;
@@ -25,7 +25,8 @@
 
 @layer utilities {
   @keyframes gradient-x {
-    0%, 100% {
+    0%,
+    100% {
       background-position: 0% 50%;
     }
     50% {
@@ -36,10 +37,9 @@
   .bg-animated-gradient {
     background-image: linear-gradient(
       -45deg,
-      #EBE9E3,
-      #36665B,
-      #638E87,
-      #142E39
+      #558ba6,
+      #024059,
+      #558ba6
     );
     background-size: 400% 400%;
     animation: gradient-x 15s ease infinite;
@@ -84,45 +84,13 @@
   }
 
   button {
-    @apply relative overflow-visible uppercase font-normal text-base leading-[1.0] shadow-lg px-6 py-2 rounded-full cursor-pointer bg-alt text-white tracking-wide;
+    @apply relative overflow-visible uppercase font-alt text-base leading-[1.0] shadow-lg px-6 py-2 rounded-full cursor-pointer bg-alt text-black tracking-wide;
     z-index: 1;
   }
 
-  button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 115%; /* halo width */
-    height: 150%; /* halo height */
-    border-radius: 9999px; /* full round */
-    background-color: var(--color-alternate); /* halo color */
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
-    z-index: -1; /* place behind button */
+button:hover {
+    @apply bg-white text-black shadow-xl;
   }
-
-  @keyframes ripple {
-    0% {
-      transform: translate(-50%, -50%) scale(0.9);
-      opacity: 0.75;
-    }
-    70% {
-      transform: translate(-50%, -50%) scale(1.2); /* how far the wave expands */
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  button:hover::after {
-    animation: ripple 1s ease-in-out;
-  }
-
-  /* .dark button {
-    @apply ;
-  } */
 
   a.email-link {
     @apply text-base font-semibold cursor-pointer;

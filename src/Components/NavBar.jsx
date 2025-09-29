@@ -20,7 +20,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
   const linkBaseClasses =
-    "relative text-lg transition-colors duration-200 text-black dark:text-white";
+    "relative font-alt text-lg transition-colors duration-200 text-black dark:text-white";
   const activeClasses =
     "font-semibold";
   const inactiveClasses =
