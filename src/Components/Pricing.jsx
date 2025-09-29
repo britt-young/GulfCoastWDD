@@ -151,7 +151,7 @@ const Pricing = () => {
         className={classNames(
           "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
           tier.featured
-            ? "bg-alt text-white shadow-lg hover:bg-alternate"
+            ? "bg-alt text-black shadow-lg hover:bg-alternate hover:text-white"
             : "text-black bg-gray-100 hover:bg-gray-200"
         )}
       >

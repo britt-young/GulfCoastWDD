@@ -31,7 +31,7 @@ const Workflow = () => {
       </div>
       <FlowStepper />
       <div className="flex items-center justify-center">
-        <button>Get Started Today</button>
+        <button className="hover:bg-alternate hover:text-white">Get Started Today</button>
       </div>
     </div>
   );

@@ -118,7 +118,7 @@ const FAQsStepper = () => {
             key={category}
             className={`px-4 py-2 border rounded cursor-pointer  font-normal ${
               activeCategory === category
-                ? "bg-alt text-white border-black"
+                ? "bg-alternate text-white border-black"
                 : "bg-white text-black hover:bg-gray-100"
             }`}
             onClick={() => setActiveCategory(category)}
@@ -134,7 +134,7 @@ const FAQsStepper = () => {
           <div key={index} className="my-4 border rounded">
             <div
               onClick={() => toggleExpand(index)}
-              className=" text-black px-4 py-1 cursor-pointer bg-alt hover:bg-alternate hover:text-white flex justify-between items-center"
+              className=" text-black px-4 py-1 cursor-pointer bg-gray-200 hover:bg-alternate hover:text-white flex justify-between items-center"
             >
               <span className="font-semibold tracking-wider">{item[0]}</span> {/* Question */}
               <span className="text-xl">

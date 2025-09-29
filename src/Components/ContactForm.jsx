@@ -19,7 +19,7 @@ const ContactForm = () => {
         <form
           action="#"
           method="POST"
-          className="lg:mx-auto mx-5 max-w-xl mt-12"
+          className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -173,7 +173,7 @@ const ContactForm = () => {
             </Field>
           </div>
           <div className="mt-10">
-            <button type="submit">submit</button>
+            <button type="submit" className="hover:bg-alternate hover:text-white">submit</button>
           </div>
         </form>
       </div>

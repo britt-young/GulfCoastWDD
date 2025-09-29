@@ -42,7 +42,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>visit website</button>
+            <button className="hover:bg-alternate hover:text-white">visit website</button>
           </NavLink>
         </div>
         {/* Second Webpage */}
@@ -60,7 +60,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>visit website</button>
+            <button className="hover:bg-alternate hover:text-white">visit website</button>
           </NavLink>
         </div>
         {/* Third Webpage */}
@@ -78,7 +78,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>visit website</button>
+            <button className="hover:bg-alternate hover:text-white">visit website</button>
           </NavLink>
         </div>
       </div>
