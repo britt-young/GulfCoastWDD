@@ -1,7 +1,7 @@
 
 import { useNavigate } from "react-router-dom";
 import {PhoneArrowDownLeftIcon, EnvelopeIcon, MapPinIcon} from "@heroicons/react/24/solid";
-import logo from "../assets/logos/alt-logo.svg"
+import logo from "../assets/logos/Footer-logo-light.svg"
 
 
 const Footer = () => {

@@ -35,7 +35,7 @@ const PortfolioGrid = () => {
             className="w-full object-cover"
           />
 
-          <h5 className="text-black pt-2 font-semibold">Local Farm</h5>
+          <h5 className="text-black p-2 font-semibold">Local Farm</h5>
           <p className="text-gray-600 pb-5">A beautiful farm website showcasing local produce</p>
           <NavLink
             to="https://localfarm.dev"
@@ -74,7 +74,7 @@ const PortfolioGrid = () => {
           <h5 className="text-black p-2 font-semibold">Julia Rose Photo</h5>
           <p className="text-gray-600 pb-5">A beautiful photography website of stunning visuals</p>
           <NavLink
-            to="https://google.com"
+            to="https://juliarosephoto.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
