@@ -44,7 +44,7 @@
     background-size: 400% 400%;
     animation: gradient-x 10s ease infinite;
   }
-  /* .text-fluid {
+   /* .text-fluid {
     @apply transition-colors duration-500 font-sans m-0 p-0 box-border;
     font-size: min(3vw, 2vh); 
   } */
@@ -61,7 +61,7 @@
   }
 
   h1 {
-    @apply text-[5em] font-bold leading-20 tracking-tighter text-black;
+    @apply lg:text-[5em] text-[4em] font-bold lg:leading-20 leading-15 tracking-tighter text-black;
   }
 
   h2 {

@@ -36,7 +36,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         }`}
       >
         {/* Logo */}
-        <img src={main} alt="Logo" className="h-14" />
+        <img src={main} alt="Logo" className="lg:h-14" />
 
         {/* Desktop Nav Links */}
         <ul className="hidden lg:flex items-center gap-20">
@@ -62,7 +62,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block"
+            className="hidden lg:inline-block hover:bg-alternate hover:text-white"
           >
             Get Started
           </button>
@@ -79,7 +79,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Hamburger Icon */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden text-2xl"
+            className="lg:hidden text-2xl bg-transparent shadow-none p-0"
             aria-label="Open Menu"
           >
             <GiHamburgerMenu />
@@ -97,7 +97,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       >
         <button
           onClick={() => setIsMenuOpen(false)}
-          className="absolute top-6 right-6 text-3xl text-gray-800"
+          className="absolute top-6 right-6 text-3xl bg-transparent shadow-none p-0"
           aria-label="Close Menu"
         >
           <IoClose />
@@ -126,7 +126,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
               navigate("/Contact");
               setIsMenuOpen(false);
             }}
-            className="mt-4 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+            className="mt-4 px-6 py-2 hover:text-white rounded-lg hover:bg-alternate transition"
           >
             Get Started
           </button>
