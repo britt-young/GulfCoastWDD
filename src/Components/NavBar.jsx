@@ -29,10 +29,10 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit ">
       <nav
-        className={`bg-white/90 flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
+        className={`bg-white flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "shadow-lg "
-            : "backdrop-blur-lg mt-6 mx-4 lg:mx-10 rounded-sm "
+            ? "shadow-lg"
+            : "backdrop-blur-lg mt-6 mx-4 lg:mx-10 rounded-sm bg-white/70"
         }`}
       >
         {/* Logo */}
