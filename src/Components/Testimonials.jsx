@@ -1,12 +1,14 @@
 import AOS from "aos";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import 'aos/dist/aos.css';
+import WaveBackground from "./WaveBackground";
 AOS.init();
 
 const Testimonials = () => {
   return (
-    <div className="lg:py-20 py-15 px-10 bg-gray-50">
-      <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
+    <section className="relative lg:py-20 py-15 px-10">
+      <WaveBackground />
+      <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
         <h4 className="">testimonials</h4>
         <h2 className="">What our clients are saying</h2>
         <p className="mt-5 lg:w-200 mx-5">
@@ -79,7 +81,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

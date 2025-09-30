@@ -1,6 +1,6 @@
-
 import { useNavigate } from "react-router-dom";
 import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
+import WaveBackground2 from "./WaveBackground2";
 
 const tiers = [
   {
@@ -17,10 +17,7 @@ const tiers = [
       "5 Page Website + Privacy/Terms Pages",
       "+$50/mo Unlimited Edits",
     ],
-    others: [
-      "24/7 Support",
-      "Lifetime Updates",
-    ],
+    others: ["24/7 Support", "Lifetime Updates"],
     featured: false,
   },
   {
@@ -29,7 +26,8 @@ const tiers = [
     href: "#",
     price: "$145",
     add: "/month",
-    description: "Our most popular plan for businesses that prefer a month to month commitment",
+    description:
+      "Our most popular plan for businesses that prefer a month to month commitment",
     features: [
       "Design And Development",
       "Includes Hosting",
@@ -38,8 +36,7 @@ const tiers = [
       "24/7 Support",
       "Lifetime Updates",
     ],
-    others: [
-    ],
+    others: [],
     featured: true,
   },
   {
@@ -56,11 +53,7 @@ const tiers = [
       "Shopify Tutorial Walkthrough",
       "Fully Editable In Shopify CMS",
     ],
-    others: [
-      "Unlimited Edits",
-      "24/7 Support",
-      "Lifetime Updates",
-    ],
+    others: ["Unlimited Edits", "24/7 Support", "Lifetime Updates"],
     featured: false,
   },
 ];
@@ -73,11 +66,12 @@ const Pricing = () => {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/Contact");
-  }
+  };
 
   return (
-    <div className="relative isolate px-6 py-20 lg:px-8 shadow-lg">
-      <div
+    <section className="relative isolate px-6 py-20 lg:px-8 shadow-lg">
+      <WaveBackground2 />
+      {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
       >
@@ -88,13 +82,11 @@ const Pricing = () => {
           }}
           className="mx-auto aspect-1155/678 w-full"
         />
-      </div>
-      <div className="mx-auto text-center">
+      </div> */}
+      <div className="relative mx-auto text-center">
         <div>
           <h4>our packages</h4>
-          <h2 className="">
-            Pricing packages for any business
-          </h2>
+          <h2 className="">Pricing packages for any business</h2>
         </div>
         <p className="mt-5">
           Choose an affordable plan that’s packed with the best features for
@@ -102,66 +94,72 @@ const Pricing = () => {
         </p>
       </div>
 
-  
       {/* Pricing Cards */}
-<div className="mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
-  {tiers.map((tier) => (
-    <div
-      key={tier.id}
-      className={classNames(
-        "rounded-3xl shadow-xl p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
-        tier.featured ? "bg-white" : "bg-white"
-      )}
-    >
-      <h3
-        id={tier.id}
-        className={classNames(
-          tier.featured ? "text-alt" : "text-red-600",
-          "text-base font-semibold"
-        )}
-      >
-        {tier.name}
-      </h3>
-      <p className="mt-4 flex items-baseline gap-x-2">
-        <span className="text-5xl font-semibold tracking-tight text-black">{tier.price}</span>
-        <span className="text-base text-black">{tier.add}</span>
-      </p>
-      <p className="mt-6 text-base text-black">{tier.description}</p>
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
+        {tiers.map((tier) => (
+          <div
+            key={tier.id}
+            className={classNames(
+              "rounded-3xl shadow-xl p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              tier.featured ? "bg-white" : "bg-white"
+            )}
+          >
+            <h3
+              id={tier.id}
+              className={classNames(
+                tier.featured ? "text-alt" : "text-red-600",
+                "text-base font-semibold"
+              )}
+            >
+              {tier.name}
+            </h3>
+            <p className="mt-4 flex items-baseline gap-x-2">
+              <span className="text-5xl font-semibold tracking-tight text-black">
+                {tier.price}
+              </span>
+              <span className="text-base text-black">{tier.add}</span>
+            </p>
+            <p className="mt-6 text-base text-black">{tier.description}</p>
 
-      <ul role="list" className="lg:mt-8 space-y-3 mt-10 flex-grow ">
-        {tier.features.map((feature) => (
-          <li key={feature} className="flex gap-x-3 items-center">
-            {/* Fully opaque green check */}
-            <CheckIcon className="h-6 w-5 flex-none text-alt" aria-hidden="true" />
-            <span className="text-black ">{feature}</span>
-          </li>
+            <ul role="list" className="lg:mt-8 space-y-3 mt-10 flex-grow ">
+              {tier.features.map((feature) => (
+                <li key={feature} className="flex gap-x-3 items-center">
+                  {/* Fully opaque green check */}
+                  <CheckIcon
+                    className="h-6 w-5 flex-none text-alt"
+                    aria-hidden="true"
+                  />
+                  <span className="text-black ">{feature}</span>
+                </li>
+              ))}
+              {tier.others.map((other) => (
+                <li key={other} className="flex gap-x-3 items-center">
+                  {/* Fully opaque red X */}
+                  <XCircleIcon
+                    className="h-6 w-5 flex-none text-red-400"
+                    aria-hidden="true"
+                  />
+                  <span className="text-black font-normal">{other}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href={tier.href}
+              onClick={handleClick}
+              className={classNames(
+                "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
+                tier.featured
+                  ? "bg-alt text-black shadow-lg hover:bg-alternate hover:text-white"
+                  : "text-black bg-gray-100 hover:bg-gray-200"
+              )}
+            >
+              Get a quote
+            </a>
+          </div>
         ))}
-        {tier.others.map((other) => (
-          <li key={other} className="flex gap-x-3 items-center">
-            {/* Fully opaque red X */}
-            <XCircleIcon className="h-6 w-5 flex-none text-red-400" aria-hidden="true" />
-            <span className="text-black font-normal">{other}</span>
-          </li>
-        ))}
-      </ul>
-
-      <a
-        href={tier.href}
-        onClick={handleClick}
-        className={classNames(
-          "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
-          tier.featured
-            ? "bg-alt text-black shadow-lg hover:bg-alternate hover:text-white"
-            : "text-black bg-gray-100 hover:bg-gray-200"
-        )}
-      >
-        Get a quote
-      </a>
-    </div>
-  ))}
-</div>
-
-    </div>
+      </div>
+    </section>
   );
 };
 
