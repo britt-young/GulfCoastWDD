@@ -70,7 +70,7 @@ const Pricing = () => {
 
   return (
     <section className="relative isolate px-6 py-20 lg:px-8">
-      <WaveBackground2 />
+      {/* <WaveBackground2 /> */}
       {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"

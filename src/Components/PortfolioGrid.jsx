@@ -2,12 +2,12 @@ import farm from "../assets/clippings/mockup-farm.svg";
 import florist from "../assets/clippings/mockup-florist.svg";
 import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
-import WaveBackground from "./WaveBackground";
+import WaveBackground2 from "./WaveBackground2";
 
 const PortfolioGrid = () => {
   return (
     <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
-      <WaveBackground />
+      <WaveBackground2 />
       <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-white">
         <div className="h-full">
           <h4>Portfolio</h4>

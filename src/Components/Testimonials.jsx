@@ -7,11 +7,11 @@ AOS.init();
 
 const Testimonials = () => {
   return (
-    <section className="relative lg:py-20 py-15 px-10">
+    <section className="relative lg:py-60 py-15 px-10">
       <WaveBackground />
       <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center text-white">
-        <h4 className="uppercase tracking-wide">Testimonials</h4>
-        <h2 className="text-3xl font-bold">What our clients are saying</h2>
+        <h4 className="">Testimonials</h4>
+        <h2 className="">What our clients are saying</h2>
         <p className="mt-5 lg:w-2/3 mx-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
