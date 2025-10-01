@@ -60,7 +60,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Desktop CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block px-6 py-2 rounded-lg bg-alt text-black hover:bg-white transition"
+            className="hidden lg:inline-block bg-alt text-black hover:bg-white transition"
           >
             Get Started
           </button>
@@ -68,7 +68,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Dark Mode Toggle (desktop only) */}
           <button
             onClick={toggleDarkMode}
-            className="hidden lg:inline-block bg-transparent text-2xl text-alternate hover:scale-110 transition duration-200"
+            className="hidden lg:inline-block bg-transparent text-2xl text-gray-400 hover:scale-120 transition duration-200"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
