@@ -4,7 +4,7 @@ import { TbDeviceMobileStar } from "react-icons/tb";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WaveBackground from "./WaveBackground";
+import WaveBackground2 from "./WaveBackground2";
 AOS.init();
 
 const ServiceCards = () => {
@@ -15,11 +15,11 @@ const ServiceCards = () => {
   };
   return (
     <section className="relative overflow-hidden px-6 py-24 lg:px-8">
-      <WaveBackground />
+      <WaveBackground2 />
 
       {/* 🎯 Content (centered inside max-w-7xl) */}
       <div className="relative mx-auto max-w-7xl">
-        <div className="flex flex-col items-center justify-center py-5 text-white">
+        <div className="flex flex-col items-center justify-center py-5 text-black">
           <h4>what we offer</h4>
           <h2 className="text-center ">Our Services</h2>
           <p className="mt-5 lg:w-200 mx-5 text-center">
@@ -28,7 +28,7 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card Grid */}
         <div
-          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-20 gap-0 lg:pb-10 lg:pt-15 p-0"
+          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-10 gap-0 lg:p-10 p-0"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >

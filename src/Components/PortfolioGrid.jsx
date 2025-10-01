@@ -8,13 +8,13 @@ const PortfolioGrid = () => {
   return (
     <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
       <WaveBackground />
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-white">
         <div className="h-full">
           <h4>Portfolio</h4>
           <h2>Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start pb-10 lg:pb-0">
-          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-black lg:pl-5 lg:pt-0 pt-5">
+          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-gray-500 lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laborisLorem

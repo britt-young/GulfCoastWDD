@@ -3,7 +3,7 @@ const WaveBackground = ({ className = "" }) => {
   return (
     <div className="absolute inset-0 bg-[#022C3D] dark:bg-[#022C3D]">
       <svg
-        className="absolute inset-0 h-full w-full opacity-100 dark:opacity-40"
+        className="absolute inset-0 h-full w-full opacity-100 dark:opacity-30"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >

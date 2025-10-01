@@ -3,7 +3,7 @@ import GuarenteeGrid from "./GuarenteeGrid";
 import pic from "../assets/imgs/homeabout.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WaveBackground2 from "./WaveBackground2";
+import WaveBackground from "./WaveBackground";
 
 AOS.init();
 
@@ -15,10 +15,10 @@ const HomeAbout = () => {
 return (
   <section className="relative px-5 py-20 overflow-hidden">
     
-    <WaveBackground2 />
+    <WaveBackground />
 
     {/* Content */}
-    <div className="relative px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10">
+    <div className="relative px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-white">
       {/* Image */}
       <div className="w-full flex items-center justify-center">
         <img

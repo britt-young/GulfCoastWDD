@@ -1,4 +1,5 @@
 import AOS from "aos";
+import { FaUserCircle } from "react-icons/fa"; // placeholder avatar
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import 'aos/dist/aos.css';
 import WaveBackground from "./WaveBackground";
@@ -8,75 +9,92 @@ const Testimonials = () => {
   return (
     <section className="relative lg:py-20 py-15 px-10">
       <WaveBackground />
-      <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center">
-        <h4 className="">testimonials</h4>
-        <h2 className="">What our clients are saying</h2>
-        <p className="mt-5 lg:w-200 mx-5">
+      <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center text-white">
+        <h4 className="uppercase tracking-wide">Testimonials</h4>
+        <h2 className="text-3xl font-bold">What our clients are saying</h2>
+        <p className="mt-5 lg:w-2/3 mx-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris
+          minim veniam, quis nostrud exercitation ullamco laboris.
         </p>
       </div>
+
       {/* Testimonial Grid */}
-      <div className="mx-auto max-w-full grid grid-cols-1 lg:grid-cols-3 py-5 lg:gap-x-5 gap-y-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-5 items-center">
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
-          <div className="my-2 items-start justify-start flex-grow relative">
-            <p className=" mb-15">
-              <span className="inline-flex items-start me-1">
-                <RiDoubleQuotesL />
-              </span>
+        <div
+          className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-full shadow-md p-6"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          {/* Icon / Avatar */}
+          <div className="flex-shrink-0 text-alternate">
+            <FaUserCircle className="text-5xl" />
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-col justify-between h-full">
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
               Brittney transformed our outdated website into a modern,
-              user-friendly platform. The team was responsive and dedicated, and
-              we've seen a noticeable increase in traffic and positive feedback
+              user-friendly platform. We've seen a noticeable increase in traffic and positive feedback
               since the launch
-              <span className="inline-flex items-end ms-1">
-                <RiDoubleQuotesR />
-              </span>
+              <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
             </p>
-            <div className="absolute bottom-0 left-0 right-0">
-              <h5 className="leading-5 font-bold">Sarah T.</h5>
-              <h5 className="leading-5">Marketing Director, Local Florist</h5>
+            <div className="flex flex-col items-end pe-8">
+              <p className="text-sm">
+                Local Florist
+              </p>
             </div>
           </div>
         </div>
+
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
-          <div className="my-2 items-start justify-start flex-grow relative">
-            <p className=" mb-15">
-              <span className="inline-flex items-start me-1">
-                <RiDoubleQuotesL />
-              </span>
+        <div
+          className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-full shadow-md p-6"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="flex-shrink-0 text-alternate">
+            <FaUserCircle className="text-5xl" />
+          </div>
+          <div className="flex flex-col justify-between h-full">
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
               Thanks to Gulf Coast WDD, our e-commerce site is not only
               beautiful but also fast and user-friendly. Their attention to
               detail and expertise led to a significant boost in sales
-              <span className="inline-flex items-end ms-1">
-                <RiDoubleQuotesR />
-              </span>
+              <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
             </p>
-            <div className="absolute bottom-0 left-0 right-0">
-              <h5 className="leading-5 font-bold">John M.</h5>
-              <h5 className=" leading-5">CEO, Local Farm</h5>
+            <div className="flex flex-col items-end pe-8">
+              <p className="text-sm ">
+                Local Farm
+              </p>
             </div>
           </div>
         </div>
+
         {/* Testimonial Card */}
-        <div className="card min-h-full shadow-black/30" data-aos="zoom-in" data-aos-duration="1500">
-          <div className="my-2 items-start justify-start flex-grow relative  transition-colors duration-300">
-            <p className=" mb-15">
-              <span className="inline-flex items-start me-1">
-                <RiDoubleQuotesL />
-              </span>
+        <div
+          className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-full shadow-md p-6"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="flex-shrink-0 text-alternate">
+            <FaUserCircle className="text-5xl" />
+          </div>
+          <div className="flex flex-col justify-between h-full">
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
               Brittney brought our vision to life with a stunning and functional
               website. Their ongoing support and expertise have been invaluable
               to our business
-              <span className="inline-flex items-end ms-1">
-                <RiDoubleQuotesR />
-              </span>
+              <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
             </p>
-            <div className="absolute bottom-0 left-0 right-0">
-              <h5 className=" leading-5 font-bold">Emily R.</h5>
-              <h5 className=" leading-5">Founder, Julia Rose Photography</h5>
+            <div className="flex flex-col items-end pe-8">
+              <p className="text-sm">
+                Julia Rose Photography
+              </p>
             </div>
           </div>
         </div>
@@ -86,5 +104,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-// dark:bg-linear-240 from-[#1f3b47] to-[#3d8069] dark:text-white

@@ -85,7 +85,7 @@
     @apply uppercase text-[1em] font-semibold tracking-wide text-alt;
   }
   h5 {
-    @apply font-semibold text-lg tracking-normal text-alt;
+    @apply font-semibold text-lg tracking-normal text-alternate;
   }
 
   p {

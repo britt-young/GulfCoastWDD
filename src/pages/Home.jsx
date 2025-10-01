@@ -11,8 +11,9 @@ const Home = () => {
   return (
     <div className="min-h-screen ">
       <HomeHeader />
-      <ServiceCards />
       <HomeAbout />
+      <ServiceCards />
+      
       <PortfolioGrid />
       {/* <Portfolio /> */}
       <Pricing />

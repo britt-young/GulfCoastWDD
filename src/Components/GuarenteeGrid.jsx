@@ -2,12 +2,12 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const GuarenteeGrid = () => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10">
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10 text-black">
       {/* Snippet */}
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
@@ -20,7 +20,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
@@ -33,7 +33,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
@@ -46,7 +46,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
@@ -59,7 +59,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
@@ -72,7 +72,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold ">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-black" />
+            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
           Our Guarentee
         </h5>
