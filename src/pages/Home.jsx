@@ -16,8 +16,9 @@ const Home = () => {
       
       <PortfolioGrid />
       {/* <Portfolio /> */}
-      <Pricing />
-      <Testimonials />  
+      
+      <Testimonials />
+      <Pricing />  
     </div>
   );
 };

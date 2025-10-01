@@ -7,8 +7,8 @@ AOS.init();
 
 const Testimonials = () => {
   return (
-    <section className="relative lg:py-60 py-15 px-10">
-      <WaveBackground />
+    <section className="relative lg:py-40 py-15 px-10">
+      {/* <WaveBackground /> */}
       <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center text-white">
         <h4 className="">Testimonials</h4>
         <h2 className="">What our clients are saying</h2>

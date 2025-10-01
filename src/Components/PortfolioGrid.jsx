@@ -8,13 +8,13 @@ const PortfolioGrid = () => {
   return (
     <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
       <WaveBackground2 />
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-white">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black">
         <div className="h-full">
           <h4>Portfolio</h4>
           <h2>Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start pb-10 lg:pb-0">
-          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-gray-500 lg:pl-5 lg:pt-0 pt-5">
+          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alternate lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laborisLorem
@@ -33,8 +33,8 @@ const PortfolioGrid = () => {
         <div>
           <img src={farm} alt="Mockup Image" className="w-full object-cover" />
 
-          <h5 className="text-black p-2 font-semibold">Local Farm</h5>
-          <p className="text-gray-600 pb-5">
+          <h5 className="text-white p-2 font-semibold">Local Farm</h5>
+          <p className="text-white pb-5">
             A beautiful farm website showcasing local produce
           </p>
           <NavLink
@@ -42,7 +42,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hover:bg-alternate hover:text-white">
+            <button className="hover:bg-white hover:text-black">
               visit website
             </button>
           </NavLink>
@@ -55,8 +55,8 @@ const PortfolioGrid = () => {
             className="w-full object-cover"
           />
 
-          <h5 className="text-black p-2 font-semibold">Local Florist</h5>
-          <p className="text-gray-600 pb-5">
+          <h5 className="text-white p-2 font-semibold">Local Florist</h5>
+          <p className="text-white pb-5">
             A beautiful florist website showcasing local flowers
           </p>
           <NavLink
@@ -73,8 +73,8 @@ const PortfolioGrid = () => {
         <div className="relative group">
           <img src={photo} alt="Mockup Image" className="w-full object-cover" />
 
-          <h5 className="text-black p-2 font-semibold">Julia Rose Photo</h5>
-          <p className="text-gray-600 pb-5">
+          <h5 className="text-white p-2 font-semibold">Julia Rose Photo</h5>
+          <p className="text-white pb-5">
             A beautiful photography website of stunning visuals
           </p>
           <NavLink
