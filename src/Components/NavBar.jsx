@@ -20,90 +20,110 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
   const linkBaseClasses =
-    "relative font-alt text-lg transition-colors duration-200 text-black dark:text-white";
-  const activeClasses =
-    "font-semibold";
-  const inactiveClasses =
-    "font-normal hover:text-alternate";
+    "relative font-alt text-lg transition-colors duration-200";
+  const activeClasses = "font-semibold";
+  const inactiveClasses = "font-normal hover:font-semibold";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit ">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit">
       <nav
-        className={`bg-white flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
+        className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "shadow-lg"
-            : "backdrop-blur-lg mt-6 mx-4 lg:mx-10 rounded-sm bg-white/70"
+            ? "shadow-lg bg-white dark:bg-gray-900"
+            : "bg-transparent text-white mt-6 mx-4 lg:mx-10"
         }`}
       >
         {/* Logo */}
-        <img src={main} alt="Logo" className="lg:h-14" />
+        <img src={main} alt="Logo" className="lg:h-10 h-8" />
 
-        {/* Desktop Nav Links */}
-        <ul className="hidden lg:flex items-center gap-20">
-          {navItems.map((item) => (
-            <li key={item}>
-              <NavLink
-                to={getPath(item)}
-                onClick={() => setIsMenuOpen(false)}
-                className={({ isActive }) =>
-                  `${linkBaseClasses} ${
-                    isActive ? activeClasses : inactiveClasses
-                  }`
-                }
-              >
-                {item}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {/* Right Section */}
+        <div className="flex items-center space-x-6">
+          {/* Desktop Nav Links */}
+          <ul className="hidden lg:flex gap-10">
+            {navItems.map((item) => (
+              <li key={item}>
+                <NavLink
+                  to={getPath(item)}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `${linkBaseClasses} ${
+                      isActive ? activeClasses : inactiveClasses
+                    }`
+                  }
+                >
+                  {item}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
 
-        {/* Right Controls */}
-        <div className="flex items-center space-x-4">
-          {/* CTA */}
+          {/* Desktop CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block hover:bg-alternate hover:text-white"
+            className="hidden lg:inline-block px-6 py-2 rounded-lg bg-alt text-black hover:bg-white transition"
           >
             Get Started
           </button>
 
-          {/* Dark Mode Toggle */}
+          {/* Dark Mode Toggle (desktop only) */}
           <button
             onClick={toggleDarkMode}
-            className="bg-transparent shadow-none text-2xl p-0 text-blue-10 hover:text-blue-11 transition-colors duration-200 dark:text-blue-11 dark:hover:text-blue-10"
+            className="hidden lg:inline-block bg-transparent text-2xl text-alternate hover:scale-110 transition duration-200"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
           </button>
 
-          {/* Hamburger Icon */}
+          {/* Hamburger / Close Toggle (mobile only) */}
           <button
-            onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden text-2xl bg-transparent shadow-none p-0"
-            aria-label="Open Menu"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden relative w-8 h-8 flex items-center justify-center bg-alternate"
+            aria-label="Toggle Menu"
           >
-            <GiHamburgerMenu />
+            {/* Hamburger Icon */}
+            <GiHamburgerMenu
+              className={`absolute text-2xl text-white transition-all duration-300 transform ${
+                isMenuOpen
+                  ? "opacity-0 rotate-90 scale-75"
+                  : "opacity-100 rotate-0 scale-100"
+              }`}
+            />
+
+            {/* Close Icon */}
+            <IoClose
+              className={`absolute text-3xl text-white  transition-all duration-300 transform ${
+                isMenuOpen
+                  ? "opacity-100 rotate-0 scale-100"
+                  : "opacity-0 -rotate-90 scale-75"
+              }`}
+            />
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 bg-white bg-opacity-95 transition-opacity duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
-      >
-        <button
-          onClick={() => setIsMenuOpen(false)}
-          className="absolute top-6 right-6 text-3xl bg-transparent shadow-none p-0"
-          aria-label="Close Menu"
-        >
-          <IoClose />
-        </button>
+        onClick={() => setIsMenuOpen(false)}
+      />
 
-        <ul className="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium">
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Header with Logo + Close (Close is hidden since it's now morphing into hamburger) */}
+        <div className="p-4 mt-6 flex border-b border-gray-200 dark:border-gray-700">
+          <img src={main} alt="Logo" className="h-8" />
+        </div>
+
+        {/* Mobile Nav Links */}
+        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium">
           {navItems.map((item) => (
             <li key={item}>
               <NavLink
@@ -119,18 +139,20 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
               </NavLink>
             </li>
           ))}
+        </ul>
 
-          {/* Mobile CTA */}
+        {/* Mobile CTA */}
+        <div className="flex justify-start mt-10 px-6">
           <button
             onClick={() => {
               navigate("/Contact");
               setIsMenuOpen(false);
             }}
-            className="mt-4 px-6 py-2 hover:text-white rounded-lg hover:bg-alternate transition"
+            className="px-6 py-2 rounded-lg bg-alternate text-white hover:bg-alt hover:text-black transition"
           >
             Get Started
           </button>
-        </ul>
+        </div>
       </div>
     </header>
   );

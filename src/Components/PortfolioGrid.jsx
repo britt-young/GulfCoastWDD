@@ -6,7 +6,7 @@ import WaveBackground from "./WaveBackground";
 
 const PortfolioGrid = () => {
   return (
-    <section className="px-6 py-20 lg:px-8 relative overflow-hidden">
+    <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
       <WaveBackground />
       <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="h-full">
