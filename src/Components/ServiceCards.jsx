@@ -14,7 +14,7 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative overflow-hidden px-6 py-24 lg:px-8 bg-white">
+    <section className="relative overflow-hidden px-6 py-20 lg:px-8 bg-white">
       {/* <WaveBackground2 /> */}
 
       {/* 🎯 Content (centered inside max-w-7xl) */}
@@ -28,22 +28,22 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card Grid */}
         <div
-          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-10 gap-0 lg:p-10 p-0"
+          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-10 gap-0 lg:p-8 p-0"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-xl font-semibold">Mobile First Design</h5>
+              <h5 className="text-alt">Mobile First Design</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit"
@@ -53,10 +53,10 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-xl font-semibold">
+              <h5 className="text-alt">
                 Loading Speed Optimization
               </h5>
               <p className="mt-1 mb-3">
@@ -65,7 +65,7 @@ const ServiceCards = () => {
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit"
@@ -75,17 +75,17 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-xl font-semibold">Responsive Design</h5>
+              <h5 className="text-alt">Responsive Design</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit"
@@ -95,17 +95,17 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-xl font-semibold">Based in the USA</h5>
+              <h5 className="text-alt">Based in the USA</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit"
@@ -115,17 +115,17 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-xl font-semibold">On-Page SEO</h5>
+              <h5 className="text-alt">On-Page SEO</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit"
@@ -135,17 +135,17 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5 ">
-              <h5 className="text-xl font-semibold">Mobile First Design</h5>
+              <h5 className="text-alt">Mobile First Design</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
                 velit provident cupiditate, quasi earum temporibus numquam!
               </p>
             </div>
-            <div className="flex justify-end hover:text-alternate">
+            <div className="flex justify-end hover:text-alt">
               <Link
                 to="/services"
                 className="flex items-center px-2 py-1 w-fit "
