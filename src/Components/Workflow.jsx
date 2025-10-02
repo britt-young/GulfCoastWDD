@@ -1,6 +1,12 @@
 import FlowStepper from "./FlowStepper";
+import { useNavigate } from "react-router-dom";
 
 const Workflow = () => {
+  const navigate = useNavigate();
+    const handleClick = () => {
+      navigate("/About"); // Navigate to the "/contact" route
+    };
+
   return (
     <div className="flex flex-col py-10 relative isolate bg-white">
       <div
@@ -21,7 +27,7 @@ const Workflow = () => {
           <h2 className="font-bold">How we build the perfect website</h2>
         </div>
         <div className="flex items-center justify-start">
-          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-black lg:pl-5 lg:pt-0 pt-5">
+          <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alternate dark:border-alt lg:pl-5 lg:pt-0 pt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -31,7 +37,7 @@ const Workflow = () => {
       </div>
       <FlowStepper />
       <div className="flex items-center justify-center">
-        <button className="hover:bg-alternate hover:text-white">Get Started Today</button>
+        <button className="hover:bg-alternate hover:text-white" onClick={handleClick} >Schedule a Call</button>
       </div>
     </div>
   );

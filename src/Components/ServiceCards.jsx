@@ -21,7 +21,7 @@ const ServiceCards = () => {
       <div className="relative mx-auto max-w-7xl">
         <div className="flex flex-col items-center justify-center py-5 text-black">
           <h4>what we offer</h4>
-          <h2 className="text-center ">Our Services</h2>
+          <h2 className="text-center ">Services included in all our packages</h2>
           <p className="mt-5 lg:w-200 mx-5 text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit...
           </p>
@@ -36,7 +36,7 @@ const ServiceCards = () => {
           <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-alt">Mobile First Design</h5>
+              <h5 className="text-alt">User-Friendly Features</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
@@ -45,7 +45,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/features"
                 className="flex items-center px-2 py-1 w-fit"
               >
                 see more <FaArrowRight className="ms-2 inline-block" />
@@ -67,7 +67,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/optimization"
                 className="flex items-center px-2 py-1 w-fit"
               >
                 see more <FaArrowRight className="ms-2 inline-block" />
@@ -87,7 +87,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/responsiveness"
                 className="flex items-center px-2 py-1 w-fit"
               >
                 see more <FaArrowRight className="ms-2 inline-block" />
@@ -98,7 +98,7 @@ const ServiceCards = () => {
           <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5">
-              <h5 className="text-alt">Based in the USA</h5>
+              <h5 className="text-alt">User Security and Web Encryption</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
@@ -107,7 +107,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/security"
                 className="flex items-center px-2 py-1 w-fit"
               >
                 see more <FaArrowRight className="ms-2 inline-block" />
@@ -127,7 +127,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/seo"
                 className="flex items-center px-2 py-1 w-fit"
               >
                 see more <FaArrowRight className="ms-2 inline-block" />
@@ -138,7 +138,7 @@ const ServiceCards = () => {
           <div className="card hover:scale-105 transition-all duration-300 ease-in bg-alternate text-white">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="mt-5 ">
-              <h5 className="text-alt">Mobile First Design</h5>
+              <h5 className="text-alt">Shopify Store Integration</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
                 odio commodi voluptatibus possimus provident! Quidem magnam,
@@ -147,7 +147,7 @@ const ServiceCards = () => {
             </div>
             <div className="flex justify-end hover:text-alt">
               <Link
-                to="/services"
+                to="/services/shopify"
                 className="flex items-center px-2 py-1 w-fit "
               >
                 see more <FaArrowRight className="ms-2 inline-block" />

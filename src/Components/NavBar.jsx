@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -8,7 +8,20 @@ import main from "../assets/logos/Nav-logo-light.svg";
 const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // services dropdown
+  const servicesRef = useRef(null);
   const navigate = useNavigate();
+
+  // Close Services dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (servicesRef.current && !servicesRef.current.contains(e.target)) {
+        setIsServicesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -16,7 +29,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["Home", "About", "FAQs", "Contact"];
+  const navItems = ["Home", "About", "Services", "FAQs", "Contact"];
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
   const linkBaseClasses =
@@ -39,22 +52,109 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         {/* Right Section */}
         <div className="flex items-center space-x-6">
           {/* Desktop Nav Links */}
-          <ul className="hidden lg:flex gap-10">
-            {navItems.map((item) => (
-              <li key={item}>
-                <NavLink
-                  to={getPath(item)}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={({ isActive }) =>
-                    `${linkBaseClasses} ${
-                      isActive ? activeClasses : inactiveClasses
-                    }`
-                  }
-                >
-                  {item}
-                </NavLink>
-              </li>
-            ))}
+          <ul className="hidden lg:flex gap-10 items-center">
+            {navItems.map((item) =>
+              item === "Services" ? (
+                <li key={item} className="relative" ref={servicesRef}>
+                  {/* Dropdown Trigger */}
+                  <div
+                    onClick={() => setIsServicesOpen((prev) => !prev)}
+                    className="cursor-pointer inline-flex items-center gap-1 font-alt text-lg font-normal hover:font-semibold"
+                  >
+                    Services
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        isServicesOpen ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+
+                  {/* Dropdown Menu */}
+                  {isServicesOpen && (
+                    <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg divide-y divide-gray-200 z-50">
+                      <li>
+                        <NavLink
+                          to="/services/features"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          User-Friendly Features
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services/optimization"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Page Speed Optimization
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services/responsiveness"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Responsive Design
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services/security"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Cyber Security
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services/seo"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          On-Page SEO
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services/shopify"
+                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Shopify Integration
+                        </NavLink>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+              ) : (
+                <li key={item}>
+                  <NavLink
+                    to={getPath(item)}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={({ isActive }) =>
+                      `${linkBaseClasses} ${
+                        isActive ? activeClasses : inactiveClasses
+                      }`
+                    }
+                  >
+                    {item}
+                  </NavLink>
+                </li>
+              )
+            )}
           </ul>
 
           {/* Desktop CTA */}

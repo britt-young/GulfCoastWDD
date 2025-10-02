@@ -24,7 +24,7 @@ return (
         <img
           src={pic}
           alt="website preview"
-          data-aos="zoom-in"
+          data-aos="fade-right"
           data-aos-duration="1500"
           className="w-fit lg:h-185 md:h-140 h-100 object-cover rounded-lg shadow-lg"
         />
@@ -46,10 +46,10 @@ return (
         <GuarenteeGrid />
 
         <button
-          className="mt-10 w-full flex justify-center mx-auto"
+          className="mt-10 w-full flex justify-center mx-auto bg-alternate text-white hover:bg-alt hover:text-black"
           onClick={handleClick}
         >
-          More About GCWDD
+         About Us
         </button>
       </div>
     </div>

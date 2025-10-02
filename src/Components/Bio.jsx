@@ -1,13 +1,9 @@
 import headshot from "../assets/imgs/headshot.png";
-import WaveBackground from "./WaveBackground";
-// import headshot from "../assets/imgs/owner.svg";
 
 
 const Bio = () => {
   return (
-    <section className="relative px-5 py-20 overflow-hidden">
-      <WaveBackground />
-    <div className="relative px-6 lg:py-24 py-10 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
+    <div className="bg-white px-6 lg:py-24 py-10 lg:px-8 grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <div className="mx-auto lg:mr-20 mb-5 lg:mb-0">
         <img
           src={headshot}
@@ -46,7 +42,6 @@ const Bio = () => {
           
       </div>
     </div>
-    </section>
   );
 };
 
