@@ -1,4 +1,4 @@
-import seo from "../../public/imgs/seo.jpg";
+import seo from "../assets/imgs/seo.jpg";
 import SEOHeader from "../Components/SEOHeader";
 
 const SEO = () => {

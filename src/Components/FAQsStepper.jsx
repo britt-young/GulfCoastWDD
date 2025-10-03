@@ -112,7 +112,7 @@ const FAQsStepper = () => {
       </div>
 
       {/* Category buttons */}
-      <div className="flex gap-4 mb-8 mt-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 mt-10 text-center">
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
@@ -129,7 +129,7 @@ const FAQsStepper = () => {
       </div>
 
       {/* FAQ list */}
-      <div className="w-full max-w-2xl">
+      <div className="w-full max-w-2xl px-5 lg:px-0">
         {faqData[activeCategory].map((item, index) => (
           <div key={index} className="my-4 border rounded">
             <div

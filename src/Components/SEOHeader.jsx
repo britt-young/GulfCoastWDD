@@ -2,7 +2,7 @@ import WaveBackground
  from "./WaveBackground";
 const SEOHeader = () => {
   return (
-    <section className="relative px-5 py-5 overflow-hidden h-[150px]">
+    <section className="relative overflow-hidden h-[160px]">
       <WaveBackground />
     </section>
   );
