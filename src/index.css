@@ -101,14 +101,14 @@ button:hover {
     @apply bg-white text-black shadow-xl;
   }
 
-  a.email-link {
+  /* a.email-link {
     @apply text-base font-semibold cursor-pointer;
     color: red;
   }
   a.email-link:hover {
     @apply underline;
     text-decoration-color: red;
-  }
+  } */
 }
 
 /* reusable UI */

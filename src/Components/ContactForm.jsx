@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 // import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Field, Label, Checkbox } from "@headlessui/react";
@@ -142,7 +141,7 @@ const ContactForm = () => {
               </select>
             </label>
 
-            <Field className="flex gap-x-4 col-span-2">
+            <Field className="flex gap-x-2 col-span-2">
               <div className="flex h-6 items-center">
                 <Checkbox
                   checked={enabled}
@@ -164,7 +163,7 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm text-gray-600 ">
+              <Label className="text-sm text-gray-600 content-center">
                 By selecting this, you agree to our
                 <Link to="/privacy" className="text-blue-600 underline ms-1">
                   privacy policy
