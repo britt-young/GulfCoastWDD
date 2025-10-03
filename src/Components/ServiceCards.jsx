@@ -156,7 +156,7 @@ const ServiceCards = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center mt-0">
-          <button className="lg:mt-0 mt-10" onClick={handleClick}>
+          <button className="lg:mt-0 mt-10 hover:bg-alternate hover:text-white" onClick={handleClick}>
             get started
           </button>
         </div>

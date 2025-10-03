@@ -42,7 +42,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hover:bg-white hover:text-black">
+            <button>
               visit website
             </button>
           </NavLink>
@@ -64,7 +64,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hover:bg-alternate hover:text-white">
+            <button>
               visit website
             </button>
           </NavLink>
@@ -82,7 +82,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hover:bg-alternate hover:text-white">
+            <button>
               visit website
             </button>
           </NavLink>
