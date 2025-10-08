@@ -2,13 +2,13 @@ import AOS from "aos";
 import { FaUserCircle } from "react-icons/fa"; // placeholder avatar
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import 'aos/dist/aos.css';
-import WaveBackground from "./WaveBackground";
+
 AOS.init();
 
 const Testimonials = () => {
   return (
-    <section className="relative lg:py-40 py-15 px-10">
-      {/* <WaveBackground /> */}
+    <section className=" lg:py-40 py-15 px-10 overflow-hidden">
+  
       <div className="relative mx-auto max-w-7xl flex flex-col items-center justify-center py-2 mb-5 text-center text-white">
         <h4 className="">Testimonials</h4>
         <h2 className="">What our clients are saying</h2>

@@ -19,7 +19,7 @@ const HomeHeader = () => {
           <button>get started</button>
         </Link>
       </div>
-      <div className="flex items-center lg:justify-start justify-center lg:w-1/2 lg:h-[60%] bg-white/60 border-1">
+      <div className="flex items-center lg:justify-start justify-center w-2/3 h-70 lg:w-1/2 lg:h-[60%] bg-white/60 border-1">
         {/* <picture>
           <img
             src={mockup}

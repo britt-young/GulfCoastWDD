@@ -9,7 +9,7 @@ import PortfolioGrid from "../Components/PortfolioGrid";
 
 const Home = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <HomeHeader />
       <HomeAbout />
       <ServiceCards />

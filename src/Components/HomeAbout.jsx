@@ -21,13 +21,13 @@ return (
     <div className="relative px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-white">
       {/* Image */}
       <div className="w-full flex items-center justify-center">
-        <img
+        {/* <img
           src={pic}
           alt="website preview"
           data-aos="fade-right"
           data-aos-duration="1500"
           className="w-fit lg:h-185 md:h-140 h-100 object-cover rounded-lg shadow-lg"
-        />
+        /> */}
       </div>
 
       {/* Text + CTA */}
