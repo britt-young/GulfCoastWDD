@@ -10,7 +10,7 @@ const PortfolioGrid = () => {
     <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
         <WaveBackground />
       <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-10">
-        <div className="h-full">
+        <div className="">
           <h4 className="text-alternate">Portfolio</h4>
           <h2>Some of our recent website designs</h2>
         </div>

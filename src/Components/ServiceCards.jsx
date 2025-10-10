@@ -14,10 +14,10 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative overflow-hidden px-6 py-20 lg:px-8 bg-white">
+    <section className="relative overflow-hidden px-6 py-20 lg:px-8">
       <WaveBackground2 />
 
-      <div className="relative mx-auto max-w-7xl pt-10">
+      <div className="relative mx-auto max-w-7xl pt-20 lg:h-[850px] h-full">
         <div className="flex flex-col items-center justify-center py-5 text-white">
           <h4>what we offer</h4>
           <h2 className="text-center ">Services included in all our packages</h2>
@@ -27,14 +27,14 @@ const ServiceCards = () => {
         </div>
         {/* Feature Card Grid */}
         <div
-          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-10 gap-0 lg:p-8 p-0"
+          className="group mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-4 gap-y-0 lg:p-8 p-0"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">User-Friendly Features</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -52,9 +52,9 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">
                 Loading Speed Optimization
               </h5>
@@ -74,9 +74,9 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">Responsive Design</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -94,9 +94,9 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">User Security and Web Encryption</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -114,9 +114,9 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">On-Page SEO</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -134,9 +134,9 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-md shadow-alt">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
-            <div className="mt-5 ">
+            <div className="h-full w-fit">
               <h5 className="text-alternate">Shopify Store Integration</h5>
               <p className="mt-1 mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
