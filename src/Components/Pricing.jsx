@@ -72,9 +72,9 @@ const Pricing = () => {
     <section className="relative isolate px-6 py-20 lg:px-8">
       <WaveBackground />
        
-      <div className="relative mx-auto text-center text-white">
+      <div className="relative mx-auto pt-10 text-center">
         <div>
-          <h4>our packages</h4>
+          <h4 className="text-alternate">our packages</h4>
           <h2 className="">Pricing packages for any business</h2>
         </div>
         <p className="mt-5">

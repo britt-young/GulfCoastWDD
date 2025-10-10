@@ -1,5 +1,6 @@
 import FlowStepper from "./FlowStepper";
 import { useNavigate } from "react-router-dom";
+import WaveBackground2 from './WaveBackground2'
 
 const Workflow = () => {
   const navigate = useNavigate();
@@ -8,7 +9,9 @@ const Workflow = () => {
     };
 
   return (
-    <div className="flex flex-col py-10 relative isolate bg-white">
+    <section className="relative px-6 pb-12 pt-20 lg:px-8 overflow-hidden">
+  <WaveBackground2 />
+    <div className="flex flex-col py-10 relative isolate ">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -37,9 +40,10 @@ const Workflow = () => {
       </div>
       <FlowStepper />
       <div className="flex items-center justify-center">
-        <button className="hover:bg-alternate hover:text-white" onClick={handleClick} >Schedule a Call</button>
+        <button onClick={handleClick} >Schedule a Call</button>
       </div>
     </div>
+     </section>
   );
 };
 

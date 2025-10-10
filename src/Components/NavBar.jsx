@@ -42,8 +42,8 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "shadow-lg bg-white dark:bg-gray-900"
-            : "bg-transparent text-white mt-6 mx-4 lg:mx-10"
+            ? "shadow-lg bg-white dark:bg-dark dark:text-white"
+            : "bg-white/10 dark:bg-dark/20 text-white mt-6 mx-4 lg:mx-10"
         }`}
       >
         {/* Logo */}

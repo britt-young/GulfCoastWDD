@@ -4,7 +4,7 @@ const WaveBackground3 = ({ className = "" }) => {
       className={`absolute inset-0 bg-alternate dark:bg-alternate ${className}`}
     >
       <svg
-        className="absolute inset-0 w-full h-full opacity-100 dark:opacity-40"
+        className="absolute inset-0 w-full h-full opacity-100"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const WaveBackground3 = ({ className = "" }) => {
             Q75,10 100,20
             V100 H0 Z
           "
-          className="fill-alt dark:fill-[#000000]"
+          className="fill-alt dark:fill-alt"
         />
         <path
           d="
@@ -25,7 +25,7 @@ const WaveBackground3 = ({ className = "" }) => {
             Q75,20 100,30
             V100 H0 Z
           "
-          className="fill-[#ffffff] dark:fill-[#000000]"
+          className="fill-[#ffffff] dark:fill-dark"
         />
       </svg>
     </div>

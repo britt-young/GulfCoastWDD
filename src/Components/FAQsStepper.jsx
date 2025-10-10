@@ -101,12 +101,12 @@ const FAQsStepper = () => {
   };
 
   return (
-    <div className="bg-white flex flex-col items-center py-24">
+    <div className="bg-white dark:bg-dark flex flex-col items-center pb-24">
       {/* Title/Subtitle */}
-      <div className="mx-auto max-w-7xl flex flex-col items-center justify-center py-5">
-        <h4 className="">how can we help</h4>
-        <h2 className="text-center">Frequently Asked Questions</h2>
-        <p className="mt-5 lg:w-200 mx-5 text-center">
+      <div className="relative flex flex-col items-center justify-center pt-0">
+        <h4 className="text-alternate dark:text-alt">how can we help</h4>
+        <h2 className="text-center dark:text-white">Frequently Asked Questions</h2>
+        <p className="mt-5 lg:w-200 mx-5 text-center dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor.
         </p>
       </div>
@@ -118,7 +118,7 @@ const FAQsStepper = () => {
             key={category}
             className={`px-4 py-2 border rounded cursor-pointer  font-normal ${
               activeCategory === category
-                ? "bg-alternate text-white border-black"
+                ? "bg-alternate dark:bg-alt dark:text-black text-white border-black"
                 : "bg-white text-black hover:bg-gray-100"
             }`}
             onClick={() => setActiveCategory(category)}
@@ -134,7 +134,7 @@ const FAQsStepper = () => {
           <div key={index} className="my-4 border rounded">
             <div
               onClick={() => toggleExpand(index)}
-              className=" text-black px-4 py-1 cursor-pointer bg-gray-200 hover:bg-alternate hover:text-white flex justify-between items-center"
+              className=" text-black px-4 py-1 cursor-pointer bg-gray-200 hover:bg-alternate hover:dark:bg-alt hover:dark:text-black hover:text-white flex justify-between items-center"
             >
               <span className="font-semibold tracking-wider">{item[0]}</span> {/* Question */}
               <span className="text-xl">

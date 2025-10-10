@@ -2,15 +2,16 @@ import farm from "../assets/clippings/mockup-farm.svg";
 import florist from "../assets/clippings/mockup-florist.svg";
 import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
-import WaveBackground2 from "./WaveBackground2";
+import WaveBackground
+ from "./WaveBackground";
 
 const PortfolioGrid = () => {
   return (
     <section className="px-6 py-24 lg:px-8 relative overflow-hidden">
-      <WaveBackground2 />
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black">
+        <WaveBackground />
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-10">
         <div className="h-full">
-          <h4>Portfolio</h4>
+          <h4 className="text-alternate">Portfolio</h4>
           <h2>Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start pb-10 lg:pb-0">
@@ -42,7 +43,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
               visit website
             </button>
           </NavLink>
@@ -64,7 +65,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
               visit website
             </button>
           </NavLink>
@@ -82,7 +83,7 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
               visit website
             </button>
           </NavLink>
