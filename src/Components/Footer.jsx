@@ -13,7 +13,7 @@ const Footer = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <div className="bg-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
+    <div className="bg-white dark:bg-black dark:text-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
       {/* brand side */}
       <div className="flex flex-col lg:items-start justify-between py-5 ">
         <img src={logo} alt="logo" className="h-50" />

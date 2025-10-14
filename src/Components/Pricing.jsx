@@ -96,7 +96,7 @@ const Pricing = () => {
             <h3
               id={tier.id}
               className={classNames(
-                tier.featured ? "text-alternate" : "text-red-600",
+                tier.featured ? "text-alt" : "text-red-600",
                 "text-base font-semibold"
               )}
             >
@@ -115,7 +115,7 @@ const Pricing = () => {
                 <li key={feature} className="flex gap-x-3 items-center">
                   {/* Fully opaque green check */}
                   <CheckIcon
-                    className="h-6 w-5 flex-none text-green-500"
+                    className="h-6 w-5 flex-none text-alt"
                     aria-hidden="true"
                   />
                   <span className="text-black ">{feature}</span>

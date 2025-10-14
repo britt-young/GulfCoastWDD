@@ -34,8 +34,8 @@ const PortfolioGrid = () => {
         <div>
           <img src={farm} alt="Mockup Image" className="w-full object-cover" />
 
-          <h5 className="text-white p-2 font-semibold">Local Farm</h5>
-          <p className="text-white pb-5">
+          <h5 className="p-2 font-semibold">Local Farm</h5>
+          <p className="pb-5">
             A beautiful farm website showcasing local produce
           </p>
           <NavLink
@@ -56,8 +56,8 @@ const PortfolioGrid = () => {
             className="w-full object-cover"
           />
 
-          <h5 className="text-white p-2 font-semibold">Local Florist</h5>
-          <p className="text-white pb-5">
+          <h5 className="p-2 font-semibold">Local Florist</h5>
+          <p className="pb-5">
             A beautiful florist website showcasing local flowers
           </p>
           <NavLink
@@ -74,8 +74,8 @@ const PortfolioGrid = () => {
         <div className="relative group">
           <img src={photo} alt="Mockup Image" className="w-full object-cover" />
 
-          <h5 className="text-white p-2 font-semibold">Julia Rose Photo</h5>
-          <p className="text-white pb-5">
+          <h5 className="p-2 font-semibold">Julia Rose Photo</h5>
+          <p className="pb-5">
             A beautiful photography website of stunning visuals
           </p>
           <NavLink
