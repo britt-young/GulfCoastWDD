@@ -18,10 +18,13 @@
   /* --color-alternate: #024059; */
   /* --color-alt: #a7d5f2;  */
 
-   --color-alternate: #1E3FC2;
-  --color-alt: #F1F414;
+  /* --color-alternate: #1E3FC2; */
+  /* --color-alt: #a1cad7; */
 /* --color-dark: #0f2061; */
---color-dark:#122674;
+/* --color-dark:#122574; */
+--color-alternate:#0091C0;
+--color-alt:#A7DC6A;
+--color-dark:#006B8F;
 
   /* --color-alt:#C7D8D0; */
 

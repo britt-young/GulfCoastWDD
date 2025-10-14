@@ -19,14 +19,14 @@ const HomeHeader = () => {
           <button>get started</button>
         </Link>
       </div>
-      <div className="flex items-center lg:justify-start justify-center">
-         <picture>
+      <div className="flex items-center lg:justify-start justify-center w-[800px] h-[600px] bg-white/50">
+         {/* <picture>
           <img
             src={mockup}
             alt="mockup img"
             className="lg:w-[600px]"
           />
-        </picture>  
+        </picture>   */}
       </div>
     </div>
   );
