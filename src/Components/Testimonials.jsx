@@ -24,7 +24,7 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-5 items-center">
           {/* Testimonial Card */}
           <div
-            className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-3xl shadow-md p-6"
+            className="flex items-start gap-4 bg-white  rounded-3xl shadow-md p-6"
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
@@ -35,7 +35,7 @@ const Testimonials = () => {
 
             {/* Content */}
             <div className="flex flex-col justify-between h-full">
-              <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <p className="text-gray-700 mb-2">
                 <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
                 Brittney transformed our outdated website into a modern,
                 user-friendly platform. We've seen a noticeable increase in
@@ -50,7 +50,7 @@ const Testimonials = () => {
 
           {/* Testimonial Card */}
           <div
-            className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-3xl shadow-md p-6"
+            className="flex items-start gap-4 bg-white rounded-3xl shadow-md p-6"
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
@@ -58,7 +58,7 @@ const Testimonials = () => {
               <FaUserCircle className="text-5xl" />
             </div>
             <div className="flex flex-col justify-between h-full">
-              <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <p className="text-gray-700 mb-2">
                 <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
                 Thanks to Gulf Coast WDD, our e-commerce site is not only
                 beautiful but also fast and user-friendly. Their attention to
@@ -73,7 +73,7 @@ const Testimonials = () => {
 
           {/* Testimonial Card */}
           <div
-            className="flex items-start gap-4 bg-white dark:bg-gray-900 rounded-3xl shadow-md p-6"
+            className="flex items-start gap-4 bg-white  rounded-3xl shadow-md p-6"
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
@@ -81,7 +81,7 @@ const Testimonials = () => {
               <FaUserCircle className="text-5xl" />
             </div>
             <div className="flex flex-col justify-between h-full">
-              <p className="text-gray-700 dark:text-gray-200 mb-2">
+              <p className="text-gray-700 mb-2">
                 <RiDoubleQuotesL className="inline-block mr-1 text-alternate" />
                 Brittney brought our vision to life with a stunning and
                 functional website. Their ongoing support and expertise have
