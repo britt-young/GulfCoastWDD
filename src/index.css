@@ -24,7 +24,7 @@
 /* --color-dark:#122574; */
 --color-alternate:#0091C0;
 --color-alt:#A7DC6A;
---color-dark:#006B8F;
+ --color-dark:#006B8F; 
 
   /* --color-alt:#C7D8D0; */
 
@@ -99,7 +99,7 @@
   }
 
   button {
-    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-full cursor-pointer bg-alt text-black tracking-wide;
+    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide;
     z-index: 1;
   }
 

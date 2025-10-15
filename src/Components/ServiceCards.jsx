@@ -32,7 +32,7 @@ const ServiceCards = () => {
           data-aos-duration="1500"
         >
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">User-Friendly Features</h5>
@@ -52,7 +52,7 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">
@@ -74,7 +74,7 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">Responsive Design</h5>
@@ -94,7 +94,7 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">User Security and Web Encryption</h5>
@@ -114,7 +114,7 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">On-Page SEO</h5>
@@ -134,7 +134,7 @@ const ServiceCards = () => {
             </div>
           </div>
           {/* Feature Card */}
-          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark">
+          <div className="card hover:scale-105 transition-all duration-300 ease-in bg-white text-black shadow-lg shadow-dark rounded-3xl">
             {/* <TbDeviceMobileStar className="bg-white border-2 border-black rounded-lg p-2 w-15 h-15 absolute transform lg:translate-x-0 -top-7.5 left-7.5" /> */}
             <div className="h-full w-fit">
               <h5 className="text-alternate">Shopify Store Integration</h5>

@@ -69,7 +69,7 @@ const Pricing = () => {
   };
 
   return (
-    <section className="relative isolate px-6 py-20 lg:px-8">
+    <section className="relative isolate px-6 py-20 lg:px-8 lg:min-h-[950px]">
       <WaveBackground />
        
       <div className="relative mx-auto pt-10 text-center">
@@ -89,7 +89,7 @@ const Pricing = () => {
           <div
             key={tier.id}
             className={classNames(
-              "rounded-3xl shadow-xl p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
               tier.featured ? "bg-white" : "bg-white"
             )}
           >
@@ -106,9 +106,9 @@ const Pricing = () => {
               <span className="text-5xl font-semibold tracking-tight text-black">
                 {tier.price}
               </span>
-              <span className="text-base text-black">{tier.add}</span>
+              <span className="text-base lg:px-0 px-2 text-black">{tier.add}</span>
             </p>
-            <p className="mt-6 text-base text-black">{tier.description}</p>
+            <p className="mt-6 text-base font-alt text-black">{tier.description}</p>
 
             <ul role="list" className="lg:mt-8 space-y-3 mt-10 flex-grow ">
               {tier.features.map((feature) => (

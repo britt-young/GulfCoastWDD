@@ -47,7 +47,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         }`}
       >
         {/* Logo */}
-        <img src={main} alt="Logo" className="lg:h-10 h-8" />
+        <img src={main} alt="Logo" className="h-12" />
 
         {/* Right Section */}
         <div className="flex items-center space-x-6">
@@ -160,7 +160,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Desktop CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block bg-alt text-black hover:bg-white transition"
+            className="hidden lg:inline-block bg-alt text-black transition hover:bg-dark dark:hover:bg-white"
           >
             Get Started
           </button>
@@ -177,7 +177,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Hamburger / Close Toggle (mobile only) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden relative w-8 h-8 flex items-center justify-center bg-alternate"
+            className="lg:hidden relative w-8 h-8 flex items-center justify-center bg-transparent mr-2 shadow-none"
             aria-label="Toggle Menu"
           >
             {/* Hamburger Icon */}
