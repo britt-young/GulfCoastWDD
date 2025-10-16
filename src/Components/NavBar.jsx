@@ -48,7 +48,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       >
         {/* Logo */}
         {/* <img src={main} alt="Logo" className="h-12" /> */}
-        <div className="flex flex-col text-center h-full w-fit">
+        <div className="flex flex-col text-center h-full w-fit p-4 lg:p-0">
           <h2 className="uppercase">Gulf Coast</h2>
           <p className="font-alt tracking-widest">Web Design & Development</p>
         </div>
@@ -195,7 +195,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
 
             {/* Close Icon */}
             <IoClose
-              className={`absolute text-3xl text-white  transition-all duration-300 transform ${
+              className={`absolute text-3xl dark:text-white text-alternate transition-all duration-300 transform ${
                 isMenuOpen
                   ? "opacity-100 rotate-0 scale-100"
                   : "opacity-0 -rotate-90 scale-75"
@@ -217,17 +217,22 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Header with Logo + Close (Close is hidden since it's now morphing into hamburger) */}
-        <div className="p-4 mt-6 flex border-b border-gray-200 dark:border-gray-700">
-          <img src={main} alt="Logo" className="h-8" />
+        <div className="p-6 mt-12 flex border-b border-gray-200 dark:border-gray-700">
+          {/* <img src={main} alt="Logo" className="h-8" /> */}
+          <div className="flex flex-col text-center h-full w-fit">
+          <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
+          <p className="dark:text-alt font-alt">Web Design & Dev</p>
+          {/* <p className="font-alt tracking-widest">Web Design & Development</p> */}
+        </div>
         </div>
 
         {/* Mobile Nav Links */}
-        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium">
+        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium dark:text-white">
           {navItems.map((item) => (
             <li key={item}>
               <NavLink
