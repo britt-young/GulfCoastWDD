@@ -1,4 +1,4 @@
-import WaveAnimation from "../Components/WaveAnimation";
+import WaveAnimation from "../Components/WaveAnimation3";
 
 const ComingSoon = () => {
   return (

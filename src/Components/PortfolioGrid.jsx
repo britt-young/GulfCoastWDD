@@ -2,14 +2,14 @@ import farm from "../assets/clippings/mockup-farm.svg";
 import florist from "../assets/clippings/mockup-florist.svg";
 import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
-import WaveBackground
- from "./WaveBackground";
+import WaveAnimation from "./WaveAnimation3";
+
 
 const PortfolioGrid = () => {
   return (
-    <section className="px-6 py-24 lg:px-8 relative overflow-hidden min-h-[900px]">
-        <WaveBackground />
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-20 ">
+    <section className="relative overflow-hidden min-h-[900px]">
+        <WaveAnimation />
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
         <div className="">
           <h4 className="lg:text-alternate">Portfolio</h4>
           <h2>Some of our recent website designs</h2>

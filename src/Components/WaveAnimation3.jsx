@@ -1,10 +1,10 @@
 import Wave from "react-wavify";
-
-const WaveAnimation = () => {
+// white wave
+const WaveAnimation3 = () => {
   return (
     <div>
       <Wave
-        fill="#A7DC6A"
+        fill="#ffffff"
         paused={false}
         style={{
           display: "flex",
@@ -14,7 +14,7 @@ const WaveAnimation = () => {
         }}
         options={{
           height: 40,
-          amplitude: 25,
+          amplitude: 40,
           speed: 0.1,
           points: 6,
         }}
@@ -24,4 +24,4 @@ const WaveAnimation = () => {
   );
 };
 
-export default WaveAnimation;
+export default WaveAnimation3;

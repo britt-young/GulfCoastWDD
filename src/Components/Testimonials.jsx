@@ -2,17 +2,18 @@ import AOS from "aos";
 import { FaUserCircle } from "react-icons/fa"; // placeholder avatar
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import "aos/dist/aos.css";
-import WaveBackground2 from "./WaveBackground2";
+
+import WaveAnimation from "./WaveAnimation2";
 AOS.init();
 
 const Testimonials = () => {
   return (
-    <section className="relative lg:py-30 py-15 px-10 overflow-hidden lg:min-h-[580px] ">
-      <WaveBackground2 />
-      <div className="flex flex-col items-center justify-center mx-auto">
-        <div className="relative max-w-7xl py-2 mb-5 text-white text-center">
-          <h4 className="">Testimonials</h4>
-          <h2 className="">What our clients are saying</h2>
+    <section className="relative overflow-hidden lg:min-h-[580px] ">
+      <WaveAnimation />
+      <div className="relative flex flex-col items-center justify-center mx-auto pt-40">
+        <div className="max-w-7xl py-2 mb-5 text-white text-center">
+          <h4>Testimonials</h4>
+          <h2>What our clients are saying</h2>
           <p className="mt-5 mx-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -21,7 +22,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonial Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-5 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-5 px-10 items-center">
           {/* Testimonial Card */}
           <div
             className="flex items-start gap-4 bg-white  rounded-3xl shadow-md p-6"

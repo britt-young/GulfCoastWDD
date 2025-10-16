@@ -4,7 +4,8 @@ import { TbDeviceMobileStar } from "react-icons/tb";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WaveBackground2 from "./WaveBackground2";
+import WaveAnimation2 from "./WaveAnimation2";
+
 AOS.init();
 
 const ServiceCards = () => {
@@ -14,10 +15,10 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative overflow-hidden px-6 py-20 lg:px-8">
-      <WaveBackground2 />
+    <section className="relative overflow-hidden bg-white py-20">
+   <WaveAnimation2 />
 
-      <div className="relative mx-auto max-w-7xl pt-20 lg:h-[850px] h-full">
+      <div className="relative mx-auto max-w-7xl pt-40">
         <div className="flex flex-col items-center justify-center py-5 text-white">
           <h4>what we offer</h4>
           <h2 className="text-center ">Services included in all our packages</h2>

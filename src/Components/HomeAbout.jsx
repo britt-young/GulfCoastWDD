@@ -3,7 +3,8 @@ import GuarenteeGrid from "./GuarenteeGrid";
 import pic from "../assets/imgs/homeabout.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WaveBackground from "./WaveBackground";
+import WaveAnimation from "./WaveAnimation3";
+// import WaveBackground from "./WaveBackground";
 
 AOS.init();
 
@@ -13,11 +14,12 @@ const HomeAbout = () => {
     navigate("/About"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative px-5 lg:pt-25 pt-10 overflow-hidden">
-      <WaveBackground />
+    <section className="relative py-10 overflow-hidden">
+      {/* <WaveBackground /> */}
+      <WaveAnimation />
 
       {/* Content */}
-      <div className="relative py-10 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">
+      <div className="relative pt-40 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">
         {/* Image */}
         <div className="w-full flex items-center justify-center">
           <img
