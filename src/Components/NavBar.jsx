@@ -48,8 +48,8 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       >
         {/* Logo */}
         {/* <img src={main} alt="Logo" className="h-12" /> */}
-        <div className="flex flex-col text-center h-full w-fit p-4 lg:p-0">
-          <h2 className="uppercase">Gulf Coast</h2>
+        <div className="flex flex-col items-center mx-4 lg:mx-0">
+          <p className="text-3xl uppercase font-bold">Gulf Coast</p>
           <p className="font-alt tracking-widest">Web Design & Development</p>
         </div>
 
@@ -222,13 +222,12 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         }`}
       >
         {/* Header with Logo + Close (Close is hidden since it's now morphing into hamburger) */}
-        <div className="p-6 mt-12 flex border-b border-gray-200 dark:border-gray-700">
+        <div className="p-6 mt-5 flex border-b border-gray-200 dark:border-gray-700">
           {/* <img src={main} alt="Logo" className="h-8" /> */}
           <div className="flex flex-col text-center h-full w-fit">
-          <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
-          <p className="dark:text-alt font-alt">Web Design & Dev</p>
-          {/* <p className="font-alt tracking-widest">Web Design & Development</p> */}
-        </div>
+            <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
+            <p className="dark:text-alt font-alt">Web Design & Dev</p>
+          </div>
         </div>
 
         {/* Mobile Nav Links */}

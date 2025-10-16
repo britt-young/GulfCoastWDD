@@ -5,7 +5,7 @@ import mockup from "../assets/mockupGif.gif"
 const HomeHeader = () => {
 
   return (
-    <div className="pt-25 py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 h-[80vh]">
+    <div className="lg:mt-10 mt-5 py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 h-[80vh]">
       {/* change below div to items-start if second div is un-commented */}
       <div className="h-fit lg:w-1/2 items-start flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
@@ -19,7 +19,7 @@ const HomeHeader = () => {
           <button>get started</button>
         </Link>
       </div>
-      <div className="flex items-center lg:justify-start justify-center lg:w-[800px] w-[400px] h-[600px] bg-white/50">
+      <div className="flex items-center lg:justify-start justify-center w-[800px] h-[600px] bg-white/50">
          {/* <picture>
           <img
             src={mockup}
