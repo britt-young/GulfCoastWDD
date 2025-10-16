@@ -38,7 +38,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const inactiveClasses = "font-normal hover:font-semibold";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-fit">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-full">
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
@@ -47,7 +47,11 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         }`}
       >
         {/* Logo */}
-        <img src={main} alt="Logo" className="h-12" />
+        {/* <img src={main} alt="Logo" className="h-12" /> */}
+        <div className="flex flex-col text-center h-full w-fit">
+          <h2 className="uppercase">Gulf Coast</h2>
+          <p className="font-alt tracking-widest">Web Design & Development</p>
+        </div>
 
         {/* Right Section */}
         <div className="flex items-center space-x-6">
