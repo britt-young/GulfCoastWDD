@@ -4,6 +4,7 @@ import {
   EnvelopeIcon,
   MapPinIcon,
 } from "@heroicons/react/24/solid";
+import WaveAnimation from "./WaveAnimation1";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -12,7 +13,10 @@ const Footer = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <div className="bg-white dark:bg-alternate dark:text-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt border-t-4 border-alt/30 border-double">
+    <section className="relative overflow-hidden bg-white">
+      <WaveAnimation />
+    <div className="pt-20 relative dark:text-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
+      
       {/* brand side */}
       <div className="flex flex-col lg:items-start justify-top gap-5">
         {/* <img src={logo} alt="logo" className="h-20" /> */}
@@ -25,7 +29,7 @@ const Footer = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris{" "}
         </p>
-        <button className="hover:bg-alternate" onClick={handleClick}>
+        <button className="bg-white hover:text-white hover:bg-alternate" onClick={handleClick}>
           Get Started
         </button>
       </div>
@@ -78,6 +82,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

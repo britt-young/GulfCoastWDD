@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
 import WaveBackground from "./WaveBackground";
+import WaveAnimation from "./WaveAnimation3";
 
 const tiers = [
   {
@@ -69,10 +70,10 @@ const Pricing = () => {
   };
 
   return (
-    <section className="relative isolate px-6 py-20 lg:px-8 lg:min-h-[950px]">
-      <WaveBackground />
+    <section className="relative isolate lg:min-h-[950px] bg-alternate">
+      <WaveAnimation />
        
-      <div className="relative mx-auto pt-10 text-center">
+      <div className="relative mx-auto pt-40 text-center">
         <div>
           <h4 className="text-alternate">our packages</h4>
           <h2 className="">Pricing packages for any business</h2>
@@ -84,7 +85,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 pb-40">
         {tiers.map((tier) => (
           <div
             key={tier.id}
