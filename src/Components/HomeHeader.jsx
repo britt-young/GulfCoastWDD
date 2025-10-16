@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import mockup from "../assets/mockupGif.gif"
+// import mockup from "../assets/mockupGif.gif"
 
 
 const HomeHeader = () => {

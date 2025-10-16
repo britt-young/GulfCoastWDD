@@ -32,28 +32,28 @@ const Footer = () => {
       {/* contact + link side */}
       <div className="flex lg:flex-row flex-col gap-10 lg:gap-0">
         <div className="flex flex-col lg:items-start">
-          <h4 className="mb-4 text-2xl border-l-6 border-alternate pl-2 text-black">
+          <h4 className="mb-4 text-2xl border-l-6 border-alternate dark:border-alt pl-2 text-black">
             Contact Us
           </h4>
           <div className="text-left font-normal indent-4">
             <p className="mb-2">
-              <PhoneArrowDownLeftIcon className="inline-block w-4 me-2 text-alternate" />
+              <PhoneArrowDownLeftIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
               +123 456 7890
             </p>
             <p className="my-2 mr-10">
-              <EnvelopeIcon className="inline-block w-4 me-2 text-alternate" />
+              <EnvelopeIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
               <a href="https://gulfcoastwdd.com/" className="hover:underline">
                 gulfcoastwdd@protonmail.com
               </a>
             </p>
             <p className="my-2">
-              <MapPinIcon className="inline-block w-4 me-2 text-alternate" />
+              <MapPinIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
               Tallahassee, FL., USA
             </p>
           </div>
         </div>
         <div className="flex flex-col lg:items-start">
-          <h4 className="text-2xl border-l-6 border-alt pl-2 mb-4 text-black">
+          <h4 className="text-2xl border-l-6 border-alternate dark:border-alt pl-2 mb-4 text-black">
             Site Map
           </h4>
           <div className="text-left font-normal indent-4 w-full">
@@ -65,10 +65,13 @@ const Footer = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li className="hover:text-alt">
-                <Link to="/events">Event Schedule</Link>
+                <Link to="/services">Services</Link>
               </li>
               <li className="hover:text-alt">
-                <Link to="/products">Product Library</Link>
+                <Link to="/faqs">FAQs</Link>
+              </li>
+              <li className="hover:text-alt">
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

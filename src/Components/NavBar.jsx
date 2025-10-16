@@ -38,7 +38,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const inactiveClasses = "font-normal hover:font-semibold";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-full">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
