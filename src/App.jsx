@@ -15,6 +15,7 @@ import Privacy from "./pages/Privacy";
 import Error from "./Components/Error";
 import Services from "./pages/Services";
 import SEO from "./pages/SEO"
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   const router = createBrowserRouter(
@@ -30,12 +31,12 @@ function App() {
         <Route path="services" element={<Services />} />
         {/* child path for services */}
           <Route index element={<Services />} />
-          <Route path="services/features" element={<SEO />} />
-          <Route path="services/optimization" element={<SEO />} />
-          <Route path="services/responsiveness" element={<SEO />} />
-          <Route path="services/security" element={<SEO />} />
+          <Route path="services/features" element={<ComingSoon />} />
+          <Route path="services/optimization" element={<ComingSoon />} />
+          <Route path="services/responsiveness" element={<ComingSoon />} />
+          <Route path="services/security" element={<ComingSoon />} />
           <Route path="services/seo" element={<SEO />} />
-          <Route path="services/shopify" element={<SEO />} />
+          <Route path="services/shopify" element={<ComingSoon />} />
         {/* Can add nested (additional children) routes too */}
         <Route path="*" element={<Error />} />
       </Route>
