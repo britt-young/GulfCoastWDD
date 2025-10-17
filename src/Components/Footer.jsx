@@ -13,10 +13,12 @@ const Footer = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
+    
+
     <section className="relative overflow-hidden bg-white">
       <WaveAnimation />
     <div className="pt-20 relative dark:text-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
-      
+
       {/* brand side */}
       <div className="flex flex-col lg:items-start justify-top gap-5">
         {/* <img src={logo} alt="logo" className="h-20" /> */}
@@ -36,45 +38,45 @@ const Footer = () => {
       {/* contact + link side */}
       <div className="flex lg:flex-row flex-col gap-10 lg:gap-0">
         <div className="flex flex-col lg:items-start">
-          <h4 className="mb-4 text-2xl border-l-6 border-alternate dark:border-alt pl-2 text-black">
+          <h4 className="mb-4 text-2xl border-l-6 border-black dark:border-alt pl-2 text-black">
             Contact Us
           </h4>
           <div className="text-left font-normal indent-4">
             <p className="mb-2">
-              <PhoneArrowDownLeftIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
+              <PhoneArrowDownLeftIcon className="inline-block w-4 me-2" />
               +123 456 7890
             </p>
             <p className="my-2 mr-10">
-              <EnvelopeIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
+              <EnvelopeIcon className="inline-block w-4 me-2 " />
               <a href="https://gulfcoastwdd.com/" className="hover:underline">
                 gulfcoastwdd@protonmail.com
               </a>
             </p>
             <p className="my-2">
-              <MapPinIcon className="inline-block w-4 me-2 text-alternate dark:text-alt" />
+              <MapPinIcon className="inline-block w-4 me-2 " />
               Tallahassee, FL., USA
             </p>
           </div>
         </div>
         <div className="flex flex-col lg:items-start">
-          <h4 className="text-2xl border-l-6 border-alternate dark:border-alt pl-2 mb-4 text-black">
+          <h4 className="text-2xl border-l-6 border-black dark:border-alt pl-2 mb-4 text-black">
             Site Map
           </h4>
           <div className="text-left font-normal indent-4 w-full">
             <ul>
-              <li className="hover:text-alt">
+              <li className="hover:underline">
                 <Link to="/">Home</Link>
               </li>
-              <li className="hover:text-alt">
+              <li className="hover:underline">
                 <Link to="/about">About Us</Link>
               </li>
-              <li className="hover:text-alt">
+              <li className="hover:underline">
                 <Link to="/services">Services</Link>
               </li>
-              <li className="hover:text-alt">
+              <li className="hover:underline">
                 <Link to="/faqs">FAQs</Link>
               </li>
-              <li className="hover:text-alt">
+              <li className="hover:underline">
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>

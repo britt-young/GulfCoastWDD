@@ -15,7 +15,10 @@ const ContactSection = () => {
       </div>
       <div className="flex flex-col lg:items-start pt-5 w-fit mx-auto">
         <p className="my-1"><PhoneArrowDownLeftIcon className="inline-block w-6 me-2" />+123 456 7890</p>
-        <p className="my-1 mr-10"><EnvelopeIcon className="inline-block w-6 me-2" />gulfcoastwdd@protonmail.com</p>
+        <p className="my-1 mr-10"><EnvelopeIcon className="inline-block w-6 me-2 " />
+              <a href="https://gulfcoastwdd.com/" className="hover:underline">
+                gulfcoastwdd@protonmail.com
+              </a></p>
         <p className="my-1"><MapPinIcon className="inline-block w-6 me-2" />United States</p>
       </div>
     </div>
