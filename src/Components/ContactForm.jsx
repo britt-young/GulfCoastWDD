@@ -106,23 +106,6 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            {/* <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="block text-sm/6 font-semibold dark:text-white text-gray-900"
-              >
-                Message
-              </label>
-              <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={2}
-                  className="block w-full rounded-md bg-white dark:bg-white/15 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-"
-                  defaultValue={""}
-                />
-              </div>
-            </div> */}
 
             {/* Pricing Selection */}
             <label className="block text-sm font-semibold  text-gray-900">

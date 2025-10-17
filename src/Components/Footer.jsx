@@ -17,7 +17,7 @@ const Footer = () => {
 
     <section className="relative overflow-hidden bg-white">
       <WaveAnimation />
-    <div className="pt-20 relative dark:text-white grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
+    <div className="pt-20 relative grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
 
       {/* brand side */}
       <div className="flex flex-col lg:items-start justify-top gap-5">
@@ -38,7 +38,7 @@ const Footer = () => {
       {/* contact + link side */}
       <div className="flex lg:flex-row flex-col gap-10 lg:gap-0">
         <div className="flex flex-col lg:items-start">
-          <h4 className="mb-4 text-2xl border-l-6 border-black dark:border-alt pl-2 text-black">
+          <h4 className="mb-4 text-2xl border-l-6 border-black pl-2 text-black">
             Contact Us
           </h4>
           <div className="text-left font-normal indent-4">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col lg:items-start">
-          <h4 className="text-2xl border-l-6 border-black dark:border-alt pl-2 mb-4 text-black">
+          <h4 className="text-2xl border-l-6 border-black pl-2 mb-4 text-black">
             Site Map
           </h4>
           <div className="text-left font-normal indent-4 w-full">

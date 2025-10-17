@@ -33,8 +33,8 @@ const HomeAbout = () => {
 
         {/* Text + CTA */}
         <div className="flex flex-col items-start">
-          <h4 className="text-alternate dark:text-alt">Gulf Coast Guarantee</h4>
-          <h2 className="dark:text-white">
+          <h4 className="text-alternate">Gulf Coast Guarantee</h4>
+          <h2 className="">
             Websites starting at $145 per month
           </h2>
           <p className="mt-5">
