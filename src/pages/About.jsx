@@ -16,7 +16,7 @@ const About = () => {
       <Testimonials />
       <div className="bg-alternate relative overflow-hidden">
         <WaveAnimation1 />
-        <div className="relative pt-20">
+        <div className="relative pt-20 px-5">
           <Contact />
         </div>
       </div>

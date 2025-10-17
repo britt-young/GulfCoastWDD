@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
-import WaveBackground from "./WaveBackground";
 import WaveAnimation from "./WaveAnimation3";
 
 const tiers = [
@@ -91,7 +90,7 @@ const Pricing = () => {
             key={tier.id}
             className={classNames(
               "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
-              tier.featured ? "bg-white" : "bg-white"
+              tier.featured ? "bg-alt/10 border-1 border-alt" : "bg-white"
             )}
           >
             <h3
@@ -140,7 +139,7 @@ const Pricing = () => {
               className={classNames(
                 "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
                 tier.featured
-                  ? "bg-alt text-black shadow-lg hover:bg-alternate hover:text-white"
+                  ? "bg-alt text-black shadow-lg hover:text-white"
                   : "text-black bg-gray-100 hover:bg-gray-200"
               )}
             >

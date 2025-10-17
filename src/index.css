@@ -80,7 +80,7 @@
   }
 
   h2 {
-    @apply text-[3em] font-bold leading-12 tracking-tighter;
+    @apply lg:text-[3em] text-[2em] font-bold lg:leading-12 leading-8 tracking-tighter;
   }
 
   h3 {

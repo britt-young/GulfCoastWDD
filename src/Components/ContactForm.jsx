@@ -10,9 +10,9 @@ const ContactForm = () => {
     <div className="py-20 px-5 lg:px-0">
       <div className="bg-gray-100 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
         <div className="mx-auto text-center">
-          <h2>Send us a message</h2>
+          <h2>Custom Website Request</h2>
           <p className="mt-2">
-            Aute magna irure deserunt veniam aliqua magna enim voluptate.
+            Send us a message and let us help you convert website visitors to clients 
           </p>
         </div>
         <form

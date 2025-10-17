@@ -3,7 +3,7 @@ import {PhoneArrowDownLeftIcon, EnvelopeIcon, MapPinIcon} from "@heroicons/react
 
 const ContactSection = () => {
   return (
-    <div className="px-5 lg:py-24 pt-20 lg:px-0">
+    <div className="px-5 lg:py-20 pt-20 lg:px-0">
         <div className="mx-auto w-fit lg:text-start text-center">
         <h4>contact us</h4>
         <h2>
