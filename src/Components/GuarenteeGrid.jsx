@@ -5,7 +5,7 @@ const GuarenteeGrid = () => {
     <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10 text-black">
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
@@ -18,7 +18,7 @@ const GuarenteeGrid = () => {
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
@@ -31,7 +31,7 @@ const GuarenteeGrid = () => {
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
@@ -44,7 +44,7 @@ const GuarenteeGrid = () => {
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
@@ -57,7 +57,7 @@ const GuarenteeGrid = () => {
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
@@ -70,7 +70,7 @@ const GuarenteeGrid = () => {
       </div>
       {/* Snippet */}
       <div className="w-full ">
-        <h5 className="font-bold ">
+        <h5 className="font-bold text-black">
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>

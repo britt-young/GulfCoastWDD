@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
               </p>
               <div className="flex flex-col items-end pe-8">
-                <p className="text-sm">Local Florist</p>
+                <p className="text-sm font-semibold">Local Florist</p>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                 <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
               </p>
               <div className="flex flex-col items-end pe-8">
-                <p className="text-sm ">Local Farm</p>
+                <p className="text-sm font-semibold">Local Farm</p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Testimonials = () => {
                 <RiDoubleQuotesR className="inline-block ml-1 text-alternate" />
               </p>
               <div className="flex flex-col items-end pe-8">
-                <p className="text-sm">Julia Rose Photography</p>
+                <p className="text-sm font-semibold">Julia Rose Photography</p>
               </div>
             </div>
           </div>

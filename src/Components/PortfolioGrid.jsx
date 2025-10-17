@@ -10,7 +10,7 @@ const PortfolioGrid = () => {
       <WaveAnimation />
       <div className="relative lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
         <div className="">
-          <h4 className="lg:text-alternate">Portfolio</h4>
+          <h4 className="text-alternate">Portfolio</h4>
           <h2>Some of our recent website designs</h2>
         </div>
         <div className="flex items-center justify-start pb-10 lg:pb-0">
@@ -37,7 +37,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-semibold">Local Farm</h5>
+          <h5 className="p-2 font-semibold text-black">Local Farm</h5>
           <p className="pb-5">
             A beautiful farm website showcasing local produce
           </p>
@@ -59,7 +59,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-semibold">Local Florist</h5>
+          <h5 className="p-2 font-semibold text-black">Local Florist</h5>
           <p className="pb-5">
             A beautiful florist website showcasing local flowers
           </p>
@@ -81,7 +81,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-semibold">Julia Rose Photo</h5>
+          <h5 className="p-2 font-semibold text-black">Julia Rose Photo</h5>
           <p className="pb-5">
             A beautiful photography website of stunning visuals
           </p>

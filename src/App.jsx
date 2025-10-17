@@ -28,7 +28,7 @@ function App() {
         <Route path="faqs" element={<FAQs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
-        <Route path="services" element={<Services />} />
+        <Route path="services" element={<ComingSoon />} />
         {/* child path for services */}
           <Route index element={<Services />} />
           <Route path="services/features" element={<ComingSoon />} />
