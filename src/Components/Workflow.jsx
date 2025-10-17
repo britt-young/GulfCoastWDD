@@ -1,6 +1,7 @@
 import FlowStepper from "./FlowStepper";
 import { useNavigate } from "react-router-dom";
-import WaveBackground2 from './WaveBackground2'
+import WaveAnimation from "./WaveAnimation2";
+
 
 const Workflow = () => {
   const navigate = useNavigate();
@@ -9,9 +10,9 @@ const Workflow = () => {
     };
 
   return (
-    <section className="relative px-6 pb-12 pt-20 lg:px-8 overflow-hidden">
-  <WaveBackground2 />
-    <div className="flex flex-col py-10 relative isolate text-white lg:h-[650px]">
+    <section className="relative pb-12 bg-white overflow-hidden">
+  <WaveAnimation />
+    <div className="flex flex-col py-10 pt-10 relative isolate text-white lg:h-[650px]">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
         <div className="h-full">
           <h4 className="">Our Workflow</h4>

@@ -8,7 +8,7 @@ AOS.init();
 
 const Testimonials = () => {
   return (
-    <section className="relative overflow-hidden lg:min-h-[580px] bg-white">
+    <section className="relative overflow-hidden lg:min-h-[600px] bg-white">
       <WaveAnimation />
       <div className="relative flex flex-col items-center justify-center mx-auto pt-40">
         <div className="max-w-7xl py-2 mb-5 text-white text-center">

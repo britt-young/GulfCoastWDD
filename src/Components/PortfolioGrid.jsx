@@ -6,7 +6,7 @@ import WaveAnimation from "./WaveAnimation3";
 
 const PortfolioGrid = () => {
   return (
-    <section className="relative overflow-hidden min-h-[900px]">
+    <section className="relative overflow-hidden min-h-[900px] ">
       <WaveAnimation />
       <div className="relative lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
         <div className="">
@@ -28,7 +28,7 @@ const PortfolioGrid = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="relative text-center mx-5 lg:mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-20 lg:pt-25 px-0 ">
+      <div className="relative text-center mx-5 lg:mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-20 lg:pt-25 px-0">
         {/* First Webpage */}
         <div>
           <img

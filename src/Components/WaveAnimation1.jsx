@@ -13,7 +13,7 @@ const WaveAnimation1 = () => {
           index: "50",
         }}
         options={{
-          height: 0,
+          height: 20,
           amplitude: 40,
           speed: 0.1,
           points: 6,
