@@ -50,7 +50,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         {/* <img src={main} alt="Logo" className="h-12" /> */}
         <div className="flex flex-col items-center mx-4 lg:mx-0">
           <p className="text-3xl uppercase font-bold">Gulf Coast</p>
-          <p className="font-alt tracking-widest">Web Design & Development</p>
+          <p className="font-alt tracking-widest text-xs">Web Design & Development</p>
         </div>
 
         {/* Right Section */}

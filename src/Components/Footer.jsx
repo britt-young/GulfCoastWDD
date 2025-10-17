@@ -24,7 +24,7 @@ const Footer = () => {
         {/* <img src={logo} alt="logo" className="h-20" /> */}
         <div className="flex flex-col text-center h-20 w-fit p-4 lg:p-0">
           <h2 className="uppercase">Gulf Coast</h2>
-          <p className="font-alt tracking-widest">Web Design & Development</p>
+          <p className="font-alt tracking-widest text-lg">Web Design & Development</p>
         </div>
         <p className="mr-10 mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
