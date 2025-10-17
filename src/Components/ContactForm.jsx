@@ -12,10 +12,13 @@ const ContactForm = () => {
         <div className="mx-auto text-center">
           <h2>Custom Website Request</h2>
           <p className="mt-2">
-            Send us a message and let us help you convert website visitors to clients 
+            Send us a message and let us help you convert website visitors to
+            clients
           </p>
         </div>
         <form
+          name="contact"
+          netlify
           action="#"
           method="POST"
           className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
@@ -155,7 +158,12 @@ const ContactForm = () => {
             </Field>
           </div>
           <div className="mt-10">
-            <button type="submit" className="hover:bg-alternate hover:text-white">submit</button>
+            <button
+              type="submit"
+              className="hover:bg-alternate hover:text-white"
+            >
+              submit
+            </button>
           </div>
         </form>
       </div>
