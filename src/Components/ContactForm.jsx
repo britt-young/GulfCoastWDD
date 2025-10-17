@@ -17,8 +17,7 @@ const ContactForm = () => {
           </p>
         </div>
         <form
-          name="contact"
-          netlify
+          data-netlify="true"
           action="#"
           method="POST"
           className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
