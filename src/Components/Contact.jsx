@@ -9,10 +9,10 @@ const navigate = useNavigate();
   };
   return (
     <div className="bg-white w-full h-fit">
-      <div className="lg:my-10 my-5 py-20 px-5 flex flex-col lg:flex-row mx-20 justify-around border-1 rounded-3xl border-alt bg-alt/20">
+      <div className="lg:my-10 my-5 py-20 px-5 flex flex-col lg:flex-row lg:mx-20 justify-around border-1 rounded-3xl border-alt bg-alt/20">
         <div className="lg:text-start text-center">
           <h2>Book your free consultation call today</h2>
-          <p className="mt-2">
+          <p className="my-4 lg:mt-2 lg:my-0">
             Make your business stand out, generate more website views and turn
             them into customers!
           </p>
