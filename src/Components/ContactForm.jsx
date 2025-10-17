@@ -17,6 +17,7 @@ const ContactForm = () => {
           </p>
         </div>
         <form
+          name="gcww contact"
           data-netlify="true"
           action="#"
           method="POST"
