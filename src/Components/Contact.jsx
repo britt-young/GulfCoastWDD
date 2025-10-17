@@ -1,6 +1,11 @@
+import { useNavigate, Link } from "react-router-dom";
 
 const Contact = () => {
+const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate("/Contact"); // Navigate to the "/contact" route
+  };
   return (
     <div className="lg:my-10 my-5 py-20 px-5 flex flex-col lg:flex-row w-fit mx-auto gap-8 border-1 rounded-3xl border-alt bg-alt/20">
       <div className="lg:text-start text-center">
@@ -11,7 +16,7 @@ const Contact = () => {
         </p>
       </div>
       <div className='flex  justify-center'>
-        <button>Schedule a Free Call</button>
+        <button onClick={handleClick}>Schedule a Free Call</button>
       </div>
     </div>
   );
