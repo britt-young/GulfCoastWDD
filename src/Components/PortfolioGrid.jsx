@@ -4,12 +4,11 @@ import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
 import WaveAnimation from "./WaveAnimation3";
 
-
 const PortfolioGrid = () => {
   return (
     <section className="relative overflow-hidden min-h-[900px]">
-        <WaveAnimation />
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
+      <WaveAnimation />
+      <div className="relative lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
         <div className="">
           <h4 className="lg:text-alternate">Portfolio</h4>
           <h2>Some of our recent website designs</h2>
@@ -29,10 +28,14 @@ const PortfolioGrid = () => {
         </div>
       </div>
       {/* Portfolio Cards */}
-      <div className="relative text-center mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-20 lg:pt-25 px-0 ">
+      <div className="relative text-center mx-5 lg:mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 lg:gap-2 gap-20 lg:pt-25 px-0 ">
         {/* First Webpage */}
         <div>
-          <img src={farm} alt="Mockup Image" className="w-full object-cover" />
+          <img
+            src={farm}
+            alt="Mockup Image"
+            className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
+          />
 
           <h5 className="p-2 font-semibold">Local Farm</h5>
           <p className="pb-5">
@@ -53,7 +56,7 @@ const PortfolioGrid = () => {
           <img
             src={florist}
             alt="Mockup Image"
-            className="w-full object-cover"
+            className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
           <h5 className="p-2 font-semibold">Local Florist</h5>
@@ -72,7 +75,11 @@ const PortfolioGrid = () => {
         </div>
         {/* Third Webpage */}
         <div className="relative group">
-          <img src={photo} alt="Mockup Image" className="w-full object-cover" />
+          <img
+            src={photo}
+            alt="Mockup Image"
+            className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
+          />
 
           <h5 className="p-2 font-semibold">Julia Rose Photo</h5>
           <p className="pb-5">
