@@ -15,7 +15,7 @@ const Bio = () => {
         </p> */}
       </div>
       <div className="flex flex-col items-start lg:mr-90 mt-10 lg:mt-0">
-        <h4 className="">Why Choose GCWDD?</h4>
+        <h4 className="text-alternate">Why Choose GCWDD?</h4>
         <h2 className="font-bold">
           Let us bring your buisness to the online space
         </h2>

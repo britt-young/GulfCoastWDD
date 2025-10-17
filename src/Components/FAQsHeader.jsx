@@ -1,12 +1,11 @@
-import WaveBackground3 from "./WaveBackground3";
+import WaveAnimation from "./WaveAnimation3";
 
 const FAQsHeader = () => {
   return (
-    <section className="relative px-5 py-5 overflow-hidden">
-      <WaveBackground3 />
-      <h2 className="relative flex items-end h-[150px] justify-center text-black">
-        
-      </h2> 
+    <section className="relative overflow-hidden">
+      <WaveAnimation />
+      <div className="relative h-[100px] ">
+      </div>
     </section>
   );
 };
