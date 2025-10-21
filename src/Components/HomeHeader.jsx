@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import mockup from "../assets/mockupGif.gif"
+import mockup from "../assets/imgs/mockUp.png"
 
 
 const HomeHeader = () => {
@@ -19,14 +19,14 @@ const HomeHeader = () => {
           <button>get started</button>
         </Link>
       </div>
-      <div className="flex items-center lg:justify-start justify-center w-[800px] h-[600px] bg-white/50">
-         {/* <picture>
+      <div className="flex items-center lg:justify-start justify-center">
+         <picture>
           <img
             src={mockup}
             alt="mockup img"
-            className="lg:w-[600px]"
+            className="lg:w-[800px] md:w-[600px] w-[400px]"
           />
-        </picture>   */}
+        </picture>  
       </div>
     </div>
   );
