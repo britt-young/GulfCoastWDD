@@ -5,11 +5,27 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./src/assets/icons/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gulf Coast Web Designs | Custom Website Design & Development | Owner: Brittney Treece">
+  <meta name="description"
+    content="Gulf Coast Web Designs | Custom Website Design & Development | Owner: Brittney Treece">
   <title>Gulf Coast Web Designs | Custom Website Design & Development</title>
 </head>
 
 <body>
+  <!-- hidden form for netlify -->
+  <form name="gcww-contact" data-netlify="true" hidden>
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="text" name="company" />
+    <input type="email" name="email" />
+    <input type="text" name="phone-number" />
+    <select name="selectedPackage">
+      <option value="sum">Lump-Sum</option>
+      <option value="sub">Monthly Subscription</option>
+      <option value="e-comm">E-Commerce</option>
+    </select>
+    <input type="checkbox" name="agreeToPrivacy" />
+  </form>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

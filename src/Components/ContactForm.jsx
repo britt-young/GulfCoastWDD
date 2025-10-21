@@ -1,10 +1,47 @@
 import { useState } from "react";
-// import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Field, Label, Checkbox } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Required for Netlify to recognize the form
+    formData.append("form-name", form.getAttribute("name"));
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      setSubmitted(true);
+      form.reset();
+      setEnabled(false);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was a problem submitting the form.");
+    }
+  };
+
+  if (submitted) {
+    return (
+      <div className="py-20 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          Thank you for your message!
+        </h2>
+        <p className="mt-2 text-gray-600">
+          We’ll get back to you as soon as possible.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="py-20 px-5 lg:px-0">
@@ -16,16 +53,24 @@ const ContactForm = () => {
             clients
           </p>
         </div>
+
         <form
-          name="gcww contact"
+          name="gcww-contact"
+          method="POST"
           data-netlify="true"
-          action="#"
-          method="post"
-          onSubmit="submit"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
           className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
         >
-          <input type="hidden" name="contact form" value="gcwdd contact" />
-          
+          {/* Hidden form metadata for Netlify */}
+          <input type="hidden" name="form-name" value="gcww-contact" />
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you’re human:{" "}
+              <input name="bot-field" />
+            </label>
+          </p>
+
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
@@ -39,15 +84,15 @@ const ContactForm = () => {
                   id="first-name"
                   name="first-name"
                   type="text"
-                  autoComplete="first-name"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold  text-gray-900"
+                className="block text-sm font-semibold text-gray-900"
               >
                 Last name
               </label>
@@ -56,15 +101,16 @@ const ContactForm = () => {
                   id="last-name"
                   name="last-name"
                   type="text"
-                  autoComplete="last-name"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
+
             <div className="col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm font-semibold  text-gray-900"
+                className="block text-sm font-semibold text-gray-900"
               >
                 Company
               </label>
@@ -73,15 +119,15 @@ const ContactForm = () => {
                   id="company"
                   name="company"
                   type="text"
-                  autoComplete="company"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
+
             <div className="col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold  text-gray-900"
+                className="block text-sm font-semibold text-gray-900"
               >
                 Email
               </label>
@@ -90,15 +136,16 @@ const ContactForm = () => {
                   id="email"
                   name="email"
                   type="email"
-                  autoComplete="email"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 "
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
+
             <div className="col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm font-semibold  text-gray-900"
+                className="block text-sm font-semibold text-gray-900"
               >
                 Phone number
               </label>
@@ -108,18 +155,18 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white  px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1  outline-gray-300 placeholder:text-gray-400 placeholder:font-normal"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
 
-            {/* Pricing Selection */}
-            <label className="block text-sm font-semibold  text-gray-900">
+            <label className="block text-sm font-semibold text-gray-900 col-span-2">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
                 defaultValue="default"
-                className="bg-white  px-3.5 py-1 text-base font-normal text-gray-400 outline-1  outline-gray-300 "
+                required
+                className="bg-white px-3.5 py-1 text-base font-normal text-gray-700 outline outline-1 outline-gray-300 mt-1 rounded-md"
               >
                 <option value="default" disabled>
                   Select a package
@@ -135,9 +182,9 @@ const ContactForm = () => {
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-alternate "
+                  className="group block size-4 rounded border bg-white data-[checked]:bg-alternate"
+                  required
                 >
-                  {/* Checkmark icon */}
                   <svg
                     className="stroke-white opacity-0 group-data-[checked]:opacity-100"
                     viewBox="0 0 14 14"
@@ -160,12 +207,13 @@ const ContactForm = () => {
               </Label>
             </Field>
           </div>
+
           <div className="mt-10">
             <button
               type="submit"
-              className="hover:bg-alternate hover:text-white"
+              className="px-5 py-2 bg-gray-800 text-white rounded hover:bg-alternate transition"
             >
-              submit
+              Submit
             </button>
           </div>
         </form>
