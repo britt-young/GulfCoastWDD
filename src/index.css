@@ -22,6 +22,8 @@
   /* --color-alt: #a1cad7; */
 /* --color-dark: #0f2061; */
 /* --color-dark:#122574; */
+
+
 --color-alternate:#0091C0;
 --color-alt:#A7DC6A;
  --color-dark:#006B8F; 
@@ -68,6 +70,7 @@
 @layer base {
   body {
     @apply font-main text-base font-black m-0 p-0 transition-all duration-500 ease-in-out;
+    overflow-x: hidden;
   }
 
   /* .dark body {
