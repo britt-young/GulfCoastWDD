@@ -20,9 +20,12 @@ const ContactForm = () => {
           name="gcww contact"
           data-netlify="true"
           action="#"
-          method="POST"
+          method="post"
+          onSubmit="submit"
           className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
         >
+          <input type="hidden" name="contact form" value="gcwdd contact" />
+          
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
