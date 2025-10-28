@@ -54,7 +54,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-8">
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex gap-10 items-center">
             {navItems.map((item) =>
@@ -166,7 +166,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
             onClick={() => navigate("/Contact")}
             className="hidden lg:inline-block bg-alt text-black transition hover:bg-dark dark:hover:bg-white"
           >
-            Get Started
+            Get A Quote
           </button>
 
           {/* Dark Mode Toggle (desktop only) */}
