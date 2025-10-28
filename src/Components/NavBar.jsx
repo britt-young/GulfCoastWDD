@@ -49,7 +49,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         {/* Logo */}
         {/* <img src={main} alt="Logo" className="h-12" /> */}
         <div className="flex flex-col items-center mx-4 lg:mx-0">
-          <p className="text-3xl uppercase font-bold">Gulf Coast</p>
+          <p className="text-3xl uppercase font-bold tracking-wide">Gulf Coast</p>
           <p className="font-alt tracking-widest text-xs">Web Design & Development</p>
         </div>
 
@@ -170,13 +170,13 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           </button>
 
           {/* Dark Mode Toggle (desktop only) */}
-          <button
+          {/* <button
             onClick={toggleDarkMode}
             className="hidden lg:inline-block bg-transparent text-2xl text-[#FFD470] hover:scale-120 transition duration-200 shadow-none"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
-          </button>
+          </button> */}
 
           {/* Hamburger / Close Toggle (mobile only) */}
           <button
