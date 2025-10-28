@@ -20,7 +20,7 @@ const Workflow = () => {
         </div>
         <div className="flex items-center justify-start">
           <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alt lg:pl-5 lg:pt-0 pt-5">
-            After deciding if our services are right for your business, we will send over our contract followed by a short questionnaire to gather all necessary information about your business. During the design process, we will expand on that information and create your site's content for you. Once approved, we build and deliver your website within 4-8 weeks.
+            After deciding if our services are right for your business, we'll send over a contract followed by a short questionnaire. During the design process, we'll use the information from your questionnaire to create your site's content for you! Once approved, we build and deliver your website within 4-8 weeks.
           </p>
         </div>
       </div>
