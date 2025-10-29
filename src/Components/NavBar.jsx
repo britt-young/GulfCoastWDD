@@ -32,133 +32,128 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const navItems = ["Home", "About", "Services", "FAQs", "Contact"];
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
+  // Update your base/active/inactive classes:
   const linkBaseClasses =
-    "relative font-alt text-lg transition-colors duration-200";
-  const activeClasses = "font-semibold";
-  const inactiveClasses = "font-normal hover:font-semibold";
+    "relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
+
+  const activeClasses = "after:w-full"; // underline active link
+  const inactiveClasses = "hover:text-alt hover:after:w-full"; // underline on hover only
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "shadow-lg bg-white dark:bg-dark dark:text-white"
-            : "bg-white/10 dark:bg-dark/20 text-white mt-6 mx-4 lg:mx-10"
+            ? "shadow-lg bg-white text-black"
+            : "bg-white/10 text-white mt-6 mx-4 lg:mx-10"
         }`}
       >
         {/* Logo */}
         {/* <img src={main} alt="Logo" className="h-12" /> */}
         <div className="flex flex-col items-center mx-4 lg:mx-0">
-          <p className="text-3xl uppercase font-bold tracking-wide">Gulf Coast</p>
-          <p className="font-alt tracking-widest text-xs">Web Design & Development</p>
+          <p className="text-3xl uppercase font-bold tracking-wide">
+            Gulf Coast
+          </p>
+          <p className="font-alt tracking-widest text-xs">
+            Web Design & Development
+          </p>
         </div>
 
         {/* Right Section */}
         <div className="flex items-center space-x-8">
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex gap-10 items-center">
-            {navItems.map((item) =>
-              item === "Services" ? (
-                <li key={item} className="relative" ref={servicesRef}>
-                  {/* Dropdown Trigger */}
-                  <div
-                    onClick={() => setIsServicesOpen((prev) => !prev)}
-                    className="cursor-pointer inline-flex items-center gap-1 font-alt text-lg font-normal hover:font-semibold"
-                  >
-                    Services
-                    <svg
-                      className={`w-4 h-4 transition-transform duration-200 ${
-                        isServicesOpen ? "rotate-180" : ""
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
+            {navItems.map((item) => {
+              const isServices = item === "Services";
 
-                  {/* Dropdown Menu */}
-                  {isServicesOpen && (
-                    <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg divide-y divide-gray-200 z-50">
-                      <li>
-                        <NavLink
-                          to="/services/features"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              return (
+                <li
+                  key={item}
+                  className="relative"
+                  ref={isServices ? servicesRef : null}
+                >
+                  {isServices ? (
+                    <>
+                      {/* Services Dropdown Trigger */}
+                      <div
+                        onClick={() => setIsServicesOpen((prev) => !prev)}
+                        className={`${linkBaseClasses} cursor-pointer inline-flex items-center gap-1 ${
+                          isScrolled ? "text-black" : "text-white"
+                        } ${isServicesOpen ? activeClasses : inactiveClasses}`}
+                      >
+                        Services
+                        <svg
+                          className={`w-4 h-4 transition-transform duration-300 ease-in-out ${
+                            isServicesOpen ? "rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
                         >
-                          User-Friendly Features
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/services/optimization"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Page Speed Optimization
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/services/responsiveness"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Responsive Design
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/services/security"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Cyber Security
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/services/seo"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          On-Page SEO
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/services/shopify"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Shopify Integration
-                        </NavLink>
-                      </li>
-                    </ul>
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
+
+                      {/* Dropdown Menu */}
+                      {isServicesOpen && (
+                        <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg divide-y divide-gray-200 z-50">
+                          {[
+                            {
+                              name: "User-Friendly Features",
+                              path: "/services/features",
+                            },
+                            {
+                              name: "Page Speed Optimization",
+                              path: "/services/optimization",
+                            },
+                            {
+                              name: "Responsive Design",
+                              path: "/services/responsiveness",
+                            },
+                            {
+                              name: "Cyber Security",
+                              path: "/services/security",
+                            },
+                            { name: "On-Page SEO", path: "/services/seo" },
+                            {
+                              name: "Shopify Integration",
+                              path: "/services/shopify",
+                            },
+                          ].map((srv) => (
+                            <li key={srv.name}>
+                              <NavLink
+                                to={srv.path}
+                                onClick={() => setIsServicesOpen(false)}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              >
+                                {srv.name}
+                              </NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  ) : (
+                    <NavLink
+                      to={getPath(item)}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={({ isActive }) =>
+                        `${linkBaseClasses} ${
+                          isScrolled ? "text-black" : "text-white"
+                        } ${isActive ? activeClasses : inactiveClasses}`
+                      }
+                    >
+                      {item}
+                    </NavLink>
                   )}
                 </li>
-              ) : (
-                <li key={item}>
-                  <NavLink
-                    to={getPath(item)}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={({ isActive }) =>
-                      `${linkBaseClasses} ${
-                        isActive ? activeClasses : inactiveClasses
-                      }`
-                    }
-                  >
-                    {item}
-                  </NavLink>
-                </li>
-              )
-            )}
+              );
+            })}
           </ul>
 
           {/* Desktop CTA */}

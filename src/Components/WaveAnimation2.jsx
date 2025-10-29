@@ -4,7 +4,7 @@ const WaveAnimation2 = () => {
   return (
     <div>
       <Wave
-        fill="#0091C0"
+        fill="#0038a8"
         paused={false}
         style={{
           display: "flex",
