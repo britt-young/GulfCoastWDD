@@ -226,7 +226,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* <img src={main} alt="Logo" className="h-8" /> */}
           <div className="flex flex-col text-center h-full w-fit">
             <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
-            <p className="dark:text-alt font-alt">Web Design & Dev</p>
+            <p className="dark:text-alt font-alt text-sm">Web Design & Dev</p>
           </div>
         </div>
 
