@@ -4,6 +4,7 @@ import pic from "../assets/imgs/homeabout.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WaveAnimation from "./WaveAnimation3";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 // import WaveBackground from "./WaveBackground";
 
 AOS.init();
@@ -49,10 +50,10 @@ const HomeAbout = () => {
           <GuarenteeGrid />
 
           <button
-            className="mt-10 w-full flex justify-center mx-auto bg-alternate text-white hover:bg-alt hover:text-black"
+            className="mt-10 w-fit flex flex-row items-center justify-center bg-alternate text-white hover:bg-alt hover:text-black"
             onClick={handleClick}
           >
-            About Us
+            Get to know gcwdd <ArrowRightIcon className="size-6 ms-4" />
           </button>
         </div>
       </div>

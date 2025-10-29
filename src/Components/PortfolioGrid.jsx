@@ -3,6 +3,8 @@ import florist from "../assets/clippings/mockup-florist.svg";
 import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
 import WaveAnimation from "./WaveAnimation3";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+
 
 const PortfolioGrid = () => {
   return (
@@ -46,8 +48,8 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
-              visit website
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
+              visit website <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>
@@ -68,8 +70,8 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
-              visit website
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
+              visit website <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>
@@ -90,8 +92,8 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate hover:bg-alt text-white hover:text-black">
-              visit website
+            <button className="bg-alternate hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
+              visit website <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>

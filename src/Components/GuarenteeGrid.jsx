@@ -9,7 +9,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          SITE SECURITY
         </h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
@@ -22,7 +22,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          TOP-NOTCH SUPPORT
         </h5>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -35,7 +35,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          100 PAGESPEED SCORE
         </h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
@@ -48,7 +48,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          CUSTOM DESIGN
         </h5>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -61,7 +61,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          HIGH-QUALITY CONTENT
         </h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
@@ -74,7 +74,7 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate" />
           </span>
-          Our Guarentee
+          MONEY BACK GUARENTEE
         </h5>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
