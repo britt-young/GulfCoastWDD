@@ -40,7 +40,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-bold uppercase text-black dark:text-white">Local Farm</h5>
+          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Farm</h5>
           <p className="pb-5">
             A beautiful farm website showcasing local produce
           </p>
@@ -62,7 +62,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-bold uppercase text-black dark:text-white">Local Florist</h5>
+          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Florist</h5>
           <p className="pb-5">
             A beautiful florist website showcasing local flowers
           </p>
@@ -84,7 +84,7 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="p-2 font-bold uppercase text-black dark:text-white">Julia Rose Photo</h5>
+          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Julia Rose Photo</h5>
           <p className="pb-5">
             A beautiful photography website of stunning visuals
           </p>
