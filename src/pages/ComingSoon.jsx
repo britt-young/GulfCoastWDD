@@ -4,9 +4,9 @@ const ComingSoon = () => {
   return (
     <div className="relative h-screen">
       <WaveAnimation />
-      <h2 className="relative uppercase text-black flex flex-col items-center h-screen justify-center">
+      <h1 className="relative uppercase text-black flex flex-col items-center min-h-screen justify-center tracking-wide animate-pulse">
         Coming Soon
-      </h2>
+      </h1>
     </div>
   );
 };

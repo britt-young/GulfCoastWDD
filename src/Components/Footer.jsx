@@ -31,7 +31,7 @@ const Footer = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris{" "}
         </p>
-        <button className="bg-white hover:text-white hover:bg-alternate" onClick={handleClick}>
+        <button className="bg-alternate hover:text-black hover:bg-white text-white" onClick={handleClick}>
           Get Started
         </button>
       </div>
