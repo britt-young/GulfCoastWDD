@@ -1,4 +1,4 @@
-import headshot from "../assets/imgs/owner.png";
+import headshot from "../assets/imgs/ceo.png";
 
 
 const Bio = () => {
