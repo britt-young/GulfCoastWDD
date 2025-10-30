@@ -74,10 +74,10 @@ const Pricing = () => {
        
       <div className="relative mx-auto pt-40 text-center">
         <div>
-          <h4 className="text-alternate">our packages</h4>
-          <h2 className="">Pricing packages for any business</h2>
+          <h4 className="text-alternate dark:text-alt">our packages</h4>
+          <h2 className="dark:text-white">Pricing packages for any business</h2>
         </div>
-        <p className="mt-5">
+        <p className="mt-5 dark:text-white">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
@@ -89,8 +89,8 @@ const Pricing = () => {
           <div
             key={tier.id}
             className={classNames(
-              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
-              tier.featured ? "border-black border-1 dark:border-alt" : "bg-white border-1 border-gray-50"
+              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              tier.featured ? "border-black border-1 dark:border-white bg-white" : "bg-white border-1 border-gray-50"
             )}
           >
             <h3

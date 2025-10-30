@@ -33,8 +33,8 @@ const HomeAbout = () => {
         </div>
 
         {/* Text + CTA */}
-        <div className="flex flex-col items-start">
-          <h4 className="text-alternate">Gulf Coast Guarantee</h4>
+        <div className="flex flex-col items-start dark:text-white">
+          <h4 className="text-alternate dark:text-alt">Gulf Coast Guarantee</h4>
           <h2 className="">Websites starting at $145 per month</h2>
           <p className="mt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -48,7 +48,7 @@ const HomeAbout = () => {
           <GuarenteeGrid />
 
           <button
-            className="mt-10 w-fit flex flex-row items-center justify-center bg-alternate text-white hover:bg-alt hover:text-black"
+            className="mt-10 w-fit flex flex-row items-center justify-center dark:bg-alt dark:hover:bg-white dark:text-black bg-alternate text-white hover:bg-alt hover:text-black"
             onClick={handleClick}
           >
             Get to know gcwdd <ArrowRightIcon className="size-6 ms-4" />
