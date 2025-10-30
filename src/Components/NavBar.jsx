@@ -3,26 +3,48 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { motion } from "framer-motion";
 import main from "../assets/logos/Nav-logo-light.svg";
 
-const NavBar = ({ isDarkMode, toggleDarkMode }) => {
+const TOGGLE_CLASSES =
+  "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
+
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // services dropdown
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [theme, setTheme] = useState("light");
   const servicesRef = useRef(null);
   const navigate = useNavigate();
 
-  // Close Services dropdown when clicking outside
+  // --- Sync theme with <html> class and localStorage ---
   useEffect(() => {
-    function handleClickOutside(e) {
+    const storedTheme = localStorage.getItem("theme");
+    const initialTheme =
+      storedTheme ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+    setTheme(initialTheme);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // --- Close Services dropdown on outside click ---
+  useEffect(() => {
+    const handleClickOutside = (e) => {
       if (servicesRef.current && !servicesRef.current.contains(e.target)) {
         setIsServicesOpen(false);
       }
-    }
+    };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // --- Shadow on scroll ---
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
@@ -32,19 +54,17 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
   const navItems = ["Home", "About", "Services", "FAQs", "Contact"];
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
-  // Update your base/active/inactive classes:
   const linkBaseClasses =
     "relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
-
-  const activeClasses = "after:w-full"; // underline active link
-  const inactiveClasses = "hover:text-alt hover:after:w-full"; // underline on hover only
+  const activeClasses = "after:w-full";
+  const inactiveClasses = "hover:text-alt hover:after:w-full";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "shadow-lg bg-white text-black"
+            ? "shadow-lg bg-white text-black dark:bg-dark dark:text-white"
             : "bg-white/10 text-white mt-6 mx-4 lg:mx-10"
         }`}
       >
@@ -59,13 +79,12 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           </p>
         </div>
 
-        {/* Right Section */}
+        {/* --- Right Section --- */}
         <div className="flex items-center space-x-8">
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex gap-10 items-center">
             {navItems.map((item) => {
               const isServices = item === "Services";
-
               return (
                 <li
                   key={item}
@@ -78,7 +97,9 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
                       <div
                         onClick={() => setIsServicesOpen((prev) => !prev)}
                         className={`${linkBaseClasses} cursor-pointer inline-flex items-center gap-1 ${
-                          isScrolled ? "text-black" : "text-white"
+                          isScrolled
+                            ? "text-black dark:text-white"
+                            : "text-white"
                         } ${isServicesOpen ? activeClasses : inactiveClasses}`}
                       >
                         Services
@@ -101,7 +122,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
 
                       {/* Dropdown Menu */}
                       {isServicesOpen && (
-                        <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg divide-y divide-gray-200 z-50">
+                        <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white dark:bg-slate-800 shadow-lg divide-y divide-gray-200 dark:divide-gray-700 z-50">
                           {[
                             {
                               name: "User-Friendly Features",
@@ -129,7 +150,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
                               <NavLink
                                 to={srv.path}
                                 onClick={() => setIsServicesOpen(false)}
-                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-700"
                               >
                                 {srv.name}
                               </NavLink>
@@ -144,7 +165,9 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
                       onClick={() => setIsMenuOpen(false)}
                       className={({ isActive }) =>
                         `${linkBaseClasses} ${
-                          isScrolled ? "text-black" : "text-white"
+                          isScrolled
+                            ? "text-black dark:text-white"
+                            : "text-white"
                         } ${isActive ? activeClasses : inactiveClasses}`
                       }
                     >
@@ -159,27 +182,22 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {/* Desktop CTA */}
           <button
             onClick={() => navigate("/Contact")}
-            className="hidden lg:inline-block bg-alt text-black transition hover:bg-dark dark:hover:bg-white"
+            className="hidden lg:inline-block bg-alt text-black dark:bg-alt dark:text-black transition hover:bg-alternate hover:text-white dark:hover:bg-white"
           >
             Get A Quote
           </button>
 
-          {/* Dark Mode Toggle (desktop only) */}
-          <button
-            onClick={toggleDarkMode}
-            className="hidden lg:inline-block bg-transparent text-2xl text-[#002775] hover:scale-120 transition duration-200 shadow-none"
-            aria-label="Toggle Dark Mode"
-          >
-            {isDarkMode ? <FiSun /> : <FiMoon />}
-          </button>
+          {/* Dark Mode Slider Toggle (Desktop) */}
+          <div className="hidden lg:flex">
+            <SliderToggle selected={theme} setSelected={setTheme} />
+          </div>
 
-          {/* Hamburger / Close Toggle (mobile only) */}
+          {/* Hamburger Toggle (Mobile) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden relative w-8 h-8 flex items-center justify-center bg-transparent mr-2 shadow-none"
             aria-label="Toggle Menu"
           >
-            {/* Hamburger Icon */}
             <GiHamburgerMenu
               className={`absolute text-2xl text-white transition-all duration-300 transform ${
                 isMenuOpen
@@ -187,10 +205,8 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
                   : "opacity-100 rotate-0 scale-100"
               }`}
             />
-
-            {/* Close Icon */}
             <IoClose
-              className={`absolute text-3xl dark:text-white text-alternate transition-all duration-300 transform ${
+              className={`absolute text-3xl text-white transition-all duration-300 transform ${
                 isMenuOpen
                   ? "opacity-100 rotate-0 scale-100"
                   : "opacity-0 -rotate-90 scale-75"
@@ -200,7 +216,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         </div>
       </nav>
 
-      {/* Mobile Overlay */}
+      {/* --- Mobile Overlay --- */}
       <div
         className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ease-in-out ${
           isMenuOpen
@@ -210,22 +226,19 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         onClick={() => setIsMenuOpen(false)}
       />
 
-      {/* Mobile Sidebar */}
+      {/* --- Mobile Sidebar --- */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-slate-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Header with Logo + Close (Close is hidden since it's now morphing into hamburger) */}
         <div className="p-6 mt-5 flex border-b border-gray-200 dark:border-gray-700">
-          {/* <img src={main} alt="Logo" className="h-8" /> */}
           <div className="flex flex-col text-center h-full w-fit">
             <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
             <p className="dark:text-alt font-alt text-sm">Web Design & Dev</p>
           </div>
         </div>
 
-        {/* Mobile Nav Links */}
         <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium dark:text-white">
           {navItems.map((item) => (
             <li key={item}>
@@ -244,7 +257,6 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           ))}
         </ul>
 
-        {/* Mobile CTA */}
         <div className="flex justify-start mt-10 px-6">
           <button
             onClick={() => {
@@ -256,8 +268,50 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
             Get Started
           </button>
         </div>
+
+        {/* Dark Mode Toggle for Mobile */}
+        <div className="flex justify-start mt-6 px-6">
+          <SliderToggle selected={theme} setSelected={setTheme} />
+        </div>
       </div>
     </header>
+  );
+};
+
+// === Animated Framer Motion Slider Toggle ===
+const SliderToggle = ({ selected, setSelected }) => {
+  return (
+    <div className="relative flex w-fit items-center rounded-full">
+      <button
+        className={`${TOGGLE_CLASSES} ${
+          selected === "light" ? "text-black bg-transparent" : "text-white bg-transparent"
+        }`}
+        onClick={() => setSelected("light")}
+      >
+        <FiMoon className="relative z-10 text-lg md:text-sm" />
+        <span className="relative z-10 lowercase">Light-mode</span>
+      </button>
+      <button
+        className={`${TOGGLE_CLASSES} ${
+          selected === "dark" ? "text-white bg-transparent" : "text-black bg-transparent"
+        }`}
+        onClick={() => setSelected("dark")}
+      >
+        <FiSun className="relative z-10 text-lg md:text-sm" />
+        <span className="relative z-10 lowercase">Dark-mode</span>
+      </button>
+      <div
+        className={`absolute inset-0 z-0 flex ${
+          selected === "dark" ? "justify-end" : "justify-start"
+        }`}
+      >
+        <motion.span
+          layout
+          transition={{ type: "spring", damping: 15, stiffness: 250 }}
+          className="h-full w-1/2 rounded-full bg-gradient-to-r from-alt/60 to-alt/10"
+        />
+      </div>
+    </div>
   );
 };
 
