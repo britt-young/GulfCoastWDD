@@ -1,16 +1,37 @@
+//WHITE WAVE
+
+import { useEffect, useState } from "react";
 import Wave from "react-wavify";
-// white wave
+
 const WaveAnimation3 = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const checkDarkMode = () =>
+      setIsDark(document.documentElement.classList.contains("dark"));
+
+    checkDarkMode();
+
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       <Wave
-        fill="#ffffff"
+        fill={isDark ? "#002775" : "#ffffff"}
         paused={false}
         style={{
           display: "flex",
           position: "absolute",
+          
           height: "100%",
-          index: "50",
+          zIndex: 0,
         }}
         options={{
           height: 40,
@@ -19,7 +40,6 @@ const WaveAnimation3 = () => {
           points: 6,
         }}
       />
-      
     </div>
   );
 };

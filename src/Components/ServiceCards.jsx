@@ -15,7 +15,7 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden bg-white dark:bg-dark py-20">
    <WaveAnimation2 />
 
       <div className="relative mx-auto max-w-7xl pt-40">

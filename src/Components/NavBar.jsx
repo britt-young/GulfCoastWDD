@@ -165,13 +165,13 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           </button>
 
           {/* Dark Mode Toggle (desktop only) */}
-          {/* <button
+          <button
             onClick={toggleDarkMode}
-            className="hidden lg:inline-block bg-transparent text-2xl text-[#FFD470] hover:scale-120 transition duration-200 shadow-none"
+            className="hidden lg:inline-block bg-transparent text-2xl text-[#002775] hover:scale-120 transition duration-200 shadow-none"
             aria-label="Toggle Dark Mode"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
-          </button> */}
+          </button>
 
           {/* Hamburger / Close Toggle (mobile only) */}
           <button

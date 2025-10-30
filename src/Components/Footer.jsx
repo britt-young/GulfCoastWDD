@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     
 
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-white dark:bg-dark">
       <WaveAnimation />
     <div className="pt-20 relative grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
 

@@ -10,7 +10,7 @@ const Workflow = () => {
     };
 
   return (
-    <section className="relative pb-0 bg-white overflow-hidden">
+    <section className="relative pb-0 bg-white dark:bg-dark overflow-hidden">
   <WaveAnimation />
     <div className="flex flex-col py-10 pt-20 relative isolate text-white lg:h-[650px]">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">

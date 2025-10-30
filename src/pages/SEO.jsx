@@ -4,7 +4,7 @@ const SEO = () => {
   return (
     <div>
       <SEOHeader />
-      <div className="min-h-screen bg-white py-10 px-4 md:px-20">
+      <div className="min-h-screen bg-white dark:bg-dark py-10 px-4 md:px-20">
         {/* Blog Header */}
         <div className="max-w-4xl mx-auto mb-20">
           <h2 className="mb-4">Search Engine Optimization (SEO)</h2>

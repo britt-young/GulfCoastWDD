@@ -15,7 +15,7 @@ const HomeAbout = () => {
     navigate("/About"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative py-10 overflow-hidden">
+    <section className="relative py-10 overflow-hidden ">
       {/* <WaveBackground /> */}
       <WaveAnimation />
 

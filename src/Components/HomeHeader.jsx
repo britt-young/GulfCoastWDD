@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import mockup from "../assets/imgs/mockUp.png"
+import mockup from "../assets/imgs/mockUp.svg"
 
 
 const HomeHeader = () => {
