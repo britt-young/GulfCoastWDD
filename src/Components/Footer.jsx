@@ -4,7 +4,7 @@ import {
   EnvelopeIcon,
   MapPinIcon,
 } from "@heroicons/react/24/solid";
-import WaveAnimation from "./WaveAnimation1";
+import WaveAnimation from "./WaveAnimation2";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -20,25 +20,25 @@ const Footer = () => {
     <div className="pt-20 relative grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
 
       {/* brand side */}
-      <div className="flex flex-col lg:items-start justify-top gap-5">
+      <div className="flex flex-col lg:items-start justify-top gap-5 text-white">
         {/* <img src={logo} alt="logo" className="h-20" /> */}
         <div className="flex flex-col text-center h-20 w-fit p-4 lg:p-0">
           <h2 className="uppercase">Gulf Coast</h2>
-          <p className="font-alt tracking-widest text-lg">Web Design & Development</p>
+          <p className="font-alt text-alt tracking-widest text-lg">Web Design & Development</p>
         </div>
         <p className="mr-10 mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris{" "}
         </p>
-        <button className="bg-alternate hover:text-black hover:bg-white text-white" onClick={handleClick}>
+        <button onClick={handleClick}>
           Get Started
         </button>
       </div>
       {/* contact + link side */}
-      <div className="flex lg:flex-row flex-col gap-10 lg:gap-0">
+      <div className="flex lg:flex-row flex-col gap-10 lg:gap-0 text-white">
         <div className="flex flex-col lg:items-start">
-          <h4 className="mb-4 text-2xl border-l-6 border-black pl-2 text-black">
+          <h4 className="mb-4 text-2xl border-l-6 border-alt pl-2 text-white">
             Contact Us
           </h4>
           <div className="text-left font-normal indent-4">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col lg:items-start">
-          <h4 className="text-2xl border-l-6 border-black pl-2 mb-4 text-black">
+          <h4 className="text-2xl border-l-6 border-alt pl-2 mb-4 text-white">
             Site Map
           </h4>
           <div className="text-left font-normal indent-4 w-full">
