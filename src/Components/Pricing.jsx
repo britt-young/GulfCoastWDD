@@ -90,19 +90,19 @@ const Pricing = () => {
             key={tier.id}
             className={classNames(
               "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
-              tier.featured ? "bg-alt/10 border-1 border-alt" : "bg-white"
+              tier.featured ? "border-black border-1 dark:border-alt" : "bg-white border-1 border-gray-50"
             )}
           >
             <h3
               id={tier.id}
               className={classNames(
-                tier.featured ? "text-alt" : "text-red-600",
+                tier.featured ? "text-alternate" : "text-red-600",
                 "text-base font-semibold"
               )}
             >
               {tier.name}
             </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
+            <p className="mt-4 flex items-baseline gap-x-2 ">
               <span className="text-5xl font-semibold tracking-tight text-black">
                 {tier.price}
               </span>
@@ -113,9 +113,8 @@ const Pricing = () => {
             <ul role="list" className="lg:mt-8 space-y-3 mt-10 flex-grow ">
               {tier.features.map((feature) => (
                 <li key={feature} className="flex gap-x-3 items-center">
-                  {/* Fully opaque green check */}
                   <CheckIcon
-                    className="h-6 w-5 flex-none text-alt"
+                    className="h-6 w-5 flex-none text-alternate"
                     aria-hidden="true"
                   />
                   <span className="text-black ">{feature}</span>
@@ -123,7 +122,7 @@ const Pricing = () => {
               ))}
               {tier.others.map((other) => (
                 <li key={other} className="flex gap-x-3 items-center">
-                  {/* Fully opaque red X */}
+                  
                   <XCircleIcon
                     className="h-6 w-5 flex-none text-red-400"
                     aria-hidden="true"
@@ -139,7 +138,7 @@ const Pricing = () => {
               className={classNames(
                 "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
                 tier.featured
-                  ? "bg-alt text-black shadow-lg hover:text-white"
+                  ? "bg-alternate text-white shadow-lg hover:bg-alt hover:text-black"
                   : "text-black bg-gray-100 hover:bg-gray-200"
               )}
             >
