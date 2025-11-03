@@ -35,14 +35,11 @@ const HomeAbout = () => {
         {/* Text + CTA */}
         <div className="flex flex-col items-start dark:text-white">
           <h4 className="text-alternate dark:text-alt">Gulf Coast Guarantee</h4>
-          <h2 className="">Websites starting at $145 per month</h2>
+          <h2 className="">Websites starting at $0 down, $145 per month</h2>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris.
+            We offer a variety of pricing packages for you to choose from. Our monthly subscription offer includes a standard 5-page website for $0 down. If needed, pages can be added. Pricing will vary depending on the number of additional pages requested.
+            <span className="font-bold mx-1">12 month minimum contract</span>
+            Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.
           </p>
 
           <GuarenteeGrid />

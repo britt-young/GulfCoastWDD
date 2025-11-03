@@ -12,7 +12,7 @@ const RootLayout = () => {
 }, [isDarkMode]);
 
   return (
-    <div className="flex flex-col min-h-screen transition-colors duration-300 bg-alternate">
+    <div className="flex flex-col min-h-screen transition-colors duration-300 ease-in-out bg-alternate">
       <ScrollToTop />
       {/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(prev => !prev)} />

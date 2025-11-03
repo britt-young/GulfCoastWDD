@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-import main from "../assets/logos/Nav-logo-light.svg";
+// import main from "../assets/logos/Nav-logo-light.svg";
 
 const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
@@ -44,7 +44,7 @@ const NavBar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // --- Shadow on scroll ---
+  // --- On scroll ---
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
@@ -281,7 +281,7 @@ const NavBar = () => {
 // === Animated Framer Motion Slider Toggle ===
 const SliderToggle = ({ selected, setSelected }) => {
   return (
-    <div className="relative flex w-fit items-center rounded-full">
+    <div className="relative flex w-fit items-center rounded-full transition-all duration-300 ease-in-out">
       <button
         className={`${TOGGLE_CLASSES} ${
           selected === "light" ? "text-black bg-transparent" : "text-white bg-transparent"
