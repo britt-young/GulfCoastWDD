@@ -40,7 +40,7 @@ const Bio = () => {
             onClick={() => navigate("/Contact")}
             className="mt-5 bg-alternate hover:text-black transition hover:bg-alt text-white"
           >
-            Call Us:  (513) 262-4121
+            Call Us: (850) 296-8466
           </button>
       </div>
     </div>
