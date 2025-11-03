@@ -12,8 +12,7 @@ const GuarenteeGrid = () => {
           SITE SECURITY
         </h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          mollitia?
+          Every website we build includes secure communication through HTTPS encryption and generated SSL certificates
         </p>
       </div>
       {/* Snippet */}
@@ -22,11 +21,10 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
-          TOP-NOTCH SUPPORT
+          5-STAR CUSTOMER SUPPORT
         </h5>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-          cupiditate?
+          Call or text anytime. No automated responses. When you call, you speak directly to me- your developer
         </p>
       </div>
       {/* Snippet */}
@@ -35,11 +33,10 @@ const GuarenteeGrid = () => {
           <span>
             <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
-          100 PAGESPEED SCORE
+          OPTIMIZED PAGE SPEED 
         </h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          mollitia?
+          1 in 4 users will abandon a site that takes more than 4 seconds to load. Our websites are built with performance in mind and score between 90-100 with Google everytime
         </p>
       </div>
       {/* Snippet */}
@@ -51,8 +48,7 @@ const GuarenteeGrid = () => {
           CUSTOM DESIGN
         </h5>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-          cupiditate?
+          100% hand-coded and custom to your business. You have full control with a wide range of feature customizations that align with your company's needs and goals
         </p>
       </div>
       {/* Snippet */}
@@ -64,8 +60,7 @@ const GuarenteeGrid = () => {
           HIGH-QUALITY CONTENT
         </h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          mollitia?
+          The key to building client trust is through high-quality content! We use Authoritative Content to establish your brand as a trusted leader in your industry and serve as your brnad's voice
         </p>
       </div>
       {/* Snippet */}
@@ -77,8 +72,7 @@ const GuarenteeGrid = () => {
           MONEY BACK GUARENTEE
         </h5>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-          cupiditate?
+          If we can't design something you are 100% satisfied with and no longer wish to continue with our services, we will refund you the amount paid to us to get started
         </p>
       </div>
     </div>

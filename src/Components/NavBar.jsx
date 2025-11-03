@@ -288,8 +288,8 @@ const SliderToggle = ({ selected, setSelected }) => {
         }`}
         onClick={() => setSelected("light")}
       >
-        <FiMoon className="relative z-10 text-lg md:text-sm" />
-        <span className="relative z-10 lowercase">Light-mode</span>
+        <FiSun className="relative z-10 text-lg md:text-sm " />
+        {/* <span className="relative z-10 lowercase">Light-mode</span> */}
       </button>
       <button
         className={`${TOGGLE_CLASSES} ${
@@ -297,8 +297,8 @@ const SliderToggle = ({ selected, setSelected }) => {
         }`}
         onClick={() => setSelected("dark")}
       >
-        <FiSun className="relative z-10 text-lg md:text-sm" />
-        <span className="relative z-10 lowercase">Dark-mode</span>
+        <FiMoon className="relative z-10 text-lg md:text-sm" />
+        {/* <span className="relative z-10 lowercase">Dark-mode</span> */}
       </button>
       <div
         className={`absolute inset-0 z-0 flex ${
@@ -308,7 +308,7 @@ const SliderToggle = ({ selected, setSelected }) => {
         <motion.span
           layout
           transition={{ type: "spring", damping: 15, stiffness: 250 }}
-          className="h-full w-1/2 rounded-full bg-gradient-to-r from-alt/60 to-alt/10"
+          className="h-full w-1/2 rounded-full bg-gradient-to-r from-alt/80 to-alt/10"
         />
       </div>
     </div>
