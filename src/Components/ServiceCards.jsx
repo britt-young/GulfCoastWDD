@@ -21,9 +21,9 @@ const ServiceCards = () => {
       <div className="relative mx-auto max-w-7xl pt-40">
         <div className="flex flex-col items-center justify-center py-5 text-white">
           <h4>what we offer</h4>
-          <h2 className="text-center ">Services included in all our packages</h2>
+          <h2 className="text-center ">Services included in our packages</h2>
           <p className="mt-2 lg:w-200 mx-5 text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            Let us take care of your website so you can take care of your business
           </p>
         </div>
         {/* Feature Card Grid */}
