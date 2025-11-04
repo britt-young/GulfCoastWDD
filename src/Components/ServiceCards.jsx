@@ -38,9 +38,7 @@ const ServiceCards = () => {
             <div className="h-full w-fit">
               <h5 className="text-alternate">User-Friendly Features</h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Make a good first impression with potential clients by having a website that is easy to navigate and has intuitive feature placement to guide users to the information they want to see
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
@@ -60,9 +58,7 @@ const ServiceCards = () => {
                 Loading Speed Optimization
               </h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Fast loading times are a non-negotiable for ensuring a positive user experience! We optimize images, videos, and code to improve page speed and keep users engaged and satisfied
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
@@ -80,9 +76,7 @@ const ServiceCards = () => {
             <div className="h-full w-fit">
               <h5 className="text-alternate">Responsive Design</h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Our websites adapt to every screen size! Half of all website traffic originates from mobile devices, making responsive design essential for your site to reach all types of users
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
@@ -100,9 +94,7 @@ const ServiceCards = () => {
             <div className="h-full w-fit">
               <h5 className="text-alternate">User Security and Web Encryption</h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Users want to know their personal data is safe and secure when browsing your website. We include HTTPS encryption when building our sites to give your users piece of mind that their senstitive data is protected from theft or misuse 
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
@@ -120,9 +112,7 @@ const ServiceCards = () => {
             <div className="h-full w-fit">
               <h5 className="text-alternate">On-Page SEO</h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Our "on-page" SEO strategy includes key components like high quality copyright content, keyword optimization, meta tag descriptions, clean URL structure, and enhanced user experience to attract relevant traffic and improve SEO rankings 
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
@@ -140,9 +130,7 @@ const ServiceCards = () => {
             <div className="h-full w-fit">
               <h5 className="text-alternate">Shopify Store Integration</h5>
               <p className="mt-1 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-                odio commodi voluptatibus possimus provident! Quidem magnam,
-                velit provident cupiditate, quasi earum temporibus numquam!
+                Already have a Shopify store? We can seemlessly integrate your store with your new custom website. Starting your E-Commerse website from the ground up? We will take care of everything, all you need to do is provide us your inventory!
               </p>
             </div>
             <div className="flex justify-end hover:text-alternate">
