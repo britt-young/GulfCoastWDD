@@ -206,7 +206,7 @@ const NavBar = () => {
               }`}
             />
             <IoClose
-              className={`absolute text-3xl text-white transition-all duration-300 transform ${
+              className={`absolute text-3xl text-black dark:text-white transition-all duration-300 transform ${
                 isMenuOpen
                   ? "opacity-100 rotate-0 scale-100"
                   : "opacity-0 -rotate-90 scale-75"
