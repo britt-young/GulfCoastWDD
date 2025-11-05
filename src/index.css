@@ -7,9 +7,18 @@
   --font-alt: "Public Sans", sans-serif;
 
   --breakpoint-*: initial;
-  --breakpoint-sm: 640px;
+  /* ipad */
+  --breakpoint-sm: 24rem;
+  /* tablet */
+  --breakpoint-md: 50rem;
+  /* laptop */
+  --breakpoint-lg: 90rem;
+  /* destop display */
+  --breakpoint-xl: 120rem;
+  
+  /* --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
+  --breakpoint-lg: 1024px; */
 
   /*light mode */
 
