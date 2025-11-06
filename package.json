@@ -12,7 +12,6 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@react-three/fiber": "^9.4.0",
     "@tailwindcss/vite": "^4.0.8",
     "aos": "^2.3.4",
     "framer-motion": "^12.23.24",
@@ -22,8 +21,7 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.4",
     "react-wavify": "^1.11.1",
-    "tailwindcss": "^4.0.8",
-    "three": "^0.181.0"
+    "tailwindcss": "^4.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

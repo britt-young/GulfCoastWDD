@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import mockup from "../assets/imgs/mockup.svg";
 
 const HomeHeader = () => {
+  
   return (
     <div className="relative w-full overflow-hidden lg:mt-10 mt-5 py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 h-full">
 
