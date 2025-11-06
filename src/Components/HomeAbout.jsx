@@ -3,21 +3,19 @@ import GuarenteeGrid from "./GuarenteeGrid";
 import pic from "../assets/imgs/homeabout.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WaveAnimation from "./WaveAnimation3";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-// import WaveBackground from "./WaveBackground";
+import WaveAnimation from "./WaveAnimation3";
 
 AOS.init();
 
 const HomeAbout = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/About"); // Navigate to the "/contact" route
+    navigate("/About");
   };
   return (
-    <section className="relative py-10 overflow-hidden bg-white dark:bg-dark">
-      {/* <WaveBackground /> */}
-      {/* <WaveAnimation /> */}
+    <section className="relative overflow-hidden bg-white dark:bg-dark">
+      <WaveAnimation />
 
       {/* Content */}
       <div className="relative pt-40 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">

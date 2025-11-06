@@ -32,7 +32,7 @@
 /* --color-dark: #0f2061; */
 /* --color-dark:#122574; */
 
---color-alternate:rgb(0, 56, 168)     ; 
+--color-alternate:#0038a8     ; 
 /* --color-alternate:#0091C0; */
 /* A7DC6A #93C572 #002775*/
 --color-alt:#DDFF00  ;
@@ -89,7 +89,7 @@
   } */
 
   h1 {
-    @apply lg:text-[5em] text-[4em] font-bold lg:leading-20 leading-15 tracking-tighter text-black;
+    @apply lg:text-[4em] text-[2em] font-bold lg:leading-15 leading-8 tracking-tighter text-black;
   }
 
   h2 {
