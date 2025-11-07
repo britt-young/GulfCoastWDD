@@ -2,14 +2,13 @@ import farm from "../assets/clippings/mockup-farm.svg";
 import florist from "../assets/clippings/mockup-florist.svg";
 import photo from "../assets/clippings/mockup-photo.svg";
 import { NavLink } from "react-router-dom";
-import WaveAnimation from "./WaveAnimation3";
+
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 const PortfolioGrid = () => {
   return (
-    <section className="relative overflow-hidden min-h-[800px] ">
-      <WaveAnimation />
-      <div className="relative lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
+    <section className="bg-white dark:bg-dark py-20">
+      <div className=" lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black">
         <div className="">
           <h4 className="text-alternate dark:text-alt">Portfolio</h4>
           <h2 className="dark:text-white">
