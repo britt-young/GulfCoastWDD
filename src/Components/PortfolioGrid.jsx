@@ -18,15 +18,10 @@ const PortfolioGrid = () => {
         </div>
         <div className="dark:text-white flex items-center justify-start pb-10 lg:pb-0">
           <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alternate dark:border-alt lg:pl-5 lg:pt-0 pt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laborisLorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris
+            At Gulf Coast Web Design & Development, we specialize in small
+            business web design and development for clients all along the
+            northern coast of the gulf. No matter your business, we can build a website that is beautiful, tailored to your industry, boosts customer trust, and
+            converts website viewers into patrons.
           </p>
         </div>
       </div>
@@ -40,17 +35,17 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Farm</h5>
+          {/* <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Farm</h5>
           <p className="pb-5">
             A beautiful farm website showcasing local produce
-          </p>
+          </p> */}
           <NavLink
             to="https://localfarm.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
-              visit website <ArrowUpRightIcon className="size-5 ms-2" />
+            <button className="bg-blue-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto mt-5">
+              Visit LocalFarm.dev <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>
@@ -62,17 +57,18 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Florist</h5>
+          {/* <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Local Florist</h5>
           <p className="pb-5">
             A beautiful florist website showcasing local flowers
-          </p>
+          </p> */}
           <NavLink
             to="https://localflorist.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
-              visit website <ArrowUpRightIcon className="size-5 ms-2" />
+            <button className="mt-5 bg-indigo-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
+              Visit localflorist.dev{" "}
+              <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>
@@ -84,17 +80,18 @@ const PortfolioGrid = () => {
             className="lg:w-full md:w-[90%] w-[80%] mx-auto object-cover"
           />
 
-          <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Julia Rose Photo</h5>
+          {/* <h5 className="pt-2 font-bold uppercase text-black dark:text-white">Julia Rose Photo</h5>
           <p className="pb-5">
             A beautiful photography website of stunning visuals
-          </p>
+          </p> */}
           <NavLink
             to="https://juliarosephoto.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-alternate dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
-              visit website <ArrowUpRightIcon className="size-5 ms-2" />
+            <button className="mt-5 bg-pink-400 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
+              Visit JuliaRosePhoto.dev{" "}
+              <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
         </div>
