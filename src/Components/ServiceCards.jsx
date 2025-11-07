@@ -65,10 +65,10 @@ const ServiceCards = () => {
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-5 text-white text-center">
         <h4>what we offer</h4>
-        <h2 className="text-2xl md:text-3xl font-semibold">
+        <h2>
           Services included in our packages
         </h2>
-        <p className="mt-2 max-w-2xl mx-auto px-5">
+        <p className="mt-2">
           Let us take care of your website so you can take care of your business
         </p>
       </div>
