@@ -7,7 +7,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 const PortfolioGrid = () => {
   return (
-    <section className="relative overflow-hidden min-h-[900px] ">
+    <section className="relative overflow-hidden min-h-[800px] ">
       <WaveAnimation />
       <div className="relative lg:mx-auto mx-5 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black pt-40 ">
         <div className="">

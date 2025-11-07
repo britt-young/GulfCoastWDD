@@ -25,14 +25,14 @@ const HomeHeader = () => {
       </div>
 
       {/*Image */}
-      <div className="flex items-center lg:justify-start justify-center">
-        <picture>
+      <div className="flex items-center lg:justify-start justify-center lg:w-1/2 md:w-[400px] w-[200px]">
+        {/* <picture>
           <img
             src={mockup}
             alt="mockup img"
             className="lg:w-1/2 md:w-[400px] w-[200px]"
           />
-        </picture>
+        </picture> */}
       </div>
     </div>
   );

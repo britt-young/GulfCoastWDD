@@ -18,7 +18,7 @@ const HomeAbout = () => {
       <WaveAnimation />
 
       {/* Content */}
-      <div className="relative pt-40 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">
+      <div className="relative pt-40 pb-20 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">
         {/* Image */}
         <div className="w-full flex items-center justify-center">
           <img

@@ -135,4 +135,13 @@ button:hover {
   .card {
     @apply bg-gray-50 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-lg shadow-black/30 rounded-lg flex flex-col relative;
   }
+  /* Hide scrollbar for Chrome, Safari, Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}
 }

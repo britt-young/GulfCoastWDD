@@ -15,10 +15,9 @@ const ServiceCards = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    <section className="relative overflow-hidden bg-white dark:bg-dark py-20">
-   <WaveAnimation2 />
+   
 
-      <div className="relative mx-auto max-w-7xl pt-40">
+      <div className="mx-auto max-w-7xl pt-20 bg-alternate dark:bg-dark">
         <div className="flex flex-col items-center justify-center py-5 text-white">
           <h4>what we offer</h4>
           <h2 className="text-center ">Services included in our packages</h2>
@@ -149,7 +148,6 @@ const ServiceCards = () => {
           </button>
         </div>
       </div>
-    </section>
   );
 };
 
