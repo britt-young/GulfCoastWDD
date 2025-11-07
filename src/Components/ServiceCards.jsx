@@ -89,7 +89,7 @@ const ServiceCards = () => {
             {/* Card Content */}
             <div className="relative p-6 flex flex-col justify-between h-full">
               <div>
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <h5 className="mb-1">{service.title}</h5>
                 <p className="text-gray-700 mb-4">{service.description}</p>
               </div>
 

@@ -112,8 +112,9 @@
   }
 
   button {
-    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide;
+    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-colors duration-400 ease-in-out;
     z-index: 1;
+    
   }
 
 button:hover {
