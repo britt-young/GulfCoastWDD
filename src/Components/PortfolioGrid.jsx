@@ -20,8 +20,9 @@ const PortfolioGrid = () => {
           <p className="border-t-1 lg:border-t-0 lg:border-l-1 border-l-0 border-alternate dark:border-alt lg:pl-5 lg:pt-0 pt-5">
             At Gulf Coast Web Design & Development, we specialize in small
             business web design and development for clients all along the
-            northern coast of the gulf. No matter your business, we can build a website that is beautiful, tailored to your industry, boosts customer trust, and
-            converts website viewers into patrons.
+            northern coast of the gulf. No matter your business, we can build a
+            website that is beautiful, tailored to your industry, boosts
+            customer trust, and converts website viewers into patrons.
           </p>
         </div>
       </div>
@@ -44,7 +45,10 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-blue-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto mt-5">
+            <button
+              alt="visit website"
+              className="bg-blue-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto mt-5"
+            >
               Visit LocalFarm.dev <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
@@ -66,8 +70,11 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="mt-5 bg-indigo-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
-              Visit localflorist.dev{" "}
+            <button
+              alt="visit website"
+              className="mt-5 bg-indigo-300 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto"
+            >
+              Visit localflorist.dev
               <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>
@@ -89,8 +96,11 @@ const PortfolioGrid = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="mt-5 bg-pink-400 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto">
-              Visit JuliaRosePhoto.dev{" "}
+            <button
+              alt="visit website"
+              className="mt-5 bg-pink-400 dark:bg-alt dark:hover:bg-white dark:text-black hover:bg-alt text-white hover:text-black flex flex-row items-center justify-center mx-auto"
+            >
+              Visit JuliaRosePhoto.dev
               <ArrowUpRightIcon className="size-5 ms-2" />
             </button>
           </NavLink>

@@ -13,11 +13,9 @@ const Footer = () => {
     navigate("/Contact"); // Navigate to the "/contact" route
   };
   return (
-    
-
     <section className="relative overflow-hidden bg-white dark:bg-dark">
       <WaveAnimation />
-    <div className="pt-20 relative grid grid-cols-1 lg:grid-cols-2 p-10 lg:px-80 lg:gap-40 gap-20 z-0 font-alt">
+    <div className="pt-40 pb-20 relative grid grid-cols-1 lg:grid-cols-2 lg:px-60 px-5 lg:gap-40 gap-20 z-0 font-alt">
 
       {/* brand side */}
       <div className="flex flex-col lg:items-start justify-top gap-5 text-white">
