@@ -84,7 +84,7 @@ const ServiceCards = () => {
             className="group relative bg-white text-black rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:translate-x-2 hover:-translate-y-2"
           >
             {/* Animated bubble background */}
-            <div className="absolute -bottom-15 right-5 w-32 h-32 transform translate-x-16 -translate-y-4 bg-alternate rounded-full opacity-10 group-hover:scale-150 transition-transform duration-300" />
+            <div className="absolute -bottom-16 right-5 w-32 h-32 transform translate-x-16 -translate-y-4 bg-alternate rounded-full opacity-10 group-hover:scale-150 transition-transform duration-300" />
 
             {/* Card Content */}
             <div className="relative p-6 flex flex-col justify-between h-full">
