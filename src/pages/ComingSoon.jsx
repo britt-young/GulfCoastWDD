@@ -2,12 +2,12 @@ import WaveAnimation from "../Components/WaveAnimation3";
 
 const ComingSoon = () => {
   return (
-    <div className="relative h-screen">
+    <section className="relative">
       <WaveAnimation />
-      <h1 className="relative uppercase text-black flex flex-col items-center min-h-screen justify-center tracking-wide animate-pulse">
-        Coming Soon
-      </h1>
-    </div>
+      <div className="relative h-screen flex items-center justify-center">
+        <h2 className="">✨NEW blog articles coming soon✨</h2>
+      </div>
+    </section>
   );
 };
 
