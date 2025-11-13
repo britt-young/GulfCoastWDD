@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+  Tractor,
+  Flower2,
+  Aperture,
+} from "lucide-react";
 
 const features = [
   {
     name: "Local Farm",
     description:
       "A template website for local farmers and seasonal grocerers. A community-driven agricultural resource connecting local farmers and families. Our mission is to promote sustainable agriculture, provide a fun outdoor experience, and share local food with everyone.",
-    icon: CloudArrowUpIcon,
+    icon: Tractor,
     image: "./imgs/farm.png",
     buttonText: "visit local farm",
     url: "www.localfarm.dev",
@@ -22,7 +22,7 @@ const features = [
     name: "Local Florist",
     description:
       "A template website for florists wanting to sell online. Local Florist is committed to beautiful arrangements, fair pricing, and exceptional service.",
-    icon: LockClosedIcon,
+    icon: Flower2,
     image: "./imgs/florist.png",
     buttonText: "visit local florist",
     url: "www.localflorist.dev",
@@ -31,14 +31,14 @@ const features = [
     name: "Julia Rose Photography",
     description:
       "A template website for a freelance photographer. Specializing in senior portraits and elopements.",
-    icon: ServerIcon,
+    icon: Aperture,
     image: "./imgs/photo.png",
     buttonText: "visit julia rose photo",
     url: "www.juliarosephoto.dev",
   },
 ];
 
-const PortfolioGrid = () => {
+const PortfolioDisplay = () => {
   const [activeFeature, setActiveFeature] = useState(features[0]);
 
   return (
@@ -117,4 +117,4 @@ const PortfolioGrid = () => {
   );
 };
 
-export default PortfolioGrid;
+export default PortfolioDisplay;

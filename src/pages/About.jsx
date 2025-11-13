@@ -1,10 +1,9 @@
 import AboutHeader from "../Components/AboutHeader";
 import Bio from "../Components/Bio";
 import Workflow from "../Components/Workflow";
-import PortfolioGrid from "../Components/PortfolioGrid";
+import PortfolioDisplay from "../Components/PortfolioDisplay";
 import Testimonials from "../Components/Testimonials";
 import Contact from "../Components/Contact";
-import WaveAnimation1 from "../Components/WaveAnimation3";
 
 const About = () => {
   return (
@@ -12,14 +11,9 @@ const About = () => {
       <AboutHeader />
       <Bio />
       <Workflow />
-      <PortfolioGrid />
+      <PortfolioDisplay />
       <Testimonials />
-      <div className="bg-alternate relative overflow-hidden">
-        <WaveAnimation1 />
-        <div className="relative pt-20 px-5">
-          <Contact />
-        </div>
-      </div>
+      <Contact />
     </div>
   );
 };
