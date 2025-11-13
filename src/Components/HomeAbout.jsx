@@ -18,7 +18,7 @@ const HomeAbout = () => {
       <WaveAnimation />
 
       {/* Content */}
-      <div className="relative pt-40 pb-20 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 lg:gap-10 text-black">
+      <div className="relative pt-40 pb-20 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 text-black">
         {/* Image */}
         <div className="w-full flex items-center justify-center">
           <img
@@ -35,13 +35,15 @@ const HomeAbout = () => {
           <h4 className="text-alternate dark:text-alt">Gulf Coast Guarantee</h4>
           <h2 className="">Websites starting at $0 down, $145 per month</h2>
           <p className="mt-5">
-            We offer a variety of pricing packages for you to choose from. Our monthly subscription offer includes a standard 5-page website for $0 down. If needed, pages can be added. Pricing will vary depending on the number of additional pages requested.
+            We offer a variety of pricing packages for you to choose from. Our
+            monthly subscription offer includes a standard 5-page website for $0
+            down. If needed, pages can be added. Pricing will vary depending on
+            the number of additional pages requested.
             <span className="font-bold mx-1">12 month minimum contract</span>
-            Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.
+            Includes design, development, hosting, unlimited edits, 24/7
+            support, and lifetime updates.
           </p>
-
           <GuarenteeGrid />
-
           <button
             className="mt-10 w-fit flex flex-row items-center justify-center dark:bg-alt dark:hover:bg-white dark:text-black bg-alternate text-white hover:bg-alt hover:text-black"
             onClick={handleClick}

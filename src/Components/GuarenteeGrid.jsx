@@ -1,4 +1,4 @@
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { BadgeCheck } from "lucide-react";
 
 const GuarenteeGrid = () => {
   return (
@@ -7,7 +7,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           SITE SECURITY
         </h5>
@@ -19,7 +19,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           5-STAR CUSTOMER SUPPORT
         </h5>
@@ -31,7 +31,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           OPTIMIZED PAGE SPEED 
         </h5>
@@ -43,7 +43,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           CUSTOM DESIGN
         </h5>
@@ -55,7 +55,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           HIGH-QUALITY CONTENT
         </h5>
@@ -67,7 +67,7 @@ const GuarenteeGrid = () => {
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
           <span>
-            <IoMdCheckmarkCircleOutline className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
+            <BadgeCheck className="inline-block me-1 mb-1 text-alternate dark:text-alt" />
           </span>
           MONEY BACK GUARENTEE
         </h5>
