@@ -1,6 +1,5 @@
 import FlowStepper from "./FlowStepper";
 import { useNavigate } from "react-router-dom";
-import WaveAnimation from "./WaveAnimation2";
 
 
 const Workflow = () => {
@@ -9,10 +8,9 @@ const Workflow = () => {
       navigate("/About"); // Navigate to the "/contact" route
     };
 
+
   return (
-    <section className="relative pb-0 bg-white dark:bg-dark overflow-hidden">
-  <WaveAnimation />
-    <div className="flex flex-col py-10 pt-20 relative isolate text-white lg:h-[650px]">
+    <div className="flex flex-col py-20 relative isolate text-white bg-alternate overflow-hidden">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
         <div className="h-full">
           <h4 className="">Our Workflow</h4>
@@ -29,7 +27,7 @@ const Workflow = () => {
         <button onClick={handleClick} >Schedule a Call</button>
       </div>
     </div>
-     </section>
+     
   );
 };
 
