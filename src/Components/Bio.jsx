@@ -10,7 +10,7 @@ const Bio = () => {
           className="w-full lg:h-185 h-140 object-cover outline-2 outline-offset-1 outline-white rounded-lg"
         />
       </div>
-      <div className="flex flex-col items-start lg:mr-90 mt-10 lg:mt-0">
+      <div className="flex flex-col items-start justify-center lg:mr-90 mt-10 lg:mt-0">
         <h4 className="text-alternate">Why Choose GCWDD?</h4>
         <h2 className="font-bold">
           Let us bring your buisness to the online space
@@ -39,7 +39,7 @@ const Bio = () => {
         </p>
         <button
           onClick={() => navigate("/Contact")}
-          className="mt-5 bg-alternate hover:text-black transition hover:bg-alt text-white"
+          className="mt-12 bg-alternate hover:text-black transition hover:bg-alt text-white"
         >
           Call Us: (850) 296-8466
         </button>
