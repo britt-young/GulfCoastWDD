@@ -1,6 +1,5 @@
 import headshot from "../assets/imgs/owner.png";
 
-
 const Bio = () => {
   return (
     <div className="bg-white dark:bg-dark px-6 py-10 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
@@ -17,25 +16,36 @@ const Bio = () => {
           Let us bring your buisness to the online space
         </h2>
         <p className="mt-5">
-          My name is Brittney, owner and CEO of Gulf Coast Web Design & Development. We believe that every business, big or small, should have the ability to market their services online without breaking the bank. We specialize in businesses that are wanting to expand into the digital space to reach more clients or businesses that just need an upgrade for their outdated website. 
+          My name is Brittney, I'm the founder and developer behind Gulf Coast
+          Web Design & Development. I served 13 years as a medic is the United
+          States Army and later went on to earn my Full-Stack Developer
+          Certification from the University of Utah.
         </p>
-        <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris</p>
-          <button
-            onClick={() => navigate("/Contact")}
-            className="mt-5 bg-alternate hover:text-black transition hover:bg-alt text-white"
-          >
-            Call Us: (850) 296-8466
-          </button>
+        <p className="mt-5">
+          I started Gulf Coast Web Design & Development because I believe that
+          every business, big or small, should have the ability to market their
+          services online without breaking the bank. Many small business don't
+          have the funds to pay large web design agencies just to recieve a
+          generic website that is boring and ineffective. I wanted to provide
+          small businesses an alternative option where they recieve a beautiful
+          and custom website for only $145 a month.
+        </p>
+        <p className="mt-5">
+          Gulf Coast Web Design & Development specializes in small businesses
+          that are wanting to expand into the digital space to reach more
+          clients or businesses that just want to upgrade their current outdated
+          website. We do all the work for you; design, development, hosting, and updates so you can focus on running your
+          business.
+        </p>
+        <button
+          onClick={() => navigate("/Contact")}
+          className="mt-5 bg-alternate hover:text-black transition hover:bg-alt text-white"
+        >
+          Call Us: (850) 296-8466
+        </button>
       </div>
     </div>
   );
 };
 
 export default Bio;
-
-

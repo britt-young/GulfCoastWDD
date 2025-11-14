@@ -2,11 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import {
-  Tractor,
-  Flower2,
-  Aperture,
-} from "lucide-react";
+import { Tractor, Flower2, Aperture } from "lucide-react";
 
 const features = [
   {
@@ -16,7 +12,7 @@ const features = [
     icon: Tractor,
     image: "./imgs/farm.png",
     buttonText: "visit local farm",
-    url: "www.localfarm.dev",
+    url: "https://www.localfarm.dev",
   },
   {
     name: "Local Florist",
@@ -25,7 +21,7 @@ const features = [
     icon: Flower2,
     image: "./imgs/florist.png",
     buttonText: "visit local florist",
-    url: "www.localflorist.dev",
+    url: "https://www.localflorist.dev",
   },
   {
     name: "Julia Rose Photography",
@@ -34,7 +30,7 @@ const features = [
     icon: Aperture,
     image: "./imgs/photo.png",
     buttonText: "visit julia rose photo",
-    url: "www.juliarosephoto.dev",
+    url: "https://www.juliarosephoto.dev",
   },
 ];
 
@@ -53,7 +49,7 @@ const PortfolioDisplay = () => {
           <p className="mt-6 text-black dark:text-white">
             At Gulf Coast Web Design & Development, we specialize in small
             business web design and development for clients all along the
-            northern coast of the gulf. No matter your business, we can build a
+            northern coast of the Gulf. No matter your business, we can build a
             website that is beautiful, tailored to your industry, boosts
             customer trust, and converts website viewers into patrons.
           </p>
@@ -80,25 +76,21 @@ const PortfolioDisplay = () => {
                   />
                   {feature.name}
                 </dt>
-                <dd className="font-normal">{feature.description}</dd>
+                <dd className="font-normal font-alt leading-5">{feature.description}</dd>
               </div>
             ))}
 
             {/* Dynamic Button */}
             {activeFeature?.url && (
-              <NavLink
-                to={activeFeature.url}
+              <a
+                href={activeFeature.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-3xl font-alt uppercase"
               >
-                <button
-                  alt="visit website"
-                  className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px]"
-                >
-                  {activeFeature.buttonText}
-                  <ArrowUpRightIcon className="size-5 ms-2 " />
-                </button>
-              </NavLink>
+                {activeFeature.buttonText}
+                <ArrowUpRightIcon className="size-5 ms-2" />
+              </a>
             )}
           </dl>
         </div>
