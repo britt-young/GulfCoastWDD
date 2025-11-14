@@ -25,7 +25,7 @@ const Bio = () => {
           I started Gulf Coast Web Design & Development because I believe that
           every business, big or small, should have the ability to market their
           services online without breaking the bank. Many small business don't
-          have the funds to pay large web design agencies just to recieve a
+          have the funds to pay large web design agencies just to receive a
           generic website that is boring and ineffective. I wanted to provide
           small businesses an alternative option where they recieve a beautiful
           and custom website for only $145 a month.
