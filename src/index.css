@@ -25,7 +25,7 @@
  /* 4f72fb #022C3D*/
   /* I LIKE THIS COLOR BELOW */
   /* --color-alternate: #024059; */
-  /* --color-alt: #a7d5f2;  */
+  /* --color-alts: #a7d5f2;  */
 
   /* --color-alternate: #1E3FC2; */
   /* --color-alt: #a1cad7; */
@@ -38,7 +38,8 @@
 --color-alt:#DDFF00  ;
  --color-dark:#002775; 
 
-  /* --color-alt:#C7D8D0; ccff00 */
+  /* --color-alt:#C7D8D0;  */
+  /* --color-alt: #e1ff00; */
 
 }
 
@@ -89,7 +90,7 @@
   }
 
   h4 {
-    @apply uppercase text-[1.2em] font-semibold tracking-wide text-alt;
+    @apply uppercase text-[1.2em] font-semibold tracking-normal text-alt;
   }
   h5 {
     @apply font-semibold text-lg tracking-normal text-alternate;
@@ -100,7 +101,7 @@
   }
 
   button {
-    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-colors duration-400 ease-in-out;
+    @apply relative overflow-visible uppercase font-alt leading-[1.0] shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-colors duration-300 ease-in-out;
     z-index: 1;
     
   }

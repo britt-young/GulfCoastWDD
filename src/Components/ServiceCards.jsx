@@ -94,7 +94,7 @@ const ServiceCards = () => {
               </div>
 
               {/* Hover link reveal */}
-              <div className="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="transform lg:translate-y-8 lg:opacity-0 group-hover:translate-y-0 lg:group-hover:opacity-100 opacity-100 transition-all duration-300">
                 <Link
                   to={service.link}
                   className="inline-flex items-center text-alternate font-semibold hover:underline"
