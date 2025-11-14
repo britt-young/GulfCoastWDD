@@ -27,7 +27,7 @@ const Bio = () => {
           services online without breaking the bank. Many small business don't
           have the funds to pay large web design agencies just to receive a
           generic website that is boring and ineffective. I wanted to provide
-          small businesses an alternative option where they recieve a beautiful
+          small businesses an alternative option that allows them to have a beautiful
           and custom website for only $145 a month.
         </p>
         <p className="mt-5">
