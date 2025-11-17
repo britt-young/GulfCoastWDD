@@ -2,7 +2,7 @@ import headshot from "../assets/imgs/owner.png";
 
 const Bio = () => {
   return (
-    <div className="bg-white dark:bg-dark px-6 py-10 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
+    <div className="bg-white dark:bg-dark px-6 py-14 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
       <div className="mx-auto lg:mr-20 mb-5 lg:mb-0">
         <img
           src={headshot}
