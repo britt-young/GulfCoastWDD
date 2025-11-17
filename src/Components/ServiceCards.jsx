@@ -62,7 +62,7 @@ const ServiceCards = () => {
 
   return (
     <div className="w-full  bg-alternate">
-    <div className="mx-auto max-w-7xl py-20">
+    <div className="mx-auto max-w-7xl py-20 px-5 lg:px-0">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-5 text-white text-center">
         <h4>what we offer</h4>

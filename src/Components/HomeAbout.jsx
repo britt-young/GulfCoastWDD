@@ -48,7 +48,7 @@ const HomeAbout = () => {
             className="mt-10 w-fit flex flex-row items-center justify-center dark:bg-alt dark:hover:bg-white dark:text-black bg-alternate text-white hover:bg-alt hover:text-black"
             onClick={handleClick}
           >
-            Get to know gcwdd <ArrowRightIcon className="size-6 ms-4" />
+            Get to know gcwdd <ArrowRightIcon className="size-6 ms-2" />
           </button>
         </div>
       </div>
