@@ -1,121 +1,130 @@
-import { useEffect, useRef } from "react";
+import React from "react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+
+const reviews = [
+  {
+    name: "Jane Doe",
+    rating: 5,
+    text: "Amazing service! Everything was smooth and professional.",
+  },
+  {
+    name: "John Smith",
+    rating: 4,
+    text: "Great experience overall. Will use again!",
+  },
+  {
+    name: "Emily Johnson",
+    rating: 5,
+    text: "Absolutely outstanding. Highly recommend!",
+  },
+  {
+    name: "Michael Brown",
+    rating: 5,
+    text: "Fantastic! Couldn’t be happier with the results.",
+  },
+  {
+    name: "Sarah Williams",
+    rating: 4,
+    text: "Very good experience—would recommend to friends.",
+  },
+  {
+    name: "Jane Doe",
+    rating: 5,
+    text: "Amazing service! Everything was smooth and professional.",
+  },
+  {
+    name: "John Smith",
+    rating: 4,
+    text: "Great experience overall. Will use again!",
+  },
+  {
+    name: "Emily Johnson",
+    rating: 5,
+    text: "Absolutely outstanding. Highly recommend!",
+  },
+];
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Jane Smith",
-      role: "Local Farm Owner",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-      alt: "avatar",
-    },
-    {
-      id: 2,
-      name: "Jogn Smith",
-      role: "Local Florist CEO",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
-      alt: "avatar",
-    },
-    {
-      id: 3,
-      name: "Julia Rose",
-      role: "Owner of Julia Rose Photo",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
-      alt: "avatar",
-    },
-    {
-      id: 4,
-      name: "Jane Smith",
-      role: "Local Farm Owner",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-      alt: "avatar",
-    },
-    {
-      id: 5,
-      name: "Jogn Smith",
-      role: "Local Florist CEO",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
-      alt: "avatar",
-    },
-    {
-      id: 6,
-      name: "Julia Rose",
-      role: "Owner of Julia Rose Photo",
-      content: "Testimonial coming soon",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-      alt: "avatar",
-    },
-  ];
+  const [page, setPage] = React.useState(0);
+  const [reviewsPerPage, setReviewsPerPage] = React.useState(4);
 
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    const onWheel = (e) => {
-      if (e.deltaY === 0) return;
-      e.preventDefault();
-      el.scrollTo({
-        left: el.scrollLeft + e.deltaY,
-        behavior: "smooth",
-      });
+  React.useEffect(() => {
+    const updateReviewsPerPage = () => {
+      const width = window.innerWidth;
+      if (width >= 1024) setReviewsPerPage(4); // lg
+      else if (width >= 768) setReviewsPerPage(3); // md
+      else if (width >= 640) setReviewsPerPage(2); // sm
+      else setReviewsPerPage(1); // xs
     };
-
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
+    updateReviewsPerPage();
+    window.addEventListener('resize', updateReviewsPerPage);
+    return () => window.removeEventListener('resize', updateReviewsPerPage);
   }, []);
 
+  const startIndex = page * reviewsPerPage;
+  const currentReviews = reviews.slice(startIndex, startIndex + reviewsPerPage);
+  const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+
   return (
-    <section className="w-full bg-alternate py-16">
-      <div className="lg:px-25">
-        <div className="max-w-7xl mx-auto py-2 mb-5 text-center text-white">
-          <h4>Testimonials</h4>
-          <h2>What our clients are saying</h2>
-          <p className="mt-5 mx-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris.
-          </p>
+    <div className="flex lg:flex-row flex-col justify-around gap-5 p-10 items-center lg:py-24 py-20">
+      {/* Left: Title + Description */}
+      <div className="w-fit">
+        <h4>testimonials</h4>
+        <h2 className="text-white mb-5">What our clients are saying</h2>
+        <p className="text-white">
+          Real feedback from real people. We strive to exceed expectations every day.
+        </p>
+        {/* Pagination Arrows */}
+        <div className="flex gap-4 self-end mt-5 transition-all duration-300 ease-in-out">
+          <button
+            className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50"
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={page === 0}
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50"
+            onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+            disabled={page === totalPages - 1}
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
-        {/* scrolling cards */}
-        <div
-          ref={scrollRef}
-          className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth p-10"
-        >
-          {testimonials.map((t) => (
-            <div
-              key={t.id}
-              className="flex-shrink-0 w-[320px] md:w-[360px] bg-white rounded-2xl shadow-white/30 shadow-lg p-6 hover:-translate-y-1 transition-transform duration-300"
+      </div>
+
+      {/* Right: Horizontal Testimonials */}
+      <div className="flex flex-col gap-6">
+        <div className="flex gap-4 overflow-hidden">
+          {currentReviews.map((review, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.1 }}
             >
-              <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={t.avatar}
-                  alt={t.alt}
-                  className="w-14 h-14 rounded-full object-cover"
-                />
-                <div className="text-left">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {t.name}
-                  </h3>
-                  <p className="text-gray-500">{t.role}</p>
+              <div className="rounded-2xl shadow p-4 bg-white border w-64 min-h-[180px] flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-1">
+                    {Array.from({ length: review.rating }).map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm">{review.text}</p>
+                  <p className="font-semibold text-gray-900 text-sm">- {review.name}</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-left italic text-base">
-                “{t.content}”
-              </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Testimonials;
 
+export default Testimonials;
