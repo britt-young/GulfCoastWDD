@@ -61,7 +61,8 @@ const ServiceCards = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl py-20 bg-alternate dark:bg-dark">
+    <div className="w-full  bg-alternate">
+    <div className="mx-auto max-w-7xl py-20">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-5 text-white text-center">
         <h4>what we offer</h4>
@@ -115,6 +116,7 @@ const ServiceCards = () => {
           </button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };
