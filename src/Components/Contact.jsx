@@ -40,7 +40,7 @@ const Contact = () => {
               </a>
               <a
                 onClick={handleClick}
-                className="text-sm/6 font-semibold text-white hover:text-dark hover:cursor-pointer"
+                className="text-sm/6 font-semibold text-white hover:text-dark hover:cursor-pointer z-10"
               >
                 read our FAQs
               </a>
@@ -60,21 +60,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{
-  /* <div className="bg-white dark:bg-dark lg:flex-row flex-col py-20">
-      <div className="blur-lg">
-      <div className="lg:text-start text-center">
-        <h2>Book your free consultation call today</h2>
-        <p className="my-4 lg:mt-2 lg:my-0">
-          Make your business stand out! Generate more website traffic and convert viewers to customers!
-        </p>
-      </div>
-      <div className="flex justify-center items-center">
-        <button className="flex items-center" onClick={handleClick}>
-          Schedule Now <ArrowRightIcon className="size-6 ms-4" />
-        </button>
-      </div>
-      </div>
-    </div> */
-}
