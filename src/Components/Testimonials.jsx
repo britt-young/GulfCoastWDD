@@ -89,7 +89,7 @@ const Testimonials = () => {
   return (
     <div className="flex flex-col justify-around gap-12 px-5 lg:px-0 items-center lg:py-24 py-20">
       {/* Left: Title + Description + Pagnation on sm screens*/}
-      <div className="w-full flex flex-col items-center px-10">
+      <div className="w-full flex flex-col items-center text-center px-10">
         <h4>testimonials</h4>
         <h2 className="text-white mb-5">What our clients are saying</h2>
         <p className="text-white">
