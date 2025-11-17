@@ -44,7 +44,7 @@ const PortfolioDisplay = () => {
         <div className="lg:pt-4 lg:w-2/5">
           <h4 className="text-alternate dark:text-alt">Portfolio</h4>
           <h2 className="dark:text-white">
-            Some of our recent website designs
+            Recently launched websites 
           </h2>
           <p className="mt-6 text-black dark:text-white">
             At Gulf Coast Web Design & Development, we specialize in small

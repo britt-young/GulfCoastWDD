@@ -17,7 +17,7 @@ const Bio = () => {
         </h2>
         <p className="mt-5">
           My name is Brittney, I'm the founder and developer behind Gulf Coast
-          Web Design & Development. I served 13 years as a medic is the United
+          Web Design & Development. I served 13 years as a medic in the United
           States Army and later went on to earn my Full-Stack Developer
           Certification from the University of Utah.
         </p>
@@ -27,7 +27,7 @@ const Bio = () => {
           services online without breaking the bank. Many small business don't
           have the funds to pay large web design agencies just to receive a
           generic website that is boring and ineffective. I wanted to provide
-          small businesses an alternative option that allows them to have a beautiful
+          small businesses an alternate option that allows them to have a beautiful
           and custom website for only $145 a month.
         </p>
         <p className="mt-5">
