@@ -39,7 +39,7 @@ const Contact = () => {
                 Schedule Now <ArrowRightIcon className="size-6 ms-4" />
               </a>
               <a
-                onClick={handleClick}
+                href="/FAQs"
                 className="text-sm/6 font-semibold text-white hover:text-dark hover:cursor-pointer z-10"
               >
                 read our FAQs
