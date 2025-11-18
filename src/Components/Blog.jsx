@@ -1,5 +1,5 @@
 import BlogCard from "./BlogCard";
-import { Store, MousePointerClick, Gauge, TabletSmartphone, GlobeLock, SearchCheck} from 'lucide-react';
+import { Store, MousePointerClick, Gauge, Scaling, GlobeLock, SearchCheck} from 'lucide-react';
 
 const Blog = () => {
   return (
@@ -46,7 +46,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-03.jpg"
             url="/services/responsiveness"
-            icon={<TabletSmartphone />}
+            icon={<Scaling />}
             author="Brittney Treece"
           />
           <BlogCard

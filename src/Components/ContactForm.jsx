@@ -47,7 +47,7 @@ const ContactForm = () => {
     <div className="py-20 px-5 lg:px-0">
       <div className="bg-gray-100 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
         <div className="mx-auto text-center">
-          <h2>Custom Website Request</h2>
+          <h2>Request a meeting</h2>
           <p className="mt-2">
             Send us a message and let us help you convert website visitors to
             clients
@@ -85,7 +85,7 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   id="company"
                   name="company"
                   type="text"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -137,7 +137,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -155,7 +155,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-sm text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 name="selectedPackage"
                 defaultValue="default"
                 required
-                className="bg-white px-3.5 py-1 text-base font-normal text-gray-700 outline-1 outline-gray-300 mt-1 rounded-md"
+                className="bg-white px-1 py-1 font-alt font-normal text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
               >
                 <option value="default" disabled>
                   Select a package
