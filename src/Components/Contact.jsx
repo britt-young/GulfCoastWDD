@@ -15,10 +15,10 @@ const Contact = () => {
           {/* Animated bubble background */}
           <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-350 lg:h-350 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-180 transition-transform duration-300" />
           <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-white">
+            <h2 className="text-white dark:text-black">
               Make your business stand out!
             </h2>
-            <p className="lg:mt-2 text-gray-300">
+            <p className="lg:mt-2 text-white dark:text-black">
               Generate more website traffic and convert viewers to customers!
             </p>
             <div className="mt-10 flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 items-center justify-center gap-x-6 lg:justify-start">
@@ -30,7 +30,7 @@ const Contact = () => {
               </a>
               <a
                 href="/FAQs"
-                className="text-sm/6 font-semibold text-white hover:text-dark hover:cursor-pointer z-10"
+                className="text-sm/6 font-semibold text-white dark:text-alternate hover:text-dark hover:cursor-pointer z-10"
               >
                 read our FAQs
               </a>
