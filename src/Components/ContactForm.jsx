@@ -45,8 +45,8 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="bg-gray-100 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
-        <div className="mx-auto text-center">
+      <div className="bg-gray-100 dark:bg-white/50 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
+        <div className="mx-auto text-center text-black dark:text-white">
           <h2>Request a meeting</h2>
           <p className="mt-2">
             Send us a message and let us help you convert website visitors to
@@ -75,7 +75,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 First name
               </label>
@@ -85,14 +85,14 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Last name
               </label>
@@ -110,7 +110,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Company
               </label>
@@ -127,7 +127,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Email
               </label>
@@ -145,7 +145,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm font-semibold text-gray-900"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Phone number
               </label>
@@ -160,13 +160,13 @@ const ContactForm = () => {
               </div>
             </div>
 
-            <label className="block text-sm font-semibold text-gray-900 col-span-2">
+            <label className="block text-sm font-semibold text-gray-900 dark:text-white col-span-2">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
                 defaultValue="default"
                 required
-                className="bg-white px-1 py-1 font-alt font-normal text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
+                className="bg-white px-1 py-1 font-alt hover:cursor-pointer text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
               >
                 <option value="default" disabled>
                   Select a package
@@ -199,19 +199,19 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm text-gray-600 content-center">
+              <Label className="text-sm text-gray-600 dark:text-white content-center">
                 By selecting this, you agree to our
-                <Link to="/privacy" className="text-blue-600 underline ms-1">
+                <Link to="/privacy" className="text-alternate underline ms-1 hover:text-black dark:hover:text-white">
                   privacy policy
                 </Link>
               </Label>
             </Field>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 mb-2">
             <button
               type="submit"
-              className="px-5 py-2 bg-gray-800 text-white rounded hover:bg-alternate transition"
+              className="bg-alternate text-white rounded hover:bg-alt dark:bg-alt dark:hover:bg-white dark:text-black hover:text-black transition"
             >
               Submit
             </button>
