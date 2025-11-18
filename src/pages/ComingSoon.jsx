@@ -4,8 +4,9 @@ const ComingSoon = () => {
   return (
     <section className="relative">
       <WaveAnimation />
-      <div className="relative h-screen flex items-center justify-center">
-        <h2 className="">✨NEW blog articles coming soon✨</h2>
+      <div className="relative h-screen flex flex-col items-center justify-center">
+        <h4 className="text-alternate dark:text-alt">please be patient</h4>
+        <h2 className="dark:text-white">New blog articles coming soon</h2>
       </div>
     </section>
   );

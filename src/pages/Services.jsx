@@ -1,9 +1,16 @@
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
+
+import Blog from "../Components/Blog";
+import BlogHeader from "../Components/BlogHeader";
 
 const Services = () => {
   return (
-      <Outlet />
+    <div className="min-h-screen">
+      <BlogHeader />
+      <Blog />
+    </div>
+    // <Outlet />
   );
 };
 
-export default Services
+export default Services;

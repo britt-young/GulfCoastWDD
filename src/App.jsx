@@ -28,14 +28,14 @@ function App() {
         <Route path="faqs" element={<FAQs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
-        <Route path="services" element={<ComingSoon />} />
+        <Route path="services" element={<Services />} />
         {/* child path for services */}
         <Route index element={<Services />} />
         <Route path="services/features" element={<ComingSoon />} />
         <Route path="services/optimization" element={<ComingSoon />} />
         <Route path="services/responsiveness" element={<ComingSoon />} />
         <Route path="services/security" element={<ComingSoon />} />
-        <Route path="services/seo" element={<ComingSoon />} />
+        <Route path="services/seo" element={<SEO />} />
         <Route path="services/shopify" element={<ComingSoon />} />
         {/* Can add nested (additional children) routes too */}
         <Route path="*" element={<Error />} />
