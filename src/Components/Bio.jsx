@@ -1,6 +1,9 @@
 import headshot from "../assets/imgs/owner.png";
 
 const Bio = () => {
+  // Phone number
+  const phoneNumber = "+18502968466";
+
   return (
     <div className="bg-white dark:bg-dark px-6 py-14 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
       <div className="mx-auto lg:mr-20 mb-5 lg:mb-0">
@@ -27,21 +30,23 @@ const Bio = () => {
           services online without breaking the bank. Many small business don't
           have the funds to pay large web design agencies just to receive a
           generic website that is boring and ineffective. I wanted to provide
-          small businesses an alternate option that allows them to have a beautiful
-          and custom website for only $145 a month.
+          small businesses an alternate option that allows them to have a
+          beautiful and custom website for only $145 a month.
         </p>
         <p className="mt-5">
           Gulf Coast Web Design & Development specializes in small businesses
           that are wanting to expand into the digital space to reach more
           clients or businesses that just want to upgrade their current outdated
-          website. We do all the work for you; design, development, hosting, and updates so you can focus on running your
-          business.
+          website. We do all the work for you; design, development, hosting, and
+          updates so you can focus on running your business.
         </p>
         <button
           onClick={() => navigate("/Contact")}
           className="mt-12 bg-alternate hover:text-black transition hover:bg-alt text-white"
         >
-          Call Us: (850) 296-8466
+          <a href={`tel:${phoneNumber}`} className="hover:underline">
+            Call Us: (850) 296-8466
+          </a>
         </button>
       </div>
     </div>
