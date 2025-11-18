@@ -2,7 +2,7 @@ import headshot from "../assets/imgs/owner.png";
 
 const Bio = () => {
   // Phone number
-  const phoneNumber = "+18502968466";
+  const phoneNumber = "(850) 296-8466";
 
   return (
     <div className="bg-white dark:bg-dark px-6 py-14 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
@@ -13,9 +13,9 @@ const Bio = () => {
           className="w-full lg:h-185 h-140 object-cover outline-2 outline-offset-1 outline-white rounded-lg"
         />
       </div>
-      <div className="flex flex-col items-start justify-center lg:mr-90 mt-10 lg:mt-0">
-        <h4 className="text-alternate">Why Choose GCWDD?</h4>
-        <h2 className="font-bold">
+      <div className="flex flex-col items-start justify-center lg:mr-90 mt-10 lg:mt-0 dark:text-white">
+        <h4 className="text-alternate dark:text-alt">Why Choose GCWDD?</h4>
+        <h2 className="font-bold ">
           Let us bring your buisness to the online space
         </h2>
         <p className="mt-5">
@@ -45,7 +45,7 @@ const Bio = () => {
           className="mt-12 bg-alternate hover:text-black transition hover:bg-alt text-white"
         >
           <a href={`tel:${phoneNumber}`} className="hover:underline">
-            Call Us: (850) 296-8466
+            Call Us: {phoneNumber}
           </a>
         </button>
       </div>
