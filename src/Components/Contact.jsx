@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import element from "../assets/element1.svg";
+import element from "../assets/element.svg";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -10,15 +10,15 @@ const Contact = () => {
   };
   return (
     <div className="bg-white dark:bg-dark">
-      <div className="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="h-fit relative isolate overflow-hidden bg-alternate dark:bg-white p-5 rounded-3xl transform transition-all duration-300 group">
+      <div className="flex justify-center py-16 px-5 lg:px-0">
+        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate dark:bg-white p-5  rounded-3xl transform transition-all duration-300 group">
           {/* Animated bubble background */}
-          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-350 lg:h-350 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-180 transition-transform duration-300" />
+          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-125 transition-transform duration-300" />
 
           {/* TEXT + IMAGE FLEX WRAPPER */}
-          <div className="flex flex-col lg:flex-row items-center justify-around w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:gap-32">
             {/* TEXT BLOCK */}
-            <div className="m-5 lg:m-0 max-w-3xl text-center lg:text-left">
+            <div className="m-5 lg:m-0 text-center lg:text-left">
               <h2 className="text-white dark:text-black">
                 Make your business stand out!
               </h2>
@@ -47,7 +47,7 @@ const Contact = () => {
               <img
                 alt="screenshot"
                 src={element}
-                className="w-[500px] lg:max-w-none h-auto object-contain p-5"
+                className="w-[400px] lg:max-w-none h-auto object-contain p-5"
               />
             </div>
           </div>
