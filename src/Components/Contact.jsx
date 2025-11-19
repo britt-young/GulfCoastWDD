@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import element from "../assets/element.svg";
+import element from "../assets/element1.svg";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -11,37 +11,45 @@ const Contact = () => {
   return (
     <div className="bg-white dark:bg-dark">
       <div className="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="h-[500px] lg:h-fit relative isolate overflow-hidden bg-alternate dark:bg-white px-6 pt-16 rounded-3xl md:pt-24 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 transform transition-all duration-300 group">
+        <div className="h-fit relative isolate overflow-hidden bg-alternate dark:bg-white p-5 rounded-3xl transform transition-all duration-300 group">
           {/* Animated bubble background */}
           <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-350 lg:h-350 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-180 transition-transform duration-300" />
-          <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-white dark:text-black">
-              Make your business stand out!
-            </h2>
-            <p className="lg:mt-2 text-white dark:text-black">
-              Generate more website traffic and convert viewers to customers!
-            </p>
-            <div className="mt-10 flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                className="text-sm flex items-center relative overflow-visible uppercase font-alt font-bold leading-tight shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
-                onClick={handleClick}
-              >
-                Schedule Now <ArrowRightIcon className="size-6 ms-4" />
-              </a>
-              <a
-                href="/FAQs"
-                className="text-sm/6 font-semibold text-white dark:text-alternate hover:text-dark hover:cursor-pointer z-10"
-              >
-                read our FAQs
-              </a>
+
+          {/* TEXT + IMAGE FLEX WRAPPER */}
+          <div className="flex flex-col lg:flex-row items-center justify-around w-full">
+            {/* TEXT BLOCK */}
+            <div className="m-5 lg:m-0 max-w-3xl text-center lg:text-left">
+              <h2 className="text-white dark:text-black">
+                Make your business stand out!
+              </h2>
+              <p className="mt-2 text-white dark:text-black">
+                Generate more website traffic and convert viewers to customers!
+              </p>
+
+              <div className="mt-10 flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 items-center justify-center gap-x-6 lg:justify-start">
+                <a
+                  className="text-sm flex items-center relative overflow-visible uppercase font-alt font-bold leading-tight shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
+                  onClick={handleClick}
+                >
+                  Schedule Now <ArrowRightIcon className="size-6 ms-4" />
+                </a>
+                <a
+                  href="/FAQs"
+                  className="text-sm/6 font-semibold text-white dark:text-alternate hover:text-dark hover:cursor-pointer z-10"
+                >
+                  read our FAQs
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="relative mt-25 lg:mt-0">
-            <img
-              alt="screenshot"
-              src={element}
-              className="absolute -top-20 lg:left-0 w-96 lg:w-250 max-w-none"
-            />
+
+            {/* IMAGE BLOCK */}
+            <div className="relative mt-25 lg:mt-0 flex justify-center lg:justify-end w-full lg:w-auto">
+              <img
+                alt="screenshot"
+                src={element}
+                className="w-[500px] lg:max-w-none h-auto object-contain p-5"
+              />
+            </div>
           </div>
         </div>
       </div>
