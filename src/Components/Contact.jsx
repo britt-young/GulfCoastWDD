@@ -13,10 +13,10 @@ const Contact = () => {
       <div className="flex justify-center py-16 px-5 lg:px-0">
         <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate dark:bg-white p-5  rounded-3xl transform transition-all duration-300 group">
           {/* Animated bubble background */}
-          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-125 transition-transform duration-300" />
+          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
 
           {/* TEXT + IMAGE FLEX WRAPPER */}
-          <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:gap-32">
+          <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:gap-60">
             {/* TEXT BLOCK */}
             <div className="m-5 lg:m-0 text-center lg:text-left">
               <h2 className="text-white dark:text-black">
