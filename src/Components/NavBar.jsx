@@ -199,11 +199,12 @@ const NavBar = () => {
             aria-label="Toggle Menu"
           >
             <GiHamburgerMenu
-              className={`absolute text-2xl text-white transition-all duration-300 transform ${
+              className={`absolute text-2xl transition-all duration-300 transform ${
                 isMenuOpen
                   ? "opacity-0 rotate-90 scale-75"
                   : "opacity-100 rotate-0 scale-100"
-              }`}
+              }
+              ${isScrolled ? "text-black" : "text-white"}`}
             />
             <IoClose
               className={`absolute text-3xl text-black dark:text-white transition-all duration-300 transform ${
@@ -284,7 +285,9 @@ const SliderToggle = ({ selected, setSelected }) => {
     <div className="relative flex w-fit items-center rounded-full transition-all duration-300 ease-in-out">
       <button
         className={`${TOGGLE_CLASSES} ${
-          selected === "light" ? "text-black bg-transparent" : "text-white bg-transparent"
+          selected === "light"
+            ? "text-black bg-transparent"
+            : "text-white bg-transparent"
         }`}
         onClick={() => setSelected("light")}
       >
@@ -293,7 +296,9 @@ const SliderToggle = ({ selected, setSelected }) => {
       </button>
       <button
         className={`${TOGGLE_CLASSES} ${
-          selected === "dark" ? "text-white bg-transparent" : "text-black bg-transparent"
+          selected === "dark"
+            ? "text-white bg-transparent"
+            : "text-black bg-transparent"
         }`}
         onClick={() => setSelected("dark")}
       >
