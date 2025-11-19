@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-// import mockup from "../assets/imgs/mockup.svg";
+import mockup from "../assets/mockup1.svg";
 
 const HomeHeader = () => {
   
   return (
-    <div className="relative w-full overflow-hidden lg:mt-10 mt-5 py-10 lg:px-60 flex flex-col lg:flex-row items-center justify-center gap-10 h-full">
+    <div className="max-w-full overflow-hidden mt-10 py-10 lg:px-30 flex flex-col lg:flex-row items-center justify-center lg:gap-10 gap-20 h-full lg:h-[650px]">
 
       {/*Content */}
-      <div className="h-fit lg:w-1/2 flex flex-col px-5 lg:px-0">
+      <div className="h-fit lg:w-full flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
         <h1 className="text-white pe-10 sm:pe-0">
           Small business web design & development
@@ -25,14 +25,14 @@ const HomeHeader = () => {
       </div>
 
       {/*Image */}
-      <div className="flex items-center lg:justify-start justify-center lg:w-1/2 md:w-[400px] w-[200px]">
-        {/* <picture>
+      <div className="px-5 lg:px-0">
+        <picture>
           <img
             src={mockup}
             alt="mockup img"
-            className="lg:w-1/2 md:w-[400px] w-[200px]"
+            className="w-full"
           />
-        </picture> */}
+        </picture>
       </div>
     </div>
   );

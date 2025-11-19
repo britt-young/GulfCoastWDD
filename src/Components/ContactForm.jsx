@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="bg-gray-100 dark:bg-white/50 rounded-lg shadow-lg py-5 max-w-2xl mx-auto">
+      <div className="bg-gray-100 dark:bg-alternate rounded-lg shadow-lg py-5 max-w-2xl mx-auto hover:scale-105 transition-all duration-300">
         <div className="mx-auto text-center text-black dark:text-white">
           <h2>Request a meeting</h2>
           <p className="mt-2">
@@ -201,7 +201,7 @@ const ContactForm = () => {
               </div>
               <Label className="text-sm text-gray-600 dark:text-white content-center">
                 By selecting this, you agree to our
-                <Link to="/privacy" className="text-alternate underline ms-1 hover:text-black dark:hover:text-white">
+                <Link to="/privacy" className="text-alternate dark:text-alt underline ms-1 hover:text-black dark:hover:text-white">
                   privacy policy
                 </Link>
               </Label>
