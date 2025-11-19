@@ -282,12 +282,12 @@ const NavBar = () => {
 // === Animated Framer Motion Slider Toggle ===
 const SliderToggle = ({ selected, setSelected }) => {
   return (
-    <div className="relative flex w-fit items-center rounded-full transition-all duration-300 ease-in-out">
+    <div className="relative flex w-fit items-center rounded-3xl transition-all duration-300 ease-in-out bg-gray-300 shadow-lg dark:shadow-white/30 dark:shadow-md">
       <button
         className={`${TOGGLE_CLASSES} ${
           selected === "light"
             ? "text-black bg-transparent"
-            : "text-white bg-transparent"
+            : "text-black bg-transparent"
         }`}
         onClick={() => setSelected("light")}
       >
@@ -297,7 +297,7 @@ const SliderToggle = ({ selected, setSelected }) => {
       <button
         className={`${TOGGLE_CLASSES} ${
           selected === "dark"
-            ? "text-white bg-transparent"
+            ? "text-black bg-transparent"
             : "text-black bg-transparent"
         }`}
         onClick={() => setSelected("dark")}
@@ -313,7 +313,7 @@ const SliderToggle = ({ selected, setSelected }) => {
         <motion.span
           layout
           transition={{ type: "spring", damping: 15, stiffness: 250 }}
-          className="h-full w-1/2 rounded-full bg-gradient-to-r from-alt/80 to-alt/10"
+          className="h-full w-1/2 rounded-3xl bg-alt"
         />
       </div>
     </div>
