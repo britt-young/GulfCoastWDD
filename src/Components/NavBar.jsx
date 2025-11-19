@@ -57,7 +57,7 @@ const NavBar = () => {
   const linkBaseClasses =
     "relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
   const activeClasses = "after:w-full";
-  const inactiveClasses = "hover:text-alt hover:after:w-full";
+  const inactiveClasses = "hover:text-alternate hover:after:w-full";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
