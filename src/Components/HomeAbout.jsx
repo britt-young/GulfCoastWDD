@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import GuarenteeGrid from "./GuarenteeGrid";
-import pic from "../assets/imgs/homeabout.jpg";
+import pic from "../assets/imgs/homeabout1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
@@ -20,13 +20,13 @@ const HomeAbout = () => {
       {/* Content */}
       <div className="relative pt-40 pb-20 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 text-black">
         {/* Image */}
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center ">
           <img
             src={pic}
             alt="website preview"
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="w-fit lg:h-185 md:h-140 h-100 object-cover rounded-lg shadow-lg"
+            className="w-fit lg:h-185 md:h-140 h-100 object-cover outline-2 outline-offset-1 outline-white rounded-lg shadow-lg"
           />
         </div>
 

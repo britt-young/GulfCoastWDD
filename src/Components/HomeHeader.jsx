@@ -25,7 +25,7 @@ const HomeHeader = () => {
       </div>
 
       {/*Image */}
-      <div className="px-5 lg:px-0">
+      <div className="px-5 lg:px-0 ">
         <picture>
           <img
             src={mockup}
