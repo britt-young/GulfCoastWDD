@@ -116,6 +116,12 @@ const Footer = () => {
                 <li className="hover:underline">
                   <Link to="/contact">Contact</Link>
                 </li>
+                <li className="hover:underline">
+                  <Link to="/privacy">Privacy Policy</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link to="/privacy">Terms & Conditions</Link>
+                </li>
               </ul>
             </div>
           </div>

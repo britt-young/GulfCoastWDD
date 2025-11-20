@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import FAQs from "./pages/FAQs";
 import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
+import PrivacyTerms from "./pages/PrivacyTerms";
 import Error from "./Components/Error";
 import Services from "./pages/Services";
 import SEO from "./pages/SEO";
@@ -27,7 +27,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="faqs" element={<FAQs />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="privacy" element={<Privacy />} />
+        <Route path="privacy" element={<PrivacyTerms />} />
         <Route path="services" element={<Services />} />
         {/* child path for services */}
         <Route index element={<Services />} />
