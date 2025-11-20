@@ -1,5 +1,11 @@
 import BlogCard from "./BlogCard";
 import { Store, MousePointerClick, Gauge, Scaling, GlobeLock, SearchCheck} from 'lucide-react';
+import shopify from "../assets/imgs/shopify.jpeg"
+import safe from "../assets/imgs/safe.png"
+import speed from "../assets/imgs/speed.jpg"
+import respond from "../assets/imgs/respond.jpg"
+import seo from "../assets/imgs/seo1.jpeg"
+import easy from "../assets/imgs/easy.jpg"
 
 const Blog = () => {
   return (
@@ -26,7 +32,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="User-Friendly Features"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-01.jpg"
+            image={easy}
             url="/services/features"
             icon={<MousePointerClick />}
             author="Brittney Treece"
@@ -35,7 +41,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="Loading Speed Optimization"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-02.jpg"
+            image={speed}
             url="/services/optimization"
             icon={<Gauge />}
             author="Brittney Treece"
@@ -44,7 +50,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="Responsive Design"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-03.jpg"
+            image={respond}
             url="/services/responsiveness"
             icon={<Scaling />}
             author="Brittney Treece"
@@ -53,7 +59,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="User Security and Web Encryption"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-03.jpg"
+            image={safe}
             url="/services/security"
             icon={<GlobeLock />}
           />
@@ -61,7 +67,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="On-Page SEO"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-03.jpg"
+            image={seo}
             url="/services/seo"
             icon={<SearchCheck />}
             author="Brittney Treece"
@@ -70,7 +76,7 @@ const Blog = () => {
             date="Dec 22, 2023"
             CardTitle="Shopify Store Integration"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            image="https://cdn.tailgrids.com/assets/images/application/blogs/blog-01/image-03.jpg"
+            image={shopify}
             url="/services/shopify"
             icon={<Store />}
             author="Brittney Treece"
