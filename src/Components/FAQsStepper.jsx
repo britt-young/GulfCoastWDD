@@ -24,10 +24,6 @@ const FAQsStepper = () => {
         "The main difference is long term versus short term costs. Our subscription package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Lump-Sum package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
       ],
       [
-        "What if I need more than 5 pages in the Lump Sum package?",
-        "If you need more than 5 pages, there is an additional charge of $100 per page.",
-      ],
-      [
         "How do I make a payment and what payment methods do you accept?",
         "We will send you and invoice via Square that provides you a link to the secure payment page. Subscriptions can be paid with a credit card or debit card. Lump sum projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
       ],
@@ -37,7 +33,7 @@ const FAQsStepper = () => {
       ],
       [
         "Who owns the domain name and website after the project is completed?",
-        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the lump-sum package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
+        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the lump-sum or e-commerce package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
       ],
       [
         "How do we request edits?",
@@ -46,7 +42,11 @@ const FAQsStepper = () => {
       [
         "Do you offer brand design services as well?",
         "No. Before signing your contract we will confirm that you have the minimum brand design elements needed for your website development. (i.e., brand colors, logo, icons, stock photos, etc.)",
-      ]
+      ],
+      [
+        "How do I contact customer support?",
+        "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
+      ],
     ],
     "Lump Sum": [
       [
@@ -83,7 +83,7 @@ const FAQsStepper = () => {
     "E-Commerce": [
       [
         "Do I need to have an online store before signing a contract?",
-        'No. When you choose our E-Commerce package we take care of everything. If you already have a Shopify storefront, we can easily transfer products to your new site!',
+        'No. When you choose our e-Commerce package we take care of everything. If you already have a Shopify storefront, we can easily transfer products to your new site!',
       ],
       [
         "What brand assets do you need from me to build my Shopify backend?",
