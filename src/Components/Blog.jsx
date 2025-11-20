@@ -11,11 +11,11 @@ const Blog = () => {
               <h4 className="text-alternate dark:text-alt">
                 Our Services
               </h4>
-              <h2 className="mb-5 dark:text-white">
-                More of what we offer
+              <h2 className="mb-2 dark:text-white">
+                What makes a great website? 
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum.
+              <p className="text-black dark:text-white">
+                At Gulf Coast Web Design & Development we include all the essential features that make a website safe, attractive, easy to use, and fast! 
               </p>
             </div>
           </div>
