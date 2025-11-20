@@ -17,7 +17,7 @@ const FAQsStepper = () => {
     General: [
       [
         "How long does the entire design and development process take?",
-        "Our websites typically take 4 weeks to complete. Development timelines can vary depending on how quickly clients respond to content requests and proposal feedback.",
+        "Our websites typically take between 4-8 weeks to complete. Development timelines can vary depending on the package selected and how quickly clients respond to content requests and proposal feedback.",
       ],
       [
         "What is the difference between the Lump Sum and Monthly packages?",
@@ -42,12 +42,16 @@ const FAQsStepper = () => {
       [
         "How do we request edits?",
         "All edit requests must be submitted via email to <a href='mailto:GulfCoastWDD@protonmail.com' class='email-link'>GulfCoastWDD@protonmail.com</a> and will be fulfilled in the order they're received. As edits are received and completed, we will send you an email notification.",
+      ],
+      [
+        "Do you offer brand design services as well?",
+        "No. Before signing your contract we will confirm that you have the minimum brand design elements needed for your website development. (i.e., brand colors, logo, icons, stock photos, etc.)",
       ]
     ],
     "Lump Sum": [
       [
         "How many pages are included in the Lump Sum package?",
-        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 charge per additional page.",
+        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 per additional page.",
       ],
       [
         "Can I add unlimited edits and support to the Lump Sum package?",
@@ -55,7 +59,7 @@ const FAQsStepper = () => {
       ],
       [
         "How do I contact customer support?",
-        "You can contact our customer support team via email, phone, or live chat on our website. We are available 24/7 to assist you.",
+        "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
     Monthly: [
@@ -73,30 +77,27 @@ const FAQsStepper = () => {
       ],
       [
         "How do you handle late payments?",
-        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue for months and late for months, we can cancel the contract and the client will be responsible for paying the full price of the site.We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
+        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue, we can cancel the contract and the client will be responsible for paying the full price of the site. We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
       ],
     ],
     "E-Commerce": [
       [
-        "How do I reset my password?",
-        'To reset your password, click on the "Forgot Password" link on the login page. We will send you a link to reset your password via email.',
+        "Do I need to have an online store before signing a contract?",
+        'No. When you choose our E-Commerce package we take care of everything. If you already have a Shopify storefront, we can easily transfer products to your new site!',
       ],
       [
-        "How can I delete my account?",
-        "If you would like to delete your account, please contact our customer support team. We will guide you through the process.",
+        "What brand assets do you need from me to build my Shopify backend?",
+        "In addition to your brand's visual identity assets, you will need to provide product, legal, and operational assets as well.",
       ],
       [
-        "How do I update my account information?",
-        "You can update your account information by logging in and going to your profile settings. There, you can update your email, address, and other personal information.",
+        "How do I manage my Shopify store after launch?",
+        "Once we've finished development, we transfer store ownership to you and do a quick walk-through of your store backend.  You'll have access to the Shopify Admin Dashboard where you can make all necessary updates/edits. ",
       ],
       [
-        "How do I change my email address?",
-        "You can change your email address by logging into your account and visiting your profile settings.",
+        "Are there additional costs for store management?",
+        "Yes. Shopify requires a subscription for store owners. Depending on your business needs, subscriptions can cost anywhere between $29 for solo entrepreneurs to $399 for larger businesses",
       ],
-      [
-        "Can I have multiple accounts?",
-        "We recommend having only one account per person to ensure all your orders and information are consolidated in one place.",
-      ],
+      
     ],
   };
 
