@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 import mockup from "../assets/mockup1.svg";
 
 const HomeHeader = () => {
-  
   return (
-    <div className="max-w-full overflow-hidden mt-10 py-10 lg:px-30 flex flex-col lg:flex-row items-center justify-center lg:gap-10 gap-20 h-full lg:h-[650px]">
-
+    <div className="max-w-10/12 overflow-hidden mt-10 py-10 flex flex-col lg:flex-row items-center mx-auto lg:gap-10 gap-20 h-full lg:h-[650px]">
       {/*Content */}
       <div className="h-fit lg:w-full flex flex-col px-5 lg:px-0">
         <h4>unique designs, custom-coded</h4>
@@ -18,20 +16,14 @@ const HomeHeader = () => {
           free hosting and edits*
         </p>
         <Link to="/Contact" className="mt-5">
-          <button className="w-full md:w-fit">
-            get started
-          </button>
+          <button className="w-full md:w-fit">get started</button>
         </Link>
       </div>
 
       {/*Image */}
-      <div className="px-5 lg:px-0 ">
+      <div className="px-5 lg:px-0">
         <picture>
-          <img
-            src={mockup}
-            alt="mockup img"
-            className="w-full"
-          />
+          <img src={mockup} alt="mockup img" className="w-full" />
         </picture>
       </div>
     </div>
