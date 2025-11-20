@@ -95,7 +95,7 @@
   }
 
   p {
-    @apply text-[1em] font-normal leading-5;
+    @apply text-[1em] font-normal leading-5 font-alt;
   }
 
   button {

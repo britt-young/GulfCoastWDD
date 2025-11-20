@@ -46,7 +46,7 @@ const PortfolioDisplay = () => {
           <h2 className="dark:text-white">
             Recently launched websites 
           </h2>
-          <p className="mt-6 text-black dark:text-white">
+          <p className="mt-2 text-black dark:text-white">
             At Gulf Coast Web Design & Development, we specialize in small
             business web design and development for clients all along the
             northern coast of the Gulf. No matter your business, we can build a

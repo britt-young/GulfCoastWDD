@@ -1,7 +1,12 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const FAQsStepper = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/Contact");
+  };
+
   const [activeCategory, setActiveCategory] = useState("General");
   const [expandedItems, setExpandedItems] = useState([false, false, false]);
 
@@ -107,8 +112,8 @@ const FAQsStepper = () => {
       <div className="relative flex flex-col items-center justify-center pt-0">
         <h4 className="text-alternate dark:text-alt">how can we help</h4>
         <h2 className="text-center dark:text-white">Frequently Asked Questions</h2>
-        <p className="mt-5 lg:w-200 mx-5 text-center dark:text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor.
+        <p className="mt-2 lg:w-200 mx-5 text-center dark:text-white">
+          If you can't find the answer to your question please feel free to contact us<span className="text-alternate dark:text-alt ms-1 hover:underline hover:cursor-pointer" onClick={handleClick}>here</span>.
         </p>
       </div>
 

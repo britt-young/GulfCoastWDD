@@ -74,7 +74,7 @@ const Pricing = () => {
           <h4 className="text-alternate dark:text-alt">our packages</h4>
           <h2 className="dark:text-white">Pricing packages for any business</h2>
         </div>
-        <p className="mt-5 dark:text-white">
+        <p className="mt-2 dark:text-white">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>

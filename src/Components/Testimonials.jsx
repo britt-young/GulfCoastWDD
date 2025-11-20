@@ -91,7 +91,7 @@ const Testimonials = () => {
       {/* Left: Title + Description + Pagnation on sm screens*/}
       <div className="w-full flex flex-col items-center text-center px-10">
         <h4>testimonials</h4>
-        <h2 className="text-white mb-5">What our clients are saying</h2>
+        <h2 className="text-white mb-2">What our clients are saying</h2>
         <p className="text-white">
           Real feedback from real people. We strive to exceed expectations every
           day.
