@@ -2,7 +2,7 @@ import { BadgeCheck } from "lucide-react";
 
 const GuarenteeGrid = () => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10 text-black dark:text-white">
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 my-5 text-black dark:text-white">
       {/* Snippet */}
       <div className="w-full ">
         <h5 className="font-bold text-black dark:text-white">
