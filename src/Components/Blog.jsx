@@ -62,6 +62,7 @@ const Blog = () => {
             image={safe}
             url="/services/security"
             icon={<GlobeLock />}
+            author="Brittney Treece"
           />
           <BlogCard
             date="Dec 22, 2023"

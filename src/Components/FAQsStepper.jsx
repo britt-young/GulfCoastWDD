@@ -122,7 +122,7 @@ const FAQsStepper = () => {
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
-            className={`px-4 py-2 border rounded cursor-pointer  font-normal ${
+            className={`px-4 py-2 border-1 rounded-3xl cursor-pointer shadow-lg font-normal ${
               activeCategory === category
                 ? "bg-alternate dark:bg-alt dark:text-black text-white border-black"
                 : "bg-white text-black hover:bg-gray-100"
@@ -137,12 +137,12 @@ const FAQsStepper = () => {
       {/* FAQ list */}
       <div className="w-full max-w-2xl px-5 lg:px-0">
         {faqData[activeCategory].map((item, index) => (
-          <div key={index} className="my-4 border rounded">
+          <div key={index} className="my-4">
             <div
               onClick={() => toggleExpand(index)}
               className=" text-black px-4 py-1 cursor-pointer bg-gray-200 hover:bg-alternate hover:dark:bg-alt hover:dark:text-black hover:text-white flex justify-between items-center"
             >
-              <span className="font-semibold tracking-wider">{item[0]}</span> {/* Question */}
+              <span className="font-semibold tracking-wider">{item[0]}</span>
               <span className="text-xl">
                 {expandedItems[index] ? "-" : "+"}
               </span>{" "}
@@ -150,7 +150,7 @@ const FAQsStepper = () => {
             </div>
             {expandedItems[index] && (
               <div className="px-4 py-2 bg-gray-50">
-                <p dangerouslySetInnerHTML={{ __html: item[1] }} /> {/* Answer */}
+                <p dangerouslySetInnerHTML={{ __html: item[1] }} />
               </div>
             )}
           </div>

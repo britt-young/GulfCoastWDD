@@ -72,8 +72,8 @@ const Testimonials = () => {
   React.useEffect(() => {
     const updateReviewsPerPage = () => {
       const width = window.innerWidth;
-      if (width >= 1024) setReviewsPerPage(6); // lg
-      else if (width >= 768) setReviewsPerPage(3); // md
+      if (width >= 1024) setReviewsPerPage(4); // lg
+      else if (width >= 768) setReviewsPerPage(2); // md
       else if (width >= 640) setReviewsPerPage(2); // sm
       else setReviewsPerPage(1); // xs
     };
@@ -87,42 +87,26 @@ const Testimonials = () => {
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
 
   return (
-    <div className="flex flex-col justify-around gap-12 px-5 lg:px-0 items-center lg:py-24 py-20">
+    <div className="flex flex-col justify-around gap-8 px-5 lg:px-0 items-center lg:py-24 py-20">
       {/* Left: Title + Description + Pagnation on sm screens*/}
-      <div className="w-full flex flex-col items-center text-center px-10">
+      <div className="w-full flex flex-col items-center text-center">
         <h4>testimonials</h4>
         <h2 className="text-white mb-2">What our clients are saying</h2>
         <p className="text-white">
           Real feedback from real people. We strive to exceed expectations every
           day.
         </p>
-        {/* Pagination Arrows */}
-        <div className=" lg:hidden flex gap-5 mt-5 transition-all duration-300 ease-in-out">
-          <button
-            className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50"
-            onClick={() => setPage((p) => Math.max(0, p - 1))}
-            disabled={page === 0}
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50"
-            onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
-            disabled={page === totalPages - 1}
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </div>
+        
       </div>
 
       {/* Right: Horizontal Testimonials + Pagnation on lg screens*/}
       <div className="flex flex-row gap-6 items-center">
         <button
-          className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50 h-fit hidden lg:block"
+          className="h-fit py-8 px-2 bg-transparent text-alt disabled:text-alternate disabled:bg-transparent hidden lg:block"
           onClick={() => setPage((p) => Math.max(0, p - 1))}
           disabled={page === 0}
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-6 h-6" />
         </button>
         <div className="flex gap-4 overflow-hidden">
           {currentReviews.map((review, index) => (
@@ -132,7 +116,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="rounded-3xl p-8 md:p-4 bg-white border border-dark w-80 md:w-64 min-h-[180px] flex flex-col justify-between">
+              <div className="rounded-3xl p-8 md:p-4 bg-white border border-dark w-[80] md:w-[350px] lg:w-[400px] min-h-[180px] flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="flex items-center gap-1">
                     {Array.from({ length: review.rating }).map((_, i) => (
@@ -152,13 +136,30 @@ const Testimonials = () => {
           ))}
         </div>
         <button
-          className="rounded-xl p-2 border bg-alt shadow disabled:bg-white/50 h-fit hidden lg:block"
+          className="h-fit py-8 px-2 bg-transparent text-alt disabled:text-alternate disabled:bg-transparent hidden lg:block"
           onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
           disabled={page === totalPages - 1}
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-6 h-6" />
         </button>
       </div>
+      {/* Pagination Arrows */}
+        <div className="lg:hidden flex gap-5 mt-0 transition-all duration-300 ease-in-out">
+          <button
+            className="shadow-none h-fit bg-transparent text-alt disabled:text-alternate disabled:bg-transparent block"
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={page === 0}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            className="shadow-none h-fit bg-transparent text-alt disabled:text-alternate disabled:bg-transparent block"
+            onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+            disabled={page === totalPages - 1}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
     </div>
   );
 };

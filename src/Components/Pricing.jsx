@@ -7,7 +7,7 @@ const tiers = [
     id: "tier-sum",
     href: "#",
     price: "$900",
-    add: "+$25/month hosting fee",
+    add: "+$25/month hosting",
     description:
       "The perfect one and done plan for businesses that want a website without the hassle of monthly payments",
     features: [
@@ -68,13 +68,16 @@ const Pricing = () => {
   };
 
   return (
-    <section className="bg-white dark:bg-dark">
-      <div className="mx-auto pt-24 lg:pt-40 text-center px-5 lg:px-0">
+    <section className="bg-white dark:bg-dark py-5">
+      <div className="bg-alternate pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
+      {/* Animated bubble background */}
+          <div className="absolute -top-130 -right-20 lg:bottom-150 lg:right-45 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-alt rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
+      <div className="mx-auto text-center">
         <div>
-          <h4 className="text-alternate dark:text-alt">our packages</h4>
-          <h2 className="dark:text-white">Pricing packages for any business</h2>
+          <h4 className="text-alt">our packages</h4>
+          <h2 className="text-white">Pricing packages for any business</h2>
         </div>
-        <p className="mt-2 dark:text-white">
+        <p className="mt-2 text-white">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
@@ -103,7 +106,7 @@ const Pricing = () => {
               <span className="text-5xl font-semibold tracking-tight text-black">
                 {tier.price}
               </span>
-              <span className="text-base lg:px-0 px-2 text-black">{tier.add}</span>
+              <span className="md:text-base text-sm lg:px-0 px-2 text-black ">{tier.add}</span>
             </p>
             <p className="mt-6 text-base font-alt text-black">{tier.description}</p>
 
@@ -143,6 +146,7 @@ const Pricing = () => {
             </a>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

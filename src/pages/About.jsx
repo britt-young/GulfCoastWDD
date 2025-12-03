@@ -12,7 +12,7 @@ const About = () => {
       <Bio />
       <Workflow />
       <PortfolioDisplay />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </div>
   );

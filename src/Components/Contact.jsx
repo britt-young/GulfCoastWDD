@@ -12,19 +12,19 @@ const Contact = () => {
   return (
     <div className="bg-white dark:bg-dark">
       <div className="flex justify-center py-16 px-5 lg:px-0">
-        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate dark:bg-white p-5 rounded-3xl transform transition-all duration-300 group">
+        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate p-5 rounded-3xl transform transition-all duration-300 group">
           {/* Animated bubble background */}
-          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-alternate rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
+          <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-white rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
 
           {/* TEXT + IMAGE FLEX WRAPPER */}
           <div className="flex flex-col lg:flex-row items-center justify-around w-full gap-10 lg:gap-0 p-5">
             
             {/* TEXT BLOCK */}
             <div className="flex flex-col items-center lg:items-start text-left max-w-2xl">
-              <h2 className="text-white dark:text-black">
+              <h2 className="text-white ">
                 Make your business stand out!
               </h2>
-              <p className="lg:mt-2 mt-5 text-white dark:text-black">
+              <p className="lg:mt-2 mt-5 text-white ">
                 Generate more website traffic and convert viewers to customers!
               </p>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                 </a>
                 <a
                   href="/FAQs"
-                  className="text-sm/6 font-semibold text-white dark:text-alternate hover:text-dark hover:cursor-pointer z-10"
+                  className="text-sm/6 font-semibold text-white hover:text-dark hover:cursor-pointer z-10"
                 >
                   read our FAQs
                 </a>
