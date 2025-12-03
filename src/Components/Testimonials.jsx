@@ -132,7 +132,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="rounded-3xl p-8 md:p-4 bg-white border border-dark w-100 md:w-64 min-h-[180px] flex flex-col justify-between">
+              <div className="rounded-3xl p-8 md:p-4 bg-white border border-dark w-80 md:w-64 min-h-[180px] flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="flex items-center gap-1">
                     {Array.from({ length: review.rating }).map((_, i) => (

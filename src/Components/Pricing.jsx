@@ -69,7 +69,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-white dark:bg-dark">
-      <div className="mx-auto pt-40 text-center">
+      <div className="mx-auto pt-24 lg:pt-40 text-center px-5 lg:px-0">
         <div>
           <h4 className="text-alternate dark:text-alt">our packages</h4>
           <h2 className="dark:text-white">Pricing packages for any business</h2>
@@ -81,7 +81,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 pb-40">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 pb-24">
         {tiers.map((tier) => (
           <div
             key={tier.id}
