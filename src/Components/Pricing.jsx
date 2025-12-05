@@ -69,10 +69,10 @@ const Pricing = () => {
 
   return (
     <section className="bg-white dark:bg-dark py-5">
-      <div className="bg-alternate shadow-lg shadow-gray-400 dark:shadow-none pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
+      <div className="bg-alternate shadow-lg shadow-gray-400 dark:shadow-none py-12 lg:pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
       {/* Animated bubble background */}
           <div className="absolute -top-130 -right-20 lg:-top-350 lg:right-0 w-150 h-150 lg:w-400 lg:h-450 bg-white dark:bg-alt rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
-      <div className="mx-auto text-center">
+      <div className="mx-auto text-center px-5 lg:px-0">
         <div>
           <h4 className="text-alt">our packages</h4>
           <h2 className="text-white">Pricing packages for any business</h2>
@@ -84,12 +84,12 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 pb-24">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 lg:pb-24">
         {tiers.map((tier) => (
           <div
             key={tier.id}
             className={classNames(
-              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-10 lg:p-8 h-full flex flex-col mx-8 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-4 lg:p-8 h-full flex flex-col mx-3 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
               tier.featured ? "bg-white border-1 border-gray-50" : "bg-white border-1 border-gray-50"
             )}
           >
@@ -103,7 +103,7 @@ const Pricing = () => {
               {tier.name}
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2 ">
-              <span className="text-5xl font-semibold tracking-tight text-black">
+              <span className="lg:text-5xl text-4xl font-semibold tracking-tight text-black">
                 {tier.price}
               </span>
               <span className="md:text-base text-sm lg:px-0 px-2 text-black ">{tier.add}</span>

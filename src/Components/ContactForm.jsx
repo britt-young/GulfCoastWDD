@@ -46,7 +46,7 @@ const ContactForm = () => {
   return (
     <div className="py-20 px-5 lg:px-0">
       <div className="dark:bg-alternatemx-auto max-w-2xl bg-white dark:bg-alternate rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300">
-        <div className="mx-auto text-center text-black dark:text-white">
+        <div className="mx-auto text-center text-black dark:text-white px-5">
           <h2>Request a meeting</h2>
           <p className="mt-2">
             Send us a message and let us help you convert website visitors to

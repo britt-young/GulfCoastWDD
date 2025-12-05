@@ -20,17 +20,17 @@ const Contact = () => {
           <div className="flex flex-col lg:flex-row items-center justify-around w-full gap-10 lg:gap-0 p-5">
             
             {/* TEXT BLOCK */}
-            <div className="flex flex-col items-center lg:items-start text-left max-w-2xl">
-              <h2 className="text-white ">
-                Make your business stand out!
+            <div className="flex flex-col items-center lg:items-start lg:text-left text-center max-w-2xl">
+              <h2 className="text-white lg:text-[3em] text-[1.8em] leading-6 md:leading-10">
+                It's time to make your <br/>business stand out!
               </h2>
               <p className="lg:mt-2 mt-5 text-white ">
                 Generate more website traffic and convert viewers to customers!
               </p>
 
-              <div className="lg:mt-5 mt-10 flex flex-row gap-y-2 lg:gap-y-0 gap-x-6 items-center">
+              <div className="lg:mt-5 mt-6 flex lg:flex-row flex-col gap-y-2 lg:gap-y-0 gap-x-6 items-center">
                 <a
-                  className="text-sm flex items-center relative overflow-visible uppercase font-alt font-bold leading-tight shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
+                  className="text-sm leading-3 flex items-center relative overflow-visible uppercase font-alt font-bold shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
                   onClick={handleClick}
                 >
                   Schedule Now <ArrowRightIcon className="size-6 ms-4" />
