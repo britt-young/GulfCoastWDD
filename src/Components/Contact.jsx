@@ -21,7 +21,7 @@ const Contact = () => {
             
             {/* TEXT BLOCK */}
             <div className="flex flex-col items-center lg:items-start lg:text-left text-center max-w-2xl">
-              <h2 className="text-white lg:text-[3em] text-[1.8em] leading-6 md:leading-10">
+              <h2 className="text-white lg:text-[4em] text-[1.8em] leading-6 md:leading-14">
                 It's time to make your <br/>business stand out!
               </h2>
               <p className="lg:mt-2 mt-5 text-white ">
