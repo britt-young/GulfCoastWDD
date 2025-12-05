@@ -69,7 +69,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-white dark:bg-dark py-5">
-      <div className="bg-alternate shadow-lg shadow-gray-500 pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
+      <div className="bg-alternate shadow-lg shadow-gray-400 dark:shadow-none pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
       {/* Animated bubble background */}
           <div className="absolute -top-130 -right-20 lg:-top-350 lg:right-0 w-150 h-150 lg:w-400 lg:h-450 bg-white dark:bg-alt rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
       <div className="mx-auto text-center">

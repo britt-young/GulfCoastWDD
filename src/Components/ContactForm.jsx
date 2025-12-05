@@ -45,8 +45,8 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="dark:bg-alternatemx-auto max-w-2xl bg-white rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300">
-        <div className="mx-auto text-center text-black dark:text-black">
+      <div className="dark:bg-alternatemx-auto max-w-2xl bg-white dark:bg-alternate rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300">
+        <div className="mx-auto text-center text-black dark:text-white">
           <h2>Request a meeting</h2>
           <p className="mt-2">
             Send us a message and let us help you convert website visitors to
@@ -75,7 +75,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm font-semibold text-gray-900 dark:text-black"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 First name
               </label>
@@ -92,7 +92,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold text-gray-900 dark:text-black"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Last name
               </label>
@@ -110,7 +110,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm font-semibold text-gray-900 dark:text-black"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Company
               </label>
@@ -127,7 +127,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-gray-900 dark:text-black"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Email
               </label>
@@ -145,7 +145,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm font-semibold text-gray-900 dark:text-black"
+                className="block text-sm font-semibold text-gray-900 dark:text-white"
               >
                 Phone number
               </label>
@@ -160,7 +160,7 @@ const ContactForm = () => {
               </div>
             </div>
 
-            <label className="block text-sm font-semibold text-gray-900 dark:text-black col-span-2">
+            <label className="block text-sm font-semibold text-gray-900 dark:text-white col-span-2">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
@@ -199,9 +199,9 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm text-gray-600 dark:text-black content-center">
+              <Label className="text-sm text-gray-600 dark:text-white content-center">
                 By selecting this, you agree to our
-                <Link to="/privacy" className="text-alternate underline ms-1 hover:text-black dark:hover:text-black">
+                <Link to="/privacy" className="text-alternate underline ms-1 hover:text-black dark:text-alt dark:hover:text-black">
                   privacy policy
                 </Link>
               </Label>
@@ -211,7 +211,7 @@ const ContactForm = () => {
           <div className="mt-10 mb-2">
             <button
               type="submit"
-              className="bg-alternate text-white rounded hover:bg-alt d hover:text-black transition"
+              className="bg-alternate text-white rounded hover:bg-alt dark:bg-alt dark:text-black dark:hover:bg-white hover:text-black transition"
             >
               Submit
             </button>
