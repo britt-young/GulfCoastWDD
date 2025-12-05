@@ -10,7 +10,7 @@ const features = [
     description:
       "A template website for local farmers and seasonal grocerers. A community-driven agricultural resource connecting local farmers and families. Our mission is to promote sustainable agriculture, provide a fun outdoor experience, and share local food with everyone.",
     icon: Tractor,
-    image: "./imgs/farm.png",
+    image: "./imgs/farm.webp",
     buttonText: "visit local farm",
     url: "https://www.localfarm.dev",
   },

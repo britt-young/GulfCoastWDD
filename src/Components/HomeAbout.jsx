@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import GuarenteeGrid from "./GuarenteeGrid";
-import pic from "../assets/imgs/homeabout1.png";
+import pic from "../assets/imgs/homeabout1.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
