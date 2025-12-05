@@ -29,7 +29,7 @@ const Terms = () => {
 
         <section className="space-y-6">
           <section>
-            <h2 className="text-lg font-medium">1. Use of Website</h2>
+            <h2 className="text-xl font-medium">1. Use of Website</h2>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
               <li>You may use our website only for lawful purposes.</li>
               <li>
@@ -40,7 +40,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">2. Intellectual Property</h2>
+            <h2 className="text-xl font-medium">2. Intellectual Property</h2>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
               <li>
                 All content on this website, including text, graphics, logos,
@@ -55,7 +55,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">3. Contact Form Submissions</h2>
+            <h2 className="text-xl font-medium">3. Contact Form Submissions</h2>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
               <li>
                 By submitting information through our contact form, you
@@ -70,7 +70,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">4. No Warranties</h2>
+            <h2 className="text-xl font-medium">4. No Warranties</h2>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
               <li>
                 This website and its content are provided “as is” without
@@ -84,7 +84,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">5. Limitation of Liability</h2>
+            <h2 className="text-xl font-medium">5. Limitation of Liability</h2>
             <p className="mt-2 text-gray-700">
               To the fullest extent permitted by law, {companyName} shall not be
               liable for any damages resulting from your use of our website.
@@ -92,7 +92,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">6. Links to Other Websites</h2>
+            <h2 className="text-xl font-medium">6. Links to Other Websites</h2>
             <p className="mt-2 text-gray-700">
               Our website may include links to third-party websites. We are not
               responsible for their content or practices.
@@ -100,7 +100,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">7. Governing Law</h2>
+            <h2 className="text-xl font-medium">7. Governing Law</h2>
             <p className="mt-2 text-gray-700">
               These Terms shall be governed by and construed under the laws of
               the State of {governingState}.
@@ -108,7 +108,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">8. Changes to Terms</h2>
+            <h2 className="text-xl font-medium">8. Changes to Terms</h2>
             <p className="mt-2 text-gray-700">
               We reserve the right to update these Terms at any time. Continued
               use of our website means you accept those changes.

@@ -45,8 +45,8 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="bg-gray-100 dark:bg-alternate rounded-lg shadow-lg py-5 max-w-2xl mx-auto hover:scale-105 transition-all duration-300">
-        <div className="mx-auto text-center text-black dark:text-white">
+      <div className="dark:bg-alternatemx-auto max-w-2xl bg-white rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300">
+        <div className="mx-auto text-center text-black dark:text-black">
           <h2>Request a meeting</h2>
           <p className="mt-2">
             Send us a message and let us help you convert website visitors to
@@ -75,7 +75,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm font-semibold text-gray-900 dark:text-white"
+                className="block text-sm font-semibold text-gray-900 dark:text-black"
               >
                 First name
               </label>
@@ -85,14 +85,14 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold text-gray-900 dark:text-white"
+                className="block text-sm font-semibold text-gray-900 dark:text-black"
               >
                 Last name
               </label>
@@ -102,7 +102,7 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm font-semibold text-gray-900 dark:text-white"
+                className="block text-sm font-semibold text-gray-900 dark:text-black"
               >
                 Company
               </label>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   id="company"
                   name="company"
                   type="text"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -127,7 +127,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-gray-900 dark:text-white"
+                className="block text-sm font-semibold text-gray-900 dark:text-black"
               >
                 Email
               </label>
@@ -137,7 +137,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -145,7 +145,7 @@ const ContactForm = () => {
             <div className="col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm font-semibold text-gray-900 dark:text-white"
+                className="block text-sm font-semibold text-gray-900 dark:text-black"
               >
                 Phone number
               </label>
@@ -155,18 +155,18 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 font-alt text-sm text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-sm text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
 
-            <label className="block text-sm font-semibold text-gray-900 dark:text-white col-span-2">
+            <label className="block text-sm font-semibold text-gray-900 dark:text-black col-span-2">
               Select your preferred pricing package:
               <select
                 name="selectedPackage"
                 defaultValue="default"
                 required
-                className="bg-white px-1 py-1 font-alt hover:cursor-pointer text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
+                className="bg-gray-50 px-1 py-1 font-alt hover:cursor-pointer text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
               >
                 <option value="default" disabled>
                   Select a package
@@ -182,7 +182,7 @@ const ContactForm = () => {
                 <Checkbox
                   checked={enabled}
                   onChange={setEnabled}
-                  className="group block size-4 rounded border bg-white data-[checked]:bg-alternate"
+                  className="group block size-4 rounded border bg-gray-50 data-[checked]:bg-alternate"
                   required
                 >
                   <svg
@@ -199,9 +199,9 @@ const ContactForm = () => {
                   </svg>
                 </Checkbox>
               </div>
-              <Label className="text-sm text-gray-600 dark:text-white content-center">
+              <Label className="text-sm text-gray-600 dark:text-black content-center">
                 By selecting this, you agree to our
-                <Link to="/privacy" className="text-alternate dark:text-alt underline ms-1 hover:text-black dark:hover:text-white">
+                <Link to="/privacy" className="text-alternate underline ms-1 hover:text-black dark:hover:text-black">
                   privacy policy
                 </Link>
               </Label>
@@ -211,7 +211,7 @@ const ContactForm = () => {
           <div className="mt-10 mb-2">
             <button
               type="submit"
-              className="bg-alternate text-white rounded hover:bg-alt dark:bg-alt dark:hover:bg-white dark:text-black hover:text-black transition"
+              className="bg-alternate text-white rounded hover:bg-alt d hover:text-black transition"
             >
               Submit
             </button>

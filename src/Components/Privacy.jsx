@@ -32,7 +32,7 @@ const Privacy = () => {
 
         <section className="space-y-6">
           <section>
-            <h2 className="text-lg font-medium">1. Information We Collect</h2>
+            <h2 className="text-xl font-medium">1. Information We Collect</h2>
             <p className="mt-2 text-gray-700">
               When you use our contact form, we may collect:
             </p>
@@ -50,7 +50,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">
+            <h2 className="text-xl font-medium">
               2. How We Use Your Information
             </h2>
             <p className="mt-2 text-gray-700">
@@ -67,7 +67,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">3. Sharing of Information</h2>
+            <h2 className="text-xl font-medium">3. Sharing of Information</h2>
             <p className="mt-2 text-gray-700">
               We may share your information only with:
             </p>
@@ -81,7 +81,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">4. Data Security</h2>
+            <h2 className="text-xl font-medium">4. Data Security</h2>
             <p className="mt-2 text-gray-700">
               We implement reasonable technical and organizational measures to
               protect your information. However, no online transmission or
@@ -90,7 +90,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">5. Data Retention</h2>
+            <h2 className="text-xl font-medium">5. Data Retention</h2>
             <p className="mt-2 text-gray-700">
               We retain your information only as long as necessary to fulfill
               the purposes outlined in this Privacy Policy, unless a longer
@@ -99,7 +99,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">6. Your Rights</h2>
+            <h2 className="text-xl font-medium">6. Your Rights</h2>
             <p className="mt-2 text-gray-700">
               Depending on your location, you may have rights to access,
               correct, or request deletion of your personal information. To
@@ -111,7 +111,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">7. Cookies &amp; Tracking</h2>
+            <h2 className="text-xl font-medium">7. Cookies &amp; Tracking</h2>
             <p className="mt-2 text-gray-700">
               Our website may use cookies or analytics tools to improve user
               experience. You can control cookies through your browser settings.
@@ -119,7 +119,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">8. Third-Party Links</h2>
+            <h2 className="text-xl font-medium">8. Third-Party Links</h2>
             <p className="mt-2 text-gray-700">
               Our website may contain links to third-party sites. We are not
               responsible for their privacy practices.
@@ -127,7 +127,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium">9. Contact Us</h2>
+            <h2 className="text-xl font-medium">9. Contact Us</h2>
             <p className="mt-2 text-gray-700">
               If you have any questions about this Privacy Policy, contact us
               at:
