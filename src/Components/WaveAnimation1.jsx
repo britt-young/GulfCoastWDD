@@ -16,7 +16,7 @@ const WaveAnimation1 = () => {
           height: 20,
           amplitude: 40,
           speed: 0.1,
-          points: 6,
+          points: 2,
         }}
       />
       
