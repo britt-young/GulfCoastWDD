@@ -5,6 +5,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/solid";
 import WaveAnimation from "./WaveAnimation2";
+import logoDark from "../assets/logos/nav-logo-dark.svg";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -40,21 +41,17 @@ const Footer = () => {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-dark">
       <WaveAnimation />
-      <div className="pt-40 pb-20 relative grid grid-cols-1 lg:grid-cols-2 lg:px-60 px-5 lg:gap-40 gap-20 z-0 font-alt">
+      <div className="pt-40 pb-20 relative grid grid-cols-1 lg:grid-cols-2 lg:px-60 px-5 lg:gap-28 gap-20 z-0 font-alt">
         {/* Brand side */}
-        <div className="flex flex-col lg:items-start justify-top gap-5 text-white">
-          <div className="flex flex-col text-center h-20 w-fit p-4 lg:p-0">
-            <h2 className="uppercase">Gulf Coast</h2>
-            <p className="font-alt text-alt tracking-widest text-lg">
-              Web Design & Development
-            </p>
-          </div>
-          <p className="mr-10 mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris
+        <div className="flex flex-col items-start justify-top gap-3 text-white">
+          <img src={logoDark} alt="logo" className="h-[80px]" />
+
+          <p className="mb-10 ms-2">
+            Expand your business’s reach with a strong online presence. We
+            create professional, high-performance websites tailored to your
+            industry—all at an affordable price.
           </p>
-          <button onClick={handleClick}>Get Started</button>
+          <button className="lg:ms-2 lg:w-fit w-full" onClick={handleClick}>Get Started</button>
         </div>
 
         {/* Contact + Link side */}

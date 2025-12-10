@@ -4,7 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-// import main from "../assets/logos/Nav-logo-light.svg";
+import logoLight from "../assets/logos/nav-logo-lite.svg";
+import logoDark from "../assets/logos/nav-logo-dark.svg"
 
 const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
@@ -69,14 +70,20 @@ const NavBar = () => {
         }`}
       >
         {/* Logo */}
-        {/* <img src={main} alt="Logo" className="h-12" /> */}
-        <div className="flex flex-col items-center mx-4 lg:mx-0">
-          <p className="text-3xl uppercase font-bold tracking-wide">
-            Gulf Coast
-          </p>
-          <p className="font-alt tracking-widest text-xs">
-            Web Design & Development
-          </p>
+        <div className="mx-4 lg:mx-0">
+          {/* Light Mode Logo */}
+          <img
+            src={logoLight}
+            alt="logo"
+            className="w-full object-cover dark:hidden"
+          />
+
+          {/* Dark Mode Logo */}
+          <img
+            src={logoDark}
+            alt="logo"
+            className="w-full object-cover hidden dark:block"
+          />
         </div>
 
         {/* --- Right Section --- */}
@@ -271,7 +278,7 @@ const NavBar = () => {
         </div>
 
         {/* Dark Mode Toggle for Mobile */}
-        <div className="flex justify-start mt-6 px-6">
+        <div className="flex justify-start mt-6 px-6 h-8">
           <SliderToggle selected={theme} setSelected={setTheme} />
         </div>
       </div>
