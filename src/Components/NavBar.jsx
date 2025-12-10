@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-import logoLight from "../assets/logos/nav-logo-lite.svg";
+
 import logoDark from "../assets/logos/nav-logo-dark.svg"
 
 const TOGGLE_CLASSES =
@@ -56,7 +56,7 @@ const NavBar = () => {
   const getPath = (item) => (item === "Home" ? "/" : `/${item}`);
 
   const linkBaseClasses =
-    "relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
+    "text-white relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
   const activeClasses = "after:w-full";
   const inactiveClasses = "hover:text-alternate hover:after:w-full";
 
@@ -65,24 +65,18 @@ const NavBar = () => {
       <nav
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out font-normal ${
           isScrolled
-            ? "shadow-lg bg-white text-black dark:bg-dark dark:text-white"
+            ? "shadow-lg bg-alternate dark:bg-dark "
             : "bg-white/10 text-white mt-6 mx-4 lg:mx-10 rounded-2xl"
         }`}
       >
         {/* Logo */}
         <div className="mx-4 lg:mx-0">
-          {/* Light Mode Logo */}
-          <img
-            src={logoLight}
-            alt="logo"
-            className="w-full object-cover dark:hidden"
-          />
 
           {/* Dark Mode Logo */}
           <img
             src={logoDark}
             alt="logo"
-            className="w-full object-cover hidden dark:block"
+            className="w-full object-cover block"
           />
         </div>
 

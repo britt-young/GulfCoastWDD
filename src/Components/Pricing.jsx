@@ -84,7 +84,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 lg:pb-24">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 lg:pb-24 px-5 lg:px-0">
         {tiers.map((tier) => (
           <div
             key={tier.id}
