@@ -62,10 +62,10 @@ const NavBar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
       <nav
-        className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out ${
+        className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out font-normal ${
           isScrolled
             ? "shadow-lg bg-white text-black dark:bg-dark dark:text-white"
-            : "bg-white/10 text-white mt-6 mx-4 lg:mx-10"
+            : "bg-white/10 text-white mt-6 mx-4 lg:mx-10 rounded-2xl"
         }`}
       >
         {/* Logo */}
