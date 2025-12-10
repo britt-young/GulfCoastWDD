@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="bg-white dark:bg-dark">
       <div className="flex justify-center py-16 px-5 lg:px-0">
-        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate p-5 rounded-3xl transform transition-all duration-300 group  shadow-lg shadow-gray-400 dark:shadow-none">
+        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate p-5 rounded-2xl transform transition-all duration-300 group  shadow-lg shadow-gray-400 dark:shadow-none">
           {/* Animated bubble background */}
           <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-white rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
 
@@ -30,7 +30,7 @@ const Contact = () => {
 
               <div className="lg:mt-5 mt-6 flex lg:flex-row flex-col gap-y-2 lg:gap-y-0 gap-x-6 items-center">
                 <a
-                  className="text-sm leading-3 flex items-center relative overflow-visible uppercase font-alt font-bold shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
+                  className="text-sm leading-3 flex items-center relative overflow-visible uppercase font-alt font-bold shadow-lg px-6 py-2 rounded-2xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
                   onClick={handleClick}
                 >
                   Schedule Now <ArrowRightIcon className="size-6 ms-4" />

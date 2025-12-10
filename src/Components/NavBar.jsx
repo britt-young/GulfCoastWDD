@@ -122,7 +122,7 @@ const NavBar = () => {
 
                       {/* Dropdown Menu */}
                       {isServicesOpen && (
-                        <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white dark:bg-slate-800 shadow-lg divide-y divide-gray-200 dark:divide-gray-700 z-50">
+                        <ul className="absolute left-0 mt-2 w-48 rounded-2xl bg-white dark:bg-slate-800 shadow-lg divide-y divide-gray-200 dark:divide-gray-700 z-50">
                           {[
                             {
                               name: "User-Friendly Features",
@@ -264,7 +264,7 @@ const NavBar = () => {
               navigate("/Contact");
               setIsMenuOpen(false);
             }}
-            className="px-6 py-2 rounded-lg bg-alternate text-white hover:bg-alt hover:text-black transition"
+            className="px-6 py-2 rounded-2xl bg-alternate text-white hover:bg-alt hover:text-black transition"
           >
             Get Started
           </button>
@@ -282,7 +282,7 @@ const NavBar = () => {
 // === Animated Framer Motion Slider Toggle ===
 const SliderToggle = ({ selected, setSelected }) => {
   return (
-    <div className="relative flex w-fit items-center rounded-3xl transition-all duration-300 ease-in-out bg-gray-300 shadow-lg dark:shadow-white/30 dark:shadow-md">
+    <div className="relative flex w-fit items-center rounded-2xl transition-all duration-300 ease-in-out bg-gray-300 shadow-lg dark:shadow-white/30 dark:shadow-md">
       <button
         className={`${TOGGLE_CLASSES} ${
           selected === "light"
@@ -313,7 +313,7 @@ const SliderToggle = ({ selected, setSelected }) => {
         <motion.span
           layout
           transition={{ type: "spring", damping: 15, stiffness: 250 }}
-          className="h-full w-1/2 rounded-3xl bg-alt"
+          className="h-full w-1/2 rounded-2xl bg-alt"
         />
       </div>
     </div>

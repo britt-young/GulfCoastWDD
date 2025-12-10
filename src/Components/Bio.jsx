@@ -10,7 +10,7 @@ const Bio = () => {
         <img
           src={headshot}
           alt="owner headshot"
-          className="w-full lg:h-185 h-140 object-cover outline-2 outline-offset-1 outline-white rounded-lg"
+          className="w-full lg:h-185 h-140 object-cover outline-2 outline-offset-1 outline-white rounded-2xl"
         />
       </div>
       <div className="flex flex-col items-start justify-center lg:mr-90 mt-10 lg:mt-0 dark:text-white">

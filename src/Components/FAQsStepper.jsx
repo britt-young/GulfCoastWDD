@@ -122,7 +122,7 @@ const FAQsStepper = () => {
         {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
-            className={`px-4 py-2 border-1 rounded-3xl cursor-pointer shadow-lg font-normal ${
+            className={`px-4 py-2 border-1 rounded-2xl cursor-pointer shadow-lg font-normal ${
               activeCategory === category
                 ? "bg-alternate dark:bg-alt dark:text-black text-white border-black"
                 : "bg-white text-black hover:bg-gray-100"

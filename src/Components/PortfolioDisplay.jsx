@@ -86,7 +86,7 @@ const PortfolioDisplay = () => {
                 href={activeFeature.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-3xl font-alt uppercase"
+                className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-2xl font-alt uppercase"
               >
                 {activeFeature.buttonText}
                 <ArrowUpRightIcon className="size-5 ms-2" />
@@ -101,7 +101,7 @@ const PortfolioDisplay = () => {
             key={activeFeature.image}
             alt={activeFeature.name}
             src={activeFeature.image}
-            className="lg:rounded-l-3xl shadow-xl shadow-black/30 ring-1 ring-white sm:w-[36rem] lg:w-[1000px] md:-ml-4 lg:-ml-0 transition-all duration-700 ease-in-out opacity-100 animate-fadeIn"
+            className="lg:rounded-l-2xl shadow-xl shadow-black/30 ring-1 ring-white sm:w-[36rem] lg:w-[1000px] md:-ml-4 lg:-ml-0 transition-all duration-700 ease-in-out opacity-100 animate-fadeIn"
           />
         </div>
       </div>

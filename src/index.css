@@ -100,7 +100,7 @@
 
   button {
     @apply relative overflow-visible uppercase font-alt font-bold leading-tight 
-    shadow-lg px-6 py-2 rounded-3xl cursor-pointer bg-alt text-black 
+    shadow-lg px-6 py-2 rounded-2xl cursor-pointer bg-alt text-black 
     tracking-wide transition-all duration-300 ease-in-out 
     translate-y-0 transform;
   z-index: 1;
@@ -123,7 +123,7 @@
 /* reusable UI */
 @layer components {
   .card {
-    @apply bg-gray-50 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-lg shadow-black/30 rounded-lg flex flex-col relative;
+    @apply bg-gray-50 h-fit m-2 mt-20 lg:mt-0 p-8 shadow-lg shadow-black/30 rounded-2xl flex flex-col relative;
   }
   /* Hide scrollbar for Chrome, Safari, Edge */
   .scrollbar-hide::-webkit-scrollbar {

@@ -71,7 +71,7 @@ const ContactForm = () => {
             </label>
           </p>
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="first-name"
@@ -85,7 +85,7 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   required
-                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   id="company"
                   name="company"
                   type="text"
-                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -137,7 +137,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   required
-                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -155,7 +155,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full rounded-md bg-gray-50 px-3.5 py-2 font-alt text-sm text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-sm text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 name="selectedPackage"
                 defaultValue="default"
                 required
-                className="bg-gray-50 px-1 py-1 font-alt hover:cursor-pointer text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-md"
+                className="bg-gray-50 px-1 py-1 font-alt hover:cursor-pointer text-gray-700 outline-1 outline-gray-300 mt-1 ms-2 rounded-2xl"
               >
                 <option value="default" disabled>
                   Select a package
@@ -211,7 +211,7 @@ const ContactForm = () => {
           <div className="mt-10 mb-2">
             <button
               type="submit"
-              className="bg-alternate text-white rounded hover:bg-alt dark:bg-alt dark:text-black dark:hover:bg-white hover:text-black transition"
+              className="bg-alternate text-white hover:bg-alt dark:bg-alt dark:text-black dark:hover:bg-white hover:text-black transition"
             >
               Submit
             </button>

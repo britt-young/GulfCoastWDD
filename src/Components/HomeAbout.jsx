@@ -26,7 +26,7 @@ const HomeAbout = () => {
             alt="website preview"
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="w-fit lg:h-185 md:h-140 h-100 object-cover outline-2 outline-offset-1 outline-white rounded-lg shadow-lg"
+            className="w-fit lg:h-185 md:h-140 h-100 object-cover outline-2 outline-offset-1 outline-white rounded-2xl shadow-lg"
           />
         </div>
 

@@ -69,7 +69,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-white dark:bg-dark py-5">
-      <div className="bg-alternate shadow-lg shadow-gray-400 dark:shadow-none py-12 lg:pt-24 mx-5 lg:mx-40 lg:px-0 rounded-3xl relative isolate overflow-hidden transform transition-all duration-300 group">
+      <div className="bg-alternate shadow-lg shadow-gray-400 dark:shadow-none py-12 lg:pt-24 mx-5 lg:mx-40 lg:px-0 rounded-2xl relative isolate overflow-hidden transform transition-all duration-300 group">
       {/* Animated bubble background */}
           <div className="absolute -top-130 -right-20 lg:-top-350 lg:right-0 w-150 h-150 lg:w-400 lg:h-450 bg-white dark:bg-alt rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
       <div className="mx-auto text-center px-5 lg:px-0">
@@ -89,7 +89,7 @@ const Pricing = () => {
           <div
             key={tier.id}
             className={classNames(
-              "rounded-3xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-4 lg:p-8 h-full flex flex-col mx-3 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              "rounded-2xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-4 lg:p-8 h-full flex flex-col mx-3 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
               tier.featured ? "bg-white border-1 border-gray-50" : "bg-white border-1 border-gray-50"
             )}
           >
@@ -136,7 +136,7 @@ const Pricing = () => {
               href={tier.href}
               onClick={handleClick}
               className={classNames(
-                "block rounded-md px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
+                "block rounded-2xl px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
                 tier.featured
                   ? "bg-alternate text-white shadow-lg hover:bg-alt hover:text-black"
                   : "text-black bg-gray-100 hover:bg-gray-200"
