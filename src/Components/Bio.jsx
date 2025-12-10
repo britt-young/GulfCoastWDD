@@ -42,7 +42,7 @@ const Bio = () => {
         </p>
         <button
           onClick={() => navigate("/Contact")}
-          className="mt-12 bg-alternate hover:text-black transition hover:bg-alt text-white"
+          className="mt-12 bg-alternate hover:text-black transition hover:bg-alt text-white dark:bg-alt dark:text-black dark:hover:bg-white"
         >
           <a href={`tel:${phoneNumber}`} className="hover:underline">
             Call Us: {phoneNumber}

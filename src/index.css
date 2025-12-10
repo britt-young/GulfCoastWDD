@@ -76,7 +76,7 @@
   } */
 
   h1 {
-    @apply lg:text-[4em] text-[2em] font-bold lg:leading-15 leading-8 tracking-tighter text-black;
+    @apply lg:text-[4.2em] text-[2.6em] font-bold lg:leading-15 leading-10 tracking-tighter text-black;
   }
 
   h2 {
