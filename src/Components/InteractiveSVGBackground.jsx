@@ -102,7 +102,7 @@ export default function InteractiveSVGBackground({
           <circle
             cx={spot.x}
             cy={spot.y}
-            r="180"
+            r="30"
             fill="url(#softSpotMask)"
           />
         </mask>

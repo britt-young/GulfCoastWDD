@@ -27,7 +27,7 @@ export default function HomeHeader() {
             <button className="w-5/6 md:w-fit">get started</button>
           </Link>
         </div>
-        <div className="w-250 h-100">
+        <div className="w-250 h-100 hidden lg:block">
         </div>
       </div>
     </div>
