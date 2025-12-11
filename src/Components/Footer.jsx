@@ -41,12 +41,12 @@ const Footer = () => {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-dark">
       <WaveAnimation />
-      <div className="pt-40 pb-20 relative grid grid-cols-1 lg:grid-cols-2 lg:px-60 px-5 lg:gap-28 gap-20 z-0 font-alt">
+      <div className="pt-40 pb-20 relative grid grid-cols-1 md:grid-cols-2 lg:px-60 px-5 lg:gap-28 gap-20 z-0 font-alt">
         {/* Brand side */}
         <div className="flex flex-col items-start justify-top gap-3 text-white">
-          <img src={logoDark} alt="logo" className="h-[80px]" />
+          <img src={logoDark} alt="logo" className="lg:h-[80px] md:h-[70px] h-[60px]" />
 
-          <p className="mb-10 ms-2">
+          <p className="lg:mb-10 mb-5 ms-2 text-sm lg:text-base">
             Expand your business’s reach with a strong online presence. We
             create professional, high-performance websites tailored to your
             industry—all at an affordable price.

@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-
+import favicon from "../assets/icons/favicon-dark.ico"
 import logoDark from "../assets/logos/nav-logo-dark.svg"
 
 const TOGGLE_CLASSES =
@@ -58,7 +58,7 @@ const NavBar = () => {
   const linkBaseClasses =
     "text-white relative font-alt text-lg transition-all duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300";
   const activeClasses = "after:w-full";
-  const inactiveClasses = "hover:text-alternate hover:after:w-full";
+  const inactiveClasses = "hover:text-alt hover:after:w-full";
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out h-auto">
@@ -208,7 +208,7 @@ const NavBar = () => {
               ${isScrolled ? "text-black" : "text-white"}`}
             />
             <IoClose
-              className={`absolute text-3xl text-black dark:text-white transition-all duration-300 transform ${
+              className={`absolute text-3xl text-white dark:text-white  transition-all duration-300 transform ${
                 isMenuOpen
                   ? "opacity-100 rotate-0 scale-100"
                   : "opacity-0 -rotate-90 scale-75"
@@ -230,18 +230,15 @@ const NavBar = () => {
 
       {/* --- Mobile Sidebar --- */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-slate-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-dark dark:bg-slate-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 mt-5 flex border-b border-gray-200 dark:border-gray-700">
-          <div className="flex flex-col text-center h-full w-fit">
-            <h5 className="uppercase dark:text-alt text-xl">Gulf Coast</h5>
-            <p className="dark:text-alt font-alt text-sm">Web Design & Dev</p>
-          </div>
+        <div className="p-6 mt-2 flex border-b border-alternate dark:border-gray-700">
+            <img src={favicon} alt="logo" className="h-full w-fit"/>
         </div>
 
-        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium dark:text-white">
+        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium ">
           {navItems.map((item) => (
             <li key={item}>
               <NavLink
@@ -265,7 +262,7 @@ const NavBar = () => {
               navigate("/Contact");
               setIsMenuOpen(false);
             }}
-            className="px-6 py-2 rounded-2xl bg-alternate text-white hover:bg-alt hover:text-black transition"
+            className="px-6 py-2 rounded-2xl transition"
           >
             Get Started
           </button>
