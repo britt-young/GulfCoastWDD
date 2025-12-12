@@ -1,15 +1,15 @@
-import graphic from "../assets/mockup.svg";
+// import graphic from "../assets/mockup.svg";
 import { Link } from "react-router-dom";
-import InteractiveSVGBackground from "./InteractiveSVGBackground";
+// import InteractiveSVGBackground from "./InteractiveSVGBackground";
 
 // Header with animated interactive SVG background
 export default function HomeHeader() {
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Grid */}
-      <div className="absolute inset-0 -z-0 opacity-40 pointer-events-auto">
+      {/* <div className="absolute inset-0 -z-0 opacity-40 pointer-events-auto">
         <InteractiveSVGBackground />
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto overflow-hidden mt-10 py-10 h-full lg:h-[450px] flex flex-col lg:flex-row items-center gap-20">
         {/* Content */}
