@@ -21,4 +21,4 @@ export default function HomeHeader() {
       <div className="w-250 h-100 hidden lg:block"></div>
     </div>
   );
-}
+} 

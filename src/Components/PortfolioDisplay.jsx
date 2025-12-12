@@ -36,7 +36,7 @@ const PortfolioDisplay = () => {
   const [activeFeature, setActiveFeature] = useState(features[0]);
 
   return (
-    <div className="overflow-hidden bg-white dark:bg-dark py-20 lg:pl-52 px-5 lg:px-0">
+    <div className="overflow-hidden bg-white dark:bg-dark py-20 lg:pl-52 px-5 lg:px-0 h-full">
       <div className="flex lg:flex-row flex-col gap-x-6 gap-y-16 sm:gap-y-20 lg:mx-0 ">
         {/* Left section: Text + Features */}
         <div className="lg:pt-4 lg:w-2/5">

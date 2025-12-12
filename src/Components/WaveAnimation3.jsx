@@ -29,7 +29,6 @@ const WaveAnimation3 = () => {
           display: "flex",
           position: "absolute",
           backgroundColor: "#0038a8",
-          height: "100%",
           lineHeight: 0,
           zIndex: 0,
         }}
