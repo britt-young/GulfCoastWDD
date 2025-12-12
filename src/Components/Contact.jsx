@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <div className="bg-white dark:bg-dark">
-      <div className="flex justify-center py-16 px-5 lg:px-0">
+      <div className="flex justify-center py-12 px-5 xl:px-0">
         <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate p-5 rounded-2xl transform transition-all duration-300 group  shadow-lg shadow-gray-400 dark:shadow-none">
           {/* Animated bubble background */}
           <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-white rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
@@ -21,7 +21,7 @@ const Contact = () => {
             
             {/* TEXT BLOCK */}
             <div className="flex flex-col items-center lg:items-start lg:text-left text-center max-w-2xl">
-              <h2 className="text-white lg:text-[4em] text-[1.8em] leading-6 md:leading-14">
+              <h2 className="text-white lg:text-[4em] text-[1.6em] leading-6 lg:leading-12">
                 It's time to make your <br/>business stand out!
               </h2>
               <p className="lg:mt-2 mt-5 text-white ">

@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom";
-
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { Tractor, Flower2, Aperture } from "lucide-react";
@@ -38,7 +36,7 @@ const PortfolioDisplay = () => {
   const [activeFeature, setActiveFeature] = useState(features[0]);
 
   return (
-    <div className="overflow-hidden bg-white dark:bg-dark py-24 lg:pl-52 px-5 lg:px-0">
+    <div className="overflow-hidden bg-white dark:bg-dark py-20 lg:pl-52 px-5 lg:px-0">
       <div className="flex lg:flex-row flex-col gap-x-6 gap-y-16 sm:gap-y-20 lg:mx-0 ">
         {/* Left section: Text + Features */}
         <div className="lg:pt-4 lg:w-2/5">
@@ -46,7 +44,7 @@ const PortfolioDisplay = () => {
           <h2 className="dark:text-white">
             Recently launched websites 
           </h2>
-          <p className="mt-2 text-black dark:text-white">
+          <p className="mt-5 lg:mt-2 text-black dark:text-white">
             At Gulf Coast Web Design & Development, we specialize in small
             business web design and development for clients all along the
             northern coast of the Gulf. No matter your business, we can build a

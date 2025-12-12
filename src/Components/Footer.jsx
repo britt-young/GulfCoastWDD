@@ -41,7 +41,7 @@ const Footer = () => {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-dark">
       <WaveAnimation />
-      <div className="pt-40 pb-20 relative grid grid-cols-1 md:grid-cols-2 lg:px-60 px-5 lg:gap-28 gap-20 z-0 font-alt">
+      <div className="lg:pt-40 pt-24 pb-20 relative grid grid-cols-1 md:grid-cols-2 xl:px-60 px-5 lg:px-32 lg:gap-28 gap-20 z-0 font-alt">
         {/* Brand side */}
         <div className="flex flex-col items-start justify-top gap-3 text-white">
           <img src={logoDark} alt="logo" className="lg:h-[80px] md:h-[70px] h-[60px]" />

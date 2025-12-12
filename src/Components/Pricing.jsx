@@ -77,14 +77,14 @@ const Pricing = () => {
           <h4 className="text-alt">our packages</h4>
           <h2 className="text-white">Pricing packages for any business</h2>
         </div>
-        <p className="mt-2 text-white">
+        <p className="mt-5 lg:mt-2 text-white">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
       </div>
 
       {/* Pricing Cards */}
-      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 lg:pb-24 px-5 lg:px-0">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 mt-15 gap-y-9 lg:grid-cols-3 lg:gap-8 lg:pb-24 px-2 xl:px-0">
         {tiers.map((tier) => (
           <div
             key={tier.id}

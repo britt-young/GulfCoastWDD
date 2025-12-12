@@ -12,7 +12,7 @@ const ServiceCards = () => {
   }, []);
 
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/Services");
   };
 
   const services = [
@@ -67,7 +67,7 @@ const ServiceCards = () => {
         <div className="flex flex-col items-center justify-center py-5 text-white text-center">
           <h4>what we offer</h4>
           <h2>Services included in our packages</h2>
-          <p className="mt-2">
+          <p className="lg:mt-2 mt-5">
             Let us take care of your website so you can take care of your
             business
           </p>
@@ -75,7 +75,7 @@ const ServiceCards = () => {
 
         {/* Services Grid */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8"
           data-aos="zoom-in"
         >
           {services.map((service) => (
@@ -108,11 +108,12 @@ const ServiceCards = () => {
         </div>
 
         {/* Call to action button */}
-        <div className="flex justify-center">
-          <Link to="/Services" className="mt-5">
-            <button className="w-full md:w-fit">learn more </button>
-          </Link>
-        </div>
+        <button
+          onClick={handleClick}
+          className="mt-5 w-full md:w-fit flex items-center justify-center mx-auto"
+        >
+          learn more
+        </button>
       </div>
     </div>
   );

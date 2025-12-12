@@ -18,7 +18,7 @@ const HomeAbout = () => {
       <WaveAnimation />
 
       {/* Content */}
-      <div className="relative pt-40 pb-20 px-5 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5 text-black">
+      <div className="relative pt-40 pb-20 px-5 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-15 text-black">
         {/* Image */}
         <div className="w-full flex items-center justify-center ">
           <img
@@ -45,7 +45,7 @@ const HomeAbout = () => {
           </p>
           <GuarenteeGrid />
           <button
-            className="w-fit flex flex-row items-center justify-center dark:bg-alt dark:hover:bg-white dark:text-black bg-alternate text-white hover:bg-alt hover:text-black"
+            className="mt-5 w-full md:w-fit flex flex-row items-center justify-center dark:bg-alt dark:hover:bg-white dark:text-black bg-alternate text-white hover:bg-alt hover:text-black"
             onClick={handleClick}
           >
             Get to know gcwdd <ArrowRightIcon className="size-6 ms-2" />
