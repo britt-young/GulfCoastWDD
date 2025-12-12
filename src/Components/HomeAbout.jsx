@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import WaveAnimation from "./WaveAnimation3";
+import { px } from "framer-motion";
 
 AOS.init();
 
@@ -14,11 +15,11 @@ const HomeAbout = () => {
     navigate("/About");
   };
   return (
-    <section className="relative overflow-hidden bg-white dark:bg-dark">
-      <WaveAnimation />
+    <div className="bg-white dark:bg-dark">
+      <WaveAnimation/>
 
       {/* Content */}
-      <div className="relative pt-40 pb-20 px-5 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-15 text-black">
+      <div className="pt-40 pb-20 px-5 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-15 text-black">
         {/* Image */}
         <div className="w-full flex items-center justify-center ">
           <img
@@ -52,7 +53,7 @@ const HomeAbout = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

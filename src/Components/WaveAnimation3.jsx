@@ -22,7 +22,6 @@ const WaveAnimation3 = () => {
   }, []);
 
   return (
-    <div>
       <Wave
         fill={isDark ? "#002775" : "#ffffff"}
         paused={false}
@@ -31,6 +30,7 @@ const WaveAnimation3 = () => {
           position: "absolute",
           backgroundColor: "#0038a8",
           height: "100%",
+          lineHeight: 0,
           zIndex: 0,
         }}
         options={{
@@ -40,7 +40,6 @@ const WaveAnimation3 = () => {
           points: 2,
         }}
       />
-    </div>
   );
 };
 
