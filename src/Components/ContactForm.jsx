@@ -85,6 +85,7 @@ const ContactForm = () => {
                   name="first-name"
                   type="text"
                   required
+                  placeholder="first"
                   className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900  outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
@@ -102,6 +103,7 @@ const ContactForm = () => {
                   name="last-name"
                   type="text"
                   required
+                  placeholder="last"
                   className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
@@ -137,6 +139,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   required
+                  placeholder="example@email.com"
                   className="block w-full rounded-2xl bg-gray-50 px-3.5 py-2 font-alt text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400"
                 />
               </div>
