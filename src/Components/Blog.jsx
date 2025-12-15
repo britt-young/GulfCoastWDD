@@ -9,7 +9,7 @@ import easy from "../assets/imgs/easy.jpg"
 
 const Blog = () => {
   return (
-    <section className="bg-white dark:bg-dark flex justify-center py-20">
+    <section className="bg-white dark:bg-dark flex justify-center py-20 px-5">
       <div className="container">
         <div className="flex flex-wrap mb-24">
           <div className="w-full">

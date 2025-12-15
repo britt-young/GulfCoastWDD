@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   return (
     <div className="py-20 px-5 lg:px-0">
-      <div className="dark:bg-alternatemx-auto max-w-2xl bg-white dark:bg-alternate rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300">
+      <div className="dark:bg-alternate mx-auto max-w-2xl bg-white rounded-2xl py-10 shadow-lg hover:scale-105 transition-all duration-300 lg:px-10">
         <div className="mx-auto text-center text-black dark:text-white px-5">
           <h2>Request a meeting</h2>
           <p className="mt-2">
@@ -60,7 +60,7 @@ const ContactForm = () => {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
-          className="lg:mx-auto mx-5 max-w-xl mt-12 font-alt"
+          className="mx-auto px-5 max-w-xl mt-12 font-alt"
         >
           {/* Hidden form metadata for Netlify */}
           <input type="hidden" name="form-name" value="gcww-contact" />
