@@ -14,7 +14,7 @@ export default function HomeHeader() {
           hand-coded websites for your business starting at only $145/mo with
           free hosting and edits*
         </p>
-        <Link to="/Contact" className="mt-5">
+        <Link to="/contact" className="mt-5">
           <button className="w-5/6 md:w-fit">get started</button>
         </Link>
       </div>

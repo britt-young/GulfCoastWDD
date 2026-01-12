@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Workflow = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/Contact"); // Navigate to the "/contact" route
+    navigate("/contact"); // Navigate to the "/contact" route
   };
 
   return (

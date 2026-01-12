@@ -6,7 +6,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/contact");
   };
 
   return (

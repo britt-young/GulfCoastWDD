@@ -182,7 +182,7 @@ const NavBar = () => {
 
           {/* Desktop CTA */}
           <button
-            onClick={() => navigate("/Contact")}
+            onClick={() => navigate("/contact")}
             className="hidden lg:inline-block bg-alt text-black dark:bg-alt dark:text-black transition hover:bg-alternate hover:text-white dark:hover:bg-white"
           >
             Get A Quote
@@ -259,7 +259,7 @@ const NavBar = () => {
         <div className="flex justify-start mt-10 px-6">
           <button
             onClick={() => {
-              navigate("/Contact");
+              navigate("/contact");
               setIsMenuOpen(false);
             }}
             className="px-6 py-2 rounded-2xl transition"

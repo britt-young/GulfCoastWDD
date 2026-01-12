@@ -4,7 +4,7 @@ import { useState } from "react";
 const FAQsStepper = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/contact");
   };
 
   const [activeCategory, setActiveCategory] = useState("General");

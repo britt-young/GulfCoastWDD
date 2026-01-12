@@ -11,7 +11,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/contact");
   };
 
   // Email obfuscation

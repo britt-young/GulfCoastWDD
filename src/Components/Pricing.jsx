@@ -64,7 +64,7 @@ function classNames(...classes) {
 const Pricing = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/contact");
   };
 
   return (
