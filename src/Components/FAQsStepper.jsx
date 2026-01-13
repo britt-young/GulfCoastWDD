@@ -30,15 +30,15 @@ const FAQsStepper = () => {
       ],
       [
         "How do I make a payment and what payment methods do you accept?",
-        "We will send you and invoice via Square that provides you a link to the secure payment page. Subscriptions can be paid with a credit card or debit card. Whole Package projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
+        "We will send you and invoice via Square that provides you a link to the secure payment page. Memberships can be paid with a credit card or debit card. Whole Package projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
       ],
       [
         "Do you offer refunds?",
-        "When you sign a contract (whole package or subscription) a deposit is required before designing begins. If you are not satisfied with our design proposals and no longer wish to continue with us, then we will refund you your deposit.",
+        "When you sign a contract (whole package or membership package) a deposit is required before designing begins. If you are not satisfied with our design proposals and no longer wish to continue with us, then we will refund you your deposit.",
       ],
       [
         "Who owns the domain name and website after the project is completed?",
-        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the Whole or e-commerce package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
+        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the Whole or E-commerce Package. If the client is on a Membership plan and cancels, the website will be taken down and the client will no longer have access to it.",
       ],
       [
         "How do we request edits?",
@@ -69,8 +69,8 @@ const FAQsStepper = () => {
     ],
     "Membership": [
       [
-        "How long does the subscription last?",
-        "Membership subscriptions plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
+        "How long does Membership subscription last?",
+        "Membership subscription plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
       ],
       [
         "If I previously cancelled, can I re-subscribe?",
@@ -82,13 +82,13 @@ const FAQsStepper = () => {
       ],
       [
         "How do you handle late payments?",
-        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple invoices that are overdue, we can cancel the contract and the client will be responsible for paying the full price of the site. We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
+        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a Membership subscription, and there are multiple invoices that are overdue, we can cancel the contract and the client will be responsible for paying the full price of the site. We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
       ],
     ],
     "E-Commerce": [
       [
         "Do I need to have an online store before signing a contract?",
-        'No. When you choose our e-Commerce package we take care of everything. If you already have a Shopify storefront, we can easily transfer products to your new site!',
+        'No. When you choose our E-Commerce Package we take care of everything. If you already have a Shopify storefront, we can easily transfer products to your new site!',
       ],
       [
         "What brand assets do you need from me to build my Shopify backend?",
@@ -119,7 +119,7 @@ const FAQsStepper = () => {
 
       {/* Category buttons */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 mt-10 text-center">
-        {["General", "Whole Package", "Membership", "E-Commerce"].map((category) => (
+        {["General", "Whole", "Membership", "E-Commerce"].map((category) => (
           <a
             key={category}
             className={`px-4 py-2 border-1 rounded-2xl cursor-pointer shadow-lg font-normal ${
