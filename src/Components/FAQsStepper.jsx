@@ -53,7 +53,7 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
-    "Whole Package": [
+    "Whole": [
       [
         "How many pages are included in the Whole Package?",
         "The Whole Package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 per additional page.",
