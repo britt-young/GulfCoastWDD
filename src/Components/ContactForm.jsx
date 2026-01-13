@@ -174,7 +174,7 @@ const ContactForm = () => {
                 <option value="default" disabled>
                   Select a package
                 </option>
-                <option value="sum">Lump-Sum</option>
+                <option value="whole">Whole</option>
                 <option value="sub">Monthly Subscription</option>
                 <option value="e-comm">E-Commerce</option>
               </select>

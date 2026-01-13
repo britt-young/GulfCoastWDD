@@ -25,20 +25,20 @@ const FAQsStepper = () => {
         "Our websites typically take between 4-8 weeks to complete. Development timelines can vary depending on the package selected and how quickly clients respond to content requests and proposal feedback.",
       ],
       [
-        "What is the difference between the Lump Sum and Monthly packages?",
-        "The main difference is long term versus short term costs. Our subscription package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Lump-Sum package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
+        "What is the difference between the Whole Package and Monthly packages?",
+        "The main difference is long term versus short term costs. Our subscription package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Whole Package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
       ],
       [
         "How do I make a payment and what payment methods do you accept?",
-        "We will send you and invoice via Square that provides you a link to the secure payment page. Subscriptions can be paid with a credit card or debit card. Lump sum projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
+        "We will send you and invoice via Square that provides you a link to the secure payment page. Subscriptions can be paid with a credit card or debit card. Whole Package projects are paid with an ACH bank transfer. We DO NOT ACCEPT CHECKS.",
       ],
       [
         "Do you offer refunds?",
-        "When you sign a contract (lump sum or subscription) a deposit is required before designing begins. If you are not satisfied with our design proposals and no longer wish to continue with us, then we will refund you your deposit.",
+        "When you sign a contract (whole package or subscription) a deposit is required before designing begins. If you are not satisfied with our design proposals and no longer wish to continue with us, then we will refund you your deposit.",
       ],
       [
         "Who owns the domain name and website after the project is completed?",
-        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the lump-sum or e-commerce package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
+        "Purchasing the domain is included in all of our packages but the CLIENT will always own the domain name. The website is owned by the GCWDD unless the client chooses the Whole or e-commerce package. If the client is on a subscription plan and cancels, the website will be taken down and the client will no longer have access to it.",
       ],
       [
         "How do we request edits?",
@@ -53,13 +53,13 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
-    "Lump Sum": [
+    "Whole Package": [
       [
-        "How many pages are included in the Lump Sum package?",
-        "The Lump Sum package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 per additional page.",
+        "How many pages are included in the Whole Package?",
+        "The Whole Package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 per additional page.",
       ],
       [
-        "Can I add unlimited edits and support to the Lump Sum package?",
+        "Can I add unlimited edits and support to the Whole Package?",
         "Yes! We offer $50/mo. support packages within a minimum of 12 months commitment."
       ],
       [
@@ -78,7 +78,7 @@ const FAQsStepper = () => {
       ],
       [
         "What happens if I need to cancel before the 12 months are up?",
-        "If you cancel before your 12 month contract is up, you will owe the full cost of a lump sum website ($900) minus the amount you've already paid.",
+        "If you cancel before your 12 month contract is up, you will owe the full cost of a Whole Package website ($900) minus the amount you've already paid.",
       ],
       [
         "How do you handle late payments?",
@@ -119,7 +119,7 @@ const FAQsStepper = () => {
 
       {/* Category buttons */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 mt-10 text-center">
-        {["General", "Lump Sum", "Monthly", "E-Commerce"].map((category) => (
+        {["General", "Whole Package", "Monthly", "E-Commerce"].map((category) => (
           <a
             key={category}
             className={`px-4 py-2 border-1 rounded-2xl cursor-pointer shadow-lg font-normal ${

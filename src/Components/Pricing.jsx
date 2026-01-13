@@ -3,8 +3,8 @@ import { CheckIcon, XCircleIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
-    name: "Lump-sum",
-    id: "tier-sum",
+    name: "Whole Package",
+    id: "tier-whole",
     href: "#",
     price: "$900",
     add: "+$25/month hosting",
