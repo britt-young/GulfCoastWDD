@@ -20,8 +20,8 @@ const tiers = [
     featured: false,
   },
   {
-    name: "Monthly",
-    id: "tier-month",
+    name: "Membership",
+    id: "tier-member",
     href: "#",
     price: "$145",
     add: "/month",

@@ -25,8 +25,8 @@ const FAQsStepper = () => {
         "Our websites typically take between 4-8 weeks to complete. Development timelines can vary depending on the package selected and how quickly clients respond to content requests and proposal feedback.",
       ],
       [
-        "What is the difference between the Whole Package and Monthly packages?",
-        "The main difference is long term versus short term costs. Our subscription package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Whole Package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
+        "What is the difference between the Whole Package and Membership Package?",
+        "The main difference is long term versus short term costs. Our Membership Package will cost more over time, but you'll pay small manageable and affordable monthly payments. The Whole Package is a one-time payment that covers the entire project. When deciding which package is best for you, it all depends on your budget and services included in each package.",
       ],
       [
         "How do I make a payment and what payment methods do you accept?",
@@ -67,10 +67,10 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
-    Monthly: [
+    "Membership": [
       [
-        "How long do the subscription last?",
-        "Monthly subscriptions plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
+        "How long does the subscription last?",
+        "Membership subscriptions plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
       ],
       [
         "If I previously cancelled, can I re-subscribe?",
@@ -82,7 +82,7 @@ const FAQsStepper = () => {
       ],
       [
         "How do you handle late payments?",
-        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple monthly invoices that are overdue, we can cancel the contract and the client will be responsible for paying the full price of the site. We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
+        "Every invoice sent comes with a 7 day grace period. If the invoice is not paid within those 7 days, there will be a $25 late fee applied. If you're on a subscription, and there are multiple invoices that are overdue, we can cancel the contract and the client will be responsible for paying the full price of the site. We are generally very flexible and understanding of certain situations and often times offer assistance and help. We recommend setting up automatic payments to avoid this issue.",
       ],
     ],
     "E-Commerce": [
@@ -119,7 +119,7 @@ const FAQsStepper = () => {
 
       {/* Category buttons */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 mt-10 text-center">
-        {["General", "Whole Package", "Monthly", "E-Commerce"].map((category) => (
+        {["General", "Whole Package", "Membership", "E-Commerce"].map((category) => (
           <a
             key={category}
             className={`px-4 py-2 border-1 rounded-2xl cursor-pointer shadow-lg font-normal ${

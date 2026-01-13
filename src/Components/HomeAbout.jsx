@@ -37,7 +37,7 @@ const HomeAbout = () => {
           <h2 className="">Websites starting at $0 down, $145 per month</h2>
           <p className="mt-5">
             We offer a variety of pricing packages for you to choose from. Our
-            monthly subscription offer includes a standard 5-page website for $0
+            Membership Package includes a standard 5-page website for $0
             down. If needed, pages can be added. Pricing will vary depending on
             the number of additional pages requested.
             <span className="font-bold mx-1">12 month minimum contract</span>
