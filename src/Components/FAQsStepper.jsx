@@ -53,7 +53,7 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
-    "Whole": [
+    Whole: [
       [
         "How many pages are included in the Whole Package?",
         "The Whole Package includes 5 pages of your choice. You can select any combination of pages that suit your needs. If you need more than 5 pages, there is a one time charge of $100 per additional page.",
@@ -67,7 +67,7 @@ const FAQsStepper = () => {
         "You can contact our customer support team via email or phone. We are available 24/7 to assist you.",
       ],
     ],
-    "Membership": [
+    Membership: [
       [
         "How long does Membership subscription last?",
         "Membership subscription plans last a minimum of 12 months. After the 12 months, it is on a month-to-month basis and you can cancel at any time. If you cancel, you do not keep the site.",
