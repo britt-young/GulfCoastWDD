@@ -12,7 +12,9 @@ const About = () => {
       {/* SEO Component */}
       <SEOHelmet
         title="About | Gulf Coast Web Design & Development"
+        description="Tallahassee, Florida Website Design & Development"
         canonical="/about"
+        ogImage="imgs/home-og.png"
       />
       <AboutHeader />
       <Bio />
