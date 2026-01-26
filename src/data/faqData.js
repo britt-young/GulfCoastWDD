@@ -1,4 +1,4 @@
-const faqData = {
+export const faqData = {
     General: [
       [
         "How long does the entire design and development process take?",
