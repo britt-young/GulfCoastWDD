@@ -24,8 +24,7 @@
     "react-router": "^7.12.0",
     "react-router-dom": "^7.12.0",
     "react-wavify": "^1.11.1",
-    "tailwindcss": "^4.0.8",
-    "vite-ssg": "^28.2.2"
+    "tailwindcss": "^4.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
