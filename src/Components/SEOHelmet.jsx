@@ -8,7 +8,7 @@ const SEOHelmet = ({
   faqs = [],
 }) => {
   const baseUrl = "https://gulfcoastwdd.com";
-  const canonicalUrl = canonical ? `${baseUrl}${canonical}` : baseUrl;
+  const canonicalUrl = canonical ? `${baseUrl}${canonical.replace(/\/?$/, "/")}` : `${baseUrl}/`;
 
   return (
     <Helmet>
