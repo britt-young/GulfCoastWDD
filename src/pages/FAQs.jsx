@@ -12,7 +12,7 @@ const FAQs = () => {
         description="Answers to common questions about our pricing packages and e-commerce services."
         canonical="/faqs"
         ogImage="imgs/faqs-og.png"
-        faqs={faqData} // JSON-LD structured data
+        faqs={faqsData} // JSON-LD structured data
       />
 
       {/* Page Content */}
