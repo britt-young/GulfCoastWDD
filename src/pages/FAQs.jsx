@@ -1,6 +1,7 @@
 import FAQsHeader from '../Components/FAQsHeader'
 import FAQsStepper from '../Components/FAQsStepper'
 import SEOHelmet from '../Components/SEOHelmet'
+import {faqData} from "../data/faqData"
 
 
 const FAQs = () => {
@@ -12,7 +13,7 @@ const FAQs = () => {
         description="Answers to common questions about our pricing packages and e-commerce services."
         canonical="/faqs"
         ogImage="imgs/faqs-og.png"
-        faqs={faqsData} // JSON-LD structured data
+        faqs={faqData} // JSON-LD structured data
       />
 
       {/* Page Content */}
