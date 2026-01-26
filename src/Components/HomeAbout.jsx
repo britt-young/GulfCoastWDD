@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import WaveAnimation from "./WaveAnimation3";
-import { px } from "framer-motion";
 
 AOS.init();
 

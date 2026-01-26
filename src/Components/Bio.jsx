@@ -41,7 +41,6 @@ const Bio = () => {
           updates so you can focus on running your business.
         </p>
         <button
-          onClick={() => navigate("/contact")}
           className="lg:mt-12 mt-10 bg-alternate hover:text-black transition hover:bg-alt text-white dark:bg-alt dark:text-black dark:hover:bg-white w-full md:w-fit"
         >
           <a href={`tel:${phoneNumber}`} className="hover:underline">
