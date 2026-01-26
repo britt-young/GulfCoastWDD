@@ -35,7 +35,7 @@ function App() {
         <Route path="services/optimization" element={<ComingSoon />} />
         <Route path="services/responsiveness" element={<ComingSoon />} />
         <Route path="services/security" element={<ComingSoon />} />
-        <Route path="services/seo" element={<SEO />} />
+        <Route path="services/seo" element={<ComingSoon />} />
         <Route path="services/shopify" element={<ComingSoon />} />
         {/* Can add nested (additional children) routes too */}
         <Route path="*" element={<Error />} />
