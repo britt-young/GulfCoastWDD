@@ -2,7 +2,7 @@ import headshot from "../assets/imgs/owner.png";
 
 const Bio = () => {
   // Phone number
-  const phoneNumber = "(850) 296-8466";
+  const phoneNumber = "(850) 610-1066";
 
   return (
     <div className="bg-white dark:bg-dark px-6 py-14 lg:px-8 grid grid-cols-1 lg:grid-cols-2 justify-center">
