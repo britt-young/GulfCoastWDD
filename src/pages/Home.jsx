@@ -11,7 +11,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* SEO Component */}
       <SEOHelmet
-        title="Welcome | Gulf Coast Web Design & Development"
+        title="Welcome | Gulf Coast Web Designs & Development"
         description="Tallahassee, Florida Website Design & Development"
         canonical="/"
         ogImage="imgs/home-og.png"

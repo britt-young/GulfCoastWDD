@@ -25,7 +25,7 @@ const Bio = () => {
           Certification from the University of Utah.
         </p>
         <p className="mt-5">
-          I started Gulf Coast Web Design & Development because I believe that
+          I started Gulf Coast Web Designs & Development because I believe that
           every business, big or small, should have the ability to market their
           services online without breaking the bank. Many small businesses don't
           have the funds to pay large web design agencies just to receive a
@@ -34,7 +34,7 @@ const Bio = () => {
           beautiful and custom website for only $145 a month.
         </p>
         <p className="mt-5">
-          Gulf Coast Web Design & Development specializes in small businesses
+          Gulf Coast Web Designs & Development specializes in small businesses
           that are wanting to expand into the digital space to reach more
           clients or businesses that just want to upgrade their current outdated
           website. We'll do all the work for you; design, development, hosting, and

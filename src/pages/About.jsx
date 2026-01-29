@@ -11,7 +11,7 @@ const About = () => {
     <div className="min-h-screen">
       {/* SEO Component */}
       <SEOHelmet
-        title="About | Gulf Coast Web Design & Development"
+        title="About | Gulf Coast Web Designs & Development"
         description="Tallahassee, Florida Website Design & Development"
         canonical="/about"
         ogImage="imgs/home-og.png"

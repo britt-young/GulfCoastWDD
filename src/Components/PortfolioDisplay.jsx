@@ -45,7 +45,7 @@ const PortfolioDisplay = () => {
             Recently launched websites 
           </h2>
           <p className="mt-5 lg:mt-2 text-black dark:text-white">
-            At Gulf Coast Web Design & Development, we specialize in small
+            At Gulf Coast Web Designs & Development, we specialize in small
             business web design and development for clients all along the
             northern coast of the Gulf. No matter your business, we can build a
             website that is beautiful, tailored to your industry, boosts

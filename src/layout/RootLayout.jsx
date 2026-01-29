@@ -38,7 +38,7 @@ const RootLayout = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Gulf Coast Web Design & Development",
+            "name": "Gulf Coast Web Designs & Development",
             "url": "https://www.gulfcoastwdd.com",
             "telephone": "+1-123-4567",
             "address": {

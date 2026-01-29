@@ -9,7 +9,7 @@ const FAQs = () => {
     <div className="min-h-full ">
        {/* SEO Component */}
       <SEOHelmet
-        title="Frequently Asked Questions | Gulf Coast Web Design & Development"
+        title="Frequently Asked Questions | Gulf Coast Web Designs & Development"
         description="Answers to common questions about our pricing packages and e-commerce services."
         canonical="/faqs"
         ogImage="imgs/faqs-og.png"

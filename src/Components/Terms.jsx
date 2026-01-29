@@ -1,5 +1,5 @@
 const Terms = () => {
-  const companyName = "Gulf Coast Web Design & Development";
+  const companyName = "Gulf Coast Web Designs & Development";
   const websiteUrl = "https://gulfcoastwdd.com";
   const lastUpdated = "Dec. 5, 2025";
   const governingState = "Florida";

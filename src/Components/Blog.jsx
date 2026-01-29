@@ -21,7 +21,7 @@ const Blog = () => {
                 What makes a great website? 
               </h2>
               <p className="text-black dark:text-white">
-                At Gulf Coast Web Design & Development we include all the essential features that make a website safe, attractive, easy to use, and fast! 
+                At Gulf Coast Web Designs & Development we include all the essential features that make a website safe, attractive, easy to use, and fast! 
               </p>
             </div>
           </div>

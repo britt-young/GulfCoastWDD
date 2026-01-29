@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="min-h-screen ">
       {/* SEO Component */}
       <SEOHelmet
-        title="Contact | Gulf Coast Web Design & Development"
+        title="Contact | Gulf Coast Web Designs & Development"
         description="Tallahassee, Florida Website Design & Development"
         canonical="/contact"
         ogImage="imgs/home-og.png"
