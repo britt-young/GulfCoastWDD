@@ -23,7 +23,7 @@ const Footer = () => {
   const mapsLink = `https://maps.apple.com/?q=${encodeURIComponent(address)}`;
 
   // Phone number
-  const phoneNumber = "+18502968466";
+  const phoneNumber = "+18506101066";
 
   // Function to render email dynamically
   const renderEmail = () => {
@@ -66,7 +66,7 @@ const Footer = () => {
               <p className="mb-2">
                 <PhoneArrowDownLeftIcon className="inline-block w-4 me-2" />
                 <a href={`tel:${phoneNumber}`} className="hover:underline">
-                  (850) 296-8466
+                  (850) 610-1066
                 </a>
               </p>
 
