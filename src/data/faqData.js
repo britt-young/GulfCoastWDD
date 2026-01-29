@@ -2,7 +2,7 @@ export const faqData = {
     General: [
       [
         "How long does the entire design and development process take?",
-        "Our websites typically take between 4-8 weeks to complete. Development timelines can vary depending on the package selected and how quickly clients respond to content requests and proposal feedback.",
+        "Our websites typically take 8 weeks to complete. Development timelines can vary depending on the package selected and how quickly clients respond to content requests and proposal feedback.",
       ],
       [
         "What is the difference between the Whole Package and Membership Package?",
@@ -58,7 +58,7 @@ export const faqData = {
       ],
       [
         "What happens if I need to cancel before the 12 months are up?",
-        "If you cancel before your 12 month contract is up, you will owe the full cost of a Whole Package website ($900) minus the amount you've already paid.",
+        "If you cancel before your 12 month contract is up, you will owe the full cost of a Whole Package website ($1,000) minus the amount you've already paid.",
       ],
       [
         "How do you handle late payments?",

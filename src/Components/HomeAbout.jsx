@@ -33,7 +33,7 @@ const HomeAbout = () => {
         {/* Text + CTA */}
         <div className="flex flex-col items-start dark:text-white">
           <h4 className="text-alternate dark:text-alt">Gulf Coast Guarantee</h4>
-          <h2 className="">Websites starting at $0 down, $145 per month</h2>
+          <h2 className="">Websites starting at $0 down, $150 per month</h2>
           <p className="mt-5">
             We offer a variety of pricing packages for you to choose from. Our
             Membership Package includes a standard 5-page website for $0

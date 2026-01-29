@@ -11,7 +11,7 @@ export default function HomeHeader() {
         <h1 className="text-white">Small business web design & development</h1>
         <p className="mt-2 text-white">
           No drag-and-drop webpage builders or templates. We offer 100%
-          hand-coded websites for your business starting at only $145/mo with
+          hand-coded websites for your business starting at only $150/mo with
           free hosting and edits*
         </p>
         <Link to="/contact" className="mt-5">
