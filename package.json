@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@dr.pogodin/react-helmet": "^3.0.6",
-    "@headlessui/react": "^2.2.0",
+    "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.8",
     "aos": "^2.3.4",
