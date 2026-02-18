@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import element from "../assets/element.svg";
 
-const Contact = () => {
+const CTA = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="bg-white dark:bg-dark">
       <div className="flex justify-center py-12 px-5 xl:px-0">
-        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate p-5 rounded-2xl transform transition-all duration-300 group  shadow-lg shadow-gray-400 dark:shadow-none">
+        <div className="lg:w-[100rem] h-fit relative isolate overflow-hidden bg-alternate dark:bg-alternate/30 p-5 rounded-2xl transform transition-all duration-300 group  shadow-lg shadow-gray-400 dark:shadow-none">
           {/* Animated bubble background */}
           <div className="absolute -bottom-100 -right-0 lg:-bottom-10 lg:-right-100 w-150 h-150 lg:w-300 lg:h-300 bg-white dark:bg-white rounded-full opacity-10 transform group-hover:scale-150 transition-transform duration-300" />
 
@@ -60,4 +60,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default CTA;

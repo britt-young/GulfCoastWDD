@@ -3,7 +3,7 @@ import Bio from "../Components/Bio";
 import Workflow from "../Components/Workflow";
 import PortfolioDisplay from "../Components/PortfolioDisplay";
 // import Testimonials from "../Components/Testimonials";
-import Contact from "../Components/Contact";
+import CTA from "../Components/CTA";
 import SEOHelmet from "../Components/SEOHelmet";
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
       <Workflow />
       <PortfolioDisplay />
       {/* <Testimonials /> */}
-      <Contact />
+      <CTA />
     </div>
   );
 };

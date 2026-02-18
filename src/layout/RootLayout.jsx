@@ -13,7 +13,7 @@ const RootLayout = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="flex flex-col min-h-screen transition-colors duration-300 ease-in-out bg-alternate overflow-x-hidden">
+    <div className="flex flex-col min-h-screen transition-colors duration-300 ease-in-out bg-alternate dark:bg-dark overflow-x-hidden">
       <ScrollToTop />
 
       {/* Global SEO Head */}

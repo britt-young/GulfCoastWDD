@@ -8,7 +8,7 @@ const Workflow = () => {
   };
 
   return (
-    <div className="flex flex-col pb-20 lg:pt-20 pt-10 relative isolate text-white bg-alternate overflow-hidden">
+    <div className="flex flex-col pb-20 lg:pt-20 pt-10 relative isolate text-white bg-alternate dark:bg-dark overflow-hidden">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 lg:px-0 px-5">
         <div className="h-full">
           <h4 className="">Our Workflow</h4>

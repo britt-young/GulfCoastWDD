@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 export default function InteractiveSVGBackground({
   width = "100%",
   height = "100%",
-  waveColor = "#0038a8",
+  waveColor = "#0222D0",
   spotlightColor = "#ffffff",
   followSpeed = 0.12,
 }) {

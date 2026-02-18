@@ -205,7 +205,7 @@ const NavBar = () => {
                   ? "opacity-0 rotate-90 scale-75"
                   : "opacity-100 rotate-0 scale-100"
               }
-              ${isScrolled ? "text-black" : "text-white"}`}
+              ${isScrolled ? "text-alt" : "text-white"}`}
             />
             <IoClose
               className={`absolute text-3xl text-white dark:text-white  transition-all duration-300 transform ${
@@ -230,12 +230,12 @@ const NavBar = () => {
 
       {/* --- Mobile Sidebar --- */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-dark dark:bg-slate-900 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-alternate dark:bg-dark shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 mt-2 flex border-b border-alternate dark:border-gray-700">
-            <img src={favicon} alt="logo" className="h-full w-fit"/>
+        <div className="p-8 mt-2 flex border-b border-alt">
+            {/* <img src={favicon} alt="logo" className="h-full w-fit"/> */}
         </div>
 
         <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium ">

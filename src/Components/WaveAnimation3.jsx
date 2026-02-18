@@ -23,12 +23,12 @@ const WaveAnimation3 = () => {
 
   return (
       <Wave
-        fill={isDark ? "#002775" : "#ffffff"}
+        fill={isDark ? "#010a3b" : "#ffffff"}
         paused={false}
         style={{
           display: "flex",
           position: "absolute",
-          backgroundColor: "#0038a8",
+          backgroundColor: isDark ? "#010a3b" : "#0222D0",
           lineHeight: 0,
           zIndex: 0,
         }}

@@ -46,7 +46,7 @@ const FlowStepper = () => {
         >
           <div className="relative bg-white h-60 w-80 shadow-lg shadow-white/20 rounded-2xl flex flex-col justify-center gap-2 p-10  transform transition-all duration-300 hover:-translate-y-2 hover:translate-x-2">
             {/* Animated bubble background */}
-            <div className="absolute bottom-10 -right-6 w-32 h-32 bg-alternate dark:bg-alternate rounded-full opacity-10 transform translate-x-16 -translate-y-4 group-hover:scale-150 transition-transform duration-300" />
+            <div className="absolute bottom-10 -right-6 w-32 h-32 bg-alternate dark:bg-dark rounded-full opacity-10 transform translate-x-16 -translate-y-4 group-hover:scale-150 transition-transform duration-300" />
             {/* Step number bubble */}
             <span className="absolute h-12 w-12 -top-3 -left-3 border-4 border-white bg-alt rounded-full flex items-center justify-center shadow-md">
               <h6 className="text-gray-800 text-2xl font-semibold">
