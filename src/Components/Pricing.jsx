@@ -54,6 +54,7 @@ const tiers = [
     ],
     others: ["Unlimited Edits", "24/7 Support", "Lifetime Updates"],
     featured: false,
+    disabled: true,
   },
 ];
 
@@ -90,12 +91,17 @@ const Pricing = () => {
             <div
               key={tier.id}
               className={classNames(
-                "rounded-2xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-4 lg:p-8 h-full flex flex-col mx-3 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
-                tier.featured
-                  ? "bg-white border-1 border-gray-50"
-                  : "bg-white border-1 border-gray-50",
-              )}
+                "relative rounded-2xl shadow-lg inset-shadow-sm shadow-black/30 dark:shadow-white/30 p-4 lg:p-8 h-full flex flex-col mx-3 lg:mx-0 hover:scale-105 transition-all duration-300 ease-in",
+              tier.disabled
+                    ? "bg-white border-1 border-gray-50 hover:border-black"
+                    : "bg-white border-1 border-gray-50",
+                )}
             >
+              {tier.disabled && (
+                <div className="absolute inset-0 bg-black/85 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                  <span className="text-white">Package Unavailable</span>
+                </div>
+              )}
               <h3
                 id={tier.id}
                 className={classNames(
@@ -143,16 +149,17 @@ const Pricing = () => {
               </ul>
 
               <a
-                href={tier.href}
-                onClick={handleClick}
+                href={tier.disabled ? undefined : tier.href}
+                onClick={tier.disabled ? undefined : handleClick}
                 className={classNames(
-                  "block rounded-2xl px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider",
-                  tier.featured
-                    ? "bg-alternate text-white shadow-lg hover:bg-alt hover:text-black"
-                    : "text-black bg-gray-100 hover:bg-gray-200",
+                  "block rounded-2xl px-3.5 py-2.5 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 uppercase tracking-wider shadow-lg",
+
+                  tier.disabled
+                    ? "bg-gray-300 text-black opacity-50 cursor-not-allowed pointer-events-none"
+                    : "bg-alternate text-white hover:bg-alt hover:text-black",
                 )}
               >
-                Get a quote
+                {tier.disabled ? "Unavailable" : "Get Started"}
               </a>
             </div>
           ))}

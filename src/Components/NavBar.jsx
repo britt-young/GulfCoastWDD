@@ -66,7 +66,7 @@ const NavBar = () => {
         className={`flex items-center justify-between px-0 lg:px-10 py-4 transition-all duration-300 ease-in-out font-normal ${
           isScrolled
             ? "shadow-lg bg-alternate dark:bg-dark "
-            : "bg-white/10 text-white mt-6 mx-4 lg:mx-10 rounded-2xl"
+            : "bg-white/10 text-white mt-6 mx-4 lg:mx-10 rounded-xl"
         }`}
       >
         {/* Logo */}
@@ -76,7 +76,7 @@ const NavBar = () => {
           <img
             src={logoDark}
             alt="logo"
-            className="w-full object-cover block"
+            className="w-full h-12 object-cover block"
           />
         </div>
 
