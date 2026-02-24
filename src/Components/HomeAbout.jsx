@@ -39,7 +39,7 @@ const HomeAbout = () => {
             Membership Package includes a standard 5-page website for $0
             down. If needed, pages can be added. Pricing will vary depending on
             the number of additional pages requested.
-            <span className="font-bold mx-1">12 month minimum contract</span>
+            <span className="font-bold mx-1">12 month minimum contract.</span>
             Includes design, development, hosting, unlimited edits, 24/7
             support, and lifetime updates.
           </p>
