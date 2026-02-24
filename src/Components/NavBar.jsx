@@ -4,8 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-import favicon from "../assets/icons/favicon-dark.ico"
-import logoDark from "../assets/logos/nav-logo-dark.svg"
+import logoDark from "../assets/logos/nav-logo-dark.svg";
 
 const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
@@ -71,7 +70,6 @@ const NavBar = () => {
       >
         {/* Logo */}
         <div className="mx-4 lg:mx-0">
-
           {/* Dark Mode Logo */}
           <img
             src={logoDark}
@@ -220,7 +218,7 @@ const NavBar = () => {
 
       {/* --- Mobile Overlay --- */}
       <div
-        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-black/70 transition-opacity duration-300 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -230,15 +228,12 @@ const NavBar = () => {
 
       {/* --- Mobile Sidebar --- */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-alternate dark:bg-dark shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 left-0 w-full bg-alternate dark:bg-dark shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col items-start text-left py-20 ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="p-8 mt-2 flex border-b border-alt">
-            {/* <img src={favicon} alt="logo" className="h-full w-fit"/> */}
-        </div>
-
-        <ul className="flex flex-col mt-10 px-6 space-y-4 text-lg font-medium ">
+        <img src={logoDark} alt="logo"className="h-14 mx-6 absolute top-10"/>
+        <ul className="flex flex-col mt-10 mx-6 space-y-2 font-normal">
           {navItems.map((item) => (
             <li key={item}>
               <NavLink
@@ -256,7 +251,7 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className="flex justify-start mt-10 px-6">
+        <div className="mt-10 mx-6">
           <button
             onClick={() => {
               navigate("/contact");
@@ -269,7 +264,7 @@ const NavBar = () => {
         </div>
 
         {/* Dark Mode Toggle for Mobile */}
-        <div className="flex justify-start mt-6 px-6 h-8">
+        <div className="flex justify-start mt-6 mx-6 h-8">
           <SliderToggle selected={theme} setSelected={setTheme} />
         </div>
       </div>
