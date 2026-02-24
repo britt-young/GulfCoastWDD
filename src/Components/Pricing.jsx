@@ -23,7 +23,7 @@ const tiers = [
     name: "Membership",
     id: "tier-member",
     href: "#",
-    price: "$150",
+    price: "$200",
     add: "/month",
     description:
       "Our most popular plan for businesses that prefer a month to month commitment",

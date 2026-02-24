@@ -22,7 +22,7 @@ const Workflow = () => {
             send over a contract followed by a short questionnaire. During the
             design process, we'll use the information from your questionnaire to
             create your site's content for you! Once approved, we build and
-            deliver your website within 4-8 weeks.
+            deliver your website within 7-10 weeks.
           </p>
         </div>
       </div>
