@@ -31,7 +31,7 @@ const Bio = () => {
           have the funds to pay large web design agencies just to receive a
           generic website that is boring and ineffective. I wanted to provide
           small businesses an alternate option that allows them to have a
-          beautiful and custom website for only $145 a month.
+          beautiful and custom website for only $200 a month.
         </p>
         <p className="mt-5">
           Gulf Coast Web Designs & Development specializes in small businesses
