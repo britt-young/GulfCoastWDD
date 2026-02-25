@@ -43,9 +43,12 @@ const Privacy = () => {
               <li>Any information you choose to include in your message</li>
             </ul>
             <p className="mt-2 text-gray-700">
-              We do not collect sensitive personal data (such as Social Security
-              numbers, payment details, or health information) through our
-              website.
+              No mobile information will be shared with third parties/affiliates
+              for marketing/promotional purposes. All other categories exclude
+              text messaging originator opt-in data and consent; this
+              information will not be shared with any third parties. We do not
+              collect sensitive personal data (such as Social Security numbers,
+              payment details, or health information) through our website.
             </p>
           </section>
 
