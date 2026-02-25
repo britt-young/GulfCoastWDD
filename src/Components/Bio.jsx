@@ -20,7 +20,7 @@ const Bio = () => {
         </h2>
         <p className="mt-5">
           My name is Brittney, I'm the founder and developer behind Gulf Coast
-          Web Design & Development. I served 13 years as a medic in the United
+          Web Designs & Development. I served 13 years as a medic in the United
           States Army and later went on to earn my Full-Stack Developer
           Certification from the University of Utah.
         </p>
