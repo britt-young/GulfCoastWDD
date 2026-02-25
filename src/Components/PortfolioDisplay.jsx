@@ -6,7 +6,7 @@ const features = [
   {
     name: "Local Farm",
     description:
-      "A template website for local farmers and seasonal grocerers. A community-driven agricultural resource connecting local farmers and families. Our mission is to promote sustainable agriculture, provide a fun outdoor experience, and share local food with everyone.",
+      "A website for local farmers and seasonal grocerers. A community-driven agricultural resource connecting local farmers and families. Our mission is to promote sustainable agriculture, provide a fun outdoor experience, and share local food with everyone.",
     icon: Tractor,
     image: "./imgs/farm.webp",
     buttonText: "visit local farm",
@@ -15,7 +15,7 @@ const features = [
   {
     name: "Local Florist",
     description:
-      "A template website for florists wanting to sell online. Local Florist is committed to beautiful arrangements, fair pricing, and exceptional service.",
+      "A website for florists wanting to sell online. Local Florist is committed to beautiful arrangements, fair pricing, and exceptional service.",
     icon: Flower2,
     image: "./imgs/florist.png",
     buttonText: "visit local florist",
@@ -24,7 +24,7 @@ const features = [
   {
     name: "Julia Rose Photography",
     description:
-      "A template website for a freelance photographer. Specializing in senior portraits and elopements.",
+      "A website for a freelance photographer. Specializing in senior portraits and elopements.",
     icon: Aperture,
     image: "./imgs/photo.png",
     buttonText: "visit julia rose photo",
