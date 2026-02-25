@@ -62,7 +62,11 @@ const Privacy = () => {
               <li>Improve our website and customer support</li>
             </ul>
             <p className="mt-2 text-gray-700">
-              We do not sell, rent, or trade your personal information.
+              We do not sell, rent, or trade your personal information. By
+              providing a telephone number and submitting our contact form you
+              are consenting to be contacted by SMS text message. Message & data
+              rates may apply. You can reply STOP to opt-out of further
+              messaging.
             </p>
           </section>
 
@@ -82,7 +86,7 @@ const Privacy = () => {
               No mobile information will be shared with third parties/affiliates
               for marketing/promotional purposes. All other categories exclude
               text messaging originator opt-in data and consent; this
-              information will not be shared with any third parties.{" "}
+              information will not be shared with any third parties.
             </p>
           </section>
 
