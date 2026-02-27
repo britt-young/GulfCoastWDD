@@ -1,13 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import element from "../assets/element.svg";
 
 const CTA = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/contact");
-  };
 
   return (
     <div className="bg-white dark:bg-dark">
@@ -31,7 +25,7 @@ const CTA = () => {
               <div className="lg:mt-5 mt-6 flex lg:flex-row flex-col gap-y-2 lg:gap-y-0 gap-x-6 items-center">
                 <a
                   className="text-sm leading-3 flex items-center relative overflow-visible uppercase font-alt font-bold shadow-lg px-6 py-2 rounded-2xl cursor-pointer bg-alt text-black tracking-wide transition-all duration-300 ease-in-out translate-y-0 transform hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-0.5"
-                  onClick={handleClick}
+                  href="/contact"
                 >
                   Schedule Now <ArrowRightIcon className="size-6 ms-4" />
                 </a>
