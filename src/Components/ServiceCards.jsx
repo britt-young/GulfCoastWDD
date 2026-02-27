@@ -105,7 +105,7 @@ const ServiceCards = () => {
                     to={service.link}
                     className="inline-flex items-center text-alternate font-semibold hover:underline"
                   >
-                    see more <FaArrowRight className="ml-2" />
+                    read our blog <FaArrowRight className="ml-2" />
                   </Link>
                 </div>
               </div>
