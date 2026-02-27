@@ -54,43 +54,42 @@ const PortfolioDisplay = () => {
 
           <dl className="mt-10 space-y-8 text-base text-black dark:text-white lg:max-w-none">
             {features.map((feature) => (
-              <div
-                key={feature.name}
-                onClick={() => setActiveFeature(feature)}
-                className={`relative pl-9 cursor-pointer transition-all duration-300 ${
-                  activeFeature.name === feature.name
-                    ? "text-alternate dark:text-alt"
-                    : "hover:text-alternate hover:dark:text-alt"
-                }`}
-              >
-                <dt className="inline font-semibold">
-                  <feature.icon
-                    aria-hidden="true"
-                    className={`absolute top-1 left-1 size-5 transition-colors ${
+              <div key={feature.name} className="relative">
+                <dt>
+                  <button
+                    type="button"
+                    onClick={() => setActiveFeature(feature)}
+                    className={`w-fit text-left font-semibold transition-all duration-300 capitalize ${
                       activeFeature.name === feature.name
-                        ? "text-alternate dark:text-alt"
-                        : "text-black hover:text-alternate dark:hover:text-white dark:text-white"
+                        ? "text-alternate dark:text-alt bg-transparent shadow-none"
+                        : "hover:text-alternate hover:dark:text-alt bg-transparent shadow-none"
                     }`}
-                  />
-                  {feature.name}
+                  >
+                    <feature.icon
+                      aria-hidden="true"
+                      className="size-5 items-center absolute bottom-2.5 left-0 "
+                    />
+                    {feature.name}
+                  </button>
                 </dt>
-                <dd className="font-normal font-alt leading-5">{feature.description}</dd>
+
+                <dd className="font-normal font-alt leading-5">
+                  {feature.description}
+                </dd>
               </div>
             ))}
-
-            {/* Dynamic Button */}
-            {activeFeature?.url && (
-              <a
-                href={activeFeature.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-2xl font-alt uppercase"
-              >
-                {activeFeature.buttonText}
-                <ArrowUpRightIcon className="size-5 ms-2" />
-              </a>
-            )}
           </dl>
+          {activeFeature?.url && (
+            <a
+              href={activeFeature.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-2xl font-alt uppercase"
+            >
+              {activeFeature.buttonText}
+              <ArrowUpRightIcon className="size-5 ms-2" aria-hidden="true" />
+            </a>
+          )}
         </div>
 
         {/* Right section: Image */}
