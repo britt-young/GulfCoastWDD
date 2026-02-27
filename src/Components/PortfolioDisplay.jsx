@@ -52,7 +52,7 @@ const PortfolioDisplay = () => {
             customer trust, and converts website viewers into patrons.
           </p>
 
-          <dl className="mt-10 space-y-8 text-base text-black dark:text-white lg:max-w-none">
+          <dl className="mt-5 space-y-8 ps-4 text-base text-black dark:text-white lg:max-w-none">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
@@ -84,7 +84,7 @@ const PortfolioDisplay = () => {
               href={activeFeature.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-5 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-2xl font-alt uppercase"
+              className="bg-alternate text-white hover:text-black hover:bg-alt dark:bg-alt dark:text-black hover:dark:bg-white mt-10 flex flex-row items-center justify-center mx-auto transition-all duration-300 hover:translate-y-[-2px] px-4 py-2 rounded-2xl font-alt uppercase"
             >
               {activeFeature.buttonText}
               <ArrowUpRightIcon className="size-5 ms-2" aria-hidden="true" />
