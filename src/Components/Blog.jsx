@@ -33,7 +33,7 @@ const Blog = () => {
             CardTitle="User-Friendly Features"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={easy}
-            url="/services/features"
+            url="/services/user-friendly-features"
             alt="blog link"
             icon={<MousePointerClick />}
             author="Brittney Treece"
@@ -43,7 +43,7 @@ const Blog = () => {
             CardTitle="Loading Speed Optimization"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={speed}
-            url="/services/optimization"
+            url="/services/website-optimization"
             alt="blog link"
             icon={<Gauge />}
             author="Brittney Treece"
@@ -53,7 +53,7 @@ const Blog = () => {
             CardTitle="Responsive Design"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={respond}
-            url="/services/responsiveness"
+            url="/services/responsive-design"
             alt="blog link"
             icon={<Scaling />}
             author="Brittney Treece"
@@ -63,7 +63,7 @@ const Blog = () => {
             CardTitle="User Security and Web Encryption"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={safe}
-            url="/services/security"
+            url="/services/user-security-and-web-encryption"
             alt="blog link"
             icon={<GlobeLock />}
             author="Brittney Treece"
@@ -73,7 +73,7 @@ const Blog = () => {
             CardTitle="On-Page SEO"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={seo}
-            url="/services/seo"
+            url="/services/on-page-seo"
             alt="blog link"
             icon={<SearchCheck />}
             author="Brittney Treece"
@@ -83,7 +83,7 @@ const Blog = () => {
             CardTitle="Shopify Store Integration"
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={shopify}
-            url="/services/shopify"
+            url="/services/shopify-store-integration"
             alt="blog link"
             icon={<Store />}
             author="Brittney Treece"
