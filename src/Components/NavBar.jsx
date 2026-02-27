@@ -232,7 +232,7 @@ const NavBar = () => {
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <img src={logoDark} alt="logo"className="h-14 mx-6 absolute top-10"/>
+        <img src={logoDark} alt="logo" className="h-14 mx-6 absolute top-10" />
         <ul className="flex flex-col mt-10 mx-6 space-y-2 font-normal">
           {navItems.map((item) => (
             <li key={item}>
@@ -275,29 +275,37 @@ const NavBar = () => {
 // === Animated Framer Motion Slider Toggle ===
 const SliderToggle = ({ selected, setSelected }) => {
   return (
-    <div className="relative flex w-fit items-center rounded-2xl transition-all duration-300 ease-in-out bg-gray-300 shadow-lg dark:shadow-white/30 dark:shadow-md">
+    <div
+      className="relative flex w-fit items-center rounded-2xl transition-all duration-300 ease-in-out bg-gray-300 shadow-lg dark:shadow-white/30 dark:shadow-md"
+      role="group"
+      aria-label="Theme selection"
+    >
       <button
-        className={`${TOGGLE_CLASSES} ${
-          selected === "light"
-            ? "text-black bg-transparent"
-            : "text-black bg-transparent"
-        }`}
+        type="button"
+        aria-label="Activate light mode"
+        aria-pressed={selected === "light"}
+        className={`${TOGGLE_CLASSES} text-black bg-transparent`}
         onClick={() => setSelected("light")}
       >
-        <FiSun className="relative z-10 text-lg md:text-sm " />
-        {/* <span className="relative z-10 lowercase">Light-mode</span> */}
+        <FiSun
+          className="relative z-10 text-lg md:text-sm"
+          aria-hidden="true"
+        />
       </button>
+
       <button
-        className={`${TOGGLE_CLASSES} ${
-          selected === "dark"
-            ? "text-black bg-transparent"
-            : "text-black bg-transparent"
-        }`}
+        type="button"
+        aria-label="Activate dark mode"
+        aria-pressed={selected === "dark"}
+        className={`${TOGGLE_CLASSES} text-black bg-transparent`}
         onClick={() => setSelected("dark")}
       >
-        <FiMoon className="relative z-10 text-lg md:text-sm" />
-        {/* <span className="relative z-10 lowercase">Dark-mode</span> */}
+        <FiMoon
+          className="relative z-10 text-lg md:text-sm"
+          aria-hidden="true"
+        />
       </button>
+
       <div
         className={`absolute inset-0 z-0 flex ${
           selected === "dark" ? "justify-end" : "justify-start"
@@ -307,6 +315,7 @@ const SliderToggle = ({ selected, setSelected }) => {
           layout
           transition={{ type: "spring", damping: 15, stiffness: 250 }}
           className="h-full w-1/2 rounded-2xl bg-alt"
+          aria-hidden="true"
         />
       </div>
     </div>
