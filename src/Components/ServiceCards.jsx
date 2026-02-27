@@ -22,6 +22,7 @@ const ServiceCards = () => {
       description:
         "Make a good first impression with potential clients by having a website that is easy to navigate and has intuitive feature placement to guide users to the information they want to see.",
       link: "/services/features",
+      alt: "blog link",
     },
     {
       id: 2,
@@ -29,6 +30,7 @@ const ServiceCards = () => {
       description:
         "Fast loading times are a non-negotiable for ensuring a positive user experience! We optimize images, videos, and code to improve page speed and keep users engaged and satisfied.",
       link: "/services/optimization",
+      alt: "blog link",
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ const ServiceCards = () => {
       description:
         "Our websites adapt to every screen size! Half of all website traffic originates from mobile devices, making responsive design essential for your site to reach all users.",
       link: "/services/responsiveness",
+      alt: "blog link",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ const ServiceCards = () => {
       description:
         "Users want to know their personal data is safe. We include HTTPS encryption to give your users peace of mind that their sensitive data is protected from misuse.",
       link: "/services/security",
+      alt: "blog link",
     },
     {
       id: 5,
@@ -50,6 +54,7 @@ const ServiceCards = () => {
       description:
         "Our on-page SEO strategy includes keyword optimization, meta descriptions, clean URLs, and enhanced UX to attract relevant traffic and improve rankings.",
       link: "/services/seo",
+      alt: "blog link",
     },
     {
       id: 6,
@@ -57,6 +62,7 @@ const ServiceCards = () => {
       description:
         "Already have a Shopify store? We can integrate it seamlessly with your new custom website—or build your eCommerce presence from scratch.",
       link: "/services/shopify",
+      alt: "blog link",
     },
   ];
 
