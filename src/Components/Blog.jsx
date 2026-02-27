@@ -34,6 +34,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={easy}
             url="/services/features"
+            alt="blog link"
             icon={<MousePointerClick />}
             author="Brittney Treece"
           />
@@ -43,6 +44,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={speed}
             url="/services/optimization"
+            alt="blog link"
             icon={<Gauge />}
             author="Brittney Treece"
           />
@@ -52,6 +54,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={respond}
             url="/services/responsiveness"
+            alt="blog link"
             icon={<Scaling />}
             author="Brittney Treece"
           />
@@ -61,6 +64,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={safe}
             url="/services/security"
+            alt="blog link"
             icon={<GlobeLock />}
             author="Brittney Treece"
           />
@@ -70,6 +74,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={seo}
             url="/services/seo"
+            alt="blog link"
             icon={<SearchCheck />}
             author="Brittney Treece"
           />
@@ -79,6 +84,7 @@ const Blog = () => {
             CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             image={shopify}
             url="/services/shopify"
+            alt="blog link"
             icon={<Store />}
             author="Brittney Treece"
           />
