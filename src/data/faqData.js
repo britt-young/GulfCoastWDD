@@ -22,7 +22,7 @@ export const faqData = {
       ],
       [
         "How do we request edits?",
-        "All edit requests must be submitted via email to <a href='mailto:GulfCoastWDD@protonmail.com' class='email-link'>GulfCoastWDD@protonmail.com</a> and will be fulfilled in the order they're received. As edits are received and completed, we will send you an email notification.",
+        "All edit requests must be submitted as a Change Request ticket via email to <a href='mailto:GulfCoastWDD@protonmail.com' class='email-link hover:underline'>GulfCoastWDD@protonmail.com</a>. When changes are approved, clients will recieve a signed Change Request and tickets will be fullfilled in the order they're recieved.",
       ],
       [
         "Do you offer brand design services as well?",
