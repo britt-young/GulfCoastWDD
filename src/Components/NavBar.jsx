@@ -125,24 +125,27 @@ const NavBar = () => {
                           {[
                             {
                               name: "User-Friendly Features",
-                              path: "/services/features",
+                              path: "services/user-friendly-features",
                             },
                             {
                               name: "Page Speed Optimization",
-                              path: "/services/optimization",
+                              path: "/services/website-optimization",
                             },
                             {
                               name: "Responsive Design",
-                              path: "/services/responsiveness",
+                              path: "/services/responsive-design",
                             },
                             {
                               name: "Cyber Security",
-                              path: "/services/security",
+                              path: "/services/user-security-and-web-encryption",
                             },
-                            { name: "On-Page SEO", path: "/services/seo" },
+                            {
+                              name: "On-Page SEO",
+                              path: "/services/on-page-seo",
+                            },
                             {
                               name: "Shopify Integration",
-                              path: "/services/shopify",
+                              path: "/services/shopify-store-integration",
                             },
                           ].map((srv) => (
                             <li key={srv.name}>

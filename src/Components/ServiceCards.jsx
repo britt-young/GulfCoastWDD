@@ -21,7 +21,7 @@ const ServiceCards = () => {
       title: "User-Friendly Features",
       description:
         "Make a good first impression with potential clients by having a website that is easy to navigate and has intuitive feature placement to guide users to the information they want to see.",
-      link: "/services/features",
+      link: "services/user-friendly-features",
       alt: "blog link",
     },
     {
@@ -29,7 +29,7 @@ const ServiceCards = () => {
       title: "Loading Speed Optimization",
       description:
         "Fast loading times are a non-negotiable for ensuring a positive user experience! We optimize images, videos, and code to improve page speed and keep users engaged and satisfied.",
-      link: "/services/optimization",
+      link: "services/website-optimization",
       alt: "blog link",
     },
     {
@@ -37,7 +37,7 @@ const ServiceCards = () => {
       title: "Responsive Design",
       description:
         "Our websites adapt to every screen size! Half of all website traffic originates from mobile devices, making responsive design essential for your site to reach all users.",
-      link: "/services/responsiveness",
+      link: "/services/responsive-design",
       alt: "blog link",
     },
     {
@@ -45,7 +45,7 @@ const ServiceCards = () => {
       title: "User Security and Web Encryption",
       description:
         "Users want to know their personal data is safe. We include HTTPS encryption to give your users peace of mind that their sensitive data is protected from misuse.",
-      link: "/services/security",
+      link: "/services/user-security-and-web-encryption",
       alt: "blog link",
     },
     {
@@ -53,7 +53,7 @@ const ServiceCards = () => {
       title: "On-Page SEO",
       description:
         "Our on-page SEO strategy includes keyword optimization, meta descriptions, clean URLs, and enhanced UX to attract relevant traffic and improve rankings.",
-      link: "/services/seo",
+      link: "/services/on-page-seo",
       alt: "blog link",
     },
     {
@@ -61,7 +61,7 @@ const ServiceCards = () => {
       title: "Shopify Store Integration",
       description:
         "Already have a Shopify store? We can integrate it seamlessly with your new custom website—or build your eCommerce presence from scratch.",
-      link: "/services/shopify",
+      link: "/services/shopify-store-integration",
       alt: "blog link",
     },
   ];
