@@ -98,7 +98,7 @@ const PortfolioDisplay = () => {
             key={activeFeature.image}
             alt={activeFeature.name}
             src={activeFeature.image}
-            className="m:w-[36rem] lg:w-[700px] md:-ml-4 lg:-ml-0 transition-transform duration-800 ease-in-out opacity-100 animate-fadeIn"
+            className="md:w-[36rem] lg:w-[700px] md:-ml-4 lg:-ml-0 transition-transform duration-800 ease-in-out opacity-100 animate-fadeIn"
           />
         </div>
       </div>
