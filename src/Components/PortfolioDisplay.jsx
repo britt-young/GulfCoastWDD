@@ -8,7 +8,7 @@ const features = [
     description:
       "A website for local farmers and seasonal grocerers. A community-driven agricultural resource connecting local farmers and families. Our mission is to promote sustainable agriculture, provide a fun outdoor experience, and share local food with everyone.",
     icon: Tractor,
-    image: "./imgs/farm.webp",
+    image: "./imgs/farm.png",
     buttonText: "visit local farm",
     url: "https://www.localfarm.dev",
   },
@@ -36,10 +36,10 @@ const PortfolioDisplay = () => {
   const [activeFeature, setActiveFeature] = useState(features[0]);
 
   return (
-    <div className="overflow-hidden bg-white dark:bg-dark py-20 lg:pl-52 px-5 lg:px-0 h-full">
-      <div className="flex lg:flex-row flex-col gap-x-12 gap-y-16 sm:gap-y-20 lg:mx-0 ">
+    <div className="overflow-hidden bg-white dark:bg-dark py-20 px-5 lg:pl-40 h-full">
+      <div className="flex lg:flex-row flex-col gap-x-10 gap-y-16 sm:gap-y-20 lg:mx-0 ">
         {/* Left section: Text + Features */}
-        <div className="lg:pt-4 lg:w-2/5">
+        <div className="lg:w-[40%]">
           <h4 className="text-alternate dark:text-alt">Portfolio</h4>
           <h2 className="dark:text-white">
             Recently launched websites 
@@ -62,7 +62,7 @@ const PortfolioDisplay = () => {
                     className={`w-fit text-left font-semibold transition-all duration-300 capitalize ${
                       activeFeature.name === feature.name
                         ? "text-alternate dark:text-alt bg-transparent shadow-none"
-                        : "hover:text-alternate hover:dark:text-alt bg-transparent shadow-none"
+                        : "hover:text-alternate dark:text-white hover:dark:text-alt bg-transparent shadow-none"
                     }`}
                   >
                     <feature.icon
@@ -93,12 +93,12 @@ const PortfolioDisplay = () => {
         </div>
 
         {/* Right section: Image */}
-        <div className="relative flex items-center justify-center lg:w-3/5">
+        <div className="relative flex items-center justify-center lg:w-1/2">
           <img
             key={activeFeature.image}
             alt={activeFeature.name}
             src={activeFeature.image}
-            className="lg:rounded-l-2xl shadow-xl shadow-black/30 ring-1 ring-white sm:w-[36rem] lg:w-[1000px] md:-ml-4 lg:-ml-0 transition-all duration-700 ease-in-out opacity-100 animate-fadeIn"
+            className="m:w-[36rem] lg:w-[700px] md:-ml-4 lg:-ml-0 transition-transform duration-800 ease-in-out opacity-100 animate-fadeIn"
           />
         </div>
       </div>
