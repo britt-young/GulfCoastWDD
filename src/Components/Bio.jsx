@@ -26,23 +26,21 @@ const Bio = () => {
         </p>
         <p className="mt-5">
           I started Gulf Coast Web Designs & Development because I believe that
-          every business, big or small, should have the ability to market their
+          every business, big or small, should have the ability to market its
           services online without breaking the bank. Many small businesses don't
-          have the funds to pay large web design agencies just to receive a
-          generic website that is boring and ineffective. I wanted to provide
-          small businesses an alternate option that allows them to have a
+          have the budget to hire large web design agencies and end up with a
+          generic, boring, ineffective website. I wanted to provide small
+          businesses with an alternate option that allows them to have a
           beautiful and custom website for only $200 a month.
         </p>
         <p className="mt-5">
           Gulf Coast Web Designs & Development specializes in small businesses
           that are wanting to expand into the digital space to reach more
           clients or businesses that just want to upgrade their current outdated
-          website. We'll do all the work for you; design, development, hosting, and
-          updates so you can focus on running your business.
+          website. We'll do all the work for you; design, development, hosting,
+          and updates so you can focus on running your business.
         </p>
-        <button
-          className="lg:mt-12 mt-10 bg-alternate hover:text-black transition hover:bg-alt text-white dark:bg-alt dark:text-black dark:hover:bg-white w-full md:w-fit"
-        >
+        <button className="lg:mt-12 mt-10 bg-alternate hover:text-black transition hover:bg-alt text-white dark:bg-alt dark:text-black dark:hover:bg-white w-full md:w-fit">
           <a href={`tel:${phoneNumber}`} className="hover:underline">
             Call Us: {phoneNumber}
           </a>
