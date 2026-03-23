@@ -10,7 +10,7 @@ const Contact = () => {
       {/* SEO Component */}
       <SEOHelmet
         title="Contact | Gulf Coast Web Designs & Development"
-        description="Tallahassee, Florida Website Design & Development"
+        description="convert website visitors to clients"
         canonical="/contact"
         ogImage="imgs/home-og.png"
       />

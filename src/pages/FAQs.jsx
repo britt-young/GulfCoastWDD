@@ -10,7 +10,7 @@ const FAQs = () => {
        {/* SEO Component */}
       <SEOHelmet
         title="Frequently Asked Questions | Gulf Coast Web Designs & Development"
-        description="Answers to common questions about our pricing packages and e-commerce services."
+        description="how much does a website cost? how long does it take to build a website?"
         canonical="/faqs"
         ogImage="imgs/faqs-og.png"
         faqs={faqData} // JSON-LD structured data
