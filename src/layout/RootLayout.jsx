@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import ScrollToTop from "../Components/ScrollToTop";
 import { Helmet } from "@dr.pogodin/react-helmet";
 
+
 const RootLayout = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -13,7 +14,7 @@ const RootLayout = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="flex flex-col min-h-screen transition-colors duration-300 ease-in-out bg-alternate dark:bg-dark overflow-x-hidden">
+    <div className="flex flex-col min-h-screen transition-colors duration-300 ease-in-out overflow-x-hidden">
       <ScrollToTop />
 
       {/* Global SEO Head */}

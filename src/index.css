@@ -32,11 +32,11 @@
   /* --color-dark: #0f2061; */
   /* --color-dark:#122574; */
 
-  --color-alternate: #0222D0;
-  
+  --color-alternate: #0222d0;
+
   --color-alt: #a5d2ff;
   --color-dark: #010a3b;
-   /* --color-alternate: #0038a8; */
+  /* --color-alternate: #0038a8; */
   /* --color-alt: #ddff00; */
   /* --color-dark: #002775; */
 
@@ -68,15 +68,21 @@
 
 @layer base {
   body {
-    @apply font-main text-base font-black m-0 p-0 transition-all duration-300 ease-in-out;
+    @apply font-main text-base font-black m-0 p-0 transition-all duration-300 ease-in-out bg-alternate;
+    background-image: url("digital-bg-light.svg");
+    background-repeat: repeat;
+    background-size: center;
+    background-position: top;
     overflow-x: hidden;
-    
   }
 
-  /* .dark body {
-    background-color: gray;
-    color: white;
-  } */
+  .dark body {
+    background-color: var(--color-dark);
+    background-image: url("digital-bg-dark.svg");
+    background-repeat: repeat;
+    background-size: center;
+    overflow-x: hidden;
+  }
 
   h1 {
     @apply lg:text-[4.2em] text-[2.6em] font-bold lg:leading-15 leading-10 tracking-tighter text-black;
@@ -106,7 +112,7 @@
     shadow-lg px-6 py-2 rounded-2xl cursor-pointer bg-alt text-black 
     tracking-wide transition-all duration-300 ease-in-out 
     translate-y-0 transform;
-  z-index: 1;
+    z-index: 1;
   }
 
   button:hover {

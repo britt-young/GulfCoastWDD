@@ -28,7 +28,7 @@ const WaveAnimation2 = () => {
           display: "flex",
           position: "absolute",
           height: "100%",
-          index: "50",
+          index: 50,
         }}
         options={{
           height: 20,

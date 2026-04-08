@@ -2,9 +2,11 @@ import graphic from "../assets/mockup.svg";
 import { Link } from "react-router-dom";
 
 
+
 export default function HomeHeader() {
   return (
     <div className="max-w-7xl mx-auto overflow-hidden mt-10 py-10 h-100 flex flex-col lg:flex-row items-center gap-20">
+      
       {/* Content */}
       <div className="flex flex-col text-start px-5 lg:px-0 z-0">
         <h4>unique designs, custom-coded</h4>
