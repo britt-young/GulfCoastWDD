@@ -27,7 +27,7 @@ const Footer = () => {
   const igLink = "https://www.instagram.com/gulfcoastwdd/";
 
   // Facebook link
-  const fbLink = "https://www.facebook.com/gulfcoastwdd/";
+  const fbLink = "https://www.facebook.com/profile.php?id=61583020083184/";
 
   // Phone number
   const phoneNumber = "+18506101066";
