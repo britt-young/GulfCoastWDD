@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/solid";
 import WaveAnimation from "./WaveAnimation2";
 import logoDark from "../assets/logos/nav-logo-dark.svg";
+import { RiInstagramFill,RiFacebookBoxFill } from "react-icons/ri";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -21,6 +22,12 @@ const Footer = () => {
   // Address for Apple Maps
   const address = "Tallahassee, FL., USA";
   const mapsLink = `https://maps.apple.com/?q=${encodeURIComponent(address)}`;
+
+  // Instagram link
+  const igLink = "https://www.instagram.com/gulfcoastwdd/";
+
+  // Facebook link
+  const fbLink = "https://www.facebook.com/gulfcoastwdd/";
 
   // Phone number
   const phoneNumber = "+18506101066";
@@ -44,7 +51,7 @@ const Footer = () => {
       <div className="lg:pt-40 pt-24 pb-20 relative grid grid-cols-1 md:grid-cols-2 xl:px-60 px-5 lg:px-32 lg:gap-28 gap-20 z-0 font-alt">
         {/* Brand side */}
         <div className="flex flex-col items-start justify-top gap-3 text-white">
-          <img src={logoDark} alt="logo" className="lg:h-[80px] md:h-[70px] h-[60px]" />
+          <img src={logoDark} alt="logo" className="lg:h-20 md:h-17.5 h-15" />
 
           <p className="lg:mb-10 mb-5 ms-2 text-sm lg:text-base">
             Expand your business’s reach with a strong online presence. We
@@ -86,6 +93,32 @@ const Footer = () => {
                   className="hover:underline"
                 >
                   {address}
+                </a>
+              </p>
+
+              {/* Instagram */}
+              <p className="my-2">
+                <RiInstagramFill className="inline-block w-4 me-2 " />
+                <a
+                  href={igLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  @gulfcoastwdd
+                </a>
+              </p>
+
+              {/* Facebook */}
+              <p className="my-2">
+                <RiFacebookBoxFill className="inline-block w-4 me-2 " />
+                <a
+                  href={fbLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Gulf Coast WDD
                 </a>
               </p>
             </div>
